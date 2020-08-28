@@ -1,0 +1,63 @@
+Password Protected usl using apache2 and tomcat8 server
+ -----------------tomcate configuration--------------------
+web.xml:
+
+wildseve_odk@test:/var/lib/tomcat8/conf$ sudo vi web.xml
+
+<auth-constraint>
+  <role-name>protected</role-name>
+</auth-constraint>
+
+tomcat-users.xml:
+
+wildseve_odk@test:/var/lib/tomcat8/conf$ sudo vi tomcat-users.xml
+
+<tomcat-users>
+  <user name="ServerAdmin" password="WebAdmin@odk123" roles="protected" />
+</tomcat-users>
+
+
+--------------------apache2 config-------------------------
+cd /etc/apache2/
+
+htpasswd -c .htpasswd ServerAdmin //create htpass directory using command
+
+cd etc/apache2/sites-enable/ sudo vi 000-default.
+<Location /*>
+        AuthType Basic
+        AuthName "User Authentication"
+        AuthUserFile /etc/apache2/.htpasswd
+        Require user ServerAdmin
+</Location>
+
+--------------------------------------------------------
+
+
+(1) If you can modify the web.xml of your webapps, just put in a few lines into the web.xml to require basic authentication. The trick is to make sure that the user has been designated a role in the tomcat-users.xml that matches the role defined in the auth-constraint section of the web.xml:
+
+web.xml:
+
+<auth-constraint>
+  <role-name>protected</role-name>
+</auth-constraint>
+
+tomcat-users.xml:
+
+<tomcat-users>
+  <user name="ServerAdmin" password="Admin@odk123" roles="protected" />
+</tomcat-users>
+
+(2) If your Tomcat server has an APache httpd server in front of it, it's pretty easy to do this in Apache. In your configuration file, you'll just need to set up something like this:
+
+<Location /webappname>
+        AuthType Basic
+        AuthName "Protected site"
+        AuthUserFile /etc/apache2/passwords
+        Require user theuser
+</Location>
+
+ create password directory in etc/apache2/
+ 
+# Examples of creating passwords from Terminal
+#/path/to/htpasswd -c /etc/htpasswd/.htpasswd user1
+#/path/to/htpasswd /etc/htpasswd/.htpasswd user2

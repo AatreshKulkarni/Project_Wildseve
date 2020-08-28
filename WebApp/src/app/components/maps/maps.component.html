@@ -1,0 +1,309 @@
+<div class="card">
+<div class="card-header">
+  HWC Categories
+</div>
+  <tabset>
+  <tab heading="All Categories" (select)="mapByCategory(selectedAll)">
+    <div class="row">
+      <div class="col-6">
+          <mat-form-field>
+              <mat-select placeholder="Project Year" [(value)]="selectedAll" disableOptionCentering (selectionChange)="mapByCategory($event.value)">
+                <mat-option *ngFor="let yearAll of yearArr" [value]="yearAll">
+                  {{yearAll}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+      </div>
+      <div class="col-6">
+
+          <div class=" group">
+              <button  (click)="xlsxReport(hwcCat, 'HWC_Cat'+ '('+selectedAll+')' )" class="btn  btn-primary float-right">Export</button>
+              <button class="btn  btn-pinterest float-right" (click)="downloadKmlFile(catGeoJson, 'HWC_Cat'+ '('+selectedAll+')')"><a href='#' id='export'></a>KML</button>
+            </div>
+
+      </div>
+     </div>
+
+     <div  #mapAll style="height:550px;">
+      <div id='legend' class='legend'>
+        <h4>HWC Categories</h4>
+      </div>
+    </div>
+  </tab>
+  <tab heading="Crop Loss" (select)="mapByCatCR(selectedCR)">
+    <div class="row">
+      <div class="col-6">
+          <mat-form-field>
+              <mat-select placeholder="Project Year" [(value)]="selectedCR" disableOptionCentering (selectionChange)="mapByCatCR($event.value)">
+                <mat-option *ngFor="let yearCR of yearArr" [value]="yearCR">
+                  {{yearCR}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+      </div>
+      <div class="col-6">
+
+          <div class=" group">
+            <button  (click)="xlsxReport(crCat, 'CropLoss'+ '('+selectedCR+')' )" class="btn  btn-primary float-right">Export</button>
+            <button class="btn  btn-pinterest float-right" (click)="downloadKmlFile(crGeoJson, 'CropLoss'+ '('+selectedCR+')')"><a href='#' id='export'></a>KML</button>
+            </div>
+      </div>
+     </div>
+     <div  #mapCR style="height:550px;">
+    </div>
+  </tab>
+  <tab heading="Crop & Property Loss" (select)="mapByCatCRPD(selectedCRPD)">
+    <div class="row">
+      <div class="col-6">
+          <mat-form-field>
+              <mat-select placeholder="Project Year" [(value)]="selectedCRPD" disableOptionCentering (selectionChange)="mapByCatCRPD($event.value)">
+                <mat-option *ngFor="let yearCRPD of yearArr" [value]="yearCRPD">
+                  {{yearCRPD}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+      </div>
+      <div class="col-6">
+
+          <div class="container mr-0 pr-0">
+            <button  (click)="xlsxReport(crpdCat, 'Crop&PropertyLoss'+ '('+selectedCRPD+')' )" class="btn  btn-primary float-right">Export</button>
+            <button class="btn  btn-pinterest float-right" (click)="downloadKmlFile(crpdGeoJson, 'Crop&PropertyLoss'+ '('+selectedCRPD+')')"><a href='#' id='export'></a>KML</button>
+            </div>
+      </div>
+     </div>
+     <div  #mapCRPD style="height:400px;">
+    </div>
+  </tab>
+  <tab heading="Property Loss" (select)="mapByCatPD(selectedPD)">
+    <div class="row">
+      <div class="col-6">
+          <mat-form-field>
+              <mat-select placeholder="Project Year" [(value)]="selectedPD" disableOptionCentering (selectionChange)="mapByCatPD($event.value)">
+                <mat-option *ngFor="let yearPD of yearArr" [value]="yearPD">
+                  {{yearPD}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+      </div>
+      <div class="col-6">
+
+          <div class=" group">
+            <button  (click)="xlsxReport(pdCat, 'PropertyLoss'+ '('+selectedPD+')' )" class="btn  btn-primary float-right">Export</button>
+            <button class="btn  btn-pinterest float-right" (click)="downloadKmlFile(pdGeoJson, 'PropertyDamage'+ '('+selectedPD+')')"><a href='#' id='export'></a>KML</button>
+            </div>
+      </div>
+     </div>
+     <div  #mapPD style="height:550px;">
+    </div>
+  </tab>
+  <tab heading="Livestock Predation" (select)="mapByCatLP(selectedLP)">
+    <div class="row">
+      <div class="col-6">
+          <mat-form-field>
+              <mat-select placeholder="Project Year" [(value)]="selectedLP" disableOptionCentering (selectionChange)="mapByCatLP($event.value)">
+                <mat-option *ngFor="let yearLP of yearArr" [value]="yearLP">
+                  {{yearLP}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+      </div>
+      <div class="col-6">
+
+          <div class=" group">
+            <button  (click)="xlsxReport(lpCat, 'LiveStockPredation'+ '('+selectedLP+')' )" class="btn  btn-primary float-right">Export</button>
+            <button class="btn  btn-pinterest float-right" (click)="downloadKmlFile(lpGeoJson, 'LiveStockPredation'+ '('+selectedLP+')')"><a href='#' id='export'></a>KML</button>
+            </div>
+      </div>
+     </div>
+     <div  #mapLP style="height:550px;" >
+    </div>
+  </tab>
+  <tab heading="Human Injuries" (select)="mapByCatHI(selectedHI)">
+    <div class="row">
+      <div class="col-6">
+          <mat-form-field>
+              <mat-select placeholder="Project Year" [(value)]="selectedHI" disableOptionCentering (selectionChange)="mapByCatHI($event.value)">
+                <mat-option *ngFor="let yearHI of yearArr" [value]="yearHI">
+                  {{yearHI}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+      </div>
+      <div class="col-6">
+
+          <div class=" group">
+            <button  (click)="xlsxReport(hiCat, 'HumanInjury'+ '('+selectedHI+')' )" class="btn  btn-primary float-right">Export</button>
+            <button class="btn  btn-pinterest float-right" (click)="downloadKmlFile(hiGeoJson, 'HumanInjury'+ '('+selectedHI+')')"><a href='#' id='export'></a>KML</button>
+            </div>
+      </div>
+     </div>
+     <div  #mapHI style="height:550px;">
+    </div>
+  </tab>
+  <tab heading="Human Death" (select)="mapByCatHD(selectedHD)">
+    <div class="row">
+      <div class="col-6">
+          <mat-form-field>
+              <mat-select placeholder="Project Year" [(value)]="selectedHD" disableOptionCentering (selectionChange)="mapByCatHD($event.value)">
+                <mat-option *ngFor="let yearHD of yearArr" [value]="yearHD">
+                  {{yearHD}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+      </div>
+      <div class="col-6">
+
+        <div class="group">
+          <button  (click)="xlsxReport(hdCat, 'HumanDeath'+'('+selectedHD+')' )" class="btn  btn-primary float-right">Export</button>
+          <button class="btn  btn-primary float-right" (click)="downloadKmlFile(hdGeoJson, 'HumanDeath'+ '('+selectedHD+')')"><a href='#' id='export'></a>KML</button>
+          </div>
+    </div>
+     </div>
+     <div #mapHD style="height:5500px"></div>
+  </tab>
+</tabset>
+</div>
+
+<div class="card">
+    <div class="card-header">
+      Animals
+    </div>
+<div class="card-body ">
+<div class="row">
+        <div class="col-6 " >
+            <mat-form-field >
+                <mat-select placeholder="Project Year" [(value)]="selected" disableOptionCentering (selectionChange)="mapByAnimal($event.value)">
+                  <mat-option *ngFor="let year of yearArr" [value]="year">
+                    {{year}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+        </div>
+        <div class="col-6" >
+
+          <div class="group">
+            <button  (click)="xlsxReport(animalData, 'animalData'+'('+selected+')' )" class="btn  btn-primary float-right">Export</button>
+            <button class="btn  btn-pinterest float-right" (click)="downloadKmlFile(animalGeoJson, 'Animals'+ '('+selected+')')"><a href='#' id='export'></a>KML</button>
+            </div>
+      </div>
+    </div>
+
+    <div #mapAnimal   style="height: 550px">
+        <div id='legend1' class='legend'>
+            <h4>Animals</h4>
+          </div>
+        </div>
+  </div>
+
+</div>
+
+<div class="card">
+  <div class="card-header">
+    Field Assistants
+  </div>
+<div class="card-body">
+<div class="row p-0">
+      <div class="col-6" >
+          <mat-form-field >
+              <mat-select placeholder="Project Year" [(value)]="selectedFA" disableOptionCentering (selectionChange)="mapByFA($event.value)">
+                <mat-option *ngFor="let year of yearArr" [value]="year">
+                  {{year}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+      </div>
+      <div class="col-6" >
+
+        <div class=" group">
+          <button  (click)="xlsxReport(faData, 'FieldAssistantsData'+'('+selectedFA+')' )" class="btn  btn-primary float-right">Export</button>
+          <button class="btn  btn-pinterest float-right" (click)="downloadKmlFile(faGeoJson, 'FieldAssistants'+ '('+selectedFA+')')"><a href='#' id='export'></a>KML</button>
+          </div>
+    </div>
+  </div>
+
+  <div #mapFA style="height: 550px; ">
+      <div id='legend2' class='legend' >
+          <h4>Field Assistants</h4>
+        </div>
+</div>
+</div>
+
+</div>
+
+
+
+<div class="card">
+  <div class="card-header">
+    Publicity (Visited Villages)
+  </div>
+
+  <tabset>
+    <tab heading="Since Start" (select)="mapAllPubVillages()">
+
+
+            <div class="group ">
+          <button  (click)="xlsxReport(pubVil, 'Publicity Villages' )" class="btn  btn-primary float-right">Export</button>
+        <button class="btn  btn-pinterest float-right" (click)="downloadKmlFile(pubVilGeoJson, 'Publicity_Since_Start' )"><a href='#' id='export'></a>KML</button>
+      </div>
+
+    <div #mapElement style="height: 550px"></div>
+    </tab>
+    <tab heading="By Project Year" (select)="mapPubVilByProjYear(selectedPubByDate)">
+
+        <div class="row p-0 ">
+              <div class="col-6" >
+                  <mat-form-field >
+                      <mat-select placeholder="Project Year" [(value)]="selectedPubByDate" disableOptionCentering (selectionChange)="mapPubVilByProjYear($event.value)">
+                        <mat-option *ngFor="let year of yearArr" [value]="year">
+                          {{year}}
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+              </div>
+              <div class="col-6">
+                <div class="group">
+                <button  (click)="xlsxReport(pubVilByProjYear, 'Publicity Villages By Project Year('+ selectedPubByDate +')' )" class="btn  btn-primary float-right">Export</button>
+                <button class="btn  btn-pinterest float-right" (click)="downloadKmlFile(pubGeoJsonByProjYear, 'Publicity Villages By Project Year('+ selectedPubByDate +')' )"><a href='#' id='export'></a>KML</button>
+              </div>
+              </div>
+          </div>
+
+
+    <div #mapElementByDate style="height: 550px"></div>
+    </tab>
+
+  </tabset>
+
+</div>
+
+<div class="card">
+  <div class="card-header">
+    Publicity (Visited Villages) By Field Assistants
+  </div>
+  <div class="card-body ">
+    <div class="row p-0">
+          <div class="col-6" >
+              <mat-form-field >
+                  <mat-select placeholder="Project Year" [(value)]="selectedPubByDateByFA" disableOptionCentering (selectionChange)="mapPubVilByProjYearByFA($event.value)">
+                    <mat-option *ngFor="let year of yearArr" [value]="year">
+                      {{year}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+          </div>
+          <div class="col-6">
+            <div class="group">
+            <button  (click)="xlsxReport(pubByProjYearByFA, 'Publicity Villages By Project Year By FA('+ selectedPubByDateByFA +')' )" class="btn  btn-primary float-right">Export</button>
+            <button class="btn  btn-pinterest float-right" (click)="downloadKmlFile(pubGeoJsonByProjYear, 'Publicity Villages By Project Year('+ selectedPubByDateByFA +')' )"><a href='#' id='export'></a>KML</button>
+            </div>
+          </div>
+      </div>
+
+
+<div #mapPubFA style="height: 550px">
+  <div id='legend3' class="legend" >
+    <h4>Field Assistants</h4>
+  </div>
+</div>
+</div>
+</div>

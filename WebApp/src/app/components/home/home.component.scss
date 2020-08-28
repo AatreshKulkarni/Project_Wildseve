@@ -1,0 +1,103 @@
+
+.date {
+  background-color: lightblue;
+}
+
+.date-body{
+  padding: 0px;
+}
+
+
+
+#datepicker-container {
+  align-items: center;
+}
+
+.card-header {
+  padding: 12px;
+}
+
+.c1 {
+  background-color: rgb(255, 191, 0);
+}
+
+.c2 {
+  background-color: rgb(14, 206, 14);
+}
+
+.c3 {
+  background-color: rgb(218, 87, 109);
+}
+
+.c4 {
+  background-color: rgb(255, 191, 0);
+}
+
+th, td {
+  text-align: center;
+}
+
+.card{
+  width: 100%;
+}
+.card-header {
+  background-color: rgb(14, 206, 14);
+}
+
+.h1{
+  height: 360px;
+}
+
+.group  div:first-child{
+  margin-right: 2px;
+}
+
+.group{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+
+
+.float-right{
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.hi{
+  height: 320px;
+}
+
+.date {
+  background-color: lightblue;
+}
+
+.date-body{
+  padding: 0px;
+}
+
+.form-group{
+  width: 140px;
+}
+
+td, th {
+  text-align: center;
+  border: 1px solid black;
+}
+
+.paginator{
+  display: flex;
+  justify-content: flex-end ;
+}
+
+th{
+  background-color: darkkhaki
+}
+td{
+  background-color: oldlace;
+}
+
+.header{
+  font-weight: bold;
+}

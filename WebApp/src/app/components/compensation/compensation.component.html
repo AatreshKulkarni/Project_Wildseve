@@ -1,0 +1,1806 @@
+<!-- <ng4-loading-spinner [timeout]="90000" [loadingText]="'Please wait...'"> </ng4-loading-spinner> -->
+
+<div class="container">
+    <div class="row">
+      <div class="col-6 text-center">
+          <button class="btn btn-primary float-right" (click)="showHideButton()">{{buttonName}} </button>
+      </div>
+         <div *ngIf="!showMainContent" class="col-6 text-center">
+      <button class="btn btn-primary  float-right" (click)="exportdata()">Export All</button>
+  </div>
+  <div *ngIf="showMainContent" class="col-6 text-center">
+      <button class="btn btn-primary  float-right" (click)="exportdatadaterang()">Export All</button>
+  </div>
+    </div>
+  </div>
+<div class="card date card-block " *ngIf="showMainContent">
+  <div class="card-body date-body">
+    <form class="align-items-center d-flex justify-content-center" #form="ngForm" (submit)="onSubmit(fromDate, toDate)">
+      <div class="form-group my-0">
+        <label for="fromDate" for="toDate">From</label>
+
+        <my-date-picker name="fromDate" [options]="myDatePickerOptions" [(ngModel)]="fromDate" required></my-date-picker>
+        <!-- <span *ngIf="form.controls['fromDate'].errors?.required && form.controls['fromDate'].dirty">This field is required.</span> -->
+
+      </div>
+      <div class="col-sm-1">
+
+      </div>
+      <div class="form-group my-0" >
+        <label for="toDate" for="toDate">To</label>
+        <my-date-picker  name="toDate" [options]="myDatePickerOptions" [(ngModel)]="toDate" required></my-date-picker>
+        <!-- <span *ngIf="form.controls['toDate'].errors?.required && form.controls['toDate'].dirty">This field is required.</span> -->
+      </div>
+
+
+        <!-- <label> </label> -->
+        <div class="mt-4">
+          <!-- <button mat-raised-button type="submit" class="btn btn-primary pull-right">Submit</button> -->
+          <input [disabled]="!form.valid " class="btn btn-primary" type="submit" value="Submit" />
+        </div>
+
+    </form>
+  </div>
+</div>
+
+
+
+<div class="card" *ngIf="!showMainContent">
+  <div class="card-header c4">
+    Total Compensation
+  </div>
+  <div class="card-body">
+    <div>
+        <div class="btn btn-primary btn-sm float-right"  [hidden] = "dataSource1?.length == 0" (click)="xlsxReport(dataSource1, 'Total_Compensation')">
+            Export
+          </div>
+      <table class="table table-bordered">
+        <tr class="table-secondary">
+          <th  *ngFor="let col of displayedCol1" [hidden] = "dataSource1?.length == 0">
+            {{col}}
+          </th>
+        </tr>
+        <div *ngIf="dataSource1?.length == 0">No Data To Display</div>
+        <tr class="table-warning"*ngFor="let col of dataSource1">
+          <td>{{col.Total_Com_Frequency}}</td>
+          <td>{{col.Total_Com_Amt}}</td>
+          <td>{{col.Average_Com_Amt}}</td>
+          <td>{{col.Max_Com_Amt}}</td>
+          <td>{{col.Min_Com_Amt}}</td>
+          <td>{{col.Com_Amt_std_dev}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" *ngIf="!showMainContent">
+  <div class="card-header c4">
+    Total Compensation By WSID
+  </div>
+  <tabset >
+    <tab heading="All">
+    <div>
+      <div class="btn btn-primary btn-sm float-right"  [hidden] = "allCompByWSID?.length == 0" (click)="xlsxReport(allCompByWSID, 'Total_Compensation_By_WSID')">
+        Export
+      </div>
+      <table class="table table-bordered">
+        <tr class="table-secondary">
+          <th  *ngFor="let col of dispColWSID" [hidden] = "allCompByWSID?.length == 0">
+            {{col}}
+          </th>
+        </tr>
+        <div *ngIf="allCompByWSID?.length == 0">No Data To Display</div>
+        <tr class="table-warning"*ngFor="let col of allCompByWSID | paginate: { itemsPerPage: 10, currentPage: allCompWSID, id: 'compWSID'}">
+          <td>{{col.COM_WSID}}</td>
+          <td>{{col.Com_wsid_Frequency}}</td>
+          <td>{{col.Total_Com_Amt}}</td>
+          <td>{{col.Average_Com_Amt}}</td>
+          <td>{{col.Min_Com_Amt}}</td>
+          <td>{{col.Max_Com_Amt}}</td>
+          <td>{{col.STD_DEV}}</td>
+
+        </tr>
+      </table>
+      <div class="paginator">
+        <pagination-controls  (pageChange)="allCompWSID = $event" id="compWSID"></pagination-controls>
+      </div>
+    </div>
+  </tab>
+    <tab heading="Park">
+      <div>
+        <div class="row">
+        <div class="col-6">
+          <mat-form-field>
+            <mat-select
+              placeholder="Park"
+              [(value)]="selected1"
+              (selectionChange)="filterData($event.value, resultPark, 'park')"
+              disableOptionCentering
+            >
+              <mat-option *ngFor="let park of parkFilter" [value]="park">
+                {{ park }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-md-6">
+          <div class="btn btn-primary btn-sm float-right"  [hidden] = "parkData?.length == 0" (click)="xlsxReport(parkData, 'Total_Compensation_By_WSID_By_Park')">
+              Export
+            </div>
+          </div>
+          </div>
+        <table class="table table-bordered">
+          <tr class="table-secondary">
+            <th  *ngFor="let col of dispColWSIDPark" [hidden] = "parkData?.length == 0">
+              {{col}}
+            </th>
+          </tr>
+          <div *ngIf="parkData?.length == 0">No Data To Display</div>
+          <tr class="table-warning"*ngFor="let col of parkData | paginate: { itemsPerPage: 10, currentPage: parkCompWSID, id: 'parkWSID'}">
+            <td>{{col.COM_WSID}}</td>
+            <td>{{col.com_park}}</td>
+            <td>{{col.Com_wsid_Frequency}}</td>
+            <td>{{col.Total_Com_Amt}}</td>
+            <td>{{col.Average_Com_Amt}}</td>
+            <td>{{col.Min_Com_Amt}}</td>
+            <td>{{col.Max_Com_Amt}}</td>
+            <td>{{col.STD_DEV}}</td>
+
+          </tr>
+        </table>
+        <div class="paginator">
+          <pagination-controls  (pageChange)="parkCompWSID = $event" id="parkWSID"></pagination-controls>
+        </div>
+      </div>
+    </tab>
+    <tab heading="Range">
+      <div>
+        <div class="row">
+        <div class="col-6">
+          <mat-form-field>
+            <mat-select
+              placeholder="Range"
+              [(value)]="selected2"
+              (selectionChange)="filterData($event.value, resultRange, 'range')"
+              disableOptionCentering
+            >
+              <mat-option *ngFor="let range of rangeFilter" [value]="range">
+                {{ range }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-md-6">
+          <div class="btn btn-primary btn-sm float-right"  [hidden] = "rangeData?.length == 0" (click)="xlsxReport(rangeData, 'Total_Compensation_By_WSID_By_Range')">
+              Export
+            </div>
+          </div>
+          </div>
+        <table class="table table-bordered">
+          <tr class="table-secondary">
+            <th  *ngFor="let col of dispColWSIDRange" [hidden] = "rangeData?.length == 0">
+              {{col}}
+            </th>
+          </tr>
+          <div *ngIf="rangeData?.length == 0">No Data To Display</div>
+          <tr class="table-warning"*ngFor="let col of rangeData | paginate: { itemsPerPage: 10, currentPage: rangeCompWSID, id: 'rangeWSID'}">
+            <td>{{col.COM_WSID}}</td>
+            <td>{{col.COM_OM_RANGE}}</td>
+            <td>{{col.Com_wsid_Frequency}}</td>
+            <td>{{col.Total_Com_Amt}}</td>
+            <td>{{col.Average_Com_Amt}}</td>
+            <td>{{col.Min_Com_Amt}}</td>
+            <td>{{col.Max_Com_Amt}}</td>
+            <td>{{col.STD_DEV}}</td>
+          </tr>
+        </table>
+        <div class="paginator">
+          <pagination-controls  (pageChange)="rangeCompWSID = $event" id="rangeWSID"></pagination-controls>
+        </div>
+      </div>
+    </tab>
+    <tab heading="Taluk">
+      <div>
+        <div class="row">
+        <div class="col-6">
+          <mat-form-field>
+            <mat-select
+              placeholder="Park"
+              [(value)]="selected3"
+              (selectionChange)="filterData($event.value, resultTaluk, 'taluk')"
+              disableOptionCentering
+            >
+              <mat-option *ngFor="let taluk of talukFilter" [value]="taluk">
+                {{ taluk }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-md-6">
+          <div class="btn btn-primary btn-sm float-right"  [hidden] = "talukData?.length == 0" (click)="xlsxReport(talukData, 'Total_Compensation_By_WSID_By_Taluk')">
+              Export
+            </div>
+          </div>
+          </div>
+        <table class="table table-bordered">
+          <tr class="table-secondary">
+            <th  *ngFor="let col of dispColWSIDTaluk" [hidden] = "talukData?.length == 0">
+              {{col}}
+            </th>
+          </tr>
+          <div *ngIf="talukData?.length == 0">No Data To Display</div>
+          <tr class="table-warning"*ngFor="let col of talukData | paginate: { itemsPerPage: 10, currentPage: talukCompWSID, id: 'talukWSID'}">
+            <td>{{col.COM_WSID}}</td>
+            <td>{{col.COM_TALUK}}</td>
+            <td>{{col.Com_wsid_Frequency}}</td>
+            <td>{{col.Total_Com_Amt}}</td>
+            <td>{{col.Average_Com_Amt}}</td>
+            <td>{{col.Min_Com_Amt}}</td>
+            <td>{{col.Max_Com_Amt}}</td>
+            <td>{{col.STD_DEV}}</td>
+          </tr>
+        </table>
+        <div class="paginator">
+          <pagination-controls  (pageChange)="talukCompWSID = $event" id="talukWSID"></pagination-controls>
+        </div>
+      </div>
+    </tab>
+  </tabset>
+</div>
+
+<div class="card" *ngIf="!showMainContent">
+  <div class="card-header c4">
+    Total Compensation By WSID By HWC Categories
+  </div>
+  <tabset >
+    <tab heading="CR">
+    <div>
+      <div class="btn btn-primary btn-sm float-right"  [hidden] = "compByWSIdByCatData[0]?.length == 0" (click)="xlsxReport(compByWSIdByCatData[0], 'Total Compensation For Crop Loss By WSID')">
+        Export
+      </div>
+      <table class="table table-bordered">
+        <tr class="table-secondary">
+          <th  *ngFor="let col of dispColWSID" [hidden] = "compByWSIdByCatData[0]?.length == 0">
+            {{col}}
+          </th>
+        </tr>
+        <div *ngIf="compByWSIdByCatData[0]?.length == 0">No Data To Display</div>
+        <tr class="table-warning"*ngFor="let col of compByWSIdByCatData[0] | paginate: { itemsPerPage: 10, currentPage: compCR, id: 'compWSIDCR'}">
+          <td>{{col.COM_WSID}}</td>
+          <td>{{col.Com_wsid_Frequency}}</td>
+          <td>{{col.Total_Com_Amt}}</td>
+          <td>{{col.Average_Com_Amt}}</td>
+          <td>{{col.Min_Com_Amt}}</td>
+          <td>{{col.Max_Com_Amt}}</td>
+          <td>{{col.STD_DEV}}</td>
+
+        </tr>
+      </table>
+      <div class="paginator" *ngIf="compByWSIdByCatData[0]?.length>10">
+        <pagination-controls  (pageChange)="compCR = $event" id="compWSIDCR"></pagination-controls>
+      </div>
+    </div>
+  </tab>
+    <tab heading="CRPD">
+      <div>
+        <div class="btn btn-primary btn-sm float-right"  [hidden] = "compByWSIdByCatData[1]?.length == 0" (click)="xlsxReport(compByWSIdByCatData[1], 'Total Compensation For Crop & Property Loss By WSID')">
+          Export
+        </div>
+        <table class="table table-bordered">
+          <tr class="table-secondary">
+            <th  *ngFor="let col of dispColWSID" [hidden] = "compByWSIdByCatData[1]?.length == 0">
+              {{col}}
+            </th>
+          </tr>
+          <div *ngIf="compByWSIdByCatData[1]?.length == 0">No Data To Display</div>
+          <tr class="table-warning"*ngFor="let col of compByWSIdByCatData[1] | paginate: { itemsPerPage: 10, currentPage: compCRPD, id: 'compWSIDCRPD'}">
+            <td>{{col.COM_WSID}}</td>
+            <td>{{col.Com_wsid_Frequency}}</td>
+            <td>{{col.Total_Com_Amt}}</td>
+            <td>{{col.Average_Com_Amt}}</td>
+            <td>{{col.Min_Com_Amt}}</td>
+            <td>{{col.Max_Com_Amt}}</td>
+            <td>{{col.STD_DEV}}</td>
+
+          </tr>
+        </table>
+        <div class="paginator" *ngIf="compByWSIdByCatData[1]?.length>10">
+          <pagination-controls  (pageChange)="compCRPD = $event" id="compWSIDCRPD"></pagination-controls>
+        </div>
+      </div>
+    </tab>
+    <tab heading="PD">
+      <div>
+        <div class="btn btn-primary btn-sm float-right"  [hidden] = "compByWSIdByCatData[2]?.length == 0" (click)="xlsxReport(compByWSIdByCatData[2], 'Total Compensation For Property Loss By WSID')">
+          Export
+        </div>
+        <table class="table table-bordered">
+          <tr class="table-secondary">
+            <th  *ngFor="let col of dispColWSID" [hidden] = "compByWSIdByCatData[2]?.length == 0">
+              {{col}}
+            </th>
+          </tr>
+          <div *ngIf="compByWSIdByCatData[2]?.length == 0">No Data To Display</div>
+          <tr class="table-warning"*ngFor="let col of compByWSIdByCatData[2] | paginate: { itemsPerPage: 10, currentPage: compPD, id: 'compWSIDPD'}">
+            <td>{{col.COM_WSID}}</td>
+            <td>{{col.Com_wsid_Frequency}}</td>
+            <td>{{col.Total_Com_Amt}}</td>
+            <td>{{col.Average_Com_Amt}}</td>
+            <td>{{col.Min_Com_Amt}}</td>
+            <td>{{col.Max_Com_Amt}}</td>
+            <td>{{col.STD_DEV}}</td>
+
+          </tr>
+        </table>
+        <div class="paginator" *ngIf="compByWSIdByCatData[2]?.length>10">
+          <pagination-controls  (pageChange)="compPD = $event" id="compWSIDPD"></pagination-controls>
+        </div>
+      </div>
+    </tab>
+    <tab heading="LP">
+      <div>
+        <div class="btn btn-primary btn-sm float-right"  [hidden] = "compByWSIdByCatData[3]?.length == 0" (click)="xlsxReport(compByWSIdByCatData[3], 'Total Compensation For Livestock Predation By WSID')">
+          Export
+        </div>
+        <table class="table table-bordered">
+          <tr class="table-secondary">
+            <th  *ngFor="let col of dispColWSID" [hidden] = "compByWSIdByCatData[3]?.length == 0">
+              {{col}}
+            </th>
+          </tr>
+          <div *ngIf="compByWSIdByCatData[3]?.length == 0">No Data To Display</div>
+          <tr class="table-warning"*ngFor="let col of compByWSIdByCatData[3] | paginate: { itemsPerPage: 10, currentPage: compLP, id: 'compWSIDLP'}">
+            <td>{{col.COM_WSID}}</td>
+            <td>{{col.Com_wsid_Frequency}}</td>
+            <td>{{col.Total_Com_Amt}}</td>
+            <td>{{col.Average_Com_Amt}}</td>
+            <td>{{col.Min_Com_Amt}}</td>
+            <td>{{col.Max_Com_Amt}}</td>
+            <td>{{col.STD_DEV}}</td>
+
+          </tr>
+        </table>
+        <div class="paginator" *ngIf="compByWSIdByCatData[3]?.length>10">
+          <pagination-controls  (pageChange)="compLP = $event" id="compWSIDLP"></pagination-controls>
+        </div>
+      </div>
+    </tab>
+    <tab heading="HI">
+      <div>
+        <div class="btn btn-primary btn-sm float-right"  [hidden] = "compByWSIdByCatData[4]?.length == 0" (click)="xlsxReport(compByWSIdByCatData[4], 'Total Compensation For Human Injury By WSID')">
+          Export
+        </div>
+        <table class="table table-bordered">
+          <tr class="table-secondary">
+            <th  *ngFor="let col of dispColWSID" [hidden] = "compByWSIdByCatData[4]?.length == 0">
+              {{col}}
+            </th>
+          </tr>
+          <div *ngIf="compByWSIdByCatData[4]?.length == 0">No Data To Display</div>
+          <tr class="table-warning"*ngFor="let col of compByWSIdByCatData[4] | paginate: { itemsPerPage: 10, currentPage: compHI, id: 'compWSIDHI'}">
+            <td>{{col.COM_WSID}}</td>
+            <td>{{col.Com_wsid_Frequency}}</td>
+            <td>{{col.Total_Com_Amt}}</td>
+            <td>{{col.Average_Com_Amt}}</td>
+            <td>{{col.Min_Com_Amt}}</td>
+            <td>{{col.Max_Com_Amt}}</td>
+            <td>{{col.STD_DEV}}</td>
+
+          </tr>
+        </table>
+        <div class="paginator" *ngIf="compByWSIdByCatData[4]?.length>10">
+          <pagination-controls  (pageChange)="compHI = $event" id="compWSIDHI"></pagination-controls>
+        </div>
+      </div>
+    </tab>
+    <tab heading="HD">
+      <div>
+        <div class="btn btn-primary btn-sm float-right"  [hidden] = "compByWSIdByCatData[5]?.length == 0" (click)="xlsxReport(compByWSIdByCatData[5], 'Total Compensation For Human Death By WSID')">
+          Export
+        </div>
+        <table class="table table-bordered">
+          <tr class="table-secondary">
+            <th  *ngFor="let col of dispColWSID" [hidden] = "compByWSIdByCatData[5]?.length == 0">
+              {{col}}
+            </th>
+          </tr>
+          <div *ngIf="compByWSIdByCatData[5]?.length == 0">No Data To Display</div>
+          <tr class="table-warning"*ngFor="let col of compByWSIdByCatData[5] | paginate: { itemsPerPage: 10, currentPage: compHD, id: 'compWSIDHD'}">
+            <td>{{col.COM_WSID}}</td>
+            <td>{{col.Com_wsid_Frequency}}</td>
+            <td>{{col.Total_Com_Amt}}</td>
+            <td>{{col.Average_Com_Amt}}</td>
+            <td>{{col.Min_Com_Amt}}</td>
+            <td>{{col.Max_Com_Amt}}</td>
+            <td>{{col.STD_DEV}}</td>
+
+          </tr>
+        </table>
+        <div class="paginator" *ngIf="compByWSIdByCatData[5]?.length>10">
+          <pagination-controls  (pageChange)="compHD = $event" id="compWSIDHD"></pagination-controls>
+        </div>
+      </div>
+    </tab>
+  </tabset>
+</div>
+
+
+
+<div class="card" *ngIf="showMainContent" >
+  <div class="card-header c4">
+    Compensation By
+
+  </div>
+  <tabset>
+    <tab heading="Category" >
+    <div class="table-wrapper" >
+        <div class="btn btn-primary btn-sm float-right" (click)="xlsxReport(dataSource2, 'Compensation_by_category('+fromDate.formatted+'-'+toDate.formatted+')')" [hidden]="dataSource2?.length === 0">
+            Export
+          </div>
+      <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol2" [hidden]="dataSource2?.length === 0">
+            {{col}}
+          </th>
+        </tr>
+         <div *ngIf="dataSource2?.length === 0">No Data To Display</div>
+        <tr *ngFor="let col of dataSource2 | paginate: { itemsPerPage: 7, currentPage: p2, id: 'second'}">
+          <td>{{col.HWC_Category}}</td>
+          <td>{{col.Comp_Frequency}}</td>
+          <td>{{col.Comp_Amt}}</td>
+          <td>{{col.Average_Comp_Amt}}</td>
+          <td>{{col.Max_Comp_Amt}}</td>
+          <td>{{col.Min_Comp_Amt}}</td>
+          <td>{{col.Com_Amt_std_dev}}</td>
+        </tr>
+      </table>
+      <div class="paginator" *ngIf="dataSource2?.length >= 10">
+        <pagination-controls  (pageChange)="p2 = $event" id="second"></pagination-controls>
+      </div>
+    </div>
+  </tab>
+  <tab  heading="Park">
+    <div class="table-wrapper" >
+        <div class="btn btn-primary btn-sm float-right" (click)="xlsxReport(dataSource3, 'Compensation_by_park')" [hidden]="dataSource3?.length === 0">
+            Export
+          </div>
+      <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol3" [hidden]="dataSource3?.length === 0">
+            {{col}}
+          </th>
+        </tr>
+        <div *ngIf="dataSource3?.length === 0">No Data To Display</div>
+        <tr *ngFor="let col of dataSource3">
+          <td>{{col.PARK}}</td>
+          <td>{{col.Comp_Frequency}}</td>
+          <td>{{col.Comp_Amt}}</td>
+          <td>{{col.Average_Comp_Amt}}</td>
+          <td>{{col.Max_Comp_Amt}}</td>
+          <td>{{col.Min_Comp_Amt}}</td>
+          <td>{{col.Com_Amt_std_dev}}</td>
+        </tr>
+      </table>
+    </div>
+  </tab>
+  <tab  heading="Taluk">
+    <div class="table-wrapper" >
+        <div class="btn btn-primary btn-sm float-right" (click)="xlsxReport(dataSource4, 'Compensation_by_taluk')" [hidden]="dataSource4?.length === 0">
+            Export
+          </div>
+      <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol4" [hidden]="dataSource4?.length === 0">
+            {{col}}
+          </th>
+        </tr>
+        <div *ngIf="dataSource4?.length === 0">No Data To Display</div>
+        <tr *ngFor="let col of dataSource4 | paginate: { itemsPerPage: 7, currentPage: p4, id: 'fourth'}">
+          <td>{{col.TALUK}}</td>
+          <td>{{col.Comp_Frequency}}</td>
+          <td>{{col.Comp_Amt}}</td>
+          <td>{{col.Average_Comp_Amt}}</td>
+          <td>{{col.Max_Comp_Amt}}</td>
+          <td>{{col.Min_Comp_Amt}}</td>
+          <td>{{col.Com_Amt_std_dev}}</td>
+        </tr>
+      </table>
+      <div class="paginator" *ngIf="dataSource4?.length >= 10">
+      <pagination-controls (pageChange)="p4 = $event" id="fourth"></pagination-controls>
+    </div>
+    </div>
+  </tab>
+  <tab  heading="Range">
+    <div class="table-wrapper" >
+        <div class="btn btn-primary btn-sm float-right" (click)="xlsxReport(dataRange, 'Compensation_by_Range')" [hidden]="dataSource4?.length === 0">
+            Export
+          </div>
+      <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedColRange" [hidden]="dataRange?.length === 0">
+            {{col}}
+          </th>
+        </tr>
+        <div *ngIf="dataRange?.length === 0">No Data To Display</div>
+        <tr *ngFor="let col of dataRange | paginate: { itemsPerPage: 10, currentPage: f1, id: 'fth'}">
+          <td>{{col.COM_RANGE}}</td>
+          <td>{{col.Comp_Frequency}}</td>
+          <td>{{col.Comp_Amt}}</td>
+          <td>{{col.Average_Comp_Amt}}</td>
+          <td>{{col.Max_Comp_Amt}}</td>
+          <td>{{col.Min_Comp_Amt}}</td>
+          <td>{{col.Com_Amt_std_dev}}</td>
+        </tr>
+      </table>
+      <div class="paginator" *ngIf="dataRange?.length >= 10">
+      <pagination-controls (pageChange)="f1 = $event" id="fth"></pagination-controls>
+    </div>
+    </div>
+  </tab>
+  <tab  heading="Village">
+    <div class="table-wrapper" >
+        <div class="btn btn-primary btn-sm float-right" (click)="xlsxReport(dataSource5, 'Compensation_by_village')" [hidden]="dataSource5?.length === 0">
+            Export
+          </div>
+      <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol5" [hidden]="dataSource5?.length === 0">
+            {{col}}
+          </th>
+        </tr>
+        <div *ngIf="dataSource5?.length === 0">No Data To Display</div>
+        <tr *ngFor="let col of dataSource5 | paginate: { itemsPerPage: 7, currentPage: p5, id: 'fifth'}">
+          <td>{{col.VILLAGE}}</td>
+          <td>{{col.Comp_Frequency}}</td>
+          <td>{{col.Comp_Amt}}</td>
+          <td>{{col.Average_Comp_Amt}}</td>
+          <td>{{col.Max_Comp_Amt}}</td>
+          <td>{{col.Min_Comp_Amt}}</td>
+          <td>{{col.Com_Amt_std_dev}}</td>
+        </tr>
+      </table>
+      <div class="paginator" *ngIf="dataSource5?.length >= 10">
+      <pagination-controls (pageChange)="p5 = $event" id="fifth"></pagination-controls>
+    </div>
+    </div>
+  </tab>
+  </tabset>
+</div>
+
+
+
+<div class="card" *ngIf="showMainContent">
+  <div class="card-header c4">
+    Compensation By
+
+  </div>
+  <tabset>
+    <tab heading="WSID">
+        <div class="table-wrapper" >
+            <div class="btn btn-primary btn-sm float-right" (click)="xlsxReport(dataSource6, 'Compensation_by_wsid('+fromDate.formatted+'-'+toDate.formatted+')')" [hidden]="dataSource6?.length === 0">
+                Export
+              </div>
+          <table class="table table-bordered">
+            <tr>
+              <th *ngFor="let col of displayedCol6" [hidden]="dataSource6?.length === 0">
+                {{col}}
+              </th>
+            </tr>
+            <div *ngIf="dataSource6?.length === 0">No Data To Display</div>
+            <tr *ngFor="let col of dataSource6 | paginate: { itemsPerPage: 7, currentPage: p6, id: 'sixth'}">
+              <td>{{col.WSID}}</td>
+              <td>{{col.WSID_Frequency}}</td>
+              <td>{{col.Comp_Amt}}</td>
+              <td>{{col.Average_Comp_Amt}}</td>
+              <td>{{col.Max_Comp_Amt}}</td>
+              <td>{{col.Min_Comp_Amt}}</td>
+              <td>{{col.Com_Amt_std_dev}}</td>
+            </tr>
+          </table>
+          <div class="paginator" *ngIf="dataSource6?.length >= 10">
+          <pagination-controls (pageChange)="p6 = $event" id="sixth"></pagination-controls>
+        </div>
+        </div>
+    </tab>
+    <tab heading="Village">
+        <div class="table-wrapper" >
+            <div class="btn btn-primary btn-sm float-right" (click)="xlsxReport(dataSource7, 'Comp_by_village_by_data_range('+fromDate.formatted+'-'+toDate.formatted+')')" [hidden]="dataSource7?.length === 0">
+                Export
+              </div>
+          <table class="table table-bordered">
+            <tr>
+              <th *ngFor="let col of displayedCol7" [hidden]="dataSource7?.length === 0">
+                {{col}}
+              </th>
+            </tr>
+            <div *ngIf="dataSource7?.length === 0">No Data To Display</div>
+            <tr *ngFor="let col of dataSource7 | paginate: { itemsPerPage: 7, currentPage: p7, id: 'seventh'}">
+              <td>{{col.VILLAGE}}</td>
+              <td>{{col.Comp_Frequency}}</td>
+              <td>{{col.Comp_Amt}}</td>
+              <td>{{col.Average_Comp_Amt}}</td>
+              <td>{{col.Max_Comp_Amt}}</td>
+              <td>{{col.Min_Comp_Amt}}</td>
+              <td>{{col.Com_Amt_std_dev}}</td>
+            </tr>
+          </table>
+          <div class="paginator" *ngIf="dataSource7?.length >= 10">
+          <pagination-controls (pageChange)="p7 = $event" id="seventh"></pagination-controls>
+        </div>
+        </div>
+
+    </tab>
+  </tabset>
+
+
+  </div>
+
+
+
+  <div class="card" *ngIf="!showMainContent">
+  <div class="card-header c4">
+    Total Compensation By
+  </div>
+  <tabset>
+    <tab heading="HWC">
+      <div>
+        <div class="btn btn-primary btn-sm float-right" [hidden] = "datcomp?.length == 0" (click)="xlsxReport(datcomp, 'Total_Compensation_Category')">
+            Export
+          </div>
+      <table class="table table-bordered">
+        <tr class="table-secondary">
+          <th  *ngFor="let col of displayedcompCol" [hidden] = "datcomp?.length == 0">
+            {{col}}
+          </th>
+        </tr>
+        <div *ngIf="datcomp?.length == 0">No Data To Display</div>
+        <tr class="table-warning"*ngFor="let col of datcomp">
+          <td>{{col.HWC_Category}}</td>
+          <td>{{col.Comp_Frequency}}</td>
+          <td>{{col.Comp_Amt}}</td>
+          <td>{{col.Average_Comp_Amt}}</td>
+          <td>{{col.Max_Comp_Amt}}</td>
+          <td>{{col.Min_Comp_Amt}}</td>
+          <td>{{col.Com_Amt_std_dev}}</td>
+        </tr>
+      </table>
+    </div>
+    </tab>
+    <tab heading="Categories By Park">
+      <div class="row">
+        <div class="col-md-6">
+          <mat-form-field [hidden] = "catActualCompData?.length == 0">
+            <mat-select
+              placeholder="Park"
+              [(value)]="selected4"
+              (selectionChange)="filterData($event.value, catCompByPark, 'catPark')"
+              disableOptionCentering
+            >
+              <mat-option *ngFor="let catComp of catCompFilter" [value]="catComp">
+                {{ catComp }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-md-6">
+          <div class="btn btn-primary btn-sm float-right"  [hidden] = "catActualCompData?.length == 0" (click)="xlsxReport(catCompData, 'Total Compensation By Category By Park')">
+              Export
+            </div>
+          </div>
+          </div>
+          <div>
+
+          <table class="table table-bordered">
+            <tr class="table-secondary">
+              <th  *ngFor="let col of dispColCatComp" [hidden] = "catActualCompData?.length == 0">
+                {{col}}
+              </th>
+            </tr>
+            <div *ngIf="catActualCompData?.length == 0">No Data To Display</div>
+            <tr class="table-warning"*ngFor="let col of catCompData">
+              <td>{{col.HWC_Category}}</td>
+              <td>{{col.Comp_Frequency}}</td>
+              <td>{{col.Comp_Amt}}</td>
+              <td>{{col.Average_Comp_Amt}}</td>
+              <td>{{col.Max_Comp_Amt}}</td>
+              <td>{{col.Min_Comp_Amt}}</td>
+              <td>{{col.Com_Amt_std_dev}}</td>
+            </tr>
+          </table>
+        </div>
+
+    </tab>
+    <tab heading="Park">
+      <div>
+        <div class="btn btn-primary btn-sm float-right" [hidden] = "parkComp?.length == 0" (click)="xlsxReport(parkComp, 'Total_Compensation_By_Park')">
+            Export
+          </div>
+      <table class="table table-bordered">
+        <tr class="table-secondary">
+          <th  *ngFor="let col of displayedcompCol" [hidden] = "parkComp?.length == 0">
+            {{col}}
+          </th>
+        </tr>
+        <div *ngIf="parkComp?.length == 0">No Data To Display</div>
+        <tr class="table-warning"*ngFor="let col of parkComp">
+          <td>{{col.PARK}}</td>
+          <td>{{col.Comp_Frequency}}</td>
+          <td>{{col.Comp_Amt}}</td>
+          <td>{{col.Average_Comp_Amt}}</td>
+          <td>{{col.Max_Comp_Amt}}</td>
+          <td>{{col.Min_Comp_Amt}}</td>
+          <td>{{col.Com_Amt_std_dev}}</td>
+        </tr>
+      </table>
+    </div>
+    </tab>
+    <tab heading="Taluk">
+      <div>
+        <div class="btn btn-primary btn-sm float-right" [hidden] = "talukComp?.length == 0" (click)="xlsxReport(talukComp, 'Total_Compensation_Taluk')">
+            Export
+          </div>
+      <table class="table table-bordered">
+        <tr class="table-secondary">
+          <th  *ngFor="let col of dispColTalukComp" [hidden] = "talukComp?.length == 0">
+            {{col}}
+          </th>
+        </tr>
+        <div *ngIf="talukComp?.length == 0">No Data To Display</div>
+        <tr class="table-warning"*ngFor="let col of talukComp | paginate: { itemsPerPage: 10, currentPage: v2, id: 'tal'}">
+          <td>{{col.TALUK}}</td>
+          <td>{{col.Comp_Frequency}}</td>
+          <td>{{col.Comp_Amt}}</td>
+          <td>{{col.Average_Comp_Amt}}</td>
+          <td>{{col.Max_Comp_Amt}}</td>
+          <td>{{col.Min_Comp_Amt}}</td>
+          <td>{{col.Com_Amt_std_dev}}</td>
+        </tr>
+      </table>
+      <div class="paginator" *ngIf="talukComp?.length > 10 ">
+        <pagination-controls (pageChange)="v2 = $event" id="tal"></pagination-controls>
+      </div>
+    </div>
+    </tab>
+    <tab heading="Range">
+      <div>
+        <div class="btn btn-primary btn-sm float-right" [hidden] = "rangeComp?.length == 0" (click)="xlsxReport(rangeComp, 'Total_Compensation_Range')">
+            Export
+          </div>
+      <table class="table table-bordered">
+        <tr class="table-secondary">
+          <th  *ngFor="let col of dispColRangeComp" [hidden] = "rangeComp?.length == 0">
+            {{col}}
+          </th>
+        </tr>
+        <div *ngIf="rangeComp?.length == 0">No Data To Display</div>
+        <tr class="table-warning"*ngFor="let col of rangeComp | paginate: { itemsPerPage: 10, currentPage: v3, id: 'range'}">
+          <td>{{col.COM_OM_RANGE}}</td>
+          <td>{{col.RANGE_FREQ}}</td>
+          <td>{{col.Total_Com_Amt}}</td>
+          <td>{{col.Average_Com_Amt}}</td>
+          <td>{{col.Max_Com_Amt}}</td>
+          <td>{{col.Min_Com_Amt}}</td>
+          <td>{{col.STD_DEV}}</td>
+        </tr>
+      </table>
+      <div class="paginator" *ngIf="rangeComp?.length > 10 ">
+        <pagination-controls (pageChange)="v3 = $event" id="range"></pagination-controls>
+      </div>
+    </div>
+    </tab>
+    <tab heading="Village">
+      <div>
+        <div class="btn btn-primary btn-sm float-right" [hidden] = "villageComp?.length == 0" (click)="xlsxReport(villageComp, 'Total_Compensation_Villages')">
+            Export
+          </div>
+      <table class="table table-bordered">
+        <tr class="table-secondary">
+          <th  *ngFor="let col of dispColVillageComp" [hidden] = "villageComp?.length == 0">
+            {{col}}
+          </th>
+        </tr>
+        <div *ngIf="villageComp?.length == 0">No Data To Display</div>
+        <tr class="table-warning" *ngFor="let col of villageComp | paginate: { itemsPerPage: 10, currentPage: v1, id: 'vil'}">
+          <td>{{col.VILLAGE}}</td>
+          <td>{{col.Comp_Frequency}}</td>
+          <td>{{col.Comp_Amt}}</td>
+          <td>{{col.Average_Comp_Amt}}</td>
+          <td>{{col.Max_Comp_Amt}}</td>
+          <td>{{col.Min_Comp_Amt}}</td>
+          <td>{{col.Com_Amt_std_dev}}</td>
+        </tr>
+      </table>
+      <div class="paginator" *ngIf="villageComp.length > 10 ">
+        <pagination-controls (pageChange)="v1 = $event" id="vil"></pagination-controls>
+      </div>
+    </div>
+    </tab>
+
+  </tabset>
+
+
+</div>
+
+<div class="card">
+  <div class="card-header">
+    Total Compensation By OM Sheet Number By Date
+  </div>
+      <div class="col-6">
+            <mat-form-field>
+              <mat-select
+                placeholder="Year"
+                [(value)]="selectedOMDate"
+                (selectionChange)="filterData($event.value, resCompOMDate, 'omDate')"
+                disableOptionCentering
+              >
+                <mat-option *ngFor="let year of totalCompFilterByOMDate" [value]="year">
+                  {{ year }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+
+
+    <tabset>
+      <tab heading="January">
+        <div class="btn btn-primary btn-sm float-right" [hidden]="totalCompByOMDate[0]?.length == 0" (click)="xlsxReport(totalCompByOMDate[0], 'Total Compensation By OM Sheet Date In January ('+selectedOMDate+')')">
+                   Export
+                 </div>
+       <div>
+        <table class="table table-bordered">
+          <tr>
+            <th  *ngFor="let col of dispColOMDate" [hidden] = "totalCompByOMDate[0]?.length == 0">
+              {{col}}
+            </th>
+          </tr>
+          <div *ngIf="totalCompByOMDate[0]?.length == 0">No Data To Display</div>
+          <tr class="table-warning"*ngFor="let col of totalCompByOMDate[0] | paginate: { itemsPerPage: 10, currentPage: omsh1, id: 'omdate1'}">
+            <td>{{col.COM_OM_SHEET_NUM}}</td>
+            <td>{{col.SHEET_FREQ}}</td>
+            <td>{{col.COM_OM_SHEET_UPLOADED}}</td>
+            <td>{{col.COM_OM_TOTAL_CASES}}</td>
+            <td>{{col.COM_OM_WS_CASES}}</td>
+          </tr>
+        </table>
+        <div class="paginator" *ngIf="totalCompByOMDate[0]?.length > 10">
+          <pagination-controls (pageChange)="omsh1 = $event" id="omdate1"></pagination-controls>
+        </div>
+
+       </div>
+      </tab>
+
+      <tab heading="February">
+        <div class="btn btn-primary btn-sm float-right" [hidden]="totalCompByOMDate[1]?.length == 0" (click)="xlsxReport(totalCompByOMDate[1], 'Total Compensation By OM Sheet Date In February ('+selectedOMDate+')')">
+          Export
+        </div>
+<div>
+<table class="table table-bordered">
+ <tr>
+   <th  *ngFor="let col of dispColOMDate" [hidden] = "totalCompByOMDate[1]?.length == 0">
+     {{col}}
+   </th>
+ </tr>
+ <div *ngIf="totalCompByOMDate[1]?.length == 0">No Data To Display</div>
+ <tr class="table-warning"*ngFor="let col of totalCompByOMDate[1] | paginate: { itemsPerPage: 10, currentPage: omsh2, id: 'omdate2'}">
+   <td>{{col.COM_OM_SHEET_NUM}}</td>
+   <td>{{col.SHEET_FREQ}}</td>
+   <td>{{col.COM_OM_SHEET_UPLOADED}}</td>
+   <td>{{col.COM_OM_TOTAL_CASES}}</td>
+   <td>{{col.COM_OM_WS_CASES}}</td>
+ </tr>
+</table>
+<div class="paginator" *ngIf="totalCompByOMDate[1]?.length > 10">
+ <pagination-controls (pageChange)="omsh2 = $event" id="omdate2"></pagination-controls>
+</div>
+
+</div>
+
+      </tab>
+
+      <tab heading="March">
+        <div class="btn btn-primary btn-sm float-right" [hidden]="totalCompByOMDate[2]?.length == 0" (click)="xlsxReport(totalCompByOMDate[2], 'Total Compensation By OM Sheet Date In March ('+selectedOMDate+')')">
+          Export
+        </div>
+<div>
+<table class="table table-bordered">
+ <tr>
+   <th  *ngFor="let col of dispColOMDate" [hidden] = "totalCompByOMDate[2]?.length == 0">
+     {{col}}
+   </th>
+ </tr>
+ <div *ngIf="totalCompByOMDate[2]?.length == 0">No Data To Display</div>
+ <tr class="table-warning"*ngFor="let col of totalCompByOMDate[2] | paginate: { itemsPerPage: 10, currentPage: omsh3, id: 'omdate3'}">
+   <td>{{col.COM_OM_SHEET_NUM}}</td>
+   <td>{{col.SHEET_FREQ}}</td>
+   <td>{{col.COM_OM_SHEET_UPLOADED}}</td>
+   <td>{{col.COM_OM_TOTAL_CASES}}</td>
+   <td>{{col.COM_OM_WS_CASES}}</td>
+ </tr>
+</table>
+<div class="paginator" *ngIf="totalCompByOMDate[2]?.length > 10">
+ <pagination-controls (pageChange)="omsh3 = $event" id="omdate3"></pagination-controls>
+</div>
+
+</div>
+     </tab>
+
+     <tab heading="April">
+      <div class="btn btn-primary btn-sm float-right" [hidden]="totalCompByOMDate[3]?.length == 0" (click)="xlsxReport(totalCompByOMDate[3], 'Total Compensation By OM Sheet Date In April ('+selectedOMDate+')')">
+        Export
+      </div>
+<div>
+<table class="table table-bordered">
+<tr>
+ <th  *ngFor="let col of dispColOMDate" [hidden] = "totalCompByOMDate[3]?.length == 0">
+   {{col}}
+ </th>
+</tr>
+<div *ngIf="totalCompByOMDate[3]?.length == 0">No Data To Display</div>
+<tr class="table-warning"*ngFor="let col of totalCompByOMDate[3] | paginate: { itemsPerPage: 10, currentPage: omsh4, id: 'omdate4'}">
+ <td>{{col.COM_OM_SHEET_NUM}}</td>
+ <td>{{col.SHEET_FREQ}}</td>
+ <td>{{col.COM_OM_SHEET_UPLOADED}}</td>
+ <td>{{col.COM_OM_TOTAL_CASES}}</td>
+ <td>{{col.COM_OM_WS_CASES}}</td>
+</tr>
+</table>
+<div class="paginator" *ngIf="totalCompByOMDate[3]?.length > 10">
+<pagination-controls (pageChange)="omsh4 = $event" id="omdate4"></pagination-controls>
+</div>
+
+</div>
+   </tab>
+
+   <tab heading="May">
+    <div class="btn btn-primary btn-sm float-right" [hidden]="totalCompByOMDate[4]?.length == 0" (click)="xlsxReport(totalCompByOMDate[4], 'Total Compensation By OM Sheet Date In May ('+selectedOMDate+')')">
+      Export
+    </div>
+<div>
+<table class="table table-bordered">
+<tr>
+<th  *ngFor="let col of dispColOMDate" [hidden] = "totalCompByOMDate[4]?.length == 0">
+ {{col}}
+</th>
+</tr>
+<div *ngIf="totalCompByOMDate[4]?.length == 0">No Data To Display</div>
+<tr class="table-warning"*ngFor="let col of totalCompByOMDate[4] | paginate: { itemsPerPage: 10, currentPage: omsh5, id: 'omdate5'}">
+<td>{{col.COM_OM_SHEET_NUM}}</td>
+<td>{{col.SHEET_FREQ}}</td>
+<td>{{col.COM_OM_SHEET_UPLOADED}}</td>
+<td>{{col.COM_OM_TOTAL_CASES}}</td>
+<td>{{col.COM_OM_WS_CASES}}</td>
+</tr>
+</table>
+<div class="paginator" *ngIf="totalCompByOMDate[4]?.length > 10">
+<pagination-controls (pageChange)="omsh5 = $event" id="omdate5"></pagination-controls>
+</div>
+
+</div>
+   </tab>
+
+   <tab heading="June">
+    <div class="btn btn-primary btn-sm float-right" [hidden]="totalCompByOMDate[5]?.length == 0" (click)="xlsxReport(totalCompByOMDate[5], 'Total Compensation By OM Sheet Date In June ('+selectedOMDate+')')">
+      Export
+    </div>
+<div>
+<table class="table table-bordered">
+<tr>
+<th  *ngFor="let col of dispColOMDate" [hidden] = "totalCompByOMDate[5]?.length == 0">
+ {{col}}
+</th>
+</tr>
+<div *ngIf="totalCompByOMDate[5]?.length == 0">No Data To Display</div>
+<tr class="table-warning"*ngFor="let col of totalCompByOMDate[5] | paginate: { itemsPerPage: 10, currentPage: omsh6, id: 'omdate6'}">
+<td>{{col.COM_OM_SHEET_NUM}}</td>
+<td>{{col.SHEET_FREQ}}</td>
+<td>{{col.COM_OM_SHEET_UPLOADED}}</td>
+<td>{{col.COM_OM_TOTAL_CASES}}</td>
+<td>{{col.COM_OM_WS_CASES}}</td>
+</tr>
+</table>
+<div class="paginator" *ngIf="totalCompByOMDate[5]?.length > 10">
+<pagination-controls (pageChange)="omsh6 = $event" id="omdate6"></pagination-controls>
+</div>
+
+</div>
+   </tab>
+
+   <tab heading="July">
+    <div class="btn btn-primary btn-sm float-right" [hidden]="totalCompByOMDate[6]?.length == 0" (click)="xlsxReport(totalCompByOMDate[6], 'Total Compensation By OM Sheet Date In July ('+selectedOMDate+')')">
+      Export
+    </div>
+<div>
+<table class="table table-bordered">
+<tr>
+<th  *ngFor="let col of dispColOMDate" [hidden] = "totalCompByOMDate[6]?.length == 0">
+ {{col}}
+</th>
+</tr>
+<div *ngIf="totalCompByOMDate[6]?.length == 0">No Data To Display</div>
+<tr class="table-warning"*ngFor="let col of totalCompByOMDate[6] | paginate: { itemsPerPage: 10, currentPage: omsh7, id: 'omdate7'}">
+<td>{{col.COM_OM_SHEET_NUM}}</td>
+<td>{{col.SHEET_FREQ}}</td>
+<td>{{col.COM_OM_SHEET_UPLOADED}}</td>
+<td>{{col.COM_OM_TOTAL_CASES}}</td>
+<td>{{col.COM_OM_WS_CASES}}</td>
+</tr>
+</table>
+<div class="paginator" *ngIf="totalCompByOMDate[6]?.length > 10">
+<pagination-controls (pageChange)="omsh7 = $event" id="omdate7"></pagination-controls>
+</div>
+
+</div>
+   </tab>
+
+   <tab heading="August">
+      <div class="btn btn-primary btn-sm float-right" [hidden]="totalCompByOMDate[7]?.length == 0" (click)="xlsxReport(totalCompByOMDate[7], 'Total Compensation By OM Sheet Date In August ('+selectedOMDate+')')">
+      Export
+    </div>
+<div>
+<table class="table table-bordered">
+<tr>
+<th  *ngFor="let col of dispColOMDate" [hidden] = "totalCompByOMDate[7]?.length == 0">
+ {{col}}
+</th>
+</tr>
+<div *ngIf="totalCompByOMDate[7]?.length == 0">No Data To Display</div>
+<tr class="table-warning"*ngFor="let col of totalCompByOMDate[7] | paginate: { itemsPerPage: 10, currentPage: omsh8, id: 'omdate8'}">
+<td>{{col.COM_OM_SHEET_NUM}}</td>
+<td>{{col.SHEET_FREQ}}</td>
+<td>{{col.COM_OM_SHEET_UPLOADED}}</td>
+<td>{{col.COM_OM_TOTAL_CASES}}</td>
+<td>{{col.COM_OM_WS_CASES}}</td>
+</tr>
+</table>
+<div class="paginator" *ngIf="totalCompByOMDate[7]?.length > 10">
+<pagination-controls (pageChange)="omsh8 = $event" id="omdate8"></pagination-controls>
+</div>
+
+</div>
+   </tab>
+
+   <tab heading="September">
+    <div class="btn btn-primary btn-sm float-right" [hidden]="totalCompByOMDate[8]?.length == 0" (click)="xlsxReport(totalCompByOMDate[8], 'Total Compensation By OM Sheet Date In September ('+selectedOMDate+')')">
+      Export
+    </div>
+<div>
+<table class="table table-bordered">
+<tr>
+<th  *ngFor="let col of dispColOMDate" [hidden] = "totalCompByOMDate[8]?.length == 0">
+ {{col}}
+</th>
+</tr>
+<div *ngIf="totalCompByOMDate[8]?.length == 0">No Data To Display</div>
+<tr class="table-warning"*ngFor="let col of totalCompByOMDate[8] | paginate: { itemsPerPage: 10, currentPage: omsh9, id: 'omdate9'}">
+<td>{{col.COM_OM_SHEET_NUM}}</td>
+<td>{{col.SHEET_FREQ}}</td>
+<td>{{col.COM_OM_SHEET_UPLOADED}}</td>
+<td>{{col.COM_OM_TOTAL_CASES}}</td>
+<td>{{col.COM_OM_WS_CASES}}</td>
+</tr>
+</table>
+<div class="paginator" *ngIf="totalCompByOMDate[8]?.length > 10">
+<pagination-controls (pageChange)="omsh9 = $event" id="omdate9"></pagination-controls>
+</div>
+
+</div>
+
+   </tab>
+
+   <tab heading="October">
+    <div class="btn btn-primary btn-sm float-right" [hidden]="totalCompByOMDate[9]?.length == 0" (click)="xlsxReport(totalCompByOMDate[9], 'Total Compensation By OM Sheet Date In October ('+selectedOMDate+')')">
+      Export
+    </div>
+<div>
+<table class="table table-bordered">
+<tr>
+<th  *ngFor="let col of dispColOMDate" [hidden] = "totalCompByOMDate[9]?.length == 0">
+ {{col}}
+</th>
+</tr>
+<div *ngIf="totalCompByOMDate[9]?.length == 0">No Data To Display</div>
+<tr class="table-warning"*ngFor="let col of totalCompByOMDate[9] | paginate: { itemsPerPage: 10, currentPage: omsh10, id: 'omdate10'}">
+<td>{{col.COM_OM_SHEET_NUM}}</td>
+<td>{{col.SHEET_FREQ}}</td>
+<td>{{col.COM_OM_SHEET_UPLOADED}}</td>
+<td>{{col.COM_OM_TOTAL_CASES}}</td>
+<td>{{col.COM_OM_WS_CASES}}</td>
+</tr>
+</table>
+<div class="paginator" *ngIf="totalCompByOMDate[9]?.length > 10">
+<pagination-controls (pageChange)="omsh10 = $event" id="omdate10"></pagination-controls>
+</div>
+
+</div>
+   </tab>
+   <tab heading="November">
+    <div class="btn btn-primary btn-sm float-right" [hidden]="totalCompByOMDate[10]?.length == 0" (click)="xlsxReport(totalCompByOMDate[10], 'Total Compensation By OM Sheet Date In November ('+selectedOMDate+')')">
+      Export
+    </div>
+<div>
+<table class="table table-bordered">
+<tr>
+<th  *ngFor="let col of dispColOMDate" [hidden] = "totalCompByOMDate[10]?.length == 0">
+ {{col}}
+</th>
+</tr>
+<div *ngIf="totalCompByOMDate[10]?.length == 0">No Data To Display</div>
+<tr class="table-warning"*ngFor="let col of totalCompByOMDate[10] | paginate: { itemsPerPage: 10, currentPage: omsh11, id: 'omdate11'}">
+<td>{{col.COM_OM_SHEET_NUM}}</td>
+<td>{{col.SHEET_FREQ}}</td>
+<td>{{col.COM_OM_SHEET_UPLOADED}}</td>
+<td>{{col.COM_OM_TOTAL_CASES}}</td>
+<td>{{col.COM_OM_WS_CASES}}</td>
+</tr>
+</table>
+<div class="paginator" *ngIf="totalCompByOMDate[10]?.length > 10">
+<pagination-controls (pageChange)="omsh11 = $event" id="omdate11"></pagination-controls>
+</div>
+
+</div>
+   </tab>
+   <tab heading="December">
+    <div class="btn btn-primary btn-sm float-right" [hidden]="totalCompByOMDate[11]?.length == 0" (click)="xlsxReport(totalCompByOMDate[11], 'Total Compensation By OM Sheet Date In December ('+selectedOMDate+')')">
+      Export
+    </div>
+<div>
+<table class="table table-bordered">
+<tr>
+<th  *ngFor="let col of dispColOMDate" [hidden] = "totalCompByOMDate[11]?.length == 0">
+ {{col}}
+</th>
+</tr>
+<div *ngIf="totalCompByOMDate[11]?.length == 0">No Data To Display</div>
+<tr class="table-warning"*ngFor="let col of totalCompByOMDate[11] | paginate: { itemsPerPage: 10, currentPage: omsh12, id: 'omdate12'}">
+<td>{{col.COM_OM_SHEET_NUM}}</td>
+<td>{{col.SHEET_FREQ}}</td>
+<td>{{col.COM_OM_SHEET_UPLOADED}}</td>
+<td>{{col.COM_OM_TOTAL_CASES}}</td>
+<td>{{col.COM_OM_WS_CASES}}</td>
+</tr>
+</table>
+<div class="paginator" *ngIf="totalCompByOMDate[11]?.length > 10">
+<pagination-controls (pageChange)="omsh12 = $event" id="omdate12"></pagination-controls>
+</div>
+
+</div>
+   </tab>
+ </tabset>
+  </div>
+
+
+<div class="card" *ngIf="!showMainContent">
+  <div class="card-header c4">
+    Total Compensation By OM Sheet Number By Date By Range
+  </div>
+  <tabset>
+    <tab heading="OM Sheets By Date By Range">
+      <div class="row">
+        <div class="col-md-6">
+          <mat-form-field [hidden] = "totalCompFilterByOMRange?.length == 0">
+            <mat-select
+              placeholder="OM Range"
+              [(value)]="selectedOMRange"
+              (selectionChange)="filterData($event.value, resultCompByOMRange, 'omRange')"
+              disableOptionCentering
+            >
+              <mat-option *ngFor="let omRange of totalCompFilterByOMRange" [value]="omRange">
+                {{ omRange }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-md-6">
+          <div class="btn btn-primary btn-sm float-right"  [hidden] = "totalCompByOMRange?.length == 0" (click)="xlsxReport(totalCompByOMRange, 'Total Compensation By OM Sheet Date By Park')">
+              Export
+            </div>
+          </div>
+          </div>
+          <div>
+
+          <table class="table table-bordered">
+            <tr class="table-secondary">
+              <th  *ngFor="let col of dispColOMRange" [hidden] = "totalCompByOMRange?.length == 0">
+                {{col}}
+              </th>
+            </tr>
+            <div *ngIf="totalCompByOMRange?.length == 0">No Data To Display</div>
+            <tr class="table-warning"*ngFor="let col of totalCompByOMRange | paginate: { itemsPerPage: 10, currentPage: omrg, id: 'omrange'}">
+              <td>{{col.COM_OM_RANGE}}</td>
+              <td>{{col.COM_OM_SHEET_NUM}}</td>
+              <td>{{col.SHEET_FREQ}}</td>
+              <td>{{col.COM_OM_SHEET_UPLOADED}}</td>
+              <td>{{col.COM_OM_TOTAL_CASES}}</td>
+              <td>{{col.COM_OM_WS_CASES}}</td>
+
+            </tr>
+          </table>
+          <div class="paginator" *ngIf="totalCompByOMRange?.length >= 10">
+            <pagination-controls (pageChange)="omrg = $event" id="omrange"></pagination-controls>
+          </div>
+        </div>
+
+    </tab>
+    <tab heading="Total Sheets">
+      <div>
+        <div class="btn btn-primary btn-sm float-right"[hidden] = "totalsheetdata?.length == 0" (click)="xlsxReport(totalsheetdata, 'Total_NO_Of_Sheets_In_Compensation')">
+            Export
+          </div>
+      <table class="table table-bordered">
+        <tr class="table-secondary">
+          <th  *ngFor="let col of displayedsheetCol" [hidden] = "totalsheetdata?.length == 0">
+            {{col}}
+          </th>
+        </tr>
+        <div *ngIf="totalsheetdata?.length == 0">No Data To Display</div>
+        <tr class="table-warning"*ngFor="let col of totalsheetdata">
+          <td>{{col.No_of_sheet}}</td>
+        </tr>
+      </table>
+    </div>
+    </tab>
+  </tabset>
+
+
+</div>
+
+<!-- <div class="col-lg-6">
+ <div class="card" *ngIf="!showMainContent">
+  <div class="card-header c4">
+    Total No Of Sheets
+  </div>
+  <div class="card-body">
+
+  </div>
+</div>
+</div> -->
+
+
+
+<div class="card" *ngIf="showMainContent">
+  <div class="card-header c4">
+    All OM_Sheet By Date
+  </div>
+  <div class="card-body">
+    <div>
+        <div class="btn btn-primary btn-sm float-right" (click)="xlsxReport(dataomsheet, 'Total_OM_Sheets_In_Compensation_BY_date('+fromDate.formatted+'-'+toDate.formatted+')')" [hidden]="dataomsheet?.length === 0">
+            Export
+          </div>
+      <table class="table table-bordered">
+        <tr class="table-secondary">
+          <th  *ngFor="let col of omsheetdisplayedCol" [hidden]="dataomsheet?.length === 0">
+            {{col}}
+          </th>
+        </tr>
+        <div *ngIf="dataomsheet?.length === 0">No Data To Display</div>
+        <tr class="table-warning" *ngFor="let col of dataomsheet | paginate: { itemsPerPage: 7, currentPage: omsheet, id: 'seventhom'}">
+          <td>{{col.Om_Sheet_Date}}</td>
+          <td>{{col.Comp_Amt}}</td>
+          <td>{{col.Average_Comp_Amt}}</td>
+          <td>{{col.Max_Comp_Amt}}</td>
+          <td>{{col.Min_Comp_Amt}}</td>
+          <td>{{col.Com_Amt_std_dev}}</td>
+        </tr>
+      </table>
+      <div class="paginator" *ngIf="dataomsheet?.length >= 10">
+          <pagination-controls (pageChange)="omsheet = $event" id="seventhom"></pagination-controls>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="card" *ngIf="showMainContent">
+  <div class="card-header c4">
+    Total Compenastion OM_Sheet
+  </div>
+  <div class="card-body">
+    <div>
+        <div class="btn btn-primary btn-sm float-right" (click)="xlsxReport(allcompomsheetdata, 'ALL_Compensation_OM_Sheets_BY_date('+fromDate.formatted+'-'+toDate.formatted+')')" [hidden]="allcompomsheetdata?.length === 0">
+            Export
+          </div>
+      <table class="table table-bordered">
+        <tr class="table-secondary">
+          <th  *ngFor="let col of allcompsheetcol" [hidden]="allcompomsheetdata?.length === 0">
+            {{col}}
+          </th>
+        </tr>
+        <div *ngIf="allcompomsheetdata?.length === 0">No Data To Display</div>
+        <tr class="table-warning" *ngFor="let col of allcompomsheetdata | paginate: { itemsPerPage: 7, currentPage: omsheetcomp, id: 'seventhomcomp'}">
+          <td>{{col.OM_SHEET_NO}}</td>
+          <td>{{col.WSID}}</td>
+          <td>{{col.Frequency}}</td>
+          <td>{{col.Comp_Amt}}</td>
+          <td>{{col.Average_Comp_Amt}}</td>
+          <td>{{col.Max_Comp_Amt}}</td>
+          <td>{{col.Min_Comp_Amt}}</td>
+          <td>{{col.Com_Amt_std_dev}}</td>
+        </tr>
+      </table>
+      <div class="paginator" *ngIf="allcompomsheetdata?.length >= 10">
+          <pagination-controls (pageChange)="omsheetcomp = $event" id="seventhomcomp"></pagination-controls>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="card" *ngIf="showMainContent">
+  <div class="card-header c4">
+    Total Compensation By OM Sheet By Date
+  </div>
+  <div class="card-body">
+    <div>
+        <div class="btn btn-primary btn-sm float-right" (click)="xlsxReport(dataomsheetcomp, 'Total_OM_Sheets_In_Compensation_BY_date('+fromDate.formatted+'-'+toDate.formatted+')')" [hidden]="dataomsheetcomp?.length==0">
+            Export
+          </div>
+      <table class="table table-bordered">
+        <tr class="table-secondary">
+          <th  *ngFor="let col of omsheetcompdisplayedCol" [hidden]="dataomsheetcomp?.length==0">
+            {{col}}
+          </th>
+        </tr>
+        <div *ngIf="dataomsheetcomp?.length === 0">No Data To Display</div>
+        <tr class="table-warning" *ngFor="let col of dataomsheetcomp | paginate: { itemsPerPage: 7, currentPage: omsheet1, id: 'seventhom1'}">
+          <td>{{col.Om_Sheet_Date}}</td>
+          <td>{{col.Freq_Comp}}</td>
+          <td>{{col.Comp_Amt}}</td>
+          <td>{{col.Average_Comp_Amt}}</td>
+          <td>{{col.Max_Comp_Amt}}</td>
+          <td>{{col.Min_Comp_Amt}}</td>
+          <td>{{col.Com_Amt_std_dev}}</td>
+        </tr>
+      </table>
+      <div class="paginator" *ngIf="dataomsheetcomp?.length >= 10">
+          <pagination-controls (pageChange)="omsheet1 = $event" id="seventhom1"></pagination-controls>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="card" *ngIf="showMainContent">
+  <div class="card-header">
+    Compensation By WSID By Date
+  </div>
+  <tabset>
+    <tab heading="All">
+  <div>
+    <div class="btn btn-primary btn-sm float-right"  [hidden] = "compByWSID?.length == 0" (click)="xlsxReport(compByWSID, 'Compensation_By_WSID_By_Date('+fromDate.formatted+'-'+toDate.formatted+')')">
+        Export
+      </div>
+  <table class="table table-bordered">
+    <tr class="table-secondary">
+      <th  *ngFor="let col of dispColWSID" [hidden] = "compByWSID?.length == 0">
+        {{col}}
+      </th>
+    </tr>
+    <div *ngIf="compByWSID?.length == 0">No Data To Display</div>
+    <tr class="table-warning"*ngFor="let col of compByWSID | paginate: { itemsPerPage: 10, currentPage: CompWSID, id: 'coWSID'}">
+      <td>{{col.COM_WSID}}</td>
+      <td>{{col.Com_wsid_Frequency}}</td>
+      <td>{{col.Total_Com_Amt}}</td>
+      <td>{{col.Average_Com_Amt}}</td>
+      <td>{{col.Min_Com_Amt}}</td>
+      <td>{{col.Max_Com_Amt}}</td>
+      <td>{{col.STD_DEV}}</td>
+
+    </tr>
+  </table>
+  <div class="paginator" *ngIf="compByWSID?.length>10">
+    <pagination-controls  (pageChange)="CompWSID = $event" id="coWSID"></pagination-controls>
+  </div>
+  </div>
+</tab>
+  <tab heading="Park">
+    <div>
+      <div class="row">
+      <div class="col-6">
+        <mat-form-field>
+          <mat-select
+            placeholder="Park"
+            [(value)]="selected1ByDate"
+            (selectionChange)="filterData($event.value, resultParkByDate, 'parkByDate')"
+            disableOptionCentering
+          >
+            <mat-option *ngFor="let park of parkFilterByDate" [value]="park">
+              {{ park }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <div class="btn btn-primary btn-sm float-right"  [hidden] = "parkDataByDate?.length == 0" (click)="xlsxReport(parkDataByDate, 'Total_Compensation_By_WSID_By_Park_By_Date('+fromDate.formatted+'-'+toDate.formatted+')')">
+            Export
+          </div>
+        </div>
+        </div>
+      <table class="table table-bordered">
+        <tr class="table-secondary">
+          <th  *ngFor="let col of dispColWSIDPark" [hidden] = "parkDataByDate?.length == 0">
+            {{col}}
+          </th>
+        </tr>
+        <div *ngIf="parkDataByDate?.length == 0">No Data To Display</div>
+        <tr class="table-warning"*ngFor="let col of parkDataByDate | paginate: { itemsPerPage: 10, currentPage: parkCompWSIDByDate, id: 'parkWSIDByDate'}">
+          <td>{{col.COM_WSID}}</td>
+          <td>{{col.com_park}}</td>
+          <td>{{col.Com_wsid_Frequency}}</td>
+          <td>{{col.Total_Com_Amt}}</td>
+          <td>{{col.Average_Com_Amt}}</td>
+          <td>{{col.Min_Com_Amt}}</td>
+          <td>{{col.Max_Com_Amt}}</td>
+          <td>{{col.STD_DEV}}</td>
+        </tr>
+      </table>
+      <div class="paginator" *ngIf="parkDataByDate?.length>10">
+        <pagination-controls  (pageChange)="parkCompWSIDByDate = $event" id="parkWSIDByDate"></pagination-controls>
+      </div>
+    </div>
+  </tab>
+  <tab heading="Range">
+    <div>
+      <div class="row">
+      <div class="col-6">
+        <mat-form-field>
+          <mat-select
+            placeholder="Range"
+            [(value)]="selected2ByDate"
+            (selectionChange)="filterData($event.value, resultRangeByDate, 'rangeByDate')"
+            disableOptionCentering
+          >
+            <mat-option *ngFor="let range of rangeFilterByDate" [value]="range">
+              {{ range }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <div class="btn btn-primary btn-sm float-right"  [hidden] = "rangeDataByDate?.length == 0" (click)="xlsxReport(rangeDataByDate, 'Total_Compensation_By_WSID_By_Range_By_Date('+fromDate.formatted+'-'+toDate.formatted+')')">
+            Export
+          </div>
+        </div>
+        </div>
+      <table class="table table-bordered">
+        <tr class="table-secondary">
+          <th  *ngFor="let col of dispColWSIDRange" [hidden] = "rangeDataByDate?.length == 0">
+            {{col}}
+          </th>
+        </tr>
+        <div *ngIf="rangeDataByDate?.length == 0">No Data To Display</div>
+        <tr class="table-warning"*ngFor="let col of rangeDataByDate | paginate: { itemsPerPage: 10, currentPage: rangeCompWSIDByDate, id: 'rangeWSIDByDate'}">
+          <td>{{col.COM_WSID}}</td>
+          <td>{{col.COM_OM_RANGE}}</td>
+          <td>{{col.Com_wsid_Frequency}}</td>
+          <td>{{col.Total_Com_Amt}}</td>
+          <td>{{col.Average_Com_Amt}}</td>
+          <td>{{col.Min_Com_Amt}}</td>
+          <td>{{col.Max_Com_Amt}}</td>
+          <td>{{col.STD_DEV}}</td>
+        </tr>
+      </table>
+      <div class="paginator" *ngIf="rangeDataByDate?.length>10">
+        <pagination-controls  (pageChange)="rangeCompWSIDByDate = $event" id="rangeWSIDByDate"></pagination-controls>
+      </div>
+    </div>
+  </tab>
+  <tab heading="Taluk">
+    <div>
+      <div class="row">
+      <div class="col-6">
+        <mat-form-field>
+          <mat-select
+            placeholder="Taluk"
+            [(value)]="selected3ByDate"
+            (selectionChange)="filterData($event.value, resultTalukByDate, 'talukByDate')"
+            disableOptionCentering
+          >
+            <mat-option *ngFor="let taluk of talukFilterByDate" [value]="taluk">
+              {{ taluk }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <div class="btn btn-primary btn-sm float-right"  [hidden] = "talukDataByDate?.length == 0" (click)="xlsxReport(talukDataByDate, 'Total_Compensation_By_WSID_By_Taluk_By_Date('+fromDate.formatted+'-'+toDate.formatted+')')">
+            Export
+          </div>
+        </div>
+        </div>
+      <table class="table table-bordered">
+        <tr class="table-secondary">
+          <th  *ngFor="let col of dispColWSIDTaluk" [hidden] = "talukDataByDate?.length == 0">
+            {{col}}
+          </th>
+        </tr>
+        <div *ngIf="talukDataByDate?.length == 0">No Data To Display</div>
+        <tr class="table-warning"*ngFor="let col of talukDataByDate | paginate: { itemsPerPage: 10, currentPage: talukCompWSIDByDate, id: 'talukWSIDByDate'}">
+          <td>{{col.COM_WSID}}</td>
+          <td>{{col.COM_TALUK}}</td>
+          <td>{{col.Com_wsid_Frequency}}</td>
+          <td>{{col.Total_Com_Amt}}</td>
+          <td>{{col.Average_Com_Amt}}</td>
+          <td>{{col.Min_Com_Amt}}</td>
+          <td>{{col.Max_Com_Amt}}</td>
+          <td>{{col.STD_DEV}}</td>
+        </tr>
+      </table>
+      <div class="paginator" *ngIf="talukDataByDate?.length>10">
+        <pagination-controls  (pageChange)="talukCompWSIDByDate = $event" id="talukWSIDByDate"></pagination-controls>
+      </div>
+    </div>
+  </tab>
+</tabset>
+</div>
+
+<div class="card" *ngIf="showMainContent">
+  <div class="card-header c4">
+    Total Compensation and Total Number of Sheets
+  </div>
+
+    <tabset>
+      <tab heading="Total Compensation">
+    <div>
+        <div class="btn btn-primary btn-sm float-right"[hidden] = "totalComp?.length == 0" (click)="xlsxReport(totalComp, 'Total_Compensation_By_Date('+fromDate.formatted+'-'+toDate.formatted+')')">
+            Export
+          </div>
+      <table class="table table-bordered">
+        <tr class="table-secondary">
+          <th  *ngFor="let col of dispColComp" [hidden] = "totalComp?.length == 0">
+            {{col}}
+          </th>
+        </tr>
+        <div *ngIf="totalComp?.length == 0">No Data To Display</div>
+        <tr class="table-warning">
+          <td>{{totalComp.Total_Com_Frequency}}</td>
+          <td>{{totalComp.Total_Com_Amt}}</td>
+          <td>{{totalComp.Average_Com_Amt}}</td>
+          <td>{{totalComp.Max_Com_Amt}}</td>
+          <td>{{totalComp.Min_Com_Amt}}</td>
+          <td>{{totalComp.STD_DEV}}</td>
+        </tr>
+      </table>
+    </div>
+  </tab>
+    <tab heading="Total Sheets">
+    <div>
+      <div class="btn btn-primary btn-sm float-right" (click)="xlsxReport(datares, 'Total_NO_Of_Sheets_In_Compensation_BY_date_range('+fromDate.formatted+'-'+toDate.formatted+')')">
+          Export
+        </div>
+    <table class="table table-bordered">
+      <tr class="table-secondary">
+        <th  *ngFor="let col of totalsheetdisplayedCol" >
+          {{col}}
+        </th>
+      </tr>
+      <div *ngIf="datares?.length === 0">No Data To Display</div>
+      <tr class="table-warning" *ngFor="let col of datares">
+        <td>{{col.No_of_sheets}}</td>
+      </tr>
+    </table>
+  </div>
+</tab>
+</tabset>
+
+</div>
+
+
+
+<!-- <div class="card">
+  <div class="card-header c4">
+    Compensation By
+  </div>
+  <div class="card-body">
+    <div>
+      <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol7">
+            {{col}}
+          </th>
+        </tr>
+        <tr *ngFor="let col of dataSource7">
+
+          <td>{{col.VILLAGE}}</td>
+          <td>{{col.FREQ}}</td>
+          <td>{{col.AVERAGE}}</td>
+          <td>{{col.COMP_MAX}}</td>
+          <td>{{col.COMP_MIN}}</td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+</div> -->
+
+
+
+<!-- <div class="card">
+  <div class="card-header">
+    Compensation
+    <button mat-raised-button (click)="xlsxReport()" class="btn btn-primary pull-right">Export to Excel</button>
+  </div>
+
+  <div class="mat-elevation-z8 hwc">
+    <mat-table [dataSource]="dataSource">
+      <ng-container matColumnDef="COM_METAINSTANCE_ID">
+        <mat-header-cell *matHeaderCellDef>DC_METAINSTANCE_ID</mat-header-cell>
+        <mat-cell *matCellDef="let data">{{data.COM_METAINSTANCE_ID}}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="COM_DEVICE_ID">
+        <mat-header-cell *matHeaderCellDef>DC_DEVICE_ID</mat-header-cell>
+        <mat-cell *matCellDef="let data">{{data.COM_DEVICE_ID}}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="COM_USER_NAME">
+        <mat-header-cell *matHeaderCellDef>DC_USER_NAME</mat-header-cell>
+        <mat-cell *matCellDef="let data">{{data.COM_USER_NAME}}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="COM_OM_TOTAL_CASES">
+        <mat-header-cell *matHeaderCellDef>DC_TOTAL_CASES</mat-header-cell>
+        <mat-cell *matCellDef="let data">{{data.COM_OM_TOTAL_CASES}}</mat-cell>
+      </ng-container>
+      <mat-header-row *matHeaderRowDef="displayedCol"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedCol"></mat-row>
+    </mat-table>
+    <mat-paginator [length]="totalPost" [pageSize]="postPerPage" [pageSizeOptions]="pageSizeOptions">
+    </mat-paginator>
+  </div>
+</div> -->
+
+<div class="card" *ngIf="showMainContent">
+    <div class="card-header">
+        Om Sheet by HWC Category by date
+    </div>
+   <tabset>
+     <tab heading="Crop Loss">
+    <div class="btn btn-primary btn-sm float-right" [hidden]="crcol === undefined" (click)="xlsxReport(crcol, 'Om Sheet by Crop Loss by date('+fromDate.formatted+'-'+toDate.formatted+')')">
+                  Export
+                </div>
+      <div>
+        <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of cr" [hidden]="crcol === undefined">{{ col }}</th>
+        </tr>
+        <div *ngIf="crcol === undefined">No Data To Display</div>
+        <tr *ngFor=" let col of crcol |  paginate: { itemsPerPage: 7, currentPage: cr1, id: 'seventhcr'} ">
+          <td>{{ col.Om_Sheet_Date }}</td>
+          <td>{{ col.HWC_Category }}</td>
+          <td>{{ col.Freq_HWC_Category }}</td>
+          <td>{{ col.Comp_Amt }}</td>
+          <td>{{ col.Average_Comp_Amt }}</td>
+          <td>{{ col.Max_Comp_Amt }}</td>
+          <td>{{ col.Min_Comp_Amt }}</td>
+          <td>{{col.Com_Amt_std_dev}}</td>
+        </tr>
+      </table>
+      <div class="paginator">
+          <pagination-controls (pageChange)="cr1 = $event" id="seventhcr"></pagination-controls>
+        </div>
+      </div>
+     </tab>
+     <tab heading="Crop & Property Loss">
+       <div class="btn btn-primary btn-sm float-right" [hidden]="!crpdcol" (click)="xlsxReport(crpdcol, 'Om Sheet by Crop Loss & Property Loss by date('+fromDate.formatted+'-'+toDate.formatted+')')">
+                  Export
+                </div>
+        <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of cr" [hidden]="!crpdcol">{{ col }}</th>
+        </tr>
+        <div *ngIf="crpdcol === undefined">No Data To Display</div>
+        <tr *ngFor=" let col of crpdcol | paginate: { itemsPerPage: 7, currentPage: crpd, id: 'seventhcrpd'} ">
+          <td>{{ col.Om_Sheet_Date }}</td>
+          <td>{{ col.HWC_Category }}</td>
+          <td>{{ col.Freq_HWC_Category }}</td>
+          <td>{{ col.Comp_Amt }}</td>
+          <td>{{ col.Average_Comp_Amt }}</td>
+          <td>{{ col.Max_Comp_Amt }}</td>
+          <td>{{ col.Min_Comp_Amt }}</td>
+          <td>{{col.Com_Amt_std_dev}}</td>
+        </tr>
+      </table>
+      <div class="paginator">
+          <pagination-controls (pageChange)="crpd = $event" id="seventhcrpd"></pagination-controls>
+        </div>
+
+     </tab>
+     <tab heading="Property Loss">
+       <div class="btn btn-primary btn-sm float-right" [hidden]="!pdcol" (click)="xlsxReport(pdcol, 'Om Sheet by Property Loss by date('+fromDate.formatted+'-'+toDate.formatted+')')">
+                  Export
+                </div>
+        <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of cr" [hidden]="!pdcol">{{ col }}</th>
+        </tr>
+        <div *ngIf="pdcol === undefined">No Data To Display</div>
+        <tr *ngFor=" let col of pdcol | paginate: { itemsPerPage: 7, currentPage: pd, id: 'seventhpd'} ">
+          <td>{{ col.Om_Sheet_Date }}</td>
+          <td>{{ col.HWC_Category }}</td>
+          <td>{{ col.Freq_HWC_Category }}</td>
+          <td>{{ col.Comp_Amt }}</td>
+          <td>{{ col.Average_Comp_Amt }}</td>
+          <td>{{ col.Max_Comp_Amt }}</td>
+          <td>{{ col.Min_Comp_Amt }}</td>
+          <td>{{col.Com_Amt_std_dev}}</td>
+        </tr>
+      </table>
+      <div class="paginator">
+          <pagination-controls (pageChange)="pd = $event" id="seventhpd"></pagination-controls>
+        </div>
+
+   </tab>
+   <tab heading="Livestock Predation">
+      <div class="btn btn-primary btn-sm float-right" [hidden]="!lpcol" (click)="xlsxReport(lpcol, 'Om Sheet by Livestock Predation by date('+fromDate.formatted+'-'+toDate.formatted+')')">
+                  Export
+                </div>
+      <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of cr" [hidden]="!lpcol">{{ col }}</th>
+        </tr>
+        <div *ngIf="lpcol === undefined">No Data To Display</div>
+        <tr *ngFor=" let col of lpcol | paginate: { itemsPerPage: 7, currentPage: lp, id: 'seventhlp'} ">
+          <td>{{ col.Om_Sheet_Date }}</td>
+          <td>{{ col.HWC_Category }}</td>
+          <td>{{ col.Freq_HWC_Category }}</td>
+          <td>{{ col.Comp_Amt }}</td>
+          <td>{{ col.Average_Comp_Amt }}</td>
+          <td>{{ col.Max_Comp_Amt }}</td>
+          <td>{{ col.Min_Comp_Amt }}</td>
+          <td>{{col.Com_Amt_std_dev}}</td>
+        </tr>
+      </table>
+      <div class="paginator">
+          <pagination-controls (pageChange)="lp = $event" id="seventhlp"></pagination-controls>
+        </div>
+
+  </tab>
+  <tab heading="Human Injury">
+    <div class="btn btn-primary btn-sm float-right" [hidden]="!hicol" (click)="xlsxReport(hicol, 'Om Sheet by Human Injury by date('+fromDate.formatted+'-'+toDate.formatted+')')">
+                  Export
+                </div>
+
+    <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of cr" [hidden]="!hicol">{{ col }}</th>
+        </tr>
+        <div *ngIf="hicol === undefined">No Data To Display</div>
+        <tr *ngFor=" let col of hicol | paginate: { itemsPerPage: 7, currentPage: hi, id: 'seventhhi'} ">
+          <td>{{ col.Om_Sheet_Date }}</td>
+          <td>{{ col.HWC_Category }}</td>
+          <td>{{ col.Freq_HWC_Category }}</td>
+          <td>{{ col.Comp_Amt }}</td>
+          <td>{{ col.Average_Comp_Amt }}</td>
+          <td>{{ col.Max_Comp_Amt }}</td>
+          <td>{{ col.Min_Comp_Amt }}</td>
+          <td>{{col.Com_Amt_std_dev}}</td>
+        </tr>
+      </table>
+      <div class="paginator">
+          <pagination-controls (pageChange)="hi = $event" id="seventhhi"></pagination-controls>
+        </div>
+  </tab>
+  <tab heading="Human Death">
+    <div class="btn btn-primary btn-sm float-right" [hidden]="!hdcol" (click)="xlsxReport(hdcol, 'Om Sheet by Human Death by date('+fromDate.formatted+'-'+toDate.formatted+')')">
+                  Export
+                </div>
+    <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of cr" [hidden]="!hdcol">{{ col }}</th>
+        </tr>
+         <div *ngIf="hdcol === undefined">No Data To Display</div>
+        <tr *ngFor=" let col of hdcol | paginate: { itemsPerPage: 7, currentPage: hd, id: 'seventhhd'} ">
+          <td>{{ col.Om_Sheet_Date }}</td>
+          <td>{{ col.HWC_Category }}</td>
+          <td>{{ col.Freq_HWC_Category }}</td>
+          <td>{{ col.Comp_Amt }}</td>
+          <td>{{ col.Average_Comp_Amt }}</td>
+          <td>{{ col.Max_Comp_Amt }}</td>
+          <td>{{ col.Min_Comp_Amt }}</td>
+          <td>{{col.Com_Amt_std_dev}}</td>
+        </tr>
+      </table>
+      <div class="paginator">
+          <pagination-controls (pageChange)="hd = $event" id="seventhhd"></pagination-controls>
+        </div>
+  </tab>
+   </tabset>
+   </div>

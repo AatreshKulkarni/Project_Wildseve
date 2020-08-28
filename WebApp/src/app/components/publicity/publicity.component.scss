@@ -1,0 +1,105 @@
+// .mat-elevation-z8 {
+//   transition: none !important;
+//   box-shadow: none !important;
+// }
+// mat-header-cell{
+//   font-weight:bold;
+// }
+.header{
+  font-weight: bold;
+}
+
+.card-header{
+  background-color: lightsalmon;
+}
+
+.p1{
+  display: flex;
+  justify-content: flex-end ;
+}
+
+
+.card{
+  width: 100%;
+}
+
+.date {
+  background-color: lightblue;
+}
+
+.date-body{
+  padding: 0px;
+}
+
+.form-group{
+  width: 140px;
+}
+
+.float-right{
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+
+.h1{
+  height: 360px;
+}
+
+.hi{
+  height: 320px;
+}
+
+td, th {
+  text-align: center;
+}
+
+// .p1{
+//   padding-left: 200px;
+// }
+
+td, th {
+  text-align: center;
+  border: 1px solid black;
+}
+
+th{
+  background-color: darkkhaki;
+}
+td{
+  background-color: oldlace;
+}
+
+.group{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.group  div:first-child{
+  margin-right: 2px;
+}
+
+// .mat-row,
+// .mat-header-row {
+//   min-width: 1200px;
+//   width: 100%;
+//   width: max-content;
+// }
+
+// .mat-table {
+//   overflow: scroll;
+//   max-height: 400px;
+// }
+
+// .mat-cell,
+// .mat-header-cell {
+//   min-width: 90px;
+// }
+/*unnecessary to make table header fixed*/
+// .mat-header-row {
+//   top: 0;
+//   position: sticky;
+//   z-index: 1;
+//   background-color: inherit;
+//   text-align: center;
+//}

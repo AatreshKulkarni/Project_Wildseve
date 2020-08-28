@@ -1,0 +1,93 @@
+.mat-elevation-z8 {
+  transition: none !important;
+  box-shadow: none !important;
+}
+mat-header-cell{
+  font-weight:bold;
+}
+
+td, th {
+  text-align: center;
+  border: 1px solid black;
+}
+
+th{
+  background-color: darkkhaki
+}
+td{
+  background-color: oldlace;
+}
+
+
+.h1{
+  height: 340px;
+}
+
+.hi{
+  height: 300px;
+}
+
+// .mat-row,
+// .mat-header-row {
+//   min-width: 1400px;
+//   width: 100%;
+//   width: max-content;
+// }
+
+// .mat-table {
+//   overflow: scroll;
+//   max-height: 400px;
+// }
+
+.card-header{
+  background-color: palevioletred;
+}
+
+.date {
+  background-color: lightblue;
+}
+
+.date-body{
+  padding: 0px;
+}
+.paginator{
+  display: flex;
+  justify-content: flex-end ;
+}
+
+
+.form-group{
+  width: 140px;
+}
+
+.header{
+  font-weight: bold;
+}
+
+.float-right{
+  margin-top : 2px;
+  margin-bottom: 2px;
+}
+
+.group{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.group  div:first-child{
+  margin-right: 2px;
+}
+
+// .mat-cell,
+// .mat-header-cell {
+//   min-width: 90px;
+// }
+// /*unnecessary to make table header fixed*/
+// .mat-header-row {
+//   top: 0;
+//   position: sticky;
+//   z-index: 1;
+//   background-color: inherit;
+//   text-align: center;
+// }

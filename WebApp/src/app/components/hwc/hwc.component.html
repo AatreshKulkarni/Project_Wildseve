@@ -1,0 +1,2076 @@
+<!--
+  <ng4-loading-spinner [timeout]="90000" [loadingText]="'Please wait...'"> </ng4-loading-spinner>
+-->
+<div class="container">
+  <div class="row">
+    <div class="col-6 text-center">
+        <button class="btn btn-primary float-right" (click)="showHideButton()">{{buttonName}} </button>
+    </div>
+     <div *ngIf="!showMainContent" class="col-6 text-center">
+      <button class="btn btn-primary  float-right" (click)="exportdata()">Export All</button>
+  </div>
+  <div *ngIf="showMainContent" class="col-6 text-center">
+      <button class="btn btn-primary  float-right" (click)="exportdatadaterang()">Export All</button>
+  </div>
+  </div>
+</div>
+
+
+
+<!-- <section> -->
+<!-- <app-date-picker (submit)="onSubmit($event)" *ngIf="showMainContent"></app-date-picker> -->
+<!--
+  <div class="row">
+  <div class="col-md-6">
+    <app-chart-types [chartId]="'block1CanvasId'" [chartType]="'line'" [chartLabels]='block1Labels' [chartHeaderText]='block1HeaderText' [resultSet]='block1RresultSet'></app-chart-types>
+  </div>
+  <div class="col-md-6">
+    <app-chart-types [chartId]="'hwcVillageCanvasId'" [chartType]="'bar'" [chartLabels]='hwcVillageLabels' [chartHeaderText]='hwcVillageHeaderText' [resultSet]='hwcVillageResultSet'></app-chart-types>
+  </div>
+  </div>
+  <div class="row" [hidden]="!toShow">
+  <div class="col-md-6">
+      <app-chart-types [chartId]="'hwcCaseByHwcDateCanvasId'" [chartType]="'bar'" [chartLabels]='hwcCaseByHwcDateLabels' [chartHeaderText]='hwcCaseByHwcDateHeaderText' [resultSet]='hwcCasesByHwcDateResultSet'></app-chart-types>
+  </div>
+  <div class="col-md-6">
+       <app-chart-types [chartId]="'hwcCaseByFDSubDateCanvasId'" [chartType]="'bar'" [chartLabels]='hwcCaseByFDSubDateLabels' [chartHeaderText]='hwcCaseByFDSubDateHeaderText' [resultSet]='hwcCasesByFDSubDateResultSet'></app-chart-types>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+        <app-chart-types [chartId]="'block2TotalCasesByYearMonthCanvasId'" [chartType]="'bar'" [chartLabels]='block2TotalCasesByYearMonthLabels' [chartHeaderText]='block2TotalCasesByYearMonthHeaderText' [resultSet]='block2TotalCasesByYearMonthResultSet'></app-chart-types>
+    </div>
+    <div class="col-md-6">
+         <app-chart-types [chartId]="'block2Top20CasesByCatCanvasId'" [chartType]="'bar'" [chartLabels]='block2Top20CasesByCatLabels' [chartHeaderText]='block2Top20CasesByCatHeaderText' [resultSet]='block2Top20CasesByCatResultSet'></app-chart-types>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+          <app-chart-types [chartId]="'block2Top50CasesByWsidCanvasId'" [chartType]="'bar'" [chartLabels]='block2Top50CasesByWsidLabels' [chartHeaderText]='block2Top50CasesByWsidHeaderText' [resultSet]='block2Top50CasesByWsidResultSet'></app-chart-types>
+      </div>
+      <div class="col-md-6">
+           <app-chart-types [chartId]="'block3TopCasesByCropCanvasId'" [chartType]="'bar'" [chartLabels]='block3TopCasesByCropLabels' [chartHeaderText]="block3TopCasesByCropHeaderText" [resultSet]='block3TopCasesByCropResultSet'></app-chart-types>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <app-chart-types [chartId]="'block3TopCasesByPropertyCanvasId'" [chartType]="'bar'" [chartLabels]='block3TopCasesByPropertyLabels' [chartHeaderText]="block3TopCasesByPropertyHeaderText" [resultSet]='block3TopCasesByPropertyResultSet'></app-chart-types>
+      </div>
+      <div class="col-md-6">
+           <app-chart-types [chartId]="'block3TopCasesByLivestockCanvasId'" [chartType]="'bar'" [chartLabels]='block3TopCasesByLivestockLabels' [chartHeaderText]="block3TopCasesByLivestockHeaderText" [resultSet]='block3TopCasesByLivestockResultSet'></app-chart-types>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <app-chart-types [chartId]="'block3TopCasesByVillageCanvasId'" [chartType]="'bar'" [chartLabels]='block3TopCasesByVillageLabels' [chartHeaderText]="block3TopCasesByVillageHeaderText" [resultSet]='block3TopCasesByVillageResultSet'></app-chart-types>
+      </div>
+      <div class="col-md-6">
+           <app-chart-types [chartId]="'block2ByFaDateFreqCanvasId'" [chartType]="'bar'" [chartLabels]='block2ByFaDateFreqLabels' [chartHeaderText]="block2ByFaDateFreqHeaderText" [resultSet]='block2ByFaDateFreqResultSet'></app-chart-types>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <app-chart-types [chartId]="'block2ByHwcDateFreqCanvasId'" [chartType]="'bar'" [chartLabels]='block2ByHwcDateFreqLabels' [chartHeaderText]="block2ByHwcDateFreqHeaderText" [resultSet]='block2ByHwcDateFreqResultSet'></app-chart-types>
+      </div>
+      <div class="col-md-6">
+           <app-chart-types [chartId]="'block2ByFaDateFreqCanvasId'" [chartType]="'bar'" [chartLabels]='block2ByFaDateFreqLabels' [chartHeaderText]="block2ByFaDateFreqHeaderText" [resultSet]='block2ByFaDateFreqResultSet'></app-chart-types>
+      </div>
+    </div>
+  </section>
+-->
+<!--
+  <div class="container mx-o px-0">
+  <div class="card ">
+    <div class="card-header c2">
+      Frequency of cases By {{chartType}}
+      <div class="card-header-actions">
+        <div class="row">
+          <div class="radio">
+            <label><input type="radio" [(ngModel)]="chartType" name="chartType" value="Category">category &nbsp;</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" [(ngModel)]="chartType" name="chartType" value="Animal">animal &nbsp;</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" [(ngModel)]="chartType" name="chartType" value="Park">park &nbsp;</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" [(ngModel)]="chartType" name="chartType" value="Taluk">taluk &nbsp;</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" [(ngModel)]="chartType" name="chartType" value="Range">range &nbsp;</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" [(ngModel)]="chartType" name="chartType" value="Village">village &nbsp;</label>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="card-body">
+        <div class="chart-wrapper" [hidden]="chartType !== 'Category'">
+          <canvas id="category"></canvas>
+        </div>
+        <div class="chart-wrapper" [hidden]="chartType !== 'Animal'">
+          <canvas id="animal"></canvas>
+        </div>
+        <div class="chart-wrapper" [hidden]="chartType !== 'Park'">
+          <canvas id="park"></canvas>
+        </div>
+        <div class="chart-wrapper" [hidden]="chartType !== 'Taluk'">
+          <canvas id="taluk"></canvas>
+        </div>
+        <div class="chart-wrapper" [hidden]="chartType !== 'Range'">
+          <canvas id="range"></canvas>
+        </div>
+        <div class="chart-wrapper" [hidden]="chartType !== 'Village'">
+          <canvas id="village"></canvas>
+        </div>
+      </div>
+    </div>
+    </div>
+-->
+<div class="card date card-block " *ngIf="showMainContent">
+  <div class="card-body date-body">
+    <form class="align-items-center d-flex justify-content-center" #form="ngForm" (submit)="onSubmit(fromDate, toDate)">
+      <div class="form-group my-0">
+        <label for="fromDate" for="toDate">From</label>
+
+        <my-date-picker name="fromDate" [options]="myDatePickerOptions" [(ngModel)]="fromDate" required></my-date-picker>
+        <!-- <span *ngIf="form.controls['fromDate'].errors?.required && form.controls['fromDate'].dirty">This field is required.</span> -->
+
+      </div>
+      <div class="col-sm-1">
+
+      </div>
+      <div class="form-group my-0" >
+        <label for="toDate" for="toDate">To</label>
+        <my-date-picker  name="toDate" [options]="myDatePickerOptions" [(ngModel)]="toDate" required></my-date-picker>
+        <!-- <span *ngIf="form.controls['toDate'].errors?.required && form.controls['toDate'].dirty">This field is required.</span> -->
+      </div>
+
+
+        <!-- <label> </label> -->
+        <div class="mt-4">
+          <!-- <button mat-raised-button type="submit" class="btn btn-primary pull-right">Submit</button> -->
+          <input [disabled]="!form.valid " class="btn btn-primary" type="submit" value="Submit" />
+        </div>
+
+    </form>
+  </div>
+</div>
+
+
+
+<div class="card" *ngIf="!showMainContent">
+  <!-- Nav tabs -->
+
+  <div class="card-header">Frequency of Human-Wildlife Conflict Incidents </div>
+
+    <tabset>
+      <tab heading="Category" >
+        <div class="row">
+          <div class="col-md-6">
+            <mat-form-field>
+              <mat-select placeholder="Park" [(value)]="selectedCat" (selectionChange)="filterData($event.value, 'Cat')" disableOptionCentering>
+                <mat-option *ngFor="let park of parkFilter" [value]="park">
+                  {{ park }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6">
+            <div class="group m-0 p-0">
+            <div class="btn btn-primary btn-sm "  [hidden] = "dataCat?.length == 0" (click)="xlsxReport(dataCat, 'Frequency_of_Human-Wildlife_Conflict_Incidents_By_Category('+ parkName +')')">
+                Export
+              </div>
+              <button class="btn btn-sm btn-pinterest" [hidden] = "dataCat?.length == 0" (click)="downloadImage(catChart,'Frequency_of_Human-Wildlife_Conflict_Incidents_By_Category('+ parkName +')')">Download</button>
+            </div>
+            </div>
+            </div>
+
+        <div class="hi"><canvas id="category"></canvas></div>
+      </tab>
+      <tab heading="Animal" >
+        <div class="row">
+          <div class="col-md-6">
+            <mat-form-field>
+              <mat-select placeholder="Park" [(value)]="selectedAnimal" (selectionChange)="filterData($event.value, 'Animal')" disableOptionCentering>
+                <mat-option *ngFor="let park of parkFilter" [value]="park">
+                  {{ park }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6">
+            <div class="group m-0 p-0">
+              <div class="btn btn-primary btn-sm" [hidden] = "dataAnimal?.length == 0" (click)="xlsxReport(dataAnimal, 'Frequency_of_Human-Wildlife_Conflict_Incidents_By_Animal('+ parkName +')')">
+                Export
+              </div>
+       <button class="btn btn-sm btn-pinterest" [hidden] = "dataAnimal?.length == 0" (click)="downloadImage(animalChart,'Frequency_of_Human-Wildlife_Conflict_Incidents_By_Animal('+ parkName +')')">Download</button>
+            </div>
+            </div>
+            </div>
+
+         <div class="hi"><canvas id="animal"></canvas></div>
+      </tab>
+      <tab heading="Park" class="h1">
+        <div class="group">
+        <div class="btn btn-primary btn-sm " (click)="xlsxReport(dataPark, 'Frequency_of_Human-Wildlife_Conflict_Incidents_By_Park')">
+                  Export
+                </div>
+         <button class="btn btn-sm btn-pinterest "(click)="downloadImage(parkChart,'Cases by Park')">Download</button>
+        </div>
+         <div class="hi"><canvas id="park"></canvas></div>
+      </tab>
+      <tab heading="Taluk" >
+        <div class="row">
+          <div class="col-md-6">
+            <mat-form-field>
+              <mat-select placeholder="Park" [(value)]="selectedTaluk" (selectionChange)="filterData($event.value, 'Taluk')" disableOptionCentering>
+                <mat-option *ngFor="let park of parkFilter" [value]="park">
+                  {{ park }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6">
+            <div class="group m-0 p-0">
+            <div class="btn btn-primary btn-sm "  [hidden] = "dataTaluk?.length == 0" (click)="xlsxReport(dataTaluk, 'Frequency_of_Human-Wildlife_Conflict_Incidents_By_Taluk('+ parkName +')')">
+                Export
+              </div>
+              <button class="btn btn-sm btn-pinterest" [hidden] = "dataTaluk?.length == 0" (click)="downloadImage(talukChart,'Frequency_of_Human-Wildlife_Conflict_Incidents_By_Taluk('+ parkName +')')">Download</button>
+            </div>
+            </div>
+            </div>
+
+         <div class="hi"><canvas id="taluk"></canvas></div>
+
+      </tab>
+      <tab heading="HWC Range" >
+        <div class="row">
+          <div class="col-md-6">
+            <mat-form-field>
+              <mat-select placeholder="Park" [(value)]="selectedRange" (selectionChange)="filterData($event.value, 'Range')" disableOptionCentering>
+                <mat-option *ngFor="let park of parkFilter" [value]="park">
+                  {{ park }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6">
+            <div class="group m-0 p-0">
+            <div class="btn btn-primary btn-sm "  [hidden] = "dataRange?.length == 0" (click)="xlsxReport(dataRange, 'Frequency_of_Human-Wildlife_Conflict_Incidents_By_Range('+ parkName +')')">
+                Export
+              </div>
+              <button class="btn btn-sm btn-pinterest" [hidden] = "dataRange?.length == 0" (click)="downloadImage(rangeChart,'Frequency_of_Human-Wildlife_Conflict_Incidents_By_Range('+ parkName +')')">Download</button>
+            </div>
+            </div>
+            </div>
+
+         <div class="hi"><canvas id="range"></canvas></div>
+      </tab>
+      <tab heading="Village" >
+        <div class="row">
+          <div class="col-md-6">
+            <mat-form-field>
+              <mat-select placeholder="Park" [(value)]="selected1" (selectionChange)="filterData($event.value,'Village')" disableOptionCentering>
+                <mat-option *ngFor="let park of parkFilter" [value]="park">
+                  {{ park }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6">
+            <div class="group m-0 p-0">
+            <div class="btn btn-primary btn-sm "  [hidden] = "dataVillage?.length == 0" (click)="xlsxReport(dataVillage, 'Frequency_of_Human-Wildlife_Conflict_Incidents_By_Village('+ parkName +')')">
+                Export
+              </div>
+              <button class="btn btn-sm btn-pinterest "(click)="downloadImage(villageChart,'Frequency_of_Human-Wildlife_Conflict_Incidents_By_Village('+ parkName +')')">Download</button>
+            </div>
+            </div>
+            </div>
+        <!-- <div class="btn btn-primary btn-sm " (click)="xlsxReport(dataVillage, 'Frequency_of_Human-Wildlife_Conflict_Incidents_By_Village')">
+                  Export
+                </div> -->
+
+        <div class="hi"><canvas id="village"></canvas></div>
+      </tab>
+    </tabset>
+
+
+</div>
+
+<div class="card" *ngIf="showMainContent">
+  <!-- Nav tabs -->
+  <div class="card-header">Frequency of Human-Wildlife Conflict Incidents by date of occurance </div>
+
+
+    <tabset>
+      <tab heading="Category" class="h1">
+        <div class="group">
+        <div class="btn btn-primary btn-sm " (click)="xlsxReport(dataCatBydate, 'Frequency_of_Human-Wildlife_Conflict_Incidents_By_date_Occurance_By_Category')">
+                  Export
+                </div>
+        <button class="btn btn-sm btn-pinterest "(click)="downloadImage(catChartByHwc,'Cases by Category by Hwc')">Download</button>
+      </div>
+        <div class="hi"><canvas id="categorybyhwc"></canvas></div>
+      </tab>
+      <tab heading="Animal" class="h1">
+        <div class="group">
+        <div class="btn btn-primary btn-sm " (click)="xlsxReport(dataAnimalBydate, 'Frequency_of_Human-Wildlife_Conflict_Incidents_By_date_Occurance_By_Animal')">
+                  Export
+                </div>
+        <button class="btn btn-sm btn-pinterest "(click)="downloadImage(animalChartByHwc,'Cases by Animal by Hwc')">Download</button>
+      </div>
+        <div class="hi"><canvas id="animalbyhwc"></canvas></div>
+      </tab>
+      <tab heading="Park" class="h1">
+        <div class="group">
+        <div class="btn btn-primary btn-sm " (click)="xlsxReport(dataParkBydate, 'Frequency_of_Human-Wildlife_Conflict_Incidents_By_date_Occurance_By_Park')">
+                  Export
+                </div>
+        <button class="btn btn-sm btn-pinterest "(click)="downloadImage(parkChartByHwc,'Cases by Park by Hwc')">Download</button>
+      </div>
+        <div class="hi"><canvas id="parkbyhwc"></canvas></div>
+      </tab>
+      <tab heading="Taluk" class="h1">
+        <div class="group">
+        <div class="btn btn-primary btn-sm " (click)="xlsxReport(dataTalukBydate, 'Frequency_of_Human-Wildlife_Conflict_Incidents_By_date_Occurance_By_Taluk')">
+                  Export
+                </div>
+        <button class="btn btn-sm btn-pinterest "(click)="downloadImage(talukChartByHwc,'Cases by Village')">Download</button>
+      </div>
+        <div class="hi"><canvas id="talukbyhwc"></canvas></div>
+      </tab>
+      <tab heading="HWC Range" class="h1">
+        <div class="group">
+        <div class="btn btn-primary btn-sm " (click)="xlsxReport(dataRangeBydate, 'Frequency_of_Human-Wildlife_Conflict_Incidents_By_date_Occurance_By_Range')">
+                  Export
+                </div>
+        <button class="btn btn-sm btn-pinterest "(click)="downloadImage(rangeChartByHwc,'Cases by Range by Hwc')">Download</button>
+      </div>
+        <div class="hi"><canvas id="rangebyhwc"></canvas></div>
+      </tab>
+      <tab heading="Village" class="h1">
+        <div class="group">
+        <div class="btn btn-primary btn-sm " (click)="xlsxReport(dataVillageBydate, 'Frequency_of_Human-Wildlife_Conflict_Incidents_By_date_Occurance_By_Village')">
+                  Export
+                </div>
+        <button class="btn btn-sm btn-pinterest "(click)="downloadImage(villageChartByHwc,'Cases by Village by Hwc')">Download</button>
+      </div>
+        <div class="hi"><canvas id="villagebyhwc"></canvas></div>
+      </tab>
+    </tabset>
+
+</div>
+
+
+<div class="card" *ngIf="showMainContent">
+  <!-- Nav tabs -->
+  <div class="card-header">Frequency of Human-Wildlife Conflict Incidents by date of case submission</div>
+
+
+    <tabset>
+      <tab heading="Category" class="h1">
+        <div class="group">
+         <div class="btn btn-primary btn-sm " (click)="xlsxReport(dataCatByFd, 'Frequency_of_Human-Wildlife_Conflict_Incidents_By_date_Date_Of_case_Submission_By_category')">
+                  Export
+                </div>
+        <button class="btn btn-sm btn-pinterest "(click)="downloadImage(catChartFd,'Cases by Category by case submission')">Download</button>
+      </div>
+        <div class="hi"><canvas id="catfd"></canvas></div>
+      </tab>
+      <tab heading="Animal" class="h1">
+        <div class="group">
+         <div class="btn btn-primary btn-sm " (click)="xlsxReport(dataAnimalByFd, 'Frequency_of_Human-Wildlife_Conflict_Incidents_By_date_Date_Of_case_Submission_By_Animal')">
+                  Export
+                </div>
+         <button class="btn btn-sm btn-pinterest "(click)="downloadImage(animalChartFd,'Cases by Animal by case submission')">Download</button>
+        </div>
+         <div class="hi"><canvas id="animalfd"></canvas></div>
+      </tab>
+      <tab heading="Park" class="h1">
+        <div class="group">
+         <div class="btn btn-primary btn-sm " (click)="xlsxReport(dataParkByFd, 'Frequency_of_Human-Wildlife_Conflict_Incidents_By_date_Date_Of_case_Submission_By_Park')">
+                  Export
+                </div>
+         <button class="btn btn-sm btn-pinterest "(click)="downloadImage(parkChartFd,'Cases by Park by case submission')">Download</button>
+        </div>
+         <div class="hi"><canvas id="parkfd"></canvas></div>
+      </tab>
+      <tab heading="Taluk" class="h1">
+        <div class="group">
+         <div class="btn btn-primary btn-sm " (click)="xlsxReport(dataTalukByFd, 'Frequency_of_Human-Wildlife_Conflict_Incidents_By_date_Date_Of_case_Submission_By_Taluk')">
+                  Export
+                </div>
+         <button class="btn btn-sm btn-pinterest "(click)="downloadImage(talukChartFd,'Cases by Taluk by case submission')">Download</button>
+        </div>
+         <div class="hi"><canvas id="talukfd"></canvas></div>
+      </tab>
+      <tab heading="HWC Range" class="h1">
+        <div class="group">
+         <div class="btn btn-primary btn-sm " (click)="xlsxReport(dataRangeByFd, 'Frequency_of_Human-Wildlife_Conflict_Incidents_By_date_Occurance_By_Range')">
+                  Export
+                </div>
+         <button class="btn btn-sm btn-pinterest "(click)="downloadImage(rangeChartFd,'Cases by Range by case submission')">Download</button>
+        </div>
+         <div class="hi"><canvas id="rangefd"></canvas></div>
+      </tab>
+      <tab heading="Village" class="h1">
+        <div class="group">
+         <div class="btn btn-primary btn-sm " (click)="xlsxReport(dataVillageByFd, 'Frequency_of_Human-Wildlife_Conflict_Incidents_By_date_Occurance_By_Village')">
+                  Export
+                </div>
+         <button class="btn btn-sm btn-pinterest "(click)="downloadImage(villageChartFd,'Cases by Village by case submission')">Download</button>
+        </div>
+         <div class="hi"><canvas id="villagefd"></canvas></div>
+      </tab>
+    </tabset>
+
+</div>
+
+
+
+  <div class="card" *ngIf="!showMainContent">
+     <div class="card-header">
+      All Cases By Project Year
+     </div>
+     <div class="card-body h1">
+        <!--<div class="btn btn-primary btn-sm " (click)="xlsxReport(data6, ' All_Cases_Project_By_Year')">
+                  Export
+                </div>  -->
+        <button class="btn btn-sm btn-pinterest float-right" (click)="downloadImage(baryear, 'All cases By Project By year')">Download</button>
+           <div class="hi"><canvas id="baryear">{{baryear}}</canvas></div>
+              </div>
+     </div>
+
+
+<div class="card" *ngIf="!showMainContent">
+    <div class="card-header">
+     TOP 30 WSID's for All incidents
+    </div>
+    <div class="card-body h1">
+      <div class="group">
+      <div class="btn btn-primary btn-sm " (click)="xlsxReport(dataWsid,'WSID_For_All_Incidents')">Export</div>
+      <button class="btn btn-sm btn-pinterest " (click)="downloadImage(wsidchart,'All Incidents')">Download</button>
+    </div>
+      <!-- <button id="save">Save</button> -->
+    <div class="hi"><canvas id="wsidin">{{wsidchart}}</canvas></div>
+  </div>
+   </div>
+
+   <div class="card" *ngIf="!showMainContent">
+    <div class="card-header">
+      Top 5 Villages(All Cases)
+    </div>
+    <div class="card-body h1 p-1">
+      <div class="group">
+       <div class="btn btn-primary btn-sm " (click)="xlsxReport(_data, 'Top 5 Villages(All Cases)')">
+                    Export
+                  </div>
+        <button class="btn btn-sm btn-pinterest " (click)="downloadImage(barVil,'Top 5 Villages(All Cases)')">Download</button>
+      </div>
+        <div class="hi"><canvas id="barVil"></canvas></div>
+  </div>
+   </div>
+
+   <div class="card" *ngIf="!showMainContent">
+    <div class="card-header">
+      Top 5 Villages(By Category)
+    </div>
+
+    <tabset>
+      <tab heading="Crop Loss" class="h1">
+        <div class="group">
+        <div class="btn btn-primary btn-sm " (click)="xlsxReport(rescrcat, 'Top 5 Villages(Crop Loss)')">
+                    Export
+                  </div>
+          <button class="btn btn-sm btn-pinterest " (click)="downloadImage(barVilCat[0],'Top 5 Villages(Crop Loss)')">Download</button>
+        </div>
+          <div class="hi"><canvas  id="cat1"></canvas></div>
+       </tab>
+       <tab heading="Crop & Property Loss" class="h1">
+        <div class="group">
+        <div class="btn btn-primary btn-sm " (click)="xlsxReport(rescrpdcat, 'Top 5 Villages(Crop & Property Loss)')">
+                    Export
+                  </div>
+          <button class="btn btn-sm btn-pinterest " (click)="downloadImage(barVilCat[1],'Top 5 Villages(Crop & Property Loss)')">Download</button>
+        </div>
+          <div class="hi"><canvas  id="cat2"></canvas></div>
+       </tab>
+       <tab heading="Property Loss" class="h1">
+        <div class="group">
+        <div class="btn btn-primary btn-sm " (click)="xlsxReport(respdcat, 'Top 5 Villages(Property Loss)')">
+                    Export
+                  </div>
+        <button class="btn btn-sm btn-pinterest " (click)="downloadImage(barVilCat[2],'Top 5 Villages(Property Loss)')">Download</button>
+      </div>
+        <div class="hi"><canvas  id="cat3"></canvas></div>
+      </tab>
+      <tab heading="Livestock Predation" class="h1">
+        <div class="group">
+        <div class="btn btn-primary btn-sm " (click)="xlsxReport(reslpcat, 'Top 5 Villages(Livestock Predation)')">
+                    Export
+                  </div>
+          <button class="btn btn-sm btn-pinterest " (click)="downloadImage(barVilCat[3],'Top 5 Villages(Livestock Predation)')">Download</button>
+        </div>
+          <div class="hi"><canvas id="cat4"></canvas></div>
+      </tab>
+      <tab heading="Human Injury" class="h1">
+        <div class="group">
+        <div class="btn btn-primary btn-sm " (click)="xlsxReport(reshicat, 'Top 5 Villages(Human Injury)')">
+                    Export
+                  </div>
+          <button class="btn btn-sm btn-pinterest " (click)="downloadImage(barVilCat[4],'Top 5 Villages(Human Injury)')">Download</button>
+        </div>
+          <div class="hi"><canvas id="cat5"></canvas></div>
+     </tab>
+     <tab heading="Human Death" class="h1">
+      <div class="group">
+      <div class="btn btn-primary btn-sm " (click)="xlsxReport(reshdcat, 'Top 5 Villages(Human_Death)')">
+                    Export
+                  </div>
+        <button class="btn btn-sm btn-pinterest " (click)="downloadImage(barVilCat[5],'Top 5 Villages(Human Death)')">Download</button>
+      </div>
+        <div class="hi"><canvas id="cat6"></canvas></div>
+   </tab>
+    </tabset>
+    <!-- <div class="hi"><canvas id="barVil"></canvas></div> -->
+
+   </div>
+
+    <div class="card" *ngIf="!showMainContent">
+    <div class="card-header">
+     Villages for All incidents
+    </div>
+    <div class="card-body h1">
+      <div class="group">
+       <div class="btn btn-primary btn-sm " (click)="xlsxReport(data33[6],'Villages_For_All_Incidents')">Export</div>
+      <button class="btn btn-sm btn-pinterest " (click)="downloadImage(allVill,'Villages For ALL Incidents')">Download</button>
+    </div>
+      <div class="hi"><canvas id="inVil">{{allVill}}</canvas></div>
+  </div>
+   </div>
+
+    <div class="card" *ngIf="!showMainContent">
+    <div class="card-header">
+     Ranges for All incidents
+    </div>
+    <div class="card-body h1">
+      <div class="group">
+      <div class="btn btn-primary btn-sm " (click)="xlsxReport(data34[6],'Ranges_For_All_Incidents')">Export</div>
+      <button class="btn btn-sm btn-pinterest " (click)="downloadImage(allRange,'Ranges For All incidents')">Download</button>
+    </div>
+      <div class="hi"><canvas id="inRange">{{allRange}}</canvas></div>
+  </div>
+   </div>
+<!--
+<div class="card">
+
+  <div class="card-header">Frequency of cases </div>
+  <div class="card-body">
+    <tabset>
+      <tab heading="Category" class="h1">
+        <div class="hi"><canvas id="category"></canvas></div>
+      </tab>
+      <tab heading="Animal" class="h1">
+        <div class="hi"><canvas id="animal"></canvas></div>
+      </tab>
+      <tab heading="Park" class="h1">
+        <div class="hi"><canvas id="park"></canvas></div>
+      </tab>
+      <tab heading="Taluk" class="h1">
+        <div class="hi"><canvas id="taluk"></canvas></div>
+      </tab>
+      <tab heading="HWC Range" class="h1">
+        <div class="hi"><canvas id="range"></canvas></div>
+      </tab>
+      <tab heading="Village" class="h1">
+        <div class="hi"><canvas id="village"></canvas></div>
+      </tab>
+    </tabset>
+  </div>
+</div>
+ -->
+
+<div class="container">
+<div class="row" *ngIf="showMainContent">
+  <div class="col-lg-6">
+    <div class="card">
+      <div class="card-header">Frequency of cases attended by date(HWC Date)</div>
+      <div class="card-body">
+      <div class="btn btn-primary btn-sm float-right" [hidden] = "col7?.length == 0" (click)="xlsxReport(col7, 'HWC_Date_Freq(HWC)')">
+        Export
+        </div>
+        <table class="table table-bordered">
+          <tr>
+            <th *ngFor="let col of displayedCol7" [hidden] = "col7?.length == 0">{{ col }}</th>
+          </tr>
+          <div *ngIf="col7?.length == 0">No Data To Display</div>
+          <tr
+            *ngFor="
+              let col of col7
+                | paginate: { itemsPerPage: 8, currentPage: p7, id: 'seven' }
+            "
+          >
+            <td>{{ col.HWC_DATE }}</td>
+            <td>{{ col.DATE_FREQ }}</td>
+          </tr>
+        </table>
+
+        <div class="paginator">
+          <pagination-controls
+            (pageChange)="p7 = $event"
+            id="seven"
+          ></pagination-controls>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <!-- <div class="card">
+      <div class="card-header">Frequency of cases attended by date(FDSubDate)</div>
+
+    <div class="card-body">
+        <div class="btn btn-primary btn-sm float-right" [hidden] = "col8?.length == 0" (click)="xlsxReport(col8, 'FA_Date_Freq(HWC)')">
+          Export
+        </div>
+    <table class="table table-bordered">
+      <tr>
+        <th *ngFor="let col of displayedCol8" [hidden] = "col8?.length == 0">{{ col }}</th>
+      </tr>
+      <div *ngIf="col8?.length == 0">No Data To Display</div>
+      <tr
+        *ngFor="
+          let col of col8
+            | paginate: { itemsPerPage: 8, currentPage: p8, id: 'eight' }
+        "
+      >
+        <td>{{ col.FA_DATE }}</td>
+        <td>{{ col.DATE_FREQ }}</td>
+      </tr>
+    </table>
+
+    <div class="paginator">
+      <pagination-controls
+        (pageChange)="p8 = $event"
+        id="eight"
+      ></pagination-controls>
+    </div>
+  </div>
+  </div> -->
+
+<div class="card">
+  <div class="card-header">
+    Frequency of Cases Attended By Field Assistance By Date
+  </div>
+  <div class="card-body">
+
+
+<div class="btn btn-primary btn-sm float-right" [hidden] = "faByHWCCases.length== 0" (click)="xlsxReport(faByHWCCases, 'FA Cases By Date')">
+    Export
+  </div>
+<table class="table table-bordered">
+<tr>
+  <th *ngFor="let col of dispColByFA" [hidden] = "faByHWCCases.length== 0">{{ col }}</th>
+</tr>
+<div *ngIf="faByHWCCases.length== 0">No Data To Display</div>
+<tr
+  *ngFor="
+    let col of faByHWCCases
+      | paginate: { itemsPerPage: 10, currentPage: f1, id: 't1' }
+  "
+>
+<td>{{ col.FA_NAME }}</td>
+  <td>{{ col.FA_FREQ }}</td>
+
+</tr>
+</table>
+
+<div *ngIf="faByHWCCases.length > 10" class="paginator">
+<pagination-controls
+  (pageChange)="f1 = $event"
+  id="t1"></pagination-controls>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div class="row" *ngIf="!showMainContent">
+  <div class="col-lg-6">
+    <div class="card">
+      <div class="card-header">Frequency of cases by Year and Month</div>
+      <div class="card-body">
+      <div class="btn btn-primary btn-sm float-right" [hidden] = "col0?.length == 0" (click)="xlsxReport(col2, 'Top_50_Cases_By_Year_Month(HWC)')">
+        Export
+        </div>
+      <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol0" [hidden] = "col0?.length == 0">{{ col }}</th>
+        </tr>
+        <div *ngIf="col0?.length == 0">No Data To Display</div>
+        <tr
+          *ngFor="
+            let col of col0
+              | paginate: { itemsPerPage: 8, currentPage: p1, id: 'first' }
+          "
+        >
+          <td>{{ col.YEAR }}</td>
+          <td>{{ col.MONTH }}</td>
+          <td>{{ col.TOTAL_CASES }}</td>
+        </tr>
+      </table>
+
+      <div class="paginator">
+        <pagination-controls
+          (pageChange)="p1 = $event"
+          id="first"
+        ></pagination-controls>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="card">
+      <div class="card-header">Top 20 WSIDs per HWC Category</div>
+      <div class="card-body">
+      <div class="btn btn-primary btn-sm float-right" [hidden] = "col1?.length == 0" (click)="xlsxReport(col1, 'Top_20_Cases_By_Category(HWC)')">
+        Export
+        </div>
+      <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol1" [hidden] = "col1?.length == 0">{{ col }}</th>
+        </tr>
+        <div *ngIf="col1?.length == 0">No Data To Display</div>
+        <tr
+          *ngFor="
+            let col of col1
+              | paginate: { itemsPerPage: 8, currentPage: p2, id: 'second' }
+          "
+        >
+          <td>{{ col.HWC_WSID }}</td>
+          <td>{{ col.HWC_CASE_CATEGORY }}</td>
+          <td>{{ col.CASES }}</td>
+        </tr>
+      </table>
+
+      <div class="paginator">
+        <pagination-controls
+          (pageChange)="p2 = $event"
+          id="second"
+        ></pagination-controls>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div class="row" *ngIf="!showMainContent">
+
+<div class="col-lg-6">
+    <div class="card">
+      <div class="card-header">All Incidents for WSIDs By Category </div>
+
+        <tabset>
+          <tab heading="All">
+              <div class="btn btn-primary btn-sm float-right" [hidden] = "col2?.length == 0" (click)="xlsxReport(col2, 'Top_50_Cases_By_HWC_ID(HWC)')">
+                  Export
+                </div>
+              <table class="table table-bordered">
+                <tr>
+                  <th *ngFor="let col of displayedCol2" [hidden] = "col2?.length == 0">{{ col }}</th>
+                </tr>
+                <div *ngIf="col2?.length == 0">No Data To Display</div>
+                <tr
+                  *ngFor="
+                    let col of col2
+                      | paginate: { itemsPerPage: 10, currentPage: p3, id: 'third' }
+                  "
+                >
+                  <td>{{ col.HWC_WSID }}</td>
+                  <td>{{ col.CASES }}</td>
+                </tr>
+              </table>
+
+              <div class="paginator">
+                <pagination-controls
+                  (pageChange)="p3 = $event"
+                  id="third"
+                ></pagination-controls>
+              </div>
+          </tab>
+          <tab heading="CR">
+              <div class="btn btn-primary btn-sm float-right" [hidden] = "col31[0]?.length == 0" (click)="xlsxReport(col31[0], 'ALL_INCIDENTS_By_CATEGORY(HWC)')">
+                  Export
+                </div>
+      <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol31" [hidden] = "col31[0]?.length == 0">{{ col }}</th>
+        </tr>
+        <div *ngIf="col31[0]?.length == 0">No Data To Display</div>
+        <tr
+          *ngFor="
+            let col of col31[0]
+              | paginate: { itemsPerPage: 10, currentPage: p4, id: 'thirtyonea' }
+          "
+        >
+          <td>{{ col.HWC_WSID }}</td>
+          <td>{{ col.INCIDENT }}</td>
+		      <td>{{ col.HWC_CASE_CATEGORY }}</td>
+        </tr>
+      </table>
+
+      <div class="paginator">
+        <pagination-controls
+          (pageChange)="p4 = $event"
+          id="thirtyonea"
+        ></pagination-controls>
+      </div>
+       </tab>
+       <tab heading="CRPD">
+          <div class="btn btn-primary btn-sm float-right" [hidden] = "col31[1]?.length == 0" (click)="xlsxReport(col31[1], 'ALL_INCIDENTS_By_CATEGORY(HWC)')">
+              Export
+            </div>
+       <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol31" [hidden] = "col31[1]?.length == 0">{{ col }}</th>
+        </tr>
+        <div *ngIf="col31[1]?.length == 0">No Data To Display</div>
+        <tr
+          *ngFor="
+            let col of col31[1]
+              | paginate: { itemsPerPage: 10, currentPage: p5, id: 'thirtyoneb' }
+          "
+        >
+          <td>{{ col.HWC_WSID }}</td>
+          <td>{{ col.INCIDENT }}</td>
+		      <td>{{ col.HWC_CASE_CATEGORY }}</td>
+        </tr>
+      </table>
+
+      <div class="paginator">
+        <pagination-controls
+          (pageChange)="p5 = $event"
+          id="thirtyoneb"
+        ></pagination-controls>
+      </div>
+       </tab>
+       <tab heading="PD">
+          <div class="btn btn-primary btn-sm float-right" [hidden] = "col31[2]?.length == 0" (click)="xlsxReport(col31[2], 'ALL_INCIDENTS_By_CATEGORY(HWC)')">
+              Export
+            </div>
+       <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol31" [hidden] = "col31[2]?.length == 0">{{ col }}</th>
+        </tr>
+        <div *ngIf="col31[2]?.length == 0">No Data To Display</div>
+        <tr
+          *ngFor="
+            let col of col31[2]
+              | paginate: { itemsPerPage: 10, currentPage: p6, id: 'thirtyonec' }
+          "
+        >
+          <td>{{ col.HWC_WSID }}</td>
+          <td>{{ col.INCIDENT }}</td>
+		      <td>{{ col.HWC_CASE_CATEGORY }}</td>
+        </tr>
+      </table>
+
+      <div class="paginator">
+        <pagination-controls
+          (pageChange)="p6 = $event"
+          id="thirtyonec"
+        ></pagination-controls>
+      </div>
+       </tab>
+       <tab heading="LP">
+          <div class="btn btn-primary btn-sm float-right" [hidden] = "col31[3]?.length == 0" (click)="xlsxReport(col31[3], 'ALL_INCIDENTS_By_CATEGORY(HWC)')">
+              Export
+            </div>
+       <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol31" [hidden] = "col31[3]?.length == 0">{{ col }}</th>
+        </tr>
+        <div *ngIf="col31[3]?.length == 0">No Data To Display</div>
+        <tr
+          *ngFor="
+            let col of col31[3]
+              | paginate: { itemsPerPage: 10, currentPage: p7, id: 'thirtyoned' }
+          "
+        >
+          <td>{{ col.HWC_WSID }}</td>
+          <td>{{ col.INCIDENT }}</td>
+		      <td>{{ col.HWC_CASE_CATEGORY }}</td>
+        </tr>
+      </table>
+
+      <div class="paginator">
+        <pagination-controls
+          (pageChange)="p7 = $event"
+          id="thirtyoned"
+        ></pagination-controls>
+      </div>
+       </tab>
+       <tab heading="HI">
+          <div class="btn btn-primary btn-sm float-right" [hidden] = "col31[4]?.length == 0" (click)="xlsxReport(col31[4], 'ALL_INCIDENTS_By_CATEGORY(HWC)')">
+              Export
+            </div>
+       <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol31" [hidden] = "col31[4]?.length == 0">{{ col }}</th>
+        </tr>
+        <div *ngIf="col31[4]?.length == 0">No Data To Display</div>
+        <tr
+          *ngFor="
+            let col of col31[4]
+              | paginate: { itemsPerPage: 10, currentPage: p8, id: 'thirtyonee' }
+          "
+        >
+          <td>{{ col.HWC_WSID }}</td>
+          <td>{{ col.INCIDENT }}</td>
+		      <td>{{ col.HWC_CASE_CATEGORY }}</td>
+        </tr>
+      </table>
+
+      <div class="paginator">
+        <pagination-controls
+          (pageChange)="p8 = $event"
+          id="thirtyonee"
+        ></pagination-controls>
+      </div>
+       </tab>
+       <tab heading="HD">
+          <div class="btn btn-primary btn-sm float-right" [hidden] = "col31[5]?.length == 0" (click)="xlsxReport(col31[5], 'ALL_INCIDENTS_By_CATEGORY(HWC)')">
+              Export
+            </div>
+       <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol31" [hidden] = "col31[5]?.length == 0">{{ col }}</th>
+        </tr>
+        <div *ngIf="col31[5]?.length == 0">No Data To Display</div>
+        <tr
+          *ngFor="
+            let col of col31[5]
+              | paginate: { itemsPerPage: 10, currentPage: p9, id: 'thirtyonef' }
+          "
+        >
+          <td>{{ col.HWC_WSID }}</td>
+          <td>{{ col.INCIDENT }}</td>
+		      <td>{{ col.HWC_CASE_CATEGORY }}</td>
+        </tr>
+      </table>
+
+      <div class="paginator">
+        <pagination-controls
+          (pageChange)="p9 = $event"
+          id="thirtyonef"
+        ></pagination-controls>
+      </div>
+       </tab>
+
+      </tabset>
+    </div>
+  </div>
+  <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header">Top Cases</div>
+        <tabset>
+          <tab heading="Crop" class="g1">
+              <div class="btn btn-primary btn-sm float-right" [hidden] = "col3?.length == 0" (click)="xlsxReport(col3, 'Top_Cases_Crop(HWC)')">
+                  Export
+                </div>
+            <table class="table table-bordered">
+              <tr>
+                <th *ngFor="let col of displayedCol3" [hidden] = "col3?.length == 0">{{ col }}</th>
+              </tr>
+              <div *ngIf="col3?.length == 0">No Data To Display</div>
+              <tr
+                *ngFor="
+                  let col of col3
+
+                "
+              >
+                <td>{{ col.CROP_NAME }}</td>
+                <td>{{ col.CROP_FREQ }}</td>
+              </tr>
+            </table>
+
+
+          </tab>
+          <tab heading="Property" class="g1">
+              <div class="btn btn-primary btn-sm float-right" [hidden] = "col4?.length == 0" (click)="xlsxReport(col4, 'Top_Cases_Property(HWC)')">
+                  Export
+                </div>
+            <table class="table table-bordered">
+              <tr>
+                <th *ngFor="let col of displayedCol4" [hidden] = "col4?.length == 0">{{ col }}</th>
+              </tr>
+              <div *ngIf="col4?.length == 0">No Data To Display</div>
+              <tr
+                *ngFor="
+                  let col of col4
+
+                "
+              >
+                <td>{{ col.PROPERTY_NAME }}</td>
+                <td>{{ col.PROPERTY_FREQ }}</td>
+              </tr>
+            </table>
+
+
+          </tab>
+          <tab heading="Livestock">
+              <div class="btn btn-primary btn-sm float-right" [hidden] = "col5?.length == 0" (click)="xlsxReport(col5, 'Top_Cases_Livestock(HWC)')">
+                  Export
+                </div>
+            <table class="table table-bordered">
+              <tr>
+                <th *ngFor="let col of displayedCol5" [hidden] = "col5?.length == 0">{{ col }}</th>
+              </tr>
+              <div *ngIf="col5?.length == 0">No Data To Display</div>
+              <tr
+                *ngFor="
+                  let col of col5
+                "
+              >
+                <td>{{ col.LIVESTOCK_NAME }}</td>
+                <td>{{ col.LIVESTOCK_FREQ }}</td>
+              </tr>
+            </table>
+
+
+          </tab>
+          <tab heading="Village">
+              <div class="btn btn-primary btn-sm float-right" [hidden] = "col6?.length == 0" (click)="xlsxReport(col6, 'Top_Cases_Village(HWC)')">
+                  Export
+                </div>
+            <table class="table table-bordered">
+              <tr>
+                <th *ngFor="let col of displayedCol6" [hidden] = "col6?.length == 0">{{ col }}</th>
+              </tr>
+              <div *ngIf="col6?.length == 0">No Data To Display</div>
+              <tr
+                *ngFor="
+                  let col of col6
+                    | paginate
+                      : { itemsPerPage: 10, currentPage: p9, id: 'seventh' }
+                "
+              >
+                <td>{{ col.VILLAGE_NAME }}</td>
+                <td>{{ col.VILLAGE_FREQ }}</td>
+              </tr>
+            </table>
+
+            <div class="paginator">
+              <pagination-controls
+                (pageChange)="p9 = $event"
+                id="seventh"
+              ></pagination-controls>
+            </div>
+          </tab>
+        </tabset>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container p-0 m-0">
+<div class="row p-0 m-0" *ngIf="!showMainContent">
+  <div class="col-lg-6">
+    <div class="card">
+      <div class="card-header">Top 30 Villages for All incidents</div>
+      <tabset>
+          <tab heading="All">
+              <div class="btn btn-primary btn-sm float-right" [hidden] = "data33[6]?.length == 0" (click)="xlsxReport(data33[6], 'Top_30_Cases_FOR_VILLAGES')">
+                  Export
+                </div>
+             <table class="table table-bordered">
+                <tr>
+                  <th *ngFor="let col of displayedCol35" [hidden] = "data33[6]?.length == 0">{{ col }}</th>
+                </tr>
+                <div *ngIf="data33[6]?.length == 0">No Data To Display</div>
+                <tr
+                  *ngFor="
+                    let col of data33[6]
+                      | paginate: { itemsPerPage: 10, currentPage: p39, id: 'thirtys7' }
+                  "
+                >
+                  <td>{{ col.HWC_VILLAGE_NAME }}</td>
+                  <td>{{ col.INCIDENT }}</td>
+                  <!-- <td>{{ col.HWC_CASE_CATEGORY }}</td> -->
+                </tr>
+              </table>
+
+              <div class="paginator">
+                <pagination-controls
+                  (pageChange)="p66 = $event"
+                  id="thirtys7"
+                ></pagination-controls>
+              </div>
+           </tab>
+        <tab heading="CR">
+          <div class="btn btn-primary btn-sm float-right" [hidden] = "data33[0]?.length == 0" (click)="xlsxReport(data33[0],'ALL_30_VILAGES_INCIDENTS')">
+          Export
+          </div>
+          <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol33" [hidden] = "data33[0]?.length == 0">{{ col }}</th>
+        </tr>
+        <div *ngIf="data33[0]?.length == 0">No Data To Display</div>
+        <tr
+          *ngFor="
+            let col of data33[0]
+              | paginate: { itemsPerPage: 10, currentPage: p33, id: 'thirtys1' }
+          "
+        >
+          <td>{{ col.HWC_VILLAGE_NAME }}</td>
+          <td>{{ col.INCIDENT }}</td>
+		      <td>{{ col.HWC_CASE_CATEGORY }}</td>
+        </tr>
+      </table>
+
+      <div class="paginator">
+        <pagination-controls
+          (pageChange)="p33 = $event"
+          id="thirtys1"
+        ></pagination-controls>
+      </div>
+        </tab>
+         <tab heading="CRPD">
+            <div class="btn btn-primary btn-sm float-right" [hidden] = "data33[1]?.length == 0" (click)="xlsxReport(data33[1], 'ALL_INCIDENTS_By_CATEGORY(HWC)')">
+                Export
+              </div>
+             <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol33" [hidden] = "data33[1]?.length == 0">{{ col }}</th>
+        </tr>
+        <div *ngIf="data33[1]?.length == 0">No Data To Display</div>
+        <tr
+          *ngFor="
+            let col of data33[1]
+              | paginate: { itemsPerPage: 10, currentPage: p34, id: 'thirtys2' }
+          "
+        >
+          <td>{{ col.HWC_VILLAGE_NAME }}</td>
+          <td>{{ col.INCIDENT }}</td>
+		      <td>{{ col.HWC_CASE_CATEGORY }}</td>
+        </tr>
+      </table>
+
+      <div class="paginator">
+        <pagination-controls
+          (pageChange)="p34 = $event"
+          id="thirtys2"
+        ></pagination-controls>
+      </div>
+         </tab>
+          <tab heading="PD">
+              <div class="btn btn-primary btn-sm float-right" [hidden] = "data33[2]?.length == 0" (click)="xlsxReport(data33[2], 'ALL_INCIDENTS_By_CATEGORY(HWC)')">
+                  Export
+                </div>
+              <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol33" [hidden] = "data33[2]?.length == 0">{{ col }}</th>
+        </tr>
+        <div *ngIf="data33[2]?.length == 0">No Data To Display</div>
+        <tr
+          *ngFor="
+            let col of data33[2]
+              | paginate: { itemsPerPage: 10, currentPage: p35, id: 'thirtys3' }
+          "
+        >
+          <td>{{ col.HWC_VILLAGE_NAME }}</td>
+          <td>{{ col.INCIDENT }}</td>
+		      <td>{{ col.HWC_CASE_CATEGORY }}</td>
+        </tr>
+      </table>
+
+      <div class="paginator">
+        <pagination-controls
+          (pageChange)="p33 = $event"
+          id="thirtys3"
+        ></pagination-controls>
+      </div>
+          </tab>
+           <tab heading="LP">
+              <div class="btn btn-primary btn-sm float-right" [hidden] = "data33[3]?.length == 0" (click)="xlsxReport(data33[3], 'ALL_INCIDENTS_By_CATEGORY(HWC)')">
+                  Export
+                </div>
+               <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol33" [hidden] = "data33[3]?.length == 0">{{ col }}</th>
+        </tr>
+        <div *ngIf="data33[3]?.length == 0">No Data To Display</div>
+        <tr
+          *ngFor="
+            let col of data33[3]
+              | paginate: { itemsPerPage: 10, currentPage: p36, id: 'thirtys4' }
+          "
+        >
+          <td>{{ col.HWC_VILLAGE_NAME }}</td>
+          <td>{{ col.INCIDENT }}</td>
+		      <td>{{ col.HWC_CASE_CATEGORY }}</td>
+        </tr>
+      </table>
+
+      <div class="paginator">
+        <pagination-controls
+          (pageChange)="p36 = $event"
+          id="thirtys4"
+        ></pagination-controls>
+      </div>
+           </tab>
+            <tab heading="HI">
+                <div class="btn btn-primary btn-sm float-right" [hidden] = "data33[4]?.length == 0" (click)="xlsxReport(data33[4], 'ALL_INCIDENTS_By_CATEGORY(HWC)')">
+                    Export
+                  </div>
+                <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol33" [hidden] = "data33[4]?.length == 0">{{ col }}</th>
+        </tr>
+        <div *ngIf="data33[4]?.length == 0">No Data To Display</div>
+        <tr
+          *ngFor="
+            let col of data33[4]
+              | paginate: { itemsPerPage: 10, currentPage: p37, id: 'thirtys5' }
+          "
+        >
+          <td>{{ col.HWC_VILLAGE_NAME }}</td>
+          <td>{{ col.INCIDENT }}</td>
+		      <td>{{ col.HWC_CASE_CATEGORY }}</td>
+        </tr>
+      </table>
+
+      <div class="paginator">
+        <pagination-controls
+          (pageChange)="p37 = $event"
+          id="thirtys5"
+        ></pagination-controls>
+      </div>
+            </tab>
+             <tab heading="HD">
+                <div class="btn btn-primary btn-sm float-right" [hidden] = "data33[5]?.length == 0" (click)="xlsxReport(data33[5], 'ALL_INCIDENTS_By_CATEGORY(HWC)')">
+                    Export
+                  </div>
+                 <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol33" [hidden] = "data33[5]?.length == 0">{{ col }}</th>
+        </tr>
+        <div *ngIf="data33[5]?.length == 0">No Data To Display</div>
+        <tr
+          *ngFor="
+            let col of data33[5]
+              | paginate: { itemsPerPage: 10, currentPage: p38, id: 'thirtys6' }
+          "
+        >
+          <td>{{ col.HWC_VILLAGE_NAME }}</td>
+          <td>{{ col.INCIDENT }}</td>
+		      <td>{{ col.HWC_CASE_CATEGORY }}</td>
+        </tr>
+      </table>
+
+      <div class="paginator">
+        <pagination-controls
+          (pageChange)="p38 = $event"
+          id="thirtys6"
+        ></pagination-controls>
+      </div>
+             </tab>
+
+    </tabset>
+  </div>
+  </div>
+ <div class="col-lg-6">
+    <div class="card">
+      <div class="card-header">Top 30 Ranges for All incidents</div>
+      <div>
+
+ <tabset>
+   <tab heading="All">
+      <div class="btn btn-primary btn-sm float-right" [hidden] = "data34[6]?.length == 0" (click)="xlsxReport(data34[6], 'Top_30_Cases_FOR_ALL_RANGES')">
+          Export
+        </div>
+     <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol36" [hidden] = "data34[6]?.length == 0">{{ col }}</th>
+        </tr>
+        <div *ngIf="data34[6]?.length == 0">No Data To Display</div>
+        <tr
+          *ngFor="
+            let col of data34[6]
+              | paginate: { itemsPerPage: 10, currentPage: p66, id: 'thirty66' }
+          "
+        >
+          <td>{{ col.HWC_RANGE }}</td>
+          <td>{{ col.INCIDENT }}</td>
+		      <!-- <td>{{ col.HWC_CASE_CATEGORY }}</td> -->
+        </tr>
+      </table>
+
+      <div class="paginator">
+        <pagination-controls
+          (pageChange)="p66 = $event"
+          id="thirty66"
+        ></pagination-controls>
+      </div>
+   </tab>
+   <tab heading="CR">
+      <div class="btn btn-primary btn-sm float-right" [hidden] = "data34[0]?.length == 0" (click)="xlsxReport(data34[0], 'Top_30_Cases_FOR_ALL_RANGES')">
+          Export
+        </div>
+     <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol34" [hidden] = "data34[0]?.length == 0">{{ col }}</th>
+        </tr>
+        <div *ngIf="data34[0]?.length == 0">No Data To Display</div>
+        <tr
+          *ngFor="
+            let col of data34[0]
+              | paginate: { itemsPerPage: 10, currentPage: p60, id: 'thirty60' }
+          "
+        >
+          <td>{{ col.HWC_RANGE }}</td>
+          <td>{{ col.INCIDENT }}</td>
+		      <td>{{ col.HWC_CASE_CATEGORY }}</td>
+        </tr>
+      </table>
+
+      <div class="paginator">
+        <pagination-controls
+          (pageChange)="p60 = $event"
+          id="thirty60"
+        ></pagination-controls>
+      </div>
+     </tab>
+     <tab heading="CRPD">
+        <div class="btn btn-primary btn-sm float-right" [hidden] = "data34[1]?.length == 0" (click)="xlsxReport(data34[1], 'Top_30_Cases_FOR_ALL_RANGES')">
+            Export
+          </div>
+       <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol34" [hidden] = "data34[1]?.length == 0">{{ col }}</th>
+        </tr>
+        <div *ngIf="data34[1]?.length == 0">No Data To Display</div>
+        <tr
+          *ngFor="
+            let col of data34[1]
+              | paginate: { itemsPerPage: 10, currentPage: p61, id: 'thirty61' }
+          "
+        >
+          <td>{{ col.HWC_RANGE }}</td>
+          <td>{{ col.INCIDENT }}</td>
+		      <td>{{ col.HWC_CASE_CATEGORY }}</td>
+        </tr>
+      </table>
+
+      <div class="paginator">
+        <pagination-controls
+          (pageChange)="p61 = $event"
+          id="thirty61"
+        ></pagination-controls>
+      </div>
+     </tab>
+     <tab heading="PD">
+        <div class="btn btn-primary btn-sm float-right" [hidden] = "data34[2]?.length == 0" (click)="xlsxReport(data34[2], 'Top_30_Cases_FOR_ALL_RANGES')">
+            Export
+          </div>
+       <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol34" [hidden] = "data34[2]?.length == 0">{{ col }}</th>
+        </tr>
+        <div *ngIf="data34[2]?.length == 0">No Data To Display</div>
+        <tr
+          *ngFor="
+            let col of data34[2]
+              | paginate: { itemsPerPage: 10, currentPage: p62, id: 'thirty62' }
+          "
+        >
+          <td>{{ col.HWC_RANGE }}</td>
+          <td>{{ col.INCIDENT }}</td>
+		      <td>{{ col.HWC_CASE_CATEGORY }}</td>
+        </tr>
+      </table>
+
+      <div class="paginator">
+        <pagination-controls
+          (pageChange)="p62 = $event"
+          id="thirty62"
+        ></pagination-controls>
+      </div>
+     </tab>
+     <tab heading="LP">
+        <div class="btn btn-primary btn-sm float-right" [hidden] = "data34[3]?.length == 0" (click)="xlsxReport(data34[3], 'Top_30_Cases_FOR_ALL_RANGES')">
+            Export
+          </div>
+       <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol34" [hidden] = "data34[3]?.length == 0">{{ col }}</th>
+        </tr>
+        <div *ngIf="data34[3]?.length == 0">No Data To Display</div>
+        <tr
+          *ngFor="
+            let col of data34[3]
+              | paginate: { itemsPerPage: 10, currentPage: p63, id: 'thirty63' }
+          "
+        >
+          <td>{{ col.HWC_RANGE }}</td>
+          <td>{{ col.INCIDENT }}</td>
+		      <td>{{ col.HWC_CASE_CATEGORY }}</td>
+        </tr>
+      </table>
+
+      <div class="paginator">
+        <pagination-controls
+          (pageChange)="p63 = $event"
+          id="thirty63"
+        ></pagination-controls>
+      </div>
+     </tab>
+     <tab heading="HI">
+        <div class="btn btn-primary btn-sm float-right" [hidden] = "data34[4]?.length == 0" (click)="xlsxReport(data34[4], 'Top_30_Cases_FOR_ALL_RANGES')">
+            Export
+          </div>
+       <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol34" [hidden] = "data34[4]?.length == 0">{{ col }}</th>
+        </tr>
+        <div *ngIf="data34[4]?.length == 0">No Data To Display</div>
+        <tr
+          *ngFor="
+            let col of data34[4]
+              | paginate: { itemsPerPage: 10, currentPage: p64, id: 'thirty64' }
+          "
+        >
+          <td>{{ col.HWC_RANGE }}</td>
+          <td>{{ col.INCIDENT }}</td>
+		      <td>{{ col.HWC_CASE_CATEGORY }}</td>
+        </tr>
+      </table>
+
+      <div class="paginator">
+        <pagination-controls
+          (pageChange)="p64 = $event"
+          id="thirty64"
+        ></pagination-controls>
+      </div>
+     </tab>
+     <tab heading="HD">
+        <div class="btn btn-primary btn-sm float-right" [hidden] = "data34[5]?.length == 0" (click)="xlsxReport(data34[5], 'Top_30_Cases_FOR_ALL_RANGES')">
+            Export
+          </div>
+       <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedCol34" [hidden] = "data34[5]?.length == 0">{{ col }}</th>
+        </tr>
+        <div *ngIf="data34[5]?.length == 0">No Data To Display</div>
+        <tr
+          *ngFor="
+            let col of data34[5]
+              | paginate: { itemsPerPage: 10, currentPage: p65, id: 'thirty65' }
+          "
+        >
+          <td>{{ col.HWC_RANGE }}</td>
+          <td>{{ col.INCIDENT }}</td>
+		      <td>{{ col.HWC_CASE_CATEGORY }}</td>
+        </tr>
+      </table>
+
+      <div class="paginator">
+        <pagination-controls
+          (pageChange)="p65 = $event"
+          id="thirty65"
+        ></pagination-controls>
+      </div>
+     </tab>
+   </tabset>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+
+      <div class="container" *ngIf="showMainContent">
+      <div class="row " >
+
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-header">
+            Field Assistance By Date By Category
+          </div>
+          <div>
+
+      <tabset>
+       <tab heading="CR">
+        <div class="btn btn-primary btn-sm float-right" [hidden] = "dataFA[0]== undefined" (click)="xlsxReport(dataFA[0], 'FA Cases By Date(CropLoss)')">
+            Export
+          </div>
+       <table class="table table-bordered">
+        <tr>
+          <th *ngFor="let col of displayedColFA" [hidden] = "dataFA[0]== undefined">{{ col }}</th>
+        </tr>
+        <div *ngIf="dataFA[0]== undefined">No Data To Display</div>
+        <tr
+          *ngFor="
+            let col of dataFA[0]
+              | paginate: { itemsPerPage: 10, currentPage: fa60, id: 'thirtyfa60' }
+          "
+        >
+        <td>{{ col.FA_NAME }}</td>
+          <td>{{ col.CATEGORY }}</td>
+          <td>{{ col.CASES }}</td>
+        </tr>
+      </table>
+
+      <div *ngIf="dataFA[0]?.length > 10" class="paginator">
+        <pagination-controls
+          (pageChange)="fa60 = $event"
+          id="thirtyfa60"
+
+        ></pagination-controls>
+      </div>
+      </tab>
+         <tab heading="CRPD">
+          <div class="btn btn-primary btn-sm float-right" [hidden] = "dataFA[1]== undefined" (click)="xlsxReport(dataFA[1], 'FA Cases By Date(Crop&PropertyLoss)')">
+              Export
+            </div>
+         <table class="table table-bordered">
+          <tr>
+            <th *ngFor="let col of displayedColFA" [hidden] = "dataFA[1]== undefined">{{ col }}</th>
+          </tr>
+          <div *ngIf="dataFA[1]== undefined">No Data To Display</div>
+          <tr
+            *ngFor="
+              let col of dataFA[1]
+                | paginate: { itemsPerPage: 10, currentPage: fa61, id: 'thirtyfa61' }
+            "
+          >
+          <td>{{ col.FA_NAME }}</td>
+            <td>{{ col.CATEGORY }}</td>
+            <td>{{ col.CASES }}</td>
+          </tr>
+        </table>
+
+        <div *ngIf="dataFA[1]?.length > 10" class="paginator">
+          <pagination-controls
+            (pageChange)="fa61 = $event"
+            id="thirtyfa61"
+          ></pagination-controls>
+        </div>
+       </tab>
+         <tab heading="PD">
+          <div class="btn btn-primary btn-sm float-right" [hidden] = "dataFA[2]== undefined" (click)="xlsxReport(dataFA[2], 'FA Cases By Date(PropertyDamage)')">
+              Export
+            </div>
+         <table class="table table-bordered">
+          <tr>
+            <th *ngFor="let col of displayedColFA" [hidden] = "dataFA[2]== undefined">{{ col }}</th>
+          </tr>
+          <div *ngIf="dataFA[2]== undefined">No Data To Display</div>
+          <tr
+            *ngFor="
+              let col of dataFA[2]
+                | paginate: { itemsPerPage: 10, currentPage: fa62, id: 'thirtyfa62' }
+            "
+          >
+          <td>{{ col.FA_NAME }}</td>
+            <td>{{ col.CATEGORY }}</td>
+            <td>{{ col.CASES }}</td>
+          </tr>
+        </table>
+
+        <div *ngIf="dataFA[2]?.length > 10" class="paginator">
+          <pagination-controls
+            (pageChange)="fa62 = $event"
+            id="thirtyfa62"
+
+          ></pagination-controls>
+        </div>
+       </tab>
+         <tab heading="LP">
+          <div class="btn btn-primary btn-sm float-right" [hidden] = "dataFA[3]== undefined" (click)="xlsxReport(dataFA[3], 'FA Cases By Date(LivestockPredation)')">
+              Export
+            </div>
+         <table class="table table-bordered">
+          <tr>
+            <th *ngFor="let col of displayedColFA" [hidden] = "dataFA[3]== undefined">{{ col }}</th>
+          </tr>
+          <div *ngIf="dataFA[3]== undefined">No Data To Display</div>
+          <tr
+            *ngFor="
+              let col of dataFA[3]
+                | paginate: { itemsPerPage: 10, currentPage: fa63, id: 'thirtyfa63' }
+            "
+          >
+          <td>{{ col.FA_NAME }}</td>
+            <td>{{ col.CATEGORY }}</td>
+            <td>{{ col.CASES }}</td>
+          </tr>
+        </table>
+
+        <div *ngIf="dataFA[3]?.length > 10" class="paginator">
+          <pagination-controls
+            (pageChange)="fa63 = $event"
+            id="thirtyfa63"
+          ></pagination-controls>
+        </div>
+       </tab>
+         <tab heading="HI">
+          <div class="btn btn-primary btn-sm float-right" [hidden] = "dataFA[4]== undefined" (click)="xlsxReport(dataFA[4], 'FA Cases By Date(HumanInjury)')">
+              Export
+            </div>
+         <table class="table table-bordered">
+          <tr>
+            <th *ngFor="let col of displayedColFA" [hidden] = "dataFA[4]== undefined">{{ col }}</th>
+          </tr>
+          <div *ngIf="dataFA[4]== undefined">No Data To Display</div>
+          <tr
+            *ngFor="
+              let col of dataFA[4]
+                | paginate: { itemsPerPage: 10, currentPage: fa64, id: 'thirtyfa64' }
+            "
+          >
+          <td>{{ col.FA_NAME }}</td>
+            <td>{{ col.CATEGORY }}</td>
+            <td>{{ col.CASES }}</td>
+          </tr>
+        </table>
+
+        <div *ngIf="dataFA[4]?.length > 10" class="paginator">
+          <pagination-controls
+            (pageChange)="fa64 = $event"
+            id="thirtyfa64"
+          ></pagination-controls>
+        </div>
+       </tab>
+         <tab heading="HD">
+            <div class="btn btn-primary btn-sm float-right" [hidden] = "dataFA[5] == undefined" (click)="xlsxReport(dataFA[5], 'FA Cases By Date(HumanDeath)')">
+                Export
+              </div>
+           <table class="table table-bordered">
+            <tr>
+              <th *ngFor="let col of displayedColFA" [hidden] = "dataFA[5] == undefined">{{ col }}</th>
+            </tr>
+            <div *ngIf="dataFA[5] == undefined">No Data To Display</div>
+            <tr
+              *ngFor="
+                let col of dataFA[5]
+                  | paginate: { itemsPerPage: 10, currentPage: fa65, id: 'thirtyfa65' }
+              "
+            >
+            <td>{{ col.FA_NAME }}</td>
+              <td>{{ col.CATEGORY }}</td>
+              <td>{{ col.CASES }}</td>
+            </tr>
+          </table>
+
+          <div *ngIf="dataFA[5]?.length > 10" class="paginator">
+            <pagination-controls
+              (pageChange)="fa65 = $event"
+              id="thirtyfa65"
+            ></pagination-controls>
+          </div>
+         </tab>
+       </tabset>
+        </div>
+      </div>
+
+      </div>
+      </div>
+    </div>
+
+    <div class="card" *ngIf="!showMainContent">
+    <div class="card-header">
+        HWC Total Processed Days By Field Assistants
+    </div>
+    <div class="col-6">
+      <mat-form-field>
+        <mat-select placeholder="Year" [(value)]="selected11" (selectionChange)="getAvgsubByFa($event.value)">
+          <mat-option *ngFor="let year of projYearArr" [value]="year">
+            {{year}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      </div>
+
+<tabset>
+     <tab heading="July">
+       <div class="btn btn-primary btn-sm float-right" [hidden]="!monthwiseDatahwc[0]" (click)="xlsxReport(monthwiseDatahwc[0], 'HWC Total Processed Days In July By_Category('+selected11+')')">
+                  Export
+                </div>
+      <div>
+        <table class="table table-bordered">
+        <tr class="table-secondary">
+          <th *ngFor="let col of tableHeaderhwc" >{{ col }}</th>
+        </tr>
+         <div *ngIf="monthwiseDatahwc[0] === undefined">No Data To Display</div>
+        <tr class="table-warning" *ngFor=" let col of monthwiseDatahwc[0] | paginate: { itemsPerPage: 10, currentPage: crproc1july, id: 'seventhcrproc1july'} ">
+            <td>{{col.Field_Asst}}</td>
+          <td>{{ col.month_s }}</td>
+          <td>{{ col.year_s }}</td>
+          <td>{{ col.Total_Cases }}</td>
+          <td>{{ col.Total_Time_Taken }}</td>
+          <td>{{ col.Avg_Time_Taken }}</td>
+          <td>{{ col.Max_Days_Taken }}</td>
+          <td>{{ col.Min_Days_Taken }}</td>
+          <td>{{ col.STD_DEV_Days }}</td>
+        </tr>
+      </table>
+      <div class="paginator">
+          <pagination-controls (pageChange)="crproc1july = $event" id="seventhcrproc1july"></pagination-controls>
+        </div>
+      </div>
+     </tab>
+
+     <tab heading="August">
+       <div class="btn btn-primary btn-sm float-right" [hidden]="!monthwiseDatahwc[1]" (click)="xlsxReport(monthwiseDatahwc[1], 'HWC Total Processed Days In August By_Category('+selected11+')')">
+                  Export
+                </div>
+        <table class="table table-bordered">
+        <tr class="table-secondary">
+          <th *ngFor="let col of tableHeaderhwc" >{{ col }}</th>
+        </tr>
+         <div *ngIf="monthwiseDatahwc[1] === undefined">No Data To Display</div>
+        <tr class="table-warning" *ngFor=" let col of monthwiseDatahwc[1] | paginate: { itemsPerPage: 10, currentPage: crpdproc2aug, id: 'seventhcrpdproc2aug'} ">
+          <td>{{col.Field_Asst}}</td>
+          <td>{{ col.month_s }}</td>
+          <td>{{ col.year_s }}</td>
+          <td>{{ col.Total_Cases }}</td>
+          <td>{{ col.Total_Time_Taken }}</td>
+          <td>{{ col.Avg_Time_Taken }}</td>
+          <td>{{ col.Max_Days_Taken }}</td>
+          <td>{{ col.Min_Days_Taken }}</td>
+          <td>{{ col.STD_DEV_Days }}</td>
+        </tr>
+      </table>
+      <div class="paginator">
+          <pagination-controls (pageChange)="crpdproc2aug = $event" id="seventhcrpdproc2aug"></pagination-controls>
+        </div>
+
+     </tab>
+
+     <tab heading="September">
+       <div class="btn btn-primary btn-sm float-right" [hidden]="!monthwiseDatahwc[2]" (click)="xlsxReport(monthwiseDatahwc[2], 'HWC Total Processed Days In September By_Category('+selected11+')')">
+                  Export
+                </div>
+        <table class="table table-bordered">
+        <tr class="table-secondary">
+          <th *ngFor="let col of tableHeaderhwc" >{{ col }}</th>
+        </tr>
+        <div *ngIf="monthwiseDatahwc[2] === undefined">No Data To Display</div>
+        <tr class="table-warning" *ngFor=" let col of monthwiseDatahwc[2] | paginate: { itemsPerPage: 10, currentPage: pdproc3sep, id: 'seventhpdproc3sep'} ">
+            <td>{{col.Field_Asst}}</td>
+          <td>{{ col.month_s }}</td>
+          <td>{{ col.year_s }}</td>
+          <td>{{ col.Total_Cases }}</td>
+          <td>{{ col.Total_Time_Taken }}</td>
+          <td>{{ col.Avg_Time_Taken }}</td>
+          <td>{{ col.Max_Days_Taken }}</td>
+          <td>{{ col.Min_Days_Taken }}</td>
+          <td>{{ col.STD_DEV_Days }}</td>
+        </tr>
+      </table>
+      <div class="paginator">
+          <pagination-controls (pageChange)="pdproc3sep = $event" id="seventhpdproc3sep"></pagination-controls>
+        </div>
+
+    </tab>
+    <tab heading="October">
+      <div class="btn btn-primary btn-sm float-right" [hidden]="!monthwiseDatahwc[3]" (click)="xlsxReport(monthwiseDatahwc[3], 'HWC Total Processed Days In October By_Category('+selected11+')')">
+                  Export
+                </div>
+      <table class="table table-bordered">
+        <tr class="table-secondary">
+          <th *ngFor="let col of tableHeaderhwc" >{{ col }}</th>
+        </tr>
+        <div *ngIf="monthwiseDatahwc[3] === undefined">No Data To Display</div>
+        <tr class="table-warning" *ngFor=" let col of monthwiseDatahwc[3] | paginate: { itemsPerPage: 10, currentPage: lpproc4oct, id: 'seventhlpproc4oct'} ">
+            <td>{{col.Field_Asst}}</td>
+          <td>{{ col.month_s }}</td>
+          <td>{{ col.year_s }}</td>
+          <td>{{ col.Total_Cases }}</td>
+          <td>{{ col.Total_Time_Taken }}</td>
+          <td>{{ col.Avg_Time_Taken }}</td>
+          <td>{{ col.Max_Days_Taken }}</td>
+          <td>{{ col.Min_Days_Taken }}</td>
+          <td>{{ col.STD_DEV_Days }}</td>
+        </tr>
+      </table>
+      <div class="paginator">
+          <pagination-controls (pageChange)="lpproc4oct = $event" id="seventhlpproc4oct"></pagination-controls>
+        </div>
+
+  </tab>
+  <tab heading="November">
+    <div class="btn btn-primary btn-sm float-right" [hidden]="!monthwiseDatahwc[4]" (click)="xlsxReport(monthwiseDatahwc[4], 'HWC Total Processed Days In November By_Category('+selected11+')')">
+                  Export
+                </div>
+    <table class="table table-bordered">
+        <tr class="table-secondary">
+          <th *ngFor="let col of tableHeaderhwc" >{{ col }}</th>
+        </tr>
+        <div *ngIf="monthwiseDatahwc[4] === undefined ">No Data To Display</div>
+        <tr class="table-warning" *ngFor=" let col of monthwiseDatahwc[4] | paginate: { itemsPerPage: 10, currentPage: hiproc5nov, id: 'seventhhiproc5nov'} ">
+           <td>{{col.Field_Asst}}</td>
+          <td>{{ col.month_s }}</td>
+          <td>{{ col.year_s }}</td>
+          <td>{{ col.Total_Cases }}</td>
+          <td>{{ col.Total_Time_Taken }}</td>
+          <td>{{ col.Avg_Time_Taken }}</td>
+          <td>{{ col.Max_Days_Taken }}</td>
+          <td>{{ col.Min_Days_Taken }}</td>
+          <td>{{ col.STD_DEV_Days }}</td>
+        </tr>
+      </table>
+      <div class="paginator">
+          <pagination-controls (pageChange)="hiproc5nov = $event" id="seventhhiproc5nov"></pagination-controls>
+        </div>
+  </tab>
+  <tab heading="December">
+    <div class="btn btn-primary btn-sm float-right" [hidden]="!monthwiseDatahwc[5]" (click)="xlsxReport(monthwiseDatahwc[5], 'HWC Total Processed Days In December By_Category('+selected11+')')">
+                     Export
+                   </div>
+       <table class="table table-bordered">
+           <tr class="table-secondary">
+             <th *ngFor="let col of tableHeaderhwc" >{{ col }}</th>
+           </tr>
+           <div *ngIf="monthwiseDatahwc[5] === undefined">No Data To Display</div>
+           <tr class="table-warning" *ngFor=" let col of monthwiseDatahwc[5] | paginate: { itemsPerPage: 10, currentPage: hiproc6dec, id: 'seventhhiproc6dec'} ">
+              <td>{{col.Field_Asst}}</td>
+          <td>{{ col.month_s }}</td>
+          <td>{{ col.year_s }}</td>
+          <td>{{ col.Total_Cases }}</td>
+          <td>{{ col.Total_Time_Taken }}</td>
+          <td>{{ col.Avg_Time_Taken }}</td>
+          <td>{{ col.Max_Days_Taken }}</td>
+          <td>{{ col.Min_Days_Taken }}</td>
+          <td>{{ col.STD_DEV_Days }}</td>
+           </tr>
+         </table>
+         <div class="paginator">
+             <pagination-controls (pageChange)="hiproc6dec = $event" id="seventhhiproc6dec"></pagination-controls>
+           </div>
+  </tab>
+  <tab heading="January">
+      <div class="btn btn-primary btn-sm float-right" [hidden]="!monthwiseDatahwc[6]" (click)="xlsxReport(monthwiseDatahwc[6], 'HWC Total Processed Days In January By_Category('+selected11+')')">
+                       Export
+                     </div>
+         <table class="table table-bordered">
+             <tr class="table-secondary">
+               <th *ngFor="let col of tableHeaderhwc" >{{ col }}</th>
+             </tr>
+             <div *ngIf="monthwiseDatahwc[6] === undefined">No Data To Display</div>
+             <tr class="table-warning" *ngFor=" let col of monthwiseDatahwc[6] | paginate: { itemsPerPage: 10, currentPage: hiproc7jan, id: 'seventhhiproc7jan'} ">
+                <td>{{col.Field_Asst}}</td>
+                <td>{{ col.month_s }}</td>
+                <td>{{ col.year_s }}</td>
+                <td>{{ col.Total_Cases }}</td>
+                <td>{{ col.Total_Time_Taken }}</td>
+                <td>{{ col.Avg_Time_Taken }}</td>
+                <td>{{ col.Max_Days_Taken }}</td>
+          <td>{{ col.Min_Days_Taken }}</td>
+          <td>{{ col.STD_DEV_Days }}</td>
+             </tr>
+           </table>
+           <div class="paginator">
+               <pagination-controls (pageChange)="hiproc7jan = $event" id="seventhhiproc7jan"></pagination-controls>
+             </div>
+  </tab>
+  <tab heading="February">
+        <div class="btn btn-primary btn-sm float-right" [hidden]="!monthwiseData[7]" (click)="xlsxReport(monthwiseData[7], 'HWC Total Processed Days In February By_Category('+selected11+')')">
+                         Export
+                       </div>
+           <table class="table table-bordered">
+               <tr class="table-secondary">
+                 <th *ngFor="let col of tableHeaderhwc" >{{ col }}</th>
+               </tr>
+            <div *ngIf="monthwiseDatahwc[7] === undefined">No Data To Display</div>
+               <tr class="table-warning" *ngFor=" let col of monthwiseDatahwc[7] | paginate: { itemsPerPage: 10, currentPage: hiproc8feb, id: 'seventhhiproc8feb'} ">
+                  <td>{{col.Field_Asst}}</td>
+                  <td>{{ col.month_s }}</td>
+                  <td>{{ col.year_s }}</td>
+                  <td>{{ col.Total_Cases }}</td>
+                  <td>{{ col.Total_Time_Taken }}</td>
+                  <td>{{ col.Avg_Time_Taken }}</td>
+                  <td>{{ col.Max_Days_Taken }}</td>
+          <td>{{ col.Min_Days_Taken }}</td>
+          <td>{{ col.STD_DEV_Days }}</td>
+               </tr>
+             </table>
+             <div class="paginator">
+                 <pagination-controls (pageChange)="hiproc8feb = $event" id="seventhhiproc8feb"></pagination-controls>
+               </div>
+  </tab>
+  <tab heading="March">
+          <div class="btn btn-primary btn-sm float-right" [hidden]="!monthwiseDatahwc[8]" (click)="xlsxReport(monthwiseDatahwc[8], 'HWC Total Processed Days In March By_Category('+selected11+')')">
+                           Export
+                         </div>
+             <table class="table table-bordered">
+                 <tr class="table-secondary">
+                   <th *ngFor="let col of tableHeaderhwc" >{{ col }}</th>
+                 </tr>
+                  <div *ngIf="monthwiseDatahwc[8] === undefined">No Data To Display</div>
+                 <tr class="table-warning" *ngFor=" let col of monthwiseDatahwc[8] | paginate: { itemsPerPage: 10, currentPage: hiproc9mar, id: 'seventhhiproc9mar'} ">
+                    <td>{{col.Field_Asst}}</td>
+                    <td>{{ col.month_s }}</td>
+                    <td>{{ col.year_s }}</td>
+                    <td>{{ col.Total_Cases }}</td>
+                    <td>{{ col.Total_Time_Taken }}</td>
+                    <td>{{ col.Avg_Time_Taken }}</td>
+                    <td>{{ col.Max_Days_Taken }}</td>
+          <td>{{ col.Min_Days_Taken }}</td>
+          <td>{{ col.STD_DEV_Days }}</td>
+                 </tr>
+               </table>
+               <div class="paginator">
+                   <pagination-controls (pageChange)="hiproc9mar = $event" id="seventhhiproc9mar"></pagination-controls>
+                 </div>
+  </tab>
+  <tab heading="April">
+            <div class="btn btn-primary btn-sm float-right" [hidden]="!monthwiseDatahwc[9]" (click)="xlsxReport(monthwiseDatahwc[9], 'HWC Total Processed Days In April By_Category')">
+                             Export
+                           </div>
+               <table class="table table-bordered">
+                   <tr class="table-secondary">
+                     <th *ngFor="let col of tableHeaderhwc" [hidden]="!monthwiseDatahwc[9]">{{ col }}</th>
+                   </tr>
+                   <div *ngIf="monthwiseDatahwc[9] === undefined">No Data To Display</div>
+                   <tr class="table-warning" *ngFor=" let col of monthwiseDatahwc[9] | paginate: { itemsPerPage: 10, currentPage: hiproc10apr, id: 'seventhhiproc10apr'} ">
+                      <td>{{col.Field_Asst}}</td>
+                      <td>{{ col.month_s }}</td>
+                      <td>{{ col.year_s }}</td>
+                      <td>{{ col.Total_Cases }}</td>
+                      <td>{{ col.Total_Time_Taken }}</td>
+                      <td>{{ col.Avg_Time_Taken }}</td>
+                      <td>{{ col.Max_Days_Taken }}</td>
+          <td>{{ col.Min_Days_Taken }}</td>
+          <td>{{ col.STD_DEV_Days }}</td>
+                   </tr>
+                 </table>
+                 <div class="paginator">
+                     <pagination-controls (pageChange)="hiproc10apr = $event" id="seventhhiproc10apr"></pagination-controls>
+                   </div>
+  </tab>
+  <tab heading="May">
+              <div class="btn btn-primary btn-sm float-right" [hidden]="!monthwiseDatahwc[10]" (click)="xlsxReport(monthwiseDatahwc[10], 'HWC Total Processed Days In May By_Category')">
+                               Export
+                             </div>
+                 <table class="table table-bordered">
+                     <tr class="table-secondary">
+                       <th *ngFor="let col of tableHeaderhwc" [hidden]="!monthwiseDatahwc[10]">{{ col }}</th>
+                     </tr>
+                     <div *ngIf="monthwiseDatahwc[10] === undefined">No Data To Display</div>
+                     <tr class="table-warning" *ngFor=" let col of monthwiseDatahwc[10] | paginate: { itemsPerPage: 10, currentPage: hiproc11may, id: 'seventhhiproc11may'} ">
+                        <td>{{col.Field_Asst}}</td>
+                        <td>{{ col.month_s }}</td>
+                        <td>{{ col.year_s }}</td>
+                        <td>{{ col.Total_Cases }}</td>
+                        <td>{{ col.Total_Time_Taken }}</td>
+                        <td>{{ col.Avg_Time_Taken }}</td>
+                        <td>{{ col.Max_Days_Taken }}</td>
+          <td>{{ col.Min_Days_Taken }}</td>
+          <td>{{ col.STD_DEV_Days }}</td>
+                     </tr>
+                   </table>
+                   <div class="paginator">
+                       <pagination-controls (pageChange)="hiproc11may = $event" id="seventhhiproc11may"></pagination-controls>
+                     </div>
+  </tab>
+  <tab heading="June">
+    <div class="btn btn-primary btn-sm float-right " [hidden]="!monthwiseDatahwc[11]" (click)="xlsxReport(monthwiseDatahwc[11], 'HWC Total Processed Days In June By_Category('+selected11+')')">
+                  Export
+                </div>
+    <table class="table table-bordered">
+        <tr class="table-secondary">
+          <th *ngFor="let col of tableHeaderhwc" [hidden]="!monthwiseDatahwc[11]">{{ col }}</th>
+        </tr>
+         <div *ngIf="monthwiseDatahwc[11] === undefined">No Data To Display</div>
+        <tr class="table-warning" *ngFor=" let col of monthwiseDatahwc[11] | paginate: { itemsPerPage: 10, currentPage: hdproc12jun, id: 'seventhhdproc12jun'} ">
+          <td>{{col.Field_Asst}}</td>
+          <td>{{ col.month_s }}</td>
+          <td>{{ col.year_s }}</td>
+          <td>{{ col.Total_Cases }}</td>
+          <td>{{ col.Total_Time_Taken }}</td>
+          <td>{{ col.Avg_Time_Taken }}</td>
+          <td>{{ col.Max_Days_Taken }}</td>
+          <td>{{ col.Min_Days_Taken }}</td>
+          <td>{{ col.STD_DEV_Days }}</td>
+        </tr>
+      </table>
+      <div class="paginator">
+          <pagination-controls (pageChange)="hdproc12jun = $event" id="seventhhdproc12jun"></pagination-controls>
+        </div>
+  </tab>
+</tabset>
+   </div>
+
+<!-- <div class="col-lg-6">
+  <div class="card">
+    <div class="card-header">Frequency of cases by Year and Moth</div>
+    <div class="card-body">
+
+  </div>
+</div>
+</div> -->
+
+
+  <!-- <section>
+  <div class="card">
+    <div class="card-header">
+      HWC
+      <button mat-raised-button (click)="xlsxReport()" class="btn btn-primary ">Export to Excel</button>
+      <button mat-raised-button (click)="kmlReport()" class="btn btn-primary ">Generate KML</button>
+    </div>
+
+
+    <div class="mat-elevation-z8 hwc">
+      <mat-table [dataSource]="dataSource">
+        <ng-container matColumnDef="HWC_METAINSTANCE_ID">
+          <mat-header-cell *matHeaderCellDef>HWC_ID</mat-header-cell>
+          <mat-cell *matCellDef="let data">{{data.HWC_METAINSTANCE_ID}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="HWC_METASUBMISSION_DATE">
+          <mat-header-cell *matHeaderCellDef>HWC_DATE</mat-header-cell>
+          <mat-cell *matCellDef="let data">{{data.HWC_METASUBMISSION_DATE}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="HWC_FULL_NAME">
+          <mat-header-cell *matHeaderCellDef>HWC_FULL_NAME</mat-header-cell>
+          <mat-cell *matCellDef="let data">{{data.HWC_FULL_NAME}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="HWC_NEWPHONE_NUMBER">
+          <mat-header-cell *matHeaderCellDef>PHONE_NUMBER</mat-header-cell>
+          <mat-cell *matCellDef="let data">{{data.HWC_NEWPHONE_NUMBER}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="HWC_PARK_NAME">
+          <mat-header-cell *matHeaderCellDef>HWC_PARK_NAME</mat-header-cell>
+          <mat-cell *matCellDef="let data">{{data.HWC_PARK_NAME}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="HWC_TALUK_NAME">
+          <mat-header-cell *matHeaderCellDef>HWC_TALUK_NAME</mat-header-cell>
+          <mat-cell *matCellDef="let data">{{data.HWC_TALUK_NAME}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="HWC_VILLAGE_NAME">
+          <mat-header-cell *matHeaderCellDef>HWC_VILLAGE_NAME</mat-header-cell>
+          <mat-cell *matCellDef="let data">{{data.HWC_VILLAGE_NAME}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="HWC_ANIMAL">
+          <mat-header-cell *matHeaderCellDef>HWC_ANIMAL</mat-header-cell>
+          <mat-cell *matCellDef="let data">{{data.HWC_ANIMAL}}</mat-cell>
+        </ng-container>
+        <mat-header-row *matHeaderRowDef="displayedCol; sticky: true"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedCol"></mat-row>
+      </mat-table>
+      <mat-paginator [length]="totalPost" [pageSize]="postPerPage" [pageSizeOptions]="pageSizeOptions">
+      </mat-paginator>
+    </div>
+  </div>
+  </section> -->
+

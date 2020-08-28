@@ -1,0 +1,160 @@
+**********************odk server details *****************************
+SSH HostName: server.wildseveodk.com
+SSH UserNmae: odkserver
+SSH Pass: Admin@odk123
+
+Mysql HostName : 127.0.0.1
+Port: 3306
+UserNmae: root
+pass: Admin@odk123
+
+
+
+************************************************************************
+**************************SSL Cert installation for Apache2 on ubuntu****************************** 
+ 
+apache2 ubuntu ssl installation using godaddy certificate
+
+link- https://websiteforstudents.com/setup-apache2-ssl-certificates-ubuntu-17-04-17-10/
+link- https://www.digitalocean.com/community/questions/moving-a-godaddy-ssl-certificate-to-apache-ubuntu-14-04
+
+youtube link- https://www.youtube.com/watch?v=1daMCJeh5yM
+
+
+create key and csr-
+
+openssl req -new -newkey rsa:2048 -nodes -keyout server.wildseveodk.com.key -out server.wildseveodk.com.csr
+
+
+sudo vi /etc/apache2/sites-available/default-ssl.conf
+
+
+added lines-
+
+ServerName server.wildseveodk.com:443
+SSLEngine on
+SSLCertificateFile /etc/apache2/ssl/dec5b3376d5fcb92.crt
+SSLCertificateKeyFile /etc/apache2/ssl/server.wildseveodk.com.key
+SSLCertificateChainFile /etc/apache2/ssl/gd_bundle-g2-g1.crt
+DocumentRoot /var/www/html
+ErrorLog ${APACHE_LOG_DIR}/error.log
+CustomLog ${APACHE_LOG_DIR}/access.log combined
+SSLCACertificatePath /etc/apache2/ssl/
+
+
+sudo vi /etc/apache2/sites-available/default.conf
+
+adding these lines in 000-default.conf-
+
+<VirtualHost *:443>
+        ServerAdmin admin@wildseveodk.com
+        DocumentRoot /var/www/html
+        ServerName server.wildseveodk.com
+        ServerAlias www.server.wildseveodk.com
+        SSLEngine on
+        SSLCertificateFile /etc/apache2/ssl/dec5b3376d5fcb92.crt
+        SSLCertificateKeyFile /etc/apache2/ssl/server.wildseveodk.com.key
+        SSLCACertificateFile /etc/apache2/ssl/gd_bundle-g2-g1.crt
+        <Directory /var/www/html>
+        Options FollowSymLinks
+        AllowOverride All
+        </Directory>
+		</VirtualHost>
+<VirtualHost *:80>
+    ServerName server.wildseveodk.com
+    ServerAlias www.server.wildseveodk.com
+    Redirect permanent / https://www.wildseveodk.com
+</VirtualHost>
+
+sudo a2ensite default-ssl
+
+sudo a2enmod ssl
+
+sudo systemctl restart apache2.service
+************************************************************
+
+path- /etc/apache2/ssl/ 
+
+move file from one source to destination
+
+mv /path_to_source_folder/filename /path_to_destination_folder/
+
+error--
+Proxy Error The proxy server received an invalid response from an upstream server. The proxy server could not handle the request. Reason: Error reading from remote server
+
+sol-
+/etc/apache2/apache2.conf
+Timeout 2400
+#ProxyTimeout 2400
+#ProxyBadHeader Ignore
+
+
+++++++++++++++++++++++SSL CSR File Details+++++++++++++++++++++++
+
+Country Name :- in
+State or Province Name :karnataka
+Locality Name: Bangaluru
+Organisation name: centre for Wildlife Studies
+Organisation unit : Accounts
+Common name : wildseveodk.com
+Email: krithi.karanth@gmail.com
+
+A challenge password[]: Wildseveodk@admin1
+
+
+Country Name (2 letter code) [AU]:in
+State or Province Name (full name) [Some-State]:karnataka
+Locality Name (eg, city) []:Bangaluru
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:CWSIndia
+Organizational Unit Name (eg, section) []:Accounts
+Common Name (e.g. server FQDN or YOUR name) []:server.wildseveodk.com                           
+ Email Address []:
+
+
+*****************create the private key and csr for AWS Load balancer*****************
+link- https://knowledge.digicert.com/generalinformation/INFO3386.html
+
+Description
+ 
+
+Generating a Certificate Signing Request (CSR) file for Amazon Web Services' (AWS) HTTPS Load Balancers requires the use of Apache's OpenSSL to do so.
+
+Note:  To check whether OpenSSL is already installed, run the command "openssl version" without the parenthesis.  If OpenSSL is not installed, you must install it.  For more information to install OpenSSL, see AWS's documentation for Linux distribution or contact Amazon.
+
+ 
+
+Step 1:  Generate the Private Key
+
+Using the Linux instance, run the following command to create the Private Key file.
+Note:  2048 bit key lengths or higher is required.
+ 
+openssl genrsa -out yourpivatekey_filename.key 2048
+
+Note:  AWS requires that the Private Key NOT be generated with a pass phrase/password to protect the file.  Therefore Thawte highly recommends that the Private Key file be kept in a secure location on the server as it is the key element that decrypts the encrypted information sent from the client to the server.  Not doing so could cause your SSL connections to be vulnerable if the Private Key file is compromised.
+ 
+
+Step 2:  Generate the CSR
+
+Run the following command to generate a CSR file based off the Private Key file that was created from Step 1 above.
+Note:  You will be asked for the Private Key's pass phrase created from Step 1 above when running this command.
+ 
+openssl req -new -key server.wildseveodk.com.key -out server.wildseveodk.com.csr
+
+ 
+Enter the Distinguished Name (DN) Fields:
+?  Country Name:  Use the two-letter code without punctuation for country.  (ex. US or CA)
+?  State or Province:  Spell out the state name completely.  Do not abbreviate the state or province name.  (ex. California)
+?  Locality or City:  The Locality field is the city or town name.  Do not abbreviate (ex. Saint Louis)
+?  Organization Name:  If the Organization Name (Company Name) has an &, @, or any other special character, the special character must be spelled out or omitted, in order to enroll for a certificate.  (ex. XY & Z Corporation would be XYZ Corporation or XY and Z Corporation)
+?  Organizational Unit:  The Organizational Unit field can be used as a department name or a naming convention of your choice.  To skip this field, press Enter on the keyboard.
+?  Common Name:  The Common Name is the Host + Domain Name. It looks like "www.domain.com" or "domain.com".  SSL certificates can only be used on web servers using the Common Name specified during enrollment. For example, a certificate for the domain "domain.com" will receive a warning if accessing a site named "www.domain.com" or "secure.domain.com".
+?  Email Address:  Do NOT enter an email address.  Leave this field blank and press Enter on the keyboard to skip this field.
+
+Extra Attribute Fields:
+?  Challenge password:  Do NOT enter a Challenge password.  Leave this field blank and press Enter on the keyboard to skip this field.
+?  An option company name:  Do NOT enter an option company name.  Leave this field blank and press Enter on the keyboard to skip this field.
+ 
+
+************************************************************************End*********************************
+
+

@@ -1,0 +1,53 @@
+<div class="example-container">
+<h1 mat-dialog-title style="text-align: center">Add User</h1>
+<div mat-dialog-content class= "pb-1">
+  <form [formGroup]="createForm" >
+      <mat-form-field  >
+          <input matInput placeholder="Firstname" type="text" #firstname   formControlName="firstname" required>
+          <mat-error *ngIf="isFieldInvalid('firstname')">
+            Please fill this field
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field >
+          <input matInput placeholder="Lastname" type="text"  #lastname  formControlName="lastname" required>
+          <mat-error *ngIf="isFieldInvalid('lastname')">
+            Please fill this field
+          </mat-error>
+        </mat-form-field>
+    <mat-form-field >
+      <input matInput placeholder="Username" type="text"   #username formControlName="username" required>
+      <mat-error *ngIf="isFieldInvalid('username')">
+        Please fill this field
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field >
+        <input matInput (keypress)="keyPress($event)" minlength=10 maxlength=10 placeholder="Phone"  type="text"   #phonenumber  formControlName="phonenumber" required>
+        <mat-error *ngIf="isFieldInvalid('phonenumber')">
+          Please fill this field
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field >
+          <input matInput placeholder="Email" type="email"    #email formControlName="email" required>
+          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+        <mat-form-field >
+          <input matInput placeholder="Password" type="password"  #password   formControlName="password" required>
+          <mat-error *ngIf="isFieldInvalid('password')">
+            Please fill this field
+          </mat-error>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-select placeholder="Category" formControlName="roleid" #category>
+              <mat-option value="1">Admin</mat-option>
+              <mat-option value="2">User</mat-option>
+              <!-- <mat-option value="3">FA</mat-option> -->
+            </mat-select>
+        </mat-form-field>
+
+      <button mat-raised-button (click)="createUser(firstname.value, lastname.value, username.value, phonenumber.value, email.value, password.value, category.value)" [disabled]="createForm.pristine || createForm.invalid" type="submit" color="primary">Save</button>
+      <button mat-raised-button   (click)="onNoClick()" color="accent">Cancel</button>
+
+  </form>
+</div>
+</div>
+

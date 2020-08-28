@@ -1,0 +1,227 @@
+ 
+ ************** create a password for google cloude instance instead of ssh************************
+   
+   https://www.youtube.com/watch?v=glxKJ5DraDs
+   
+   
+   sudo -i
+   adduser wildseveodk
+   if not exist then give passwd
+   or
+   passwd wildseveodk
+   enter password
+   
+   vi /etc/ssh/sshd_config
+   passwordAuthentication  make it "yes"
+   
+   sudo service ssh restart
+   
+   
+   
+ ############## Angular  ###############
+   
+ create a dist file 
+ 
+ git repo
+ clone repo
+ 
+ npm install
+git pull 
+ ng serve
+ ng build
+ 
+ -------------------------------------
+ 
+ 1  sudo apt-get install mysql-server
+    2  mysql -u root -p
+    3  sudo apt-get install apache2 -y
+    4  sudo service apache2 status
+    5  sudo apt-get install tomcat8 -y
+    6  sudo service tomcat8 status
+    7  sudo apt-get install tomcat8-admin -y
+    8  sudo apt-get install libapache2-mod-jk -y
+    9  sudo apt-get install libapache2-mod-jk
+   10  sudo service tomcat8 status
+   11  sudo vi /etc/tomcat8/server.xml
+   12  sudo vi /etc/apache2/workers.properties
+   13  sudo vi /etc/apache2/mods-available/jk.conf
+   14  sudo apt-get install libapache2-mod-jk
+   15  sudo service apache2 restart
+   16  sudo apt-get update
+   17  sudo apt-get install libapache2-mod-jk
+   18  sudo vi /etc/apache2/mods-available/jk.conf
+   19  sudo vi /etc/apache2/sites-enabled/000-default.conf
+   20  cd /var/lib/tomcat8/webapps/
+   21  sudo ln -s /usr/share/tomcat8-admin/manager/ manager
+   22  ls -l
+   23  sudo chown -R tomcat8.tomcat8 /var/lib/tomcat8/webapps
+   24  ls -l
+   25  sudo chown tomcat8.tomcat8 /usr/share/tomcat8
+   26  sudo vi /etc/init.d/tomcat8
+   27  sudo /etc/init.d/tomcat8 restart
+   28  sudo systemctl daemon-reload
+   29  sudo /etc/init.d/tomcat8 restart
+   30  sudo /etc/init.d/apache2 restart
+
+
+
+
+
+1  sudo apt-get install mysql-server -y
+    2  mysql -u root -p
+    3  sudo apt-get install apache2 -y
+    4  sudo service apache2 status
+    5  sudo apt-get install tomcat8 -y
+    6  sudo service tomcat8 status
+    7  sudo apt-get update
+    8  sudo apt-get install tomcat8 -y
+    9  sudo apt-get update
+   10  sudo service tomcat8 status
+   11  sudo apt-get install tomcat8-admin -y
+   12  sudo apt-get install libapache2-mod-jk -y
+   13  sudo vi /etc/tomcat8/server.xml
+   14  sudo vi /etc/apache2/workers.properties
+   15  sudo vi /etc/apache2/mods-available/jk.conf
+   16  sudo vi /etc/apache2/sites-enabled/000-default.conf
+   17  cd /var/lib/tomcat8/webapps/
+   18  sudo ln -s /usr/share/tomcat8-admin/manager/ manager
+   19  ls -l
+   20  sudo chown -R tomcat8.tomcat8 /var/lib/tomcat8/webapps
+   21  ls -l
+   22  sudo chown tomcat8.tomcat8 /usr/share/tomcat8
+   23  sudo vi /etc/init.d/tomcat8
+   24  sudo systemctl daemon-reload
+sudo /etc/init.d/tomcat8 restart
+sudo /etc/init.d/apache2 restart
+   27  history
+   
+   
+   
+   
+++++++++++++++++++++++Successfully deployed Node server+++++++++++++++++++++++++++++++++++
+gcloud init // initialize the project
+gcloud projects describe PROJECT_ID // choose the project or set it up.
+
+ 138  NODEDIR=src/wildseve-node/nodejs
+  139  ls
+  140  git clone https://github.com/Chethansrgit/odkserver.git $NODEDIR
+  141  ls
+  142  cd $NODEDIR/
+  143  cat server.js
+  144  cat app.yaml
+  145  npm install
+  146  export PORT=8080 && npm install
+  npm start
+  147  gcloud app deploy
+  
+  git link- https://github.com/GoogleCloudPlatform/nodejs-getting-started/blob/master/
+
+++++++++++++++++++++++Successfully deployed Node server+++++++++++++++++++++++++++++++++++
+   
+   
+   git clone https://github.com/sanjeevkr17/odknodeserver.git $NODEDIR
+   
+   git clone https://github.com/kartimanu/nodeServer.git $NODEDIR
+   
+ 
+   git clone https://github.com/kartimanu/nodeServer.git $NODEDIR
+   
+    gsutil cp gs://testfile12/node-v8.12.0-linux-x64.tar.xz .
+   
+   
+   
+multiple web on single server
+
+https://www.liberiangeek.net/2014/09/run-multiple-websites-single-ubuntu-server-using-apache2/   
+
+   
+**********node server running on google cloude app engine with nodejs**********************  
+   
+      34  export PORT=8080 && npm start
+   35  grep node
+   36  ps -ef
+   37  export PORT=8080 && npm start
+   38  ps -ef | grep node
+   39  npm start
+   40  pkill -f node   // its working fine
+   41  npm install -g forever
+   42  forever list
+   43  forever start
+   44  forever start server.js
+   45  forever list
+   46  export PORT=8080 && npm start
+   47  npm start
+   48  npm install
+   49  killall node
+   50  npm start
+   51  kill -9 PROCESS_ID
+   52  forever list
+   53  ps aux | grep node
+   54  process.exit() ;
+   55  process.exit()
+   56  kill $(ps -e | grep node | awk '{print $1}')
+   57  npm start
+   58  ls
+   59  cd node_server/
+   60  cd ..
+   61  npm install
+   62  cd node_server/
+   63  npm install
+   64  export PORT=8080 && npm start
+   65  export PORT=8080 && npm start
+   66  forever start server.js
+   67  npm inatall -g forever
+   68  npm install -g forever
+   69  forever start server.js
+
+
+*********************************************UseFull Links **************************************
+Django python setup
+
+https://poweruphosting.com/blog/install-django/
+
+
+
+
+Migration vm from other server on google cloud
+
+https://www.youtube.com/watch?v=UT1gPToi7Sg
+
+amazon SageMaker
+https://www.bmc.com/blogs/amazon-sagemaker/
+
+Kaggle 
+
+https://www.kaggle.com/
+
+
+Azure forum link-
+
+https://social.msdn.microsoft.com/Forums/azure/en-US/6c86b969-ce6e-4d95-81e1-60006a90f615/connection-failed-code9056messagecannot-connect-to-sql-server?forum=AzureStack
+
+
+
+StackFlow details
+
+s.anjeev@outlook.com
+pass-sk.An@23
+
+
+
+"C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER1\MSSQL\Binn\sqlservr.exe"
+
+"C:\Program Files (x86)\Microsoft SQL Server\90\Shared\sqlbrowser.exe"
+
+
+0000000000032298908--  2523.23- 2649 closed.
+   
+   
+   
+  
+ 
+
+ 
+ 
+ 
+   
+   

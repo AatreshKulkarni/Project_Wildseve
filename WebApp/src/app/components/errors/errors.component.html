@@ -1,0 +1,28 @@
+<ng4-loading-spinner [timeout]="90000" [loadingText]="'Please wait...'"> </ng4-loading-spinner>
+<div class="card">
+  <div class="card-header">
+    Errors
+  </div>
+
+  <div class="example-container ">
+      <mat-table #table [dataSource]="dataSource">
+        <ng-container matColumnDef="HWC_ORG_METAID">
+            <mat-header-cell *matHeaderCellDef style="font-size:large; color: black"> HWC_ORG_METAID </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.HWC_ORG_METAID}} </mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="HWC_DUP_METAID">
+            <mat-header-cell *matHeaderCellDef style="font-size:large; color: black"> HWC_DUP_METAID </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.HWC_DUP_METAID}} </mat-cell>
+          </ng-container>
+
+        <ng-container matColumnDef="Action">
+          <mat-header-cell *matHeaderCellDef ></mat-header-cell>
+          <mat-cell *matCellDef="let element" >
+            <button  mat-raised-button (click)="openUpdate(element)" color="primary">View</button>
+          </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedCol"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedCol;"></mat-row>
+
+      </mat-table>

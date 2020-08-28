@@ -1,0 +1,21 @@
+Google Cloud platform
+
+load balancing 
+
+instance 1
+instance 2
+
+
+link- https://www.youtube.com/watch?v=nSg7xtdmHtw
+
+
+link for load balancer :- 
+ 
+https://www.youtube.com/watch?v=Gn7pGQYkKnA
+
+
+
+C:\Users\sanjeev\migration_script.sql
+
+
+

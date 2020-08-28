@@ -1,0 +1,75 @@
+<div class="card">
+  <div class="card-header">
+    Users
+    <button mat-raised-button  (click)="openCreate()" class="btn btn-primary pull-right">Add User</button>
+  </div>
+  <div class="table-wrapper" >
+  <table class="table table-bordered ">
+
+      <tr >
+        <th *ngFor ="let d of displayedColumns;">{{d}}</th>
+      </tr>
+
+
+      <tr *ngFor ="let d of dataSource  | paginate: { itemsPerPage: 7, currentPage: p1, id: 'first' }">
+
+        <td>
+          <img src="assets/img/avatars/12.png" alt="admin" *ngIf="d.User_Role_Id == 1">
+          {{d.First_name}}</td>
+        <td>{{d.Last_name}}</td>
+        <td>{{d.User_name}}</td>
+        <td>{{d.Phone_number}}</td>
+        <td>{{d.Email_id}}</td>
+        <td><button mat-icon-button  (click)="openUpdate(d)"><i class='material-icons'>edit</i></button>
+          <button mat-icon-button (click)="deleteUser(d)"><i class='material-icons'>delete</i></button></td>
+      </tr>
+
+  </table>
+  <div class="float-md-right" >
+      <pagination-controls (pageChange)="p1 = $event" id="first"></pagination-controls>
+    </div>
+  </div>
+
+<!--
+  <div class="example-container mat-elevation-z8">
+    <mat-table #table [dataSource]="dataSource">
+      <ng-container matColumnDef="firstname">
+          <mat-header-cell *matHeaderCellDef> FirstName </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.First_name}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="lastname">
+          <mat-header-cell *matHeaderCellDef> LastName </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.Last_name}} </mat-cell>
+        </ng-container>
+      <ng-container matColumnDef="username">
+        <mat-header-cell *matHeaderCellDef> UserName </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.User_name}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="phone">
+          <mat-header-cell *matHeaderCellDef> Phone </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.Phone_number}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="email">
+            <mat-header-cell *matHeaderCellDef> E-Mail </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.Email_id}} </mat-cell>
+          </ng-container>
+      <ng-container matColumnDef="category">
+        <mat-header-cell *matHeaderCellDef> Category </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.category}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="actions">
+        <mat-header-cell *matHeaderCellDef >Actions</mat-header-cell>
+        <mat-cell *matCellDef="let element" >
+          <button  mat-button (click)="openUpdate(element)" color="primary">Edit</button>
+          <button mat-button (click)="deleteUser(element)" color="warn">Delete</button>
+        </mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+    </mat-table>
+  </div>
+ -->
+
+</div>

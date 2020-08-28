@@ -1,0 +1,1914 @@
+[2020-01-17T00:54:55.199] [TRACE] wildseve - > Began Syncing Compensation Records... 
+[2020-01-17T00:55:00.168] [TRACE] wildseve - Compensation records Available to sync :: 213
+[2020-01-17T00:55:00.450] [TRACE] wildseve - COMPENSATION record already exists : 1
+[2020-01-17T00:55:00.700] [TRACE] wildseve - COMPENSATION cases to be inserted : 1
+[2020-01-17T00:55:00.700] [TRACE] wildseve - COMPENSATION cases to be inserted : 2
+[2020-01-17T00:55:00.701] [TRACE] wildseve - COMPENSATION cases to be inserted : 3
+[2020-01-17T00:55:00.702] [TRACE] wildseve - COMPENSATION cases to be inserted : 4
+[2020-01-17T00:55:00.702] [TRACE] wildseve - COMPENSATION cases to be inserted : 5
+[2020-01-17T00:55:00.703] [TRACE] wildseve - COMPENSATION cases to be inserted : 6
+[2020-01-17T00:55:00.704] [TRACE] wildseve - COMPENSATION cases to be inserted : 7
+[2020-01-17T00:55:00.705] [TRACE] wildseve - COMPENSATION cases to be inserted : 8
+[2020-01-17T00:55:00.705] [TRACE] wildseve - COMPENSATION cases to be inserted : 9
+[2020-01-17T00:55:00.706] [TRACE] wildseve - COMPENSATION cases to be inserted : 10
+[2020-01-17T00:55:00.707] [TRACE] wildseve - COMPENSATION record already exists : 2
+[2020-01-17T00:55:00.939] [TRACE] wildseve - COMPENSATION cases to be inserted : 11
+[2020-01-17T00:55:00.939] [TRACE] wildseve - COMPENSATION cases to be inserted : 12
+[2020-01-17T00:55:00.940] [TRACE] wildseve - COMPENSATION cases to be inserted : 13
+[2020-01-17T00:55:00.941] [TRACE] wildseve - COMPENSATION cases to be inserted : 14
+[2020-01-17T00:55:00.941] [TRACE] wildseve - COMPENSATION cases to be inserted : 15
+[2020-01-17T00:55:00.942] [TRACE] wildseve - COMPENSATION cases to be inserted : 16
+[2020-01-17T00:55:00.942] [TRACE] wildseve - COMPENSATION cases to be inserted : 17
+[2020-01-17T00:55:00.943] [TRACE] wildseve - COMPENSATION cases to be inserted : 18
+[2020-01-17T00:55:00.944] [TRACE] wildseve - COMPENSATION cases to be inserted : 19
+[2020-01-17T00:55:00.945] [TRACE] wildseve - COMPENSATION cases to be inserted : 20
+[2020-01-17T00:55:00.945] [TRACE] wildseve - COMPENSATION record already exists : 3
+[2020-01-17T00:55:01.448] [TRACE] wildseve - COMPENSATION cases to be inserted : 21
+[2020-01-17T00:55:01.449] [TRACE] wildseve - COMPENSATION cases to be inserted : 22
+[2020-01-17T00:55:01.450] [TRACE] wildseve - COMPENSATION cases to be inserted : 23
+[2020-01-17T00:55:01.450] [TRACE] wildseve - COMPENSATION cases to be inserted : 24
+[2020-01-17T00:55:01.451] [TRACE] wildseve - COMPENSATION cases to be inserted : 25
+[2020-01-17T00:55:01.452] [TRACE] wildseve - COMPENSATION cases to be inserted : 26
+[2020-01-17T00:55:01.452] [TRACE] wildseve - COMPENSATION cases to be inserted : 27
+[2020-01-17T00:55:01.453] [TRACE] wildseve - COMPENSATION cases to be inserted : 28
+[2020-01-17T00:55:01.454] [TRACE] wildseve - COMPENSATION cases to be inserted : 29
+[2020-01-17T00:55:01.454] [TRACE] wildseve - COMPENSATION cases to be inserted : 30
+[2020-01-17T00:55:01.455] [TRACE] wildseve - COMPENSATION record already exists : 4
+[2020-01-17T00:55:01.979] [TRACE] wildseve - COMPENSATION cases to be inserted : 31
+[2020-01-17T00:55:01.979] [TRACE] wildseve - COMPENSATION cases to be inserted : 32
+[2020-01-17T00:55:01.980] [TRACE] wildseve - COMPENSATION cases to be inserted : 33
+[2020-01-17T00:55:01.981] [TRACE] wildseve - COMPENSATION cases to be inserted : 34
+[2020-01-17T00:55:01.981] [TRACE] wildseve - COMPENSATION record already exists : 5
+[2020-01-17T00:55:02.487] [TRACE] wildseve - COMPENSATION cases to be inserted : 35
+[2020-01-17T00:55:02.488] [TRACE] wildseve - COMPENSATION cases to be inserted : 36
+[2020-01-17T00:55:02.488] [TRACE] wildseve - COMPENSATION cases to be inserted : 37
+[2020-01-17T00:55:02.489] [TRACE] wildseve - COMPENSATION cases to be inserted : 38
+[2020-01-17T00:55:02.490] [TRACE] wildseve - COMPENSATION cases to be inserted : 39
+[2020-01-17T00:55:02.490] [TRACE] wildseve - COMPENSATION cases to be inserted : 40
+[2020-01-17T00:55:02.491] [TRACE] wildseve - COMPENSATION cases to be inserted : 41
+[2020-01-17T00:55:02.492] [TRACE] wildseve - COMPENSATION cases to be inserted : 42
+[2020-01-17T00:55:02.492] [TRACE] wildseve - COMPENSATION cases to be inserted : 43
+[2020-01-17T00:55:02.493] [TRACE] wildseve - COMPENSATION cases to be inserted : 44
+[2020-01-17T00:55:02.493] [TRACE] wildseve - COMPENSATION record already exists : 6
+[2020-01-17T00:55:03.019] [TRACE] wildseve - COMPENSATION cases to be inserted : 45
+[2020-01-17T00:55:03.019] [TRACE] wildseve - COMPENSATION cases to be inserted : 46
+[2020-01-17T00:55:03.020] [TRACE] wildseve - COMPENSATION cases to be inserted : 47
+[2020-01-17T00:55:03.021] [TRACE] wildseve - COMPENSATION cases to be inserted : 48
+[2020-01-17T00:55:03.021] [TRACE] wildseve - COMPENSATION cases to be inserted : 49
+[2020-01-17T00:55:03.022] [TRACE] wildseve - COMPENSATION cases to be inserted : 50
+[2020-01-17T00:55:03.023] [TRACE] wildseve - COMPENSATION cases to be inserted : 51
+[2020-01-17T00:55:03.023] [TRACE] wildseve - COMPENSATION cases to be inserted : 52
+[2020-01-17T00:55:03.024] [TRACE] wildseve - COMPENSATION cases to be inserted : 53
+[2020-01-17T00:55:03.025] [TRACE] wildseve - COMPENSATION cases to be inserted : 54
+[2020-01-17T00:55:03.025] [TRACE] wildseve - COMPENSATION record already exists : 7
+[2020-01-17T00:55:03.526] [TRACE] wildseve - COMPENSATION cases to be inserted : 55
+[2020-01-17T00:55:03.527] [TRACE] wildseve - COMPENSATION cases to be inserted : 56
+[2020-01-17T00:55:03.527] [TRACE] wildseve - COMPENSATION cases to be inserted : 57
+[2020-01-17T00:55:03.527] [TRACE] wildseve - COMPENSATION cases to be inserted : 58
+[2020-01-17T00:55:03.528] [TRACE] wildseve - COMPENSATION record already exists : 8
+[2020-01-17T00:55:04.059] [TRACE] wildseve - COMPENSATION cases to be inserted : 59
+[2020-01-17T00:55:04.059] [TRACE] wildseve - COMPENSATION cases to be inserted : 60
+[2020-01-17T00:55:04.060] [TRACE] wildseve - COMPENSATION cases to be inserted : 61
+[2020-01-17T00:55:04.061] [TRACE] wildseve - COMPENSATION cases to be inserted : 62
+[2020-01-17T00:55:04.062] [TRACE] wildseve - COMPENSATION cases to be inserted : 63
+[2020-01-17T00:55:04.062] [TRACE] wildseve - COMPENSATION record already exists : 9
+[2020-01-17T00:55:04.558] [TRACE] wildseve - COMPENSATION cases to be inserted : 64
+[2020-01-17T00:55:04.559] [TRACE] wildseve - COMPENSATION cases to be inserted : 65
+[2020-01-17T00:55:04.572] [TRACE] wildseve - COMPENSATION record already exists : 10
+[2020-01-17T00:55:05.088] [TRACE] wildseve - COMPENSATION cases to be inserted : 66
+[2020-01-17T00:55:05.089] [TRACE] wildseve - COMPENSATION cases to be inserted : 67
+[2020-01-17T00:55:05.090] [TRACE] wildseve - COMPENSATION cases to be inserted : 68
+[2020-01-17T00:55:05.091] [TRACE] wildseve - COMPENSATION cases to be inserted : 69
+[2020-01-17T00:55:05.091] [TRACE] wildseve - COMPENSATION cases to be inserted : 70
+[2020-01-17T00:55:05.092] [TRACE] wildseve - COMPENSATION cases to be inserted : 71
+[2020-01-17T00:55:05.093] [TRACE] wildseve - COMPENSATION cases to be inserted : 72
+[2020-01-17T00:55:05.093] [TRACE] wildseve - COMPENSATION cases to be inserted : 73
+[2020-01-17T00:55:05.094] [TRACE] wildseve - COMPENSATION cases to be inserted : 74
+[2020-01-17T00:55:05.095] [TRACE] wildseve - COMPENSATION cases to be inserted : 75
+[2020-01-17T00:55:05.096] [TRACE] wildseve - COMPENSATION record already exists : 11
+[2020-01-17T00:55:05.604] [TRACE] wildseve - COMPENSATION cases to be inserted : 76
+[2020-01-17T00:55:05.605] [TRACE] wildseve - COMPENSATION cases to be inserted : 77
+[2020-01-17T00:55:05.605] [TRACE] wildseve - COMPENSATION cases to be inserted : 78
+[2020-01-17T00:55:05.606] [TRACE] wildseve - COMPENSATION cases to be inserted : 79
+[2020-01-17T00:55:05.606] [TRACE] wildseve - COMPENSATION cases to be inserted : 80
+[2020-01-17T00:55:05.607] [TRACE] wildseve - COMPENSATION cases to be inserted : 81
+[2020-01-17T00:55:05.607] [TRACE] wildseve - COMPENSATION cases to be inserted : 82
+[2020-01-17T00:55:05.607] [TRACE] wildseve - COMPENSATION cases to be inserted : 83
+[2020-01-17T00:55:05.608] [TRACE] wildseve - COMPENSATION cases to be inserted : 84
+[2020-01-17T00:55:05.608] [TRACE] wildseve - COMPENSATION cases to be inserted : 85
+[2020-01-17T00:55:05.609] [TRACE] wildseve - COMPENSATION record already exists : 12
+[2020-01-17T00:55:06.149] [TRACE] wildseve - COMPENSATION cases to be inserted : 86
+[2020-01-17T00:55:06.150] [TRACE] wildseve - COMPENSATION cases to be inserted : 87
+[2020-01-17T00:55:06.151] [TRACE] wildseve - COMPENSATION cases to be inserted : 88
+[2020-01-17T00:55:06.152] [TRACE] wildseve - COMPENSATION cases to be inserted : 89
+[2020-01-17T00:55:06.152] [TRACE] wildseve - COMPENSATION cases to be inserted : 90
+[2020-01-17T00:55:06.153] [TRACE] wildseve - COMPENSATION cases to be inserted : 91
+[2020-01-17T00:55:06.154] [TRACE] wildseve - COMPENSATION cases to be inserted : 92
+[2020-01-17T00:55:06.155] [TRACE] wildseve - COMPENSATION cases to be inserted : 93
+[2020-01-17T00:55:06.156] [TRACE] wildseve - COMPENSATION cases to be inserted : 94
+[2020-01-17T00:55:06.156] [TRACE] wildseve - COMPENSATION cases to be inserted : 95
+[2020-01-17T00:55:06.157] [TRACE] wildseve - COMPENSATION record already exists : 13
+[2020-01-17T00:55:06.688] [TRACE] wildseve - COMPENSATION cases to be inserted : 96
+[2020-01-17T00:55:06.688] [TRACE] wildseve - COMPENSATION cases to be inserted : 97
+[2020-01-17T00:55:06.689] [TRACE] wildseve - COMPENSATION cases to be inserted : 98
+[2020-01-17T00:55:06.690] [TRACE] wildseve - COMPENSATION cases to be inserted : 99
+[2020-01-17T00:55:06.690] [TRACE] wildseve - COMPENSATION cases to be inserted : 100
+[2020-01-17T00:55:06.691] [TRACE] wildseve - COMPENSATION cases to be inserted : 101
+[2020-01-17T00:55:06.692] [TRACE] wildseve - COMPENSATION cases to be inserted : 102
+[2020-01-17T00:55:06.693] [TRACE] wildseve - COMPENSATION cases to be inserted : 103
+[2020-01-17T00:55:06.693] [TRACE] wildseve - COMPENSATION cases to be inserted : 104
+[2020-01-17T00:55:06.694] [TRACE] wildseve - COMPENSATION cases to be inserted : 105
+[2020-01-17T00:55:06.694] [TRACE] wildseve - COMPENSATION record already exists : 14
+[2020-01-17T00:55:07.198] [TRACE] wildseve - COMPENSATION cases to be inserted : 106
+[2020-01-17T00:55:07.199] [TRACE] wildseve - COMPENSATION cases to be inserted : 107
+[2020-01-17T00:55:07.200] [TRACE] wildseve - COMPENSATION cases to be inserted : 108
+[2020-01-17T00:55:07.200] [TRACE] wildseve - COMPENSATION cases to be inserted : 109
+[2020-01-17T00:55:07.201] [TRACE] wildseve - COMPENSATION cases to be inserted : 110
+[2020-01-17T00:55:07.202] [TRACE] wildseve - COMPENSATION cases to be inserted : 111
+[2020-01-17T00:55:07.203] [TRACE] wildseve - COMPENSATION cases to be inserted : 112
+[2020-01-17T00:55:07.203] [TRACE] wildseve - COMPENSATION cases to be inserted : 113
+[2020-01-17T00:55:07.205] [TRACE] wildseve - COMPENSATION cases to be inserted : 114
+[2020-01-17T00:55:07.206] [TRACE] wildseve - COMPENSATION cases to be inserted : 115
+[2020-01-17T00:55:07.206] [TRACE] wildseve - COMPENSATION record already exists : 15
+[2020-01-17T00:55:07.727] [TRACE] wildseve - COMPENSATION cases to be inserted : 116
+[2020-01-17T00:55:07.727] [TRACE] wildseve - COMPENSATION cases to be inserted : 117
+[2020-01-17T00:55:07.728] [TRACE] wildseve - COMPENSATION cases to be inserted : 118
+[2020-01-17T00:55:07.728] [TRACE] wildseve - COMPENSATION cases to be inserted : 119
+[2020-01-17T00:55:07.728] [TRACE] wildseve - COMPENSATION cases to be inserted : 120
+[2020-01-17T00:55:07.729] [TRACE] wildseve - COMPENSATION cases to be inserted : 121
+[2020-01-17T00:55:07.729] [TRACE] wildseve - COMPENSATION cases to be inserted : 122
+[2020-01-17T00:55:07.729] [TRACE] wildseve - COMPENSATION cases to be inserted : 123
+[2020-01-17T00:55:07.730] [TRACE] wildseve - COMPENSATION cases to be inserted : 124
+[2020-01-17T00:55:07.730] [TRACE] wildseve - COMPENSATION cases to be inserted : 125
+[2020-01-17T00:55:07.730] [TRACE] wildseve - COMPENSATION record already exists : 16
+[2020-01-17T00:55:08.239] [TRACE] wildseve - COMPENSATION cases to be inserted : 126
+[2020-01-17T00:55:08.240] [TRACE] wildseve - COMPENSATION cases to be inserted : 127
+[2020-01-17T00:55:08.240] [TRACE] wildseve - COMPENSATION cases to be inserted : 128
+[2020-01-17T00:55:08.241] [TRACE] wildseve - COMPENSATION cases to be inserted : 129
+[2020-01-17T00:55:08.242] [TRACE] wildseve - COMPENSATION cases to be inserted : 130
+[2020-01-17T00:55:08.243] [TRACE] wildseve - COMPENSATION cases to be inserted : 131
+[2020-01-17T00:55:08.243] [TRACE] wildseve - COMPENSATION cases to be inserted : 132
+[2020-01-17T00:55:08.244] [TRACE] wildseve - COMPENSATION cases to be inserted : 133
+[2020-01-17T00:55:08.245] [TRACE] wildseve - COMPENSATION cases to be inserted : 134
+[2020-01-17T00:55:08.246] [TRACE] wildseve - COMPENSATION cases to be inserted : 135
+[2020-01-17T00:55:08.246] [TRACE] wildseve - COMPENSATION record already exists : 17
+[2020-01-17T00:55:08.773] [TRACE] wildseve - COMPENSATION cases to be inserted : 136
+[2020-01-17T00:55:08.774] [TRACE] wildseve - COMPENSATION cases to be inserted : 137
+[2020-01-17T00:55:08.775] [TRACE] wildseve - COMPENSATION cases to be inserted : 138
+[2020-01-17T00:55:08.775] [TRACE] wildseve - COMPENSATION cases to be inserted : 139
+[2020-01-17T00:55:08.776] [TRACE] wildseve - COMPENSATION cases to be inserted : 140
+[2020-01-17T00:55:08.777] [TRACE] wildseve - COMPENSATION cases to be inserted : 141
+[2020-01-17T00:55:08.777] [TRACE] wildseve - COMPENSATION cases to be inserted : 142
+[2020-01-17T00:55:08.778] [TRACE] wildseve - COMPENSATION cases to be inserted : 143
+[2020-01-17T00:55:08.779] [TRACE] wildseve - COMPENSATION cases to be inserted : 144
+[2020-01-17T00:55:08.780] [TRACE] wildseve - COMPENSATION cases to be inserted : 145
+[2020-01-17T00:55:08.780] [TRACE] wildseve - COMPENSATION record already exists : 18
+[2020-01-17T00:55:09.279] [TRACE] wildseve - COMPENSATION cases to be inserted : 146
+[2020-01-17T00:55:09.280] [TRACE] wildseve - COMPENSATION cases to be inserted : 147
+[2020-01-17T00:55:09.281] [TRACE] wildseve - COMPENSATION cases to be inserted : 148
+[2020-01-17T00:55:09.281] [TRACE] wildseve - COMPENSATION cases to be inserted : 149
+[2020-01-17T00:55:09.282] [TRACE] wildseve - COMPENSATION record already exists : 19
+[2020-01-17T00:55:09.794] [TRACE] wildseve - COMPENSATION cases to be inserted : 150
+[2020-01-17T00:55:09.794] [TRACE] wildseve - COMPENSATION cases to be inserted : 151
+[2020-01-17T00:55:09.795] [TRACE] wildseve - COMPENSATION cases to be inserted : 152
+[2020-01-17T00:55:09.796] [TRACE] wildseve - COMPENSATION cases to be inserted : 153
+[2020-01-17T00:55:09.796] [TRACE] wildseve - COMPENSATION cases to be inserted : 154
+[2020-01-17T00:55:09.797] [TRACE] wildseve - COMPENSATION cases to be inserted : 155
+[2020-01-17T00:55:09.798] [TRACE] wildseve - COMPENSATION cases to be inserted : 156
+[2020-01-17T00:55:09.798] [TRACE] wildseve - COMPENSATION cases to be inserted : 157
+[2020-01-17T00:55:09.799] [TRACE] wildseve - COMPENSATION cases to be inserted : 158
+[2020-01-17T00:55:09.801] [TRACE] wildseve - COMPENSATION cases to be inserted : 159
+[2020-01-17T00:55:09.802] [TRACE] wildseve - COMPENSATION record already exists : 20
+[2020-01-17T00:55:10.300] [TRACE] wildseve - COMPENSATION cases to be inserted : 160
+[2020-01-17T00:55:10.301] [TRACE] wildseve - COMPENSATION cases to be inserted : 161
+[2020-01-17T00:55:10.302] [TRACE] wildseve - COMPENSATION cases to be inserted : 162
+[2020-01-17T00:55:10.302] [TRACE] wildseve - COMPENSATION cases to be inserted : 163
+[2020-01-17T00:55:10.303] [TRACE] wildseve - COMPENSATION cases to be inserted : 164
+[2020-01-17T00:55:10.303] [TRACE] wildseve - COMPENSATION record already exists : 21
+[2020-01-17T00:55:10.835] [TRACE] wildseve - COMPENSATION cases to be inserted : 165
+[2020-01-17T00:55:10.836] [TRACE] wildseve - COMPENSATION cases to be inserted : 166
+[2020-01-17T00:55:10.836] [TRACE] wildseve - COMPENSATION cases to be inserted : 167
+[2020-01-17T00:55:10.837] [TRACE] wildseve - COMPENSATION cases to be inserted : 168
+[2020-01-17T00:55:10.838] [TRACE] wildseve - COMPENSATION cases to be inserted : 169
+[2020-01-17T00:55:10.839] [TRACE] wildseve - COMPENSATION cases to be inserted : 170
+[2020-01-17T00:55:10.840] [TRACE] wildseve - COMPENSATION cases to be inserted : 171
+[2020-01-17T00:55:10.840] [TRACE] wildseve - COMPENSATION cases to be inserted : 172
+[2020-01-17T00:55:10.841] [TRACE] wildseve - COMPENSATION cases to be inserted : 173
+[2020-01-17T00:55:10.842] [TRACE] wildseve - COMPENSATION cases to be inserted : 174
+[2020-01-17T00:55:10.842] [TRACE] wildseve - COMPENSATION record already exists : 22
+[2020-01-17T00:55:11.347] [TRACE] wildseve - COMPENSATION cases to be inserted : 175
+[2020-01-17T00:55:11.348] [TRACE] wildseve - COMPENSATION cases to be inserted : 176
+[2020-01-17T00:55:11.349] [TRACE] wildseve - COMPENSATION cases to be inserted : 177
+[2020-01-17T00:55:11.349] [TRACE] wildseve - COMPENSATION cases to be inserted : 178
+[2020-01-17T00:55:11.350] [TRACE] wildseve - COMPENSATION cases to be inserted : 179
+[2020-01-17T00:55:11.351] [TRACE] wildseve - COMPENSATION cases to be inserted : 180
+[2020-01-17T00:55:11.351] [TRACE] wildseve - COMPENSATION cases to be inserted : 181
+[2020-01-17T00:55:11.353] [TRACE] wildseve - COMPENSATION cases to be inserted : 182
+[2020-01-17T00:55:11.353] [TRACE] wildseve - COMPENSATION cases to be inserted : 183
+[2020-01-17T00:55:11.354] [TRACE] wildseve - COMPENSATION cases to be inserted : 184
+[2020-01-17T00:55:11.355] [TRACE] wildseve - COMPENSATION record already exists : 23
+[2020-01-17T00:55:11.877] [TRACE] wildseve - COMPENSATION cases to be inserted : 185
+[2020-01-17T00:55:11.878] [TRACE] wildseve - COMPENSATION cases to be inserted : 186
+[2020-01-17T00:55:11.878] [TRACE] wildseve - COMPENSATION cases to be inserted : 187
+[2020-01-17T00:55:11.879] [TRACE] wildseve - COMPENSATION cases to be inserted : 188
+[2020-01-17T00:55:11.880] [TRACE] wildseve - COMPENSATION cases to be inserted : 189
+[2020-01-17T00:55:11.881] [TRACE] wildseve - COMPENSATION cases to be inserted : 190
+[2020-01-17T00:55:11.882] [TRACE] wildseve - COMPENSATION cases to be inserted : 191
+[2020-01-17T00:55:11.882] [TRACE] wildseve - COMPENSATION cases to be inserted : 192
+[2020-01-17T00:55:11.883] [TRACE] wildseve - COMPENSATION cases to be inserted : 193
+[2020-01-17T00:55:11.883] [TRACE] wildseve - COMPENSATION cases to be inserted : 194
+[2020-01-17T00:55:11.884] [TRACE] wildseve - COMPENSATION record already exists : 24
+[2020-01-17T00:55:12.396] [TRACE] wildseve - COMPENSATION cases to be inserted : 195
+[2020-01-17T00:55:12.396] [TRACE] wildseve - COMPENSATION cases to be inserted : 196
+[2020-01-17T00:55:12.397] [TRACE] wildseve - COMPENSATION cases to be inserted : 197
+[2020-01-17T00:55:12.398] [TRACE] wildseve - COMPENSATION cases to be inserted : 198
+[2020-01-17T00:55:12.398] [TRACE] wildseve - COMPENSATION cases to be inserted : 199
+[2020-01-17T00:55:12.399] [TRACE] wildseve - COMPENSATION cases to be inserted : 200
+[2020-01-17T00:55:12.400] [TRACE] wildseve - COMPENSATION cases to be inserted : 201
+[2020-01-17T00:55:12.401] [TRACE] wildseve - COMPENSATION cases to be inserted : 202
+[2020-01-17T00:55:12.401] [TRACE] wildseve - COMPENSATION cases to be inserted : 203
+[2020-01-17T00:55:12.404] [TRACE] wildseve - COMPENSATION cases to be inserted : 204
+[2020-01-17T00:55:12.404] [TRACE] wildseve - COMPENSATION record already exists : 25
+[2020-01-17T00:55:12.914] [TRACE] wildseve - COMPENSATION cases to be inserted : 205
+[2020-01-17T00:55:12.915] [TRACE] wildseve - COMPENSATION cases to be inserted : 206
+[2020-01-17T00:55:12.915] [TRACE] wildseve - COMPENSATION cases to be inserted : 207
+[2020-01-17T00:55:12.916] [TRACE] wildseve - COMPENSATION cases to be inserted : 208
+[2020-01-17T00:55:12.917] [TRACE] wildseve - COMPENSATION cases to be inserted : 209
+[2020-01-17T00:55:12.917] [TRACE] wildseve - COMPENSATION cases to be inserted : 210
+[2020-01-17T00:55:12.918] [TRACE] wildseve - COMPENSATION record already exists : 26
+[2020-01-17T00:55:13.420] [TRACE] wildseve - COMPENSATION cases to be inserted : 211
+[2020-01-17T00:55:13.420] [TRACE] wildseve - COMPENSATION cases to be inserted : 212
+[2020-01-17T00:55:13.421] [TRACE] wildseve - COMPENSATION cases to be inserted : 213
+[2020-01-17T00:55:13.422] [TRACE] wildseve - COMPENSATION cases to be inserted : 214
+[2020-01-17T00:55:13.422] [TRACE] wildseve - COMPENSATION cases to be inserted : 215
+[2020-01-17T00:55:13.423] [TRACE] wildseve - COMPENSATION cases to be inserted : 216
+[2020-01-17T00:55:13.424] [TRACE] wildseve - COMPENSATION cases to be inserted : 217
+[2020-01-17T00:55:13.424] [TRACE] wildseve - COMPENSATION cases to be inserted : 218
+[2020-01-17T00:55:13.425] [TRACE] wildseve - COMPENSATION cases to be inserted : 219
+[2020-01-17T00:55:13.426] [TRACE] wildseve - COMPENSATION cases to be inserted : 220
+[2020-01-17T00:55:13.427] [TRACE] wildseve - COMPENSATION record already exists : 27
+[2020-01-17T00:55:13.925] [TRACE] wildseve - COMPENSATION cases to be inserted : 221
+[2020-01-17T00:55:13.925] [TRACE] wildseve - COMPENSATION cases to be inserted : 222
+[2020-01-17T00:55:13.926] [TRACE] wildseve - COMPENSATION cases to be inserted : 223
+[2020-01-17T00:55:13.927] [TRACE] wildseve - COMPENSATION cases to be inserted : 224
+[2020-01-17T00:55:13.928] [TRACE] wildseve - COMPENSATION cases to be inserted : 225
+[2020-01-17T00:55:13.928] [TRACE] wildseve - COMPENSATION cases to be inserted : 226
+[2020-01-17T00:55:13.929] [TRACE] wildseve - COMPENSATION record already exists : 28
+[2020-01-17T00:55:14.462] [TRACE] wildseve - COMPENSATION cases to be inserted : 227
+[2020-01-17T00:55:14.463] [TRACE] wildseve - COMPENSATION cases to be inserted : 228
+[2020-01-17T00:55:14.463] [TRACE] wildseve - COMPENSATION cases to be inserted : 229
+[2020-01-17T00:55:14.464] [TRACE] wildseve - COMPENSATION record already exists : 29
+[2020-01-17T00:55:14.996] [TRACE] wildseve - COMPENSATION cases to be inserted : 230
+[2020-01-17T00:55:14.997] [TRACE] wildseve - COMPENSATION cases to be inserted : 231
+[2020-01-17T00:55:14.997] [TRACE] wildseve - COMPENSATION cases to be inserted : 232
+[2020-01-17T00:55:14.998] [TRACE] wildseve - COMPENSATION cases to be inserted : 233
+[2020-01-17T00:55:14.999] [TRACE] wildseve - COMPENSATION record already exists : 30
+[2020-01-17T00:55:15.519] [TRACE] wildseve - COMPENSATION cases to be inserted : 234
+[2020-01-17T00:55:15.519] [TRACE] wildseve - COMPENSATION cases to be inserted : 235
+[2020-01-17T00:55:15.520] [TRACE] wildseve - COMPENSATION cases to be inserted : 236
+[2020-01-17T00:55:15.521] [TRACE] wildseve - COMPENSATION cases to be inserted : 237
+[2020-01-17T00:55:15.522] [TRACE] wildseve - COMPENSATION cases to be inserted : 238
+[2020-01-17T00:55:15.522] [TRACE] wildseve - COMPENSATION cases to be inserted : 239
+[2020-01-17T00:55:15.523] [TRACE] wildseve - COMPENSATION cases to be inserted : 240
+[2020-01-17T00:55:15.524] [TRACE] wildseve - COMPENSATION cases to be inserted : 241
+[2020-01-17T00:55:15.525] [TRACE] wildseve - COMPENSATION cases to be inserted : 242
+[2020-01-17T00:55:15.525] [TRACE] wildseve - COMPENSATION cases to be inserted : 243
+[2020-01-17T00:55:15.526] [TRACE] wildseve - COMPENSATION record already exists : 31
+[2020-01-17T00:55:16.048] [TRACE] wildseve - COMPENSATION cases to be inserted : 244
+[2020-01-17T00:55:16.049] [TRACE] wildseve - COMPENSATION cases to be inserted : 245
+[2020-01-17T00:55:16.049] [TRACE] wildseve - COMPENSATION cases to be inserted : 246
+[2020-01-17T00:55:16.050] [TRACE] wildseve - COMPENSATION cases to be inserted : 247
+[2020-01-17T00:55:16.051] [TRACE] wildseve - COMPENSATION cases to be inserted : 248
+[2020-01-17T00:55:16.051] [TRACE] wildseve - COMPENSATION cases to be inserted : 249
+[2020-01-17T00:55:16.052] [TRACE] wildseve - COMPENSATION cases to be inserted : 250
+[2020-01-17T00:55:16.053] [TRACE] wildseve - COMPENSATION cases to be inserted : 251
+[2020-01-17T00:55:16.053] [TRACE] wildseve - COMPENSATION cases to be inserted : 252
+[2020-01-17T00:55:16.054] [TRACE] wildseve - COMPENSATION cases to be inserted : 253
+[2020-01-17T00:55:16.055] [TRACE] wildseve - COMPENSATION record already exists : 32
+[2020-01-17T00:55:16.563] [TRACE] wildseve - COMPENSATION cases to be inserted : 254
+[2020-01-17T00:55:16.564] [TRACE] wildseve - COMPENSATION cases to be inserted : 255
+[2020-01-17T00:55:16.564] [TRACE] wildseve - COMPENSATION cases to be inserted : 256
+[2020-01-17T00:55:16.565] [TRACE] wildseve - COMPENSATION cases to be inserted : 257
+[2020-01-17T00:55:16.566] [TRACE] wildseve - COMPENSATION cases to be inserted : 258
+[2020-01-17T00:55:16.566] [TRACE] wildseve - COMPENSATION cases to be inserted : 259
+[2020-01-17T00:55:16.567] [TRACE] wildseve - COMPENSATION cases to be inserted : 260
+[2020-01-17T00:55:16.568] [TRACE] wildseve - COMPENSATION cases to be inserted : 261
+[2020-01-17T00:55:16.568] [TRACE] wildseve - COMPENSATION cases to be inserted : 262
+[2020-01-17T00:55:16.569] [TRACE] wildseve - COMPENSATION cases to be inserted : 263
+[2020-01-17T00:55:16.570] [TRACE] wildseve - COMPENSATION record already exists : 33
+[2020-01-17T00:55:17.109] [TRACE] wildseve - COMPENSATION cases to be inserted : 264
+[2020-01-17T00:55:17.109] [TRACE] wildseve - COMPENSATION cases to be inserted : 265
+[2020-01-17T00:55:17.110] [TRACE] wildseve - COMPENSATION cases to be inserted : 266
+[2020-01-17T00:55:17.111] [TRACE] wildseve - COMPENSATION cases to be inserted : 267
+[2020-01-17T00:55:17.111] [TRACE] wildseve - COMPENSATION cases to be inserted : 268
+[2020-01-17T00:55:17.112] [TRACE] wildseve - COMPENSATION record already exists : 34
+[2020-01-17T00:55:17.648] [TRACE] wildseve - COMPENSATION cases to be inserted : 269
+[2020-01-17T00:55:17.648] [TRACE] wildseve - COMPENSATION cases to be inserted : 270
+[2020-01-17T00:55:17.649] [TRACE] wildseve - COMPENSATION cases to be inserted : 271
+[2020-01-17T00:55:17.650] [TRACE] wildseve - COMPENSATION cases to be inserted : 272
+[2020-01-17T00:55:17.651] [TRACE] wildseve - COMPENSATION cases to be inserted : 273
+[2020-01-17T00:55:17.652] [TRACE] wildseve - COMPENSATION cases to be inserted : 274
+[2020-01-17T00:55:17.653] [TRACE] wildseve - COMPENSATION cases to be inserted : 275
+[2020-01-17T00:55:17.654] [TRACE] wildseve - COMPENSATION cases to be inserted : 276
+[2020-01-17T00:55:17.654] [TRACE] wildseve - COMPENSATION cases to be inserted : 277
+[2020-01-17T00:55:17.655] [TRACE] wildseve - COMPENSATION cases to be inserted : 278
+[2020-01-17T00:55:17.655] [TRACE] wildseve - COMPENSATION record already exists : 35
+[2020-01-17T00:55:18.169] [TRACE] wildseve - COMPENSATION cases to be inserted : 279
+[2020-01-17T00:55:18.169] [TRACE] wildseve - COMPENSATION cases to be inserted : 280
+[2020-01-17T00:55:18.170] [TRACE] wildseve - COMPENSATION cases to be inserted : 281
+[2020-01-17T00:55:18.171] [TRACE] wildseve - COMPENSATION cases to be inserted : 282
+[2020-01-17T00:55:18.172] [TRACE] wildseve - COMPENSATION cases to be inserted : 283
+[2020-01-17T00:55:18.172] [TRACE] wildseve - COMPENSATION cases to be inserted : 284
+[2020-01-17T00:55:18.173] [TRACE] wildseve - COMPENSATION cases to be inserted : 285
+[2020-01-17T00:55:18.174] [TRACE] wildseve - COMPENSATION cases to be inserted : 286
+[2020-01-17T00:55:18.174] [TRACE] wildseve - COMPENSATION cases to be inserted : 287
+[2020-01-17T00:55:18.175] [TRACE] wildseve - COMPENSATION cases to be inserted : 288
+[2020-01-17T00:55:18.176] [TRACE] wildseve - COMPENSATION record already exists : 36
+[2020-01-17T00:55:18.699] [TRACE] wildseve - COMPENSATION cases to be inserted : 289
+[2020-01-17T00:55:18.700] [TRACE] wildseve - COMPENSATION cases to be inserted : 290
+[2020-01-17T00:55:18.700] [TRACE] wildseve - COMPENSATION cases to be inserted : 291
+[2020-01-17T00:55:18.701] [TRACE] wildseve - COMPENSATION cases to be inserted : 292
+[2020-01-17T00:55:18.702] [TRACE] wildseve - COMPENSATION cases to be inserted : 293
+[2020-01-17T00:55:18.703] [TRACE] wildseve - COMPENSATION cases to be inserted : 294
+[2020-01-17T00:55:18.703] [TRACE] wildseve - COMPENSATION cases to be inserted : 295
+[2020-01-17T00:55:18.704] [TRACE] wildseve - COMPENSATION cases to be inserted : 296
+[2020-01-17T00:55:18.705] [TRACE] wildseve - COMPENSATION cases to be inserted : 297
+[2020-01-17T00:55:18.706] [TRACE] wildseve - COMPENSATION cases to be inserted : 298
+[2020-01-17T00:55:18.706] [TRACE] wildseve - COMPENSATION record already exists : 37
+[2020-01-17T00:55:19.204] [TRACE] wildseve - COMPENSATION cases to be inserted : 299
+[2020-01-17T00:55:19.205] [TRACE] wildseve - COMPENSATION cases to be inserted : 300
+[2020-01-17T00:55:19.206] [TRACE] wildseve - COMPENSATION cases to be inserted : 301
+[2020-01-17T00:55:19.206] [TRACE] wildseve - COMPENSATION cases to be inserted : 302
+[2020-01-17T00:55:19.207] [TRACE] wildseve - COMPENSATION cases to be inserted : 303
+[2020-01-17T00:55:19.208] [TRACE] wildseve - COMPENSATION cases to be inserted : 304
+[2020-01-17T00:55:19.208] [TRACE] wildseve - COMPENSATION cases to be inserted : 305
+[2020-01-17T00:55:19.209] [TRACE] wildseve - COMPENSATION cases to be inserted : 306
+[2020-01-17T00:55:19.210] [TRACE] wildseve - COMPENSATION cases to be inserted : 307
+[2020-01-17T00:55:19.210] [TRACE] wildseve - COMPENSATION cases to be inserted : 308
+[2020-01-17T00:55:19.211] [TRACE] wildseve - COMPENSATION record already exists : 38
+[2020-01-17T00:55:19.739] [TRACE] wildseve - COMPENSATION cases to be inserted : 309
+[2020-01-17T00:55:19.740] [TRACE] wildseve - COMPENSATION cases to be inserted : 310
+[2020-01-17T00:55:19.741] [TRACE] wildseve - COMPENSATION cases to be inserted : 311
+[2020-01-17T00:55:19.741] [TRACE] wildseve - COMPENSATION cases to be inserted : 312
+[2020-01-17T00:55:19.742] [TRACE] wildseve - COMPENSATION cases to be inserted : 313
+[2020-01-17T00:55:19.743] [TRACE] wildseve - COMPENSATION cases to be inserted : 314
+[2020-01-17T00:55:19.744] [TRACE] wildseve - COMPENSATION cases to be inserted : 315
+[2020-01-17T00:55:19.744] [TRACE] wildseve - COMPENSATION record already exists : 39
+[2020-01-17T00:55:20.239] [TRACE] wildseve - COMPENSATION cases to be inserted : 316
+[2020-01-17T00:55:20.240] [TRACE] wildseve - COMPENSATION cases to be inserted : 317
+[2020-01-17T00:55:20.241] [TRACE] wildseve - COMPENSATION cases to be inserted : 318
+[2020-01-17T00:55:20.241] [TRACE] wildseve - COMPENSATION cases to be inserted : 319
+[2020-01-17T00:55:20.242] [TRACE] wildseve - COMPENSATION cases to be inserted : 320
+[2020-01-17T00:55:20.243] [TRACE] wildseve - COMPENSATION cases to be inserted : 321
+[2020-01-17T00:55:20.244] [TRACE] wildseve - COMPENSATION cases to be inserted : 322
+[2020-01-17T00:55:20.244] [TRACE] wildseve - COMPENSATION cases to be inserted : 323
+[2020-01-17T00:55:20.245] [TRACE] wildseve - COMPENSATION cases to be inserted : 324
+[2020-01-17T00:55:20.245] [TRACE] wildseve - COMPENSATION cases to be inserted : 325
+[2020-01-17T00:55:20.246] [TRACE] wildseve - COMPENSATION record already exists : 40
+[2020-01-17T00:55:20.754] [TRACE] wildseve - COMPENSATION cases to be inserted : 326
+[2020-01-17T00:55:20.754] [TRACE] wildseve - COMPENSATION cases to be inserted : 327
+[2020-01-17T00:55:20.755] [TRACE] wildseve - COMPENSATION cases to be inserted : 328
+[2020-01-17T00:55:20.755] [TRACE] wildseve - COMPENSATION cases to be inserted : 329
+[2020-01-17T00:55:20.755] [TRACE] wildseve - COMPENSATION cases to be inserted : 330
+[2020-01-17T00:55:20.756] [TRACE] wildseve - COMPENSATION cases to be inserted : 331
+[2020-01-17T00:55:20.756] [TRACE] wildseve - COMPENSATION cases to be inserted : 332
+[2020-01-17T00:55:20.756] [TRACE] wildseve - COMPENSATION cases to be inserted : 333
+[2020-01-17T00:55:20.756] [TRACE] wildseve - COMPENSATION cases to be inserted : 334
+[2020-01-17T00:55:20.757] [TRACE] wildseve - COMPENSATION cases to be inserted : 335
+[2020-01-17T00:55:20.757] [TRACE] wildseve - COMPENSATION record already exists : 41
+[2020-01-17T00:55:21.258] [TRACE] wildseve - COMPENSATION cases to be inserted : 336
+[2020-01-17T00:55:21.258] [TRACE] wildseve - COMPENSATION cases to be inserted : 337
+[2020-01-17T00:55:21.258] [TRACE] wildseve - COMPENSATION record already exists : 42
+[2020-01-17T00:55:21.764] [TRACE] wildseve - COMPENSATION cases to be inserted : 338
+[2020-01-17T00:55:21.764] [TRACE] wildseve - COMPENSATION cases to be inserted : 339
+[2020-01-17T00:55:21.765] [TRACE] wildseve - COMPENSATION cases to be inserted : 340
+[2020-01-17T00:55:21.767] [TRACE] wildseve - COMPENSATION cases to be inserted : 341
+[2020-01-17T00:55:21.768] [TRACE] wildseve - COMPENSATION cases to be inserted : 342
+[2020-01-17T00:55:21.768] [TRACE] wildseve - COMPENSATION cases to be inserted : 343
+[2020-01-17T00:55:21.769] [TRACE] wildseve - COMPENSATION cases to be inserted : 344
+[2020-01-17T00:55:21.770] [TRACE] wildseve - COMPENSATION cases to be inserted : 345
+[2020-01-17T00:55:21.772] [TRACE] wildseve - COMPENSATION cases to be inserted : 346
+[2020-01-17T00:55:21.772] [TRACE] wildseve - COMPENSATION record already exists : 43
+[2020-01-17T00:55:22.299] [TRACE] wildseve - COMPENSATION cases to be inserted : 347
+[2020-01-17T00:55:22.299] [TRACE] wildseve - COMPENSATION cases to be inserted : 348
+[2020-01-17T00:55:22.300] [TRACE] wildseve - COMPENSATION cases to be inserted : 349
+[2020-01-17T00:55:22.301] [TRACE] wildseve - COMPENSATION cases to be inserted : 350
+[2020-01-17T00:55:22.301] [TRACE] wildseve - COMPENSATION cases to be inserted : 351
+[2020-01-17T00:55:22.302] [TRACE] wildseve - COMPENSATION cases to be inserted : 352
+[2020-01-17T00:55:22.303] [TRACE] wildseve - COMPENSATION cases to be inserted : 353
+[2020-01-17T00:55:22.303] [TRACE] wildseve - COMPENSATION cases to be inserted : 354
+[2020-01-17T00:55:22.304] [TRACE] wildseve - COMPENSATION cases to be inserted : 355
+[2020-01-17T00:55:22.305] [TRACE] wildseve - COMPENSATION cases to be inserted : 356
+[2020-01-17T00:55:22.306] [TRACE] wildseve - COMPENSATION record already exists : 44
+[2020-01-17T00:55:22.803] [TRACE] wildseve - COMPENSATION cases to be inserted : 357
+[2020-01-17T00:55:22.803] [TRACE] wildseve - COMPENSATION cases to be inserted : 358
+[2020-01-17T00:55:22.804] [TRACE] wildseve - COMPENSATION cases to be inserted : 359
+[2020-01-17T00:55:22.804] [TRACE] wildseve - COMPENSATION cases to be inserted : 360
+[2020-01-17T00:55:22.804] [TRACE] wildseve - COMPENSATION cases to be inserted : 361
+[2020-01-17T00:55:22.804] [TRACE] wildseve - COMPENSATION cases to be inserted : 362
+[2020-01-17T00:55:22.805] [TRACE] wildseve - COMPENSATION cases to be inserted : 363
+[2020-01-17T00:55:22.805] [TRACE] wildseve - COMPENSATION cases to be inserted : 364
+[2020-01-17T00:55:22.805] [TRACE] wildseve - COMPENSATION cases to be inserted : 365
+[2020-01-17T00:55:22.806] [TRACE] wildseve - COMPENSATION cases to be inserted : 366
+[2020-01-17T00:55:22.806] [TRACE] wildseve - COMPENSATION record already exists : 45
+[2020-01-17T00:55:23.338] [TRACE] wildseve - COMPENSATION cases to be inserted : 367
+[2020-01-17T00:55:23.339] [TRACE] wildseve - COMPENSATION cases to be inserted : 368
+[2020-01-17T00:55:23.340] [TRACE] wildseve - COMPENSATION cases to be inserted : 369
+[2020-01-17T00:55:23.340] [TRACE] wildseve - COMPENSATION cases to be inserted : 370
+[2020-01-17T00:55:23.343] [TRACE] wildseve - COMPENSATION cases to be inserted : 371
+[2020-01-17T00:55:23.344] [TRACE] wildseve - COMPENSATION cases to be inserted : 372
+[2020-01-17T00:55:23.345] [TRACE] wildseve - COMPENSATION cases to be inserted : 373
+[2020-01-17T00:55:23.345] [TRACE] wildseve - COMPENSATION cases to be inserted : 374
+[2020-01-17T00:55:23.346] [TRACE] wildseve - COMPENSATION cases to be inserted : 375
+[2020-01-17T00:55:23.347] [TRACE] wildseve - COMPENSATION cases to be inserted : 376
+[2020-01-17T00:55:23.348] [TRACE] wildseve - COMPENSATION record already exists : 46
+[2020-01-17T00:55:23.854] [TRACE] wildseve - COMPENSATION cases to be inserted : 377
+[2020-01-17T00:55:23.857] [TRACE] wildseve - COMPENSATION record already exists : 47
+[2020-01-17T00:55:24.378] [TRACE] wildseve - COMPENSATION cases to be inserted : 378
+[2020-01-17T00:55:24.379] [TRACE] wildseve - COMPENSATION cases to be inserted : 379
+[2020-01-17T00:55:24.380] [TRACE] wildseve - COMPENSATION cases to be inserted : 380
+[2020-01-17T00:55:24.381] [TRACE] wildseve - COMPENSATION cases to be inserted : 381
+[2020-01-17T00:55:24.381] [TRACE] wildseve - COMPENSATION cases to be inserted : 382
+[2020-01-17T00:55:24.382] [TRACE] wildseve - COMPENSATION cases to be inserted : 383
+[2020-01-17T00:55:24.383] [TRACE] wildseve - COMPENSATION cases to be inserted : 384
+[2020-01-17T00:55:24.383] [TRACE] wildseve - COMPENSATION cases to be inserted : 385
+[2020-01-17T00:55:24.384] [TRACE] wildseve - COMPENSATION cases to be inserted : 386
+[2020-01-17T00:55:24.385] [TRACE] wildseve - COMPENSATION cases to be inserted : 387
+[2020-01-17T00:55:24.385] [TRACE] wildseve - COMPENSATION record already exists : 48
+[2020-01-17T00:55:24.880] [TRACE] wildseve - COMPENSATION cases to be inserted : 388
+[2020-01-17T00:55:24.881] [TRACE] wildseve - COMPENSATION cases to be inserted : 389
+[2020-01-17T00:55:24.881] [TRACE] wildseve - COMPENSATION cases to be inserted : 390
+[2020-01-17T00:55:24.882] [TRACE] wildseve - COMPENSATION cases to be inserted : 391
+[2020-01-17T00:55:24.883] [TRACE] wildseve - COMPENSATION cases to be inserted : 392
+[2020-01-17T00:55:24.884] [TRACE] wildseve - COMPENSATION cases to be inserted : 393
+[2020-01-17T00:55:24.884] [TRACE] wildseve - COMPENSATION cases to be inserted : 394
+[2020-01-17T00:55:24.885] [TRACE] wildseve - COMPENSATION cases to be inserted : 395
+[2020-01-17T00:55:24.885] [TRACE] wildseve - COMPENSATION cases to be inserted : 396
+[2020-01-17T00:55:24.886] [TRACE] wildseve - COMPENSATION cases to be inserted : 397
+[2020-01-17T00:55:24.887] [TRACE] wildseve - COMPENSATION record already exists : 49
+[2020-01-17T00:55:25.419] [TRACE] wildseve - COMPENSATION cases to be inserted : 398
+[2020-01-17T00:55:25.420] [TRACE] wildseve - COMPENSATION cases to be inserted : 399
+[2020-01-17T00:55:25.420] [TRACE] wildseve - COMPENSATION cases to be inserted : 400
+[2020-01-17T00:55:25.421] [TRACE] wildseve - COMPENSATION cases to be inserted : 401
+[2020-01-17T00:55:25.422] [TRACE] wildseve - COMPENSATION cases to be inserted : 402
+[2020-01-17T00:55:25.422] [TRACE] wildseve - COMPENSATION cases to be inserted : 403
+[2020-01-17T00:55:25.424] [TRACE] wildseve - COMPENSATION cases to be inserted : 404
+[2020-01-17T00:55:25.425] [TRACE] wildseve - COMPENSATION cases to be inserted : 405
+[2020-01-17T00:55:25.425] [TRACE] wildseve - COMPENSATION cases to be inserted : 406
+[2020-01-17T00:55:25.426] [TRACE] wildseve - COMPENSATION cases to be inserted : 407
+[2020-01-17T00:55:25.427] [TRACE] wildseve - COMPENSATION record already exists : 50
+[2020-01-17T00:55:25.940] [TRACE] wildseve - COMPENSATION cases to be inserted : 408
+[2020-01-17T00:55:25.940] [TRACE] wildseve - COMPENSATION cases to be inserted : 409
+[2020-01-17T00:55:25.941] [TRACE] wildseve - COMPENSATION cases to be inserted : 410
+[2020-01-17T00:55:25.942] [TRACE] wildseve - COMPENSATION cases to be inserted : 411
+[2020-01-17T00:55:25.943] [TRACE] wildseve - COMPENSATION cases to be inserted : 412
+[2020-01-17T00:55:25.943] [TRACE] wildseve - COMPENSATION cases to be inserted : 413
+[2020-01-17T00:55:25.944] [TRACE] wildseve - COMPENSATION cases to be inserted : 414
+[2020-01-17T00:55:25.945] [TRACE] wildseve - COMPENSATION cases to be inserted : 415
+[2020-01-17T00:55:25.945] [TRACE] wildseve - COMPENSATION cases to be inserted : 416
+[2020-01-17T00:55:25.946] [TRACE] wildseve - COMPENSATION cases to be inserted : 417
+[2020-01-17T00:55:25.946] [TRACE] wildseve - COMPENSATION record already exists : 51
+[2020-01-17T00:55:26.463] [TRACE] wildseve - COMPENSATION cases to be inserted : 418
+[2020-01-17T00:55:26.463] [TRACE] wildseve - COMPENSATION cases to be inserted : 419
+[2020-01-17T00:55:26.464] [TRACE] wildseve - COMPENSATION cases to be inserted : 420
+[2020-01-17T00:55:26.465] [TRACE] wildseve - COMPENSATION cases to be inserted : 421
+[2020-01-17T00:55:26.466] [TRACE] wildseve - COMPENSATION cases to be inserted : 422
+[2020-01-17T00:55:26.466] [TRACE] wildseve - COMPENSATION cases to be inserted : 423
+[2020-01-17T00:55:26.467] [TRACE] wildseve - COMPENSATION cases to be inserted : 424
+[2020-01-17T00:55:26.468] [TRACE] wildseve - COMPENSATION cases to be inserted : 425
+[2020-01-17T00:55:26.468] [TRACE] wildseve - COMPENSATION cases to be inserted : 426
+[2020-01-17T00:55:26.469] [TRACE] wildseve - COMPENSATION cases to be inserted : 427
+[2020-01-17T00:55:26.469] [TRACE] wildseve - COMPENSATION record already exists : 52
+[2020-01-17T00:55:26.995] [TRACE] wildseve - COMPENSATION cases to be inserted : 428
+[2020-01-17T00:55:26.996] [TRACE] wildseve - COMPENSATION record already exists : 53
+[2020-01-17T00:55:27.500] [TRACE] wildseve - COMPENSATION cases to be inserted : 429
+[2020-01-17T00:55:27.501] [TRACE] wildseve - COMPENSATION record already exists : 54
+[2020-01-17T00:55:28.036] [TRACE] wildseve - COMPENSATION record already exists : 55
+[2020-01-17T00:55:28.542] [TRACE] wildseve - COMPENSATION cases to be inserted : 430
+[2020-01-17T00:55:28.543] [TRACE] wildseve - COMPENSATION cases to be inserted : 431
+[2020-01-17T00:55:28.543] [TRACE] wildseve - COMPENSATION cases to be inserted : 432
+[2020-01-17T00:55:28.544] [TRACE] wildseve - COMPENSATION cases to be inserted : 433
+[2020-01-17T00:55:28.545] [TRACE] wildseve - COMPENSATION cases to be inserted : 434
+[2020-01-17T00:55:28.546] [TRACE] wildseve - COMPENSATION cases to be inserted : 435
+[2020-01-17T00:55:28.546] [TRACE] wildseve - COMPENSATION cases to be inserted : 436
+[2020-01-17T00:55:28.547] [TRACE] wildseve - COMPENSATION cases to be inserted : 437
+[2020-01-17T00:55:28.548] [TRACE] wildseve - COMPENSATION cases to be inserted : 438
+[2020-01-17T00:55:28.548] [TRACE] wildseve - COMPENSATION cases to be inserted : 439
+[2020-01-17T00:55:28.549] [TRACE] wildseve - COMPENSATION record already exists : 56
+[2020-01-17T00:55:29.076] [TRACE] wildseve - COMPENSATION cases to be inserted : 440
+[2020-01-17T00:55:29.077] [TRACE] wildseve - COMPENSATION cases to be inserted : 441
+[2020-01-17T00:55:29.077] [TRACE] wildseve - COMPENSATION cases to be inserted : 442
+[2020-01-17T00:55:29.078] [TRACE] wildseve - COMPENSATION cases to be inserted : 443
+[2020-01-17T00:55:29.079] [TRACE] wildseve - COMPENSATION cases to be inserted : 444
+[2020-01-17T00:55:29.079] [TRACE] wildseve - COMPENSATION cases to be inserted : 445
+[2020-01-17T00:55:29.080] [TRACE] wildseve - COMPENSATION cases to be inserted : 446
+[2020-01-17T00:55:29.081] [TRACE] wildseve - COMPENSATION cases to be inserted : 447
+[2020-01-17T00:55:29.081] [TRACE] wildseve - COMPENSATION cases to be inserted : 448
+[2020-01-17T00:55:29.082] [TRACE] wildseve - COMPENSATION cases to be inserted : 449
+[2020-01-17T00:55:29.082] [TRACE] wildseve - COMPENSATION record already exists : 57
+[2020-01-17T00:55:29.579] [TRACE] wildseve - COMPENSATION cases to be inserted : 450
+[2020-01-17T00:55:29.579] [TRACE] wildseve - COMPENSATION cases to be inserted : 451
+[2020-01-17T00:55:29.580] [TRACE] wildseve - COMPENSATION record already exists : 58
+[2020-01-17T00:55:30.079] [TRACE] wildseve - COMPENSATION cases to be inserted : 452
+[2020-01-17T00:55:30.079] [TRACE] wildseve - COMPENSATION cases to be inserted : 453
+[2020-01-17T00:55:30.080] [TRACE] wildseve - COMPENSATION record already exists : 59
+[2020-01-17T00:55:30.608] [TRACE] wildseve - COMPENSATION cases to be inserted : 454
+[2020-01-17T00:55:30.608] [TRACE] wildseve - COMPENSATION cases to be inserted : 455
+[2020-01-17T00:55:30.609] [TRACE] wildseve - COMPENSATION cases to be inserted : 456
+[2020-01-17T00:55:30.610] [TRACE] wildseve - COMPENSATION cases to be inserted : 457
+[2020-01-17T00:55:30.610] [TRACE] wildseve - COMPENSATION cases to be inserted : 458
+[2020-01-17T00:55:30.611] [TRACE] wildseve - COMPENSATION cases to be inserted : 459
+[2020-01-17T00:55:30.612] [TRACE] wildseve - COMPENSATION cases to be inserted : 460
+[2020-01-17T00:55:30.612] [TRACE] wildseve - COMPENSATION cases to be inserted : 461
+[2020-01-17T00:55:30.613] [TRACE] wildseve - COMPENSATION cases to be inserted : 462
+[2020-01-17T00:55:30.614] [TRACE] wildseve - COMPENSATION cases to be inserted : 463
+[2020-01-17T00:55:30.614] [TRACE] wildseve - COMPENSATION record already exists : 60
+[2020-01-17T00:55:31.122] [TRACE] wildseve - COMPENSATION cases to be inserted : 464
+[2020-01-17T00:55:31.123] [TRACE] wildseve - COMPENSATION cases to be inserted : 465
+[2020-01-17T00:55:31.123] [TRACE] wildseve - COMPENSATION cases to be inserted : 466
+[2020-01-17T00:55:31.124] [TRACE] wildseve - COMPENSATION cases to be inserted : 467
+[2020-01-17T00:55:31.126] [TRACE] wildseve - COMPENSATION cases to be inserted : 468
+[2020-01-17T00:55:31.126] [TRACE] wildseve - COMPENSATION cases to be inserted : 469
+[2020-01-17T00:55:31.127] [TRACE] wildseve - COMPENSATION cases to be inserted : 470
+[2020-01-17T00:55:31.128] [TRACE] wildseve - COMPENSATION cases to be inserted : 471
+[2020-01-17T00:55:31.128] [TRACE] wildseve - COMPENSATION cases to be inserted : 472
+[2020-01-17T00:55:31.129] [TRACE] wildseve - COMPENSATION cases to be inserted : 473
+[2020-01-17T00:55:31.130] [TRACE] wildseve - COMPENSATION record already exists : 61
+[2020-01-17T00:55:31.660] [TRACE] wildseve - COMPENSATION cases to be inserted : 474
+[2020-01-17T00:55:31.660] [TRACE] wildseve - COMPENSATION cases to be inserted : 475
+[2020-01-17T00:55:31.661] [TRACE] wildseve - COMPENSATION cases to be inserted : 476
+[2020-01-17T00:55:31.662] [TRACE] wildseve - COMPENSATION cases to be inserted : 477
+[2020-01-17T00:55:31.662] [TRACE] wildseve - COMPENSATION cases to be inserted : 478
+[2020-01-17T00:55:31.663] [TRACE] wildseve - COMPENSATION cases to be inserted : 479
+[2020-01-17T00:55:31.664] [TRACE] wildseve - COMPENSATION cases to be inserted : 480
+[2020-01-17T00:55:31.665] [TRACE] wildseve - COMPENSATION cases to be inserted : 481
+[2020-01-17T00:55:31.665] [TRACE] wildseve - COMPENSATION cases to be inserted : 482
+[2020-01-17T00:55:31.666] [TRACE] wildseve - COMPENSATION cases to be inserted : 483
+[2020-01-17T00:55:31.666] [TRACE] wildseve - COMPENSATION record already exists : 62
+[2020-01-17T00:55:32.158] [TRACE] wildseve - COMPENSATION cases to be inserted : 484
+[2020-01-17T00:55:32.158] [TRACE] wildseve - COMPENSATION cases to be inserted : 485
+[2020-01-17T00:55:32.159] [TRACE] wildseve - COMPENSATION record already exists : 63
+[2020-01-17T00:55:32.704] [TRACE] wildseve - COMPENSATION cases to be inserted : 486
+[2020-01-17T00:55:32.704] [TRACE] wildseve - COMPENSATION cases to be inserted : 487
+[2020-01-17T00:55:32.705] [TRACE] wildseve - COMPENSATION cases to be inserted : 488
+[2020-01-17T00:55:32.706] [TRACE] wildseve - COMPENSATION record already exists : 64
+[2020-01-17T00:55:33.236] [TRACE] wildseve - COMPENSATION cases to be inserted : 489
+[2020-01-17T00:55:33.237] [TRACE] wildseve - COMPENSATION cases to be inserted : 490
+[2020-01-17T00:55:33.237] [TRACE] wildseve - COMPENSATION cases to be inserted : 491
+[2020-01-17T00:55:33.238] [TRACE] wildseve - COMPENSATION cases to be inserted : 492
+[2020-01-17T00:55:33.239] [TRACE] wildseve - COMPENSATION cases to be inserted : 493
+[2020-01-17T00:55:33.240] [TRACE] wildseve - COMPENSATION cases to be inserted : 494
+[2020-01-17T00:55:33.241] [TRACE] wildseve - COMPENSATION cases to be inserted : 495
+[2020-01-17T00:55:33.241] [TRACE] wildseve - COMPENSATION cases to be inserted : 496
+[2020-01-17T00:55:33.242] [TRACE] wildseve - COMPENSATION cases to be inserted : 497
+[2020-01-17T00:55:33.242] [TRACE] wildseve - COMPENSATION cases to be inserted : 498
+[2020-01-17T00:55:33.243] [TRACE] wildseve - COMPENSATION record already exists : 65
+[2020-01-17T00:55:33.739] [TRACE] wildseve - COMPENSATION cases to be inserted : 499
+[2020-01-17T00:55:33.739] [TRACE] wildseve - COMPENSATION cases to be inserted : 500
+[2020-01-17T00:55:33.740] [TRACE] wildseve - COMPENSATION cases to be inserted : 501
+[2020-01-17T00:55:33.741] [TRACE] wildseve - COMPENSATION cases to be inserted : 502
+[2020-01-17T00:55:33.742] [TRACE] wildseve - COMPENSATION cases to be inserted : 503
+[2020-01-17T00:55:33.742] [TRACE] wildseve - COMPENSATION cases to be inserted : 504
+[2020-01-17T00:55:33.743] [TRACE] wildseve - COMPENSATION cases to be inserted : 505
+[2020-01-17T00:55:33.744] [TRACE] wildseve - COMPENSATION cases to be inserted : 506
+[2020-01-17T00:55:33.744] [TRACE] wildseve - COMPENSATION cases to be inserted : 507
+[2020-01-17T00:55:33.745] [TRACE] wildseve - COMPENSATION cases to be inserted : 508
+[2020-01-17T00:55:33.746] [TRACE] wildseve - COMPENSATION record already exists : 66
+[2020-01-17T00:55:34.260] [TRACE] wildseve - COMPENSATION cases to be inserted : 509
+[2020-01-17T00:55:34.261] [TRACE] wildseve - COMPENSATION cases to be inserted : 510
+[2020-01-17T00:55:34.262] [TRACE] wildseve - COMPENSATION cases to be inserted : 511
+[2020-01-17T00:55:34.262] [TRACE] wildseve - COMPENSATION record already exists : 67
+[2020-01-17T00:55:34.784] [TRACE] wildseve - COMPENSATION cases to be inserted : 512
+[2020-01-17T00:55:34.785] [TRACE] wildseve - COMPENSATION cases to be inserted : 513
+[2020-01-17T00:55:34.785] [TRACE] wildseve - COMPENSATION cases to be inserted : 514
+[2020-01-17T00:55:34.786] [TRACE] wildseve - COMPENSATION cases to be inserted : 515
+[2020-01-17T00:55:34.787] [TRACE] wildseve - COMPENSATION cases to be inserted : 516
+[2020-01-17T00:55:34.787] [TRACE] wildseve - COMPENSATION cases to be inserted : 517
+[2020-01-17T00:55:34.788] [TRACE] wildseve - COMPENSATION cases to be inserted : 518
+[2020-01-17T00:55:34.789] [TRACE] wildseve - COMPENSATION cases to be inserted : 519
+[2020-01-17T00:55:34.790] [TRACE] wildseve - COMPENSATION cases to be inserted : 520
+[2020-01-17T00:55:34.790] [TRACE] wildseve - COMPENSATION cases to be inserted : 521
+[2020-01-17T00:55:34.791] [TRACE] wildseve - COMPENSATION record already exists : 68
+[2020-01-17T00:55:35.336] [TRACE] wildseve - COMPENSATION cases to be inserted : 522
+[2020-01-17T00:55:35.336] [TRACE] wildseve - COMPENSATION cases to be inserted : 523
+[2020-01-17T00:55:35.337] [TRACE] wildseve - COMPENSATION cases to be inserted : 524
+[2020-01-17T00:55:35.338] [TRACE] wildseve - COMPENSATION cases to be inserted : 525
+[2020-01-17T00:55:35.338] [TRACE] wildseve - COMPENSATION cases to be inserted : 526
+[2020-01-17T00:55:35.339] [TRACE] wildseve - COMPENSATION cases to be inserted : 527
+[2020-01-17T00:55:35.340] [TRACE] wildseve - COMPENSATION cases to be inserted : 528
+[2020-01-17T00:55:35.341] [TRACE] wildseve - COMPENSATION cases to be inserted : 529
+[2020-01-17T00:55:35.341] [TRACE] wildseve - COMPENSATION cases to be inserted : 530
+[2020-01-17T00:55:35.342] [TRACE] wildseve - COMPENSATION cases to be inserted : 531
+[2020-01-17T00:55:35.342] [TRACE] wildseve - COMPENSATION record already exists : 69
+[2020-01-17T00:55:35.846] [TRACE] wildseve - COMPENSATION cases to be inserted : 532
+[2020-01-17T00:55:35.847] [TRACE] wildseve - COMPENSATION cases to be inserted : 533
+[2020-01-17T00:55:35.848] [TRACE] wildseve - COMPENSATION cases to be inserted : 534
+[2020-01-17T00:55:35.849] [TRACE] wildseve - COMPENSATION cases to be inserted : 535
+[2020-01-17T00:55:35.849] [TRACE] wildseve - COMPENSATION cases to be inserted : 536
+[2020-01-17T00:55:35.850] [TRACE] wildseve - COMPENSATION cases to be inserted : 537
+[2020-01-17T00:55:35.851] [TRACE] wildseve - COMPENSATION cases to be inserted : 538
+[2020-01-17T00:55:35.851] [TRACE] wildseve - COMPENSATION cases to be inserted : 539
+[2020-01-17T00:55:35.852] [TRACE] wildseve - COMPENSATION cases to be inserted : 540
+[2020-01-17T00:55:35.853] [TRACE] wildseve - COMPENSATION cases to be inserted : 541
+[2020-01-17T00:55:35.853] [TRACE] wildseve - COMPENSATION record already exists : 70
+[2020-01-17T00:55:36.377] [TRACE] wildseve - COMPENSATION cases to be inserted : 542
+[2020-01-17T00:55:36.378] [TRACE] wildseve - COMPENSATION cases to be inserted : 543
+[2020-01-17T00:55:36.379] [TRACE] wildseve - COMPENSATION cases to be inserted : 544
+[2020-01-17T00:55:36.379] [TRACE] wildseve - COMPENSATION cases to be inserted : 545
+[2020-01-17T00:55:36.380] [TRACE] wildseve - COMPENSATION cases to be inserted : 546
+[2020-01-17T00:55:36.381] [TRACE] wildseve - COMPENSATION cases to be inserted : 547
+[2020-01-17T00:55:36.381] [TRACE] wildseve - COMPENSATION cases to be inserted : 548
+[2020-01-17T00:55:36.382] [TRACE] wildseve - COMPENSATION cases to be inserted : 549
+[2020-01-17T00:55:36.383] [TRACE] wildseve - COMPENSATION cases to be inserted : 550
+[2020-01-17T00:55:36.383] [TRACE] wildseve - COMPENSATION cases to be inserted : 551
+[2020-01-17T00:55:36.384] [TRACE] wildseve - COMPENSATION record already exists : 71
+[2020-01-17T00:55:36.879] [TRACE] wildseve - COMPENSATION cases to be inserted : 552
+[2020-01-17T00:55:36.879] [TRACE] wildseve - COMPENSATION cases to be inserted : 553
+[2020-01-17T00:55:36.880] [TRACE] wildseve - COMPENSATION cases to be inserted : 554
+[2020-01-17T00:55:36.881] [TRACE] wildseve - COMPENSATION cases to be inserted : 555
+[2020-01-17T00:55:36.882] [TRACE] wildseve - COMPENSATION cases to be inserted : 556
+[2020-01-17T00:55:36.884] [TRACE] wildseve - COMPENSATION cases to be inserted : 557
+[2020-01-17T00:55:36.885] [TRACE] wildseve - COMPENSATION cases to be inserted : 558
+[2020-01-17T00:55:36.885] [TRACE] wildseve - COMPENSATION cases to be inserted : 559
+[2020-01-17T00:55:36.886] [TRACE] wildseve - COMPENSATION cases to be inserted : 560
+[2020-01-17T00:55:36.887] [TRACE] wildseve - COMPENSATION cases to be inserted : 561
+[2020-01-17T00:55:36.887] [TRACE] wildseve - COMPENSATION record already exists : 72
+[2020-01-17T00:55:37.408] [TRACE] wildseve - COMPENSATION cases to be inserted : 562
+[2020-01-17T00:55:37.408] [TRACE] wildseve - COMPENSATION cases to be inserted : 563
+[2020-01-17T00:55:37.409] [TRACE] wildseve - COMPENSATION cases to be inserted : 564
+[2020-01-17T00:55:37.410] [TRACE] wildseve - COMPENSATION cases to be inserted : 565
+[2020-01-17T00:55:37.410] [TRACE] wildseve - COMPENSATION cases to be inserted : 566
+[2020-01-17T00:55:37.411] [TRACE] wildseve - COMPENSATION cases to be inserted : 567
+[2020-01-17T00:55:37.412] [TRACE] wildseve - COMPENSATION cases to be inserted : 568
+[2020-01-17T00:55:37.412] [TRACE] wildseve - COMPENSATION cases to be inserted : 569
+[2020-01-17T00:55:37.413] [TRACE] wildseve - COMPENSATION cases to be inserted : 570
+[2020-01-17T00:55:37.413] [TRACE] wildseve - COMPENSATION record already exists : 73
+[2020-01-17T00:55:37.921] [TRACE] wildseve - COMPENSATION cases to be inserted : 571
+[2020-01-17T00:55:37.921] [TRACE] wildseve - COMPENSATION record already exists : 74
+[2020-01-17T00:55:38.458] [TRACE] wildseve - COMPENSATION cases to be inserted : 572
+[2020-01-17T00:55:38.459] [TRACE] wildseve - COMPENSATION cases to be inserted : 573
+[2020-01-17T00:55:38.460] [TRACE] wildseve - COMPENSATION cases to be inserted : 574
+[2020-01-17T00:55:38.460] [TRACE] wildseve - COMPENSATION cases to be inserted : 575
+[2020-01-17T00:55:38.461] [TRACE] wildseve - COMPENSATION cases to be inserted : 576
+[2020-01-17T00:55:38.462] [TRACE] wildseve - COMPENSATION cases to be inserted : 577
+[2020-01-17T00:55:38.462] [TRACE] wildseve - COMPENSATION cases to be inserted : 578
+[2020-01-17T00:55:38.463] [TRACE] wildseve - COMPENSATION cases to be inserted : 579
+[2020-01-17T00:55:38.464] [TRACE] wildseve - COMPENSATION cases to be inserted : 580
+[2020-01-17T00:55:38.464] [TRACE] wildseve - COMPENSATION cases to be inserted : 581
+[2020-01-17T00:55:38.465] [TRACE] wildseve - COMPENSATION record already exists : 75
+[2020-01-17T00:55:38.963] [TRACE] wildseve - COMPENSATION cases to be inserted : 582
+[2020-01-17T00:55:38.964] [TRACE] wildseve - COMPENSATION cases to be inserted : 583
+[2020-01-17T00:55:38.964] [TRACE] wildseve - COMPENSATION cases to be inserted : 584
+[2020-01-17T00:55:38.965] [TRACE] wildseve - COMPENSATION cases to be inserted : 585
+[2020-01-17T00:55:38.966] [TRACE] wildseve - COMPENSATION cases to be inserted : 586
+[2020-01-17T00:55:38.966] [TRACE] wildseve - COMPENSATION cases to be inserted : 587
+[2020-01-17T00:55:38.967] [TRACE] wildseve - COMPENSATION cases to be inserted : 588
+[2020-01-17T00:55:38.968] [TRACE] wildseve - COMPENSATION cases to be inserted : 589
+[2020-01-17T00:55:38.968] [TRACE] wildseve - COMPENSATION cases to be inserted : 590
+[2020-01-17T00:55:38.969] [TRACE] wildseve - COMPENSATION cases to be inserted : 591
+[2020-01-17T00:55:38.969] [TRACE] wildseve - COMPENSATION record already exists : 76
+[2020-01-17T00:55:39.499] [TRACE] wildseve - COMPENSATION cases to be inserted : 592
+[2020-01-17T00:55:39.499] [TRACE] wildseve - COMPENSATION cases to be inserted : 593
+[2020-01-17T00:55:39.500] [TRACE] wildseve - COMPENSATION cases to be inserted : 594
+[2020-01-17T00:55:39.501] [TRACE] wildseve - COMPENSATION cases to be inserted : 595
+[2020-01-17T00:55:39.501] [TRACE] wildseve - COMPENSATION cases to be inserted : 596
+[2020-01-17T00:55:39.502] [TRACE] wildseve - COMPENSATION cases to be inserted : 597
+[2020-01-17T00:55:39.502] [TRACE] wildseve - COMPENSATION cases to be inserted : 598
+[2020-01-17T00:55:39.503] [TRACE] wildseve - COMPENSATION cases to be inserted : 599
+[2020-01-17T00:55:39.504] [TRACE] wildseve - COMPENSATION cases to be inserted : 600
+[2020-01-17T00:55:39.504] [TRACE] wildseve - COMPENSATION cases to be inserted : 601
+[2020-01-17T00:55:39.505] [TRACE] wildseve - COMPENSATION record already exists : 77
+[2020-01-17T00:55:40.006] [TRACE] wildseve - COMPENSATION cases to be inserted : 602
+[2020-01-17T00:55:40.006] [TRACE] wildseve - COMPENSATION cases to be inserted : 603
+[2020-01-17T00:55:40.007] [TRACE] wildseve - COMPENSATION cases to be inserted : 604
+[2020-01-17T00:55:40.007] [TRACE] wildseve - COMPENSATION record already exists : 78
+[2020-01-17T00:55:40.538] [TRACE] wildseve - COMPENSATION cases to be inserted : 605
+[2020-01-17T00:55:40.539] [TRACE] wildseve - COMPENSATION cases to be inserted : 606
+[2020-01-17T00:55:40.539] [TRACE] wildseve - COMPENSATION cases to be inserted : 607
+[2020-01-17T00:55:40.540] [TRACE] wildseve - COMPENSATION cases to be inserted : 608
+[2020-01-17T00:55:40.541] [TRACE] wildseve - COMPENSATION cases to be inserted : 609
+[2020-01-17T00:55:40.542] [TRACE] wildseve - COMPENSATION cases to be inserted : 610
+[2020-01-17T00:55:40.543] [TRACE] wildseve - COMPENSATION cases to be inserted : 611
+[2020-01-17T00:55:40.543] [TRACE] wildseve - COMPENSATION cases to be inserted : 612
+[2020-01-17T00:55:40.544] [TRACE] wildseve - COMPENSATION record already exists : 79
+[2020-01-17T00:55:41.038] [TRACE] wildseve - COMPENSATION cases to be inserted : 613
+[2020-01-17T00:55:41.039] [TRACE] wildseve - COMPENSATION cases to be inserted : 614
+[2020-01-17T00:55:41.039] [TRACE] wildseve - COMPENSATION cases to be inserted : 615
+[2020-01-17T00:55:41.040] [TRACE] wildseve - COMPENSATION cases to be inserted : 616
+[2020-01-17T00:55:41.041] [TRACE] wildseve - COMPENSATION cases to be inserted : 617
+[2020-01-17T00:55:41.042] [TRACE] wildseve - COMPENSATION cases to be inserted : 618
+[2020-01-17T00:55:41.043] [TRACE] wildseve - COMPENSATION cases to be inserted : 619
+[2020-01-17T00:55:41.043] [TRACE] wildseve - COMPENSATION cases to be inserted : 620
+[2020-01-17T00:55:41.044] [TRACE] wildseve - COMPENSATION cases to be inserted : 621
+[2020-01-17T00:55:41.044] [TRACE] wildseve - COMPENSATION cases to be inserted : 622
+[2020-01-17T00:55:41.045] [TRACE] wildseve - COMPENSATION record already exists : 80
+[2020-01-17T00:55:41.567] [TRACE] wildseve - COMPENSATION cases to be inserted : 623
+[2020-01-17T00:55:41.568] [TRACE] wildseve - COMPENSATION cases to be inserted : 624
+[2020-01-17T00:55:41.568] [TRACE] wildseve - COMPENSATION cases to be inserted : 625
+[2020-01-17T00:55:41.569] [TRACE] wildseve - COMPENSATION cases to be inserted : 626
+[2020-01-17T00:55:41.570] [TRACE] wildseve - COMPENSATION cases to be inserted : 627
+[2020-01-17T00:55:41.571] [TRACE] wildseve - COMPENSATION cases to be inserted : 628
+[2020-01-17T00:55:41.571] [TRACE] wildseve - COMPENSATION cases to be inserted : 629
+[2020-01-17T00:55:41.572] [TRACE] wildseve - COMPENSATION cases to be inserted : 630
+[2020-01-17T00:55:41.573] [TRACE] wildseve - COMPENSATION cases to be inserted : 631
+[2020-01-17T00:55:41.573] [TRACE] wildseve - COMPENSATION cases to be inserted : 632
+[2020-01-17T00:55:41.574] [TRACE] wildseve - COMPENSATION record already exists : 81
+[2020-01-17T00:55:42.078] [TRACE] wildseve - COMPENSATION cases to be inserted : 633
+[2020-01-17T00:55:42.078] [TRACE] wildseve - COMPENSATION cases to be inserted : 634
+[2020-01-17T00:55:42.079] [TRACE] wildseve - COMPENSATION cases to be inserted : 635
+[2020-01-17T00:55:42.080] [TRACE] wildseve - COMPENSATION cases to be inserted : 636
+[2020-01-17T00:55:42.081] [TRACE] wildseve - COMPENSATION cases to be inserted : 637
+[2020-01-17T00:55:42.082] [TRACE] wildseve - COMPENSATION cases to be inserted : 638
+[2020-01-17T00:55:42.083] [TRACE] wildseve - COMPENSATION cases to be inserted : 639
+[2020-01-17T00:55:42.084] [TRACE] wildseve - COMPENSATION cases to be inserted : 640
+[2020-01-17T00:55:42.084] [TRACE] wildseve - COMPENSATION cases to be inserted : 641
+[2020-01-17T00:55:42.085] [TRACE] wildseve - COMPENSATION cases to be inserted : 642
+[2020-01-17T00:55:42.085] [TRACE] wildseve - COMPENSATION record already exists : 82
+[2020-01-17T00:55:42.610] [TRACE] wildseve - COMPENSATION cases to be inserted : 643
+[2020-01-17T00:55:42.612] [TRACE] wildseve - COMPENSATION cases to be inserted : 644
+[2020-01-17T00:55:42.613] [TRACE] wildseve - COMPENSATION cases to be inserted : 645
+[2020-01-17T00:55:42.613] [TRACE] wildseve - COMPENSATION cases to be inserted : 646
+[2020-01-17T00:55:42.615] [TRACE] wildseve - COMPENSATION cases to be inserted : 647
+[2020-01-17T00:55:42.617] [TRACE] wildseve - COMPENSATION cases to be inserted : 648
+[2020-01-17T00:55:42.639] [TRACE] wildseve - COMPENSATION cases to be inserted : 649
+[2020-01-17T00:55:42.641] [TRACE] wildseve - COMPENSATION cases to be inserted : 650
+[2020-01-17T00:55:42.641] [TRACE] wildseve - COMPENSATION cases to be inserted : 651
+[2020-01-17T00:55:42.642] [TRACE] wildseve - COMPENSATION cases to be inserted : 652
+[2020-01-17T00:55:42.644] [TRACE] wildseve - COMPENSATION record already exists : 83
+[2020-01-17T00:55:43.119] [TRACE] wildseve - COMPENSATION cases to be inserted : 653
+[2020-01-17T00:55:43.120] [TRACE] wildseve - COMPENSATION cases to be inserted : 654
+[2020-01-17T00:55:43.120] [TRACE] wildseve - COMPENSATION cases to be inserted : 655
+[2020-01-17T00:55:43.121] [TRACE] wildseve - COMPENSATION cases to be inserted : 656
+[2020-01-17T00:55:43.122] [TRACE] wildseve - COMPENSATION cases to be inserted : 657
+[2020-01-17T00:55:43.122] [TRACE] wildseve - COMPENSATION cases to be inserted : 658
+[2020-01-17T00:55:43.123] [TRACE] wildseve - COMPENSATION cases to be inserted : 659
+[2020-01-17T00:55:43.123] [TRACE] wildseve - COMPENSATION cases to be inserted : 660
+[2020-01-17T00:55:43.124] [TRACE] wildseve - COMPENSATION cases to be inserted : 661
+[2020-01-17T00:55:43.125] [TRACE] wildseve - COMPENSATION cases to be inserted : 662
+[2020-01-17T00:55:43.125] [TRACE] wildseve - COMPENSATION record already exists : 84
+[2020-01-17T00:55:43.648] [TRACE] wildseve - COMPENSATION cases to be inserted : 663
+[2020-01-17T00:55:43.648] [TRACE] wildseve - COMPENSATION cases to be inserted : 664
+[2020-01-17T00:55:43.649] [TRACE] wildseve - COMPENSATION cases to be inserted : 665
+[2020-01-17T00:55:43.650] [TRACE] wildseve - COMPENSATION cases to be inserted : 666
+[2020-01-17T00:55:43.651] [TRACE] wildseve - COMPENSATION cases to be inserted : 667
+[2020-01-17T00:55:43.651] [TRACE] wildseve - COMPENSATION cases to be inserted : 668
+[2020-01-17T00:55:43.652] [TRACE] wildseve - COMPENSATION cases to be inserted : 669
+[2020-01-17T00:55:43.653] [TRACE] wildseve - COMPENSATION record already exists : 85
+[2020-01-17T00:55:44.166] [TRACE] wildseve - COMPENSATION cases to be inserted : 670
+[2020-01-17T00:55:44.167] [TRACE] wildseve - COMPENSATION cases to be inserted : 671
+[2020-01-17T00:55:44.168] [TRACE] wildseve - COMPENSATION cases to be inserted : 672
+[2020-01-17T00:55:44.168] [TRACE] wildseve - COMPENSATION cases to be inserted : 673
+[2020-01-17T00:55:44.169] [TRACE] wildseve - COMPENSATION cases to be inserted : 674
+[2020-01-17T00:55:44.170] [TRACE] wildseve - COMPENSATION cases to be inserted : 675
+[2020-01-17T00:55:44.171] [TRACE] wildseve - COMPENSATION cases to be inserted : 676
+[2020-01-17T00:55:44.171] [TRACE] wildseve - COMPENSATION cases to be inserted : 677
+[2020-01-17T00:55:44.172] [TRACE] wildseve - COMPENSATION cases to be inserted : 678
+[2020-01-17T00:55:44.172] [TRACE] wildseve - COMPENSATION cases to be inserted : 679
+[2020-01-17T00:55:44.173] [TRACE] wildseve - COMPENSATION record already exists : 86
+[2020-01-17T00:55:44.704] [TRACE] wildseve - COMPENSATION cases to be inserted : 680
+[2020-01-17T00:55:44.705] [TRACE] wildseve - COMPENSATION cases to be inserted : 681
+[2020-01-17T00:55:44.706] [TRACE] wildseve - COMPENSATION cases to be inserted : 682
+[2020-01-17T00:55:44.706] [TRACE] wildseve - COMPENSATION cases to be inserted : 683
+[2020-01-17T00:55:44.707] [TRACE] wildseve - COMPENSATION cases to be inserted : 684
+[2020-01-17T00:55:44.708] [TRACE] wildseve - COMPENSATION cases to be inserted : 685
+[2020-01-17T00:55:44.708] [TRACE] wildseve - COMPENSATION cases to be inserted : 686
+[2020-01-17T00:55:44.709] [TRACE] wildseve - COMPENSATION cases to be inserted : 687
+[2020-01-17T00:55:44.709] [TRACE] wildseve - COMPENSATION cases to be inserted : 688
+[2020-01-17T00:55:44.710] [TRACE] wildseve - COMPENSATION cases to be inserted : 689
+[2020-01-17T00:55:44.711] [TRACE] wildseve - COMPENSATION record already exists : 87
+[2020-01-17T00:55:45.236] [TRACE] wildseve - COMPENSATION cases to be inserted : 690
+[2020-01-17T00:55:45.236] [TRACE] wildseve - COMPENSATION cases to be inserted : 691
+[2020-01-17T00:55:45.237] [TRACE] wildseve - COMPENSATION cases to be inserted : 692
+[2020-01-17T00:55:45.238] [TRACE] wildseve - COMPENSATION cases to be inserted : 693
+[2020-01-17T00:55:45.239] [TRACE] wildseve - COMPENSATION cases to be inserted : 694
+[2020-01-17T00:55:45.239] [TRACE] wildseve - COMPENSATION cases to be inserted : 695
+[2020-01-17T00:55:45.240] [TRACE] wildseve - COMPENSATION cases to be inserted : 696
+[2020-01-17T00:55:45.240] [TRACE] wildseve - COMPENSATION cases to be inserted : 697
+[2020-01-17T00:55:45.241] [TRACE] wildseve - COMPENSATION record already exists : 88
+[2020-01-17T00:55:45.742] [TRACE] wildseve - COMPENSATION cases to be inserted : 698
+[2020-01-17T00:55:45.742] [TRACE] wildseve - COMPENSATION cases to be inserted : 699
+[2020-01-17T00:55:45.743] [TRACE] wildseve - COMPENSATION cases to be inserted : 700
+[2020-01-17T00:55:45.744] [TRACE] wildseve - COMPENSATION cases to be inserted : 701
+[2020-01-17T00:55:45.745] [TRACE] wildseve - COMPENSATION cases to be inserted : 702
+[2020-01-17T00:55:45.745] [TRACE] wildseve - COMPENSATION cases to be inserted : 703
+[2020-01-17T00:55:45.746] [TRACE] wildseve - COMPENSATION cases to be inserted : 704
+[2020-01-17T00:55:45.746] [TRACE] wildseve - COMPENSATION cases to be inserted : 705
+[2020-01-17T00:55:45.747] [TRACE] wildseve - COMPENSATION cases to be inserted : 706
+[2020-01-17T00:55:45.748] [TRACE] wildseve - COMPENSATION cases to be inserted : 707
+[2020-01-17T00:55:45.748] [TRACE] wildseve - COMPENSATION record already exists : 89
+[2020-01-17T00:55:46.288] [TRACE] wildseve - COMPENSATION cases to be inserted : 708
+[2020-01-17T00:55:46.288] [TRACE] wildseve - COMPENSATION cases to be inserted : 709
+[2020-01-17T00:55:46.289] [TRACE] wildseve - COMPENSATION cases to be inserted : 710
+[2020-01-17T00:55:46.290] [TRACE] wildseve - COMPENSATION cases to be inserted : 711
+[2020-01-17T00:55:46.290] [TRACE] wildseve - COMPENSATION cases to be inserted : 712
+[2020-01-17T00:55:46.291] [TRACE] wildseve - COMPENSATION cases to be inserted : 713
+[2020-01-17T00:55:46.292] [TRACE] wildseve - COMPENSATION cases to be inserted : 714
+[2020-01-17T00:55:46.292] [TRACE] wildseve - COMPENSATION cases to be inserted : 715
+[2020-01-17T00:55:46.293] [TRACE] wildseve - COMPENSATION cases to be inserted : 716
+[2020-01-17T00:55:46.294] [TRACE] wildseve - COMPENSATION cases to be inserted : 717
+[2020-01-17T00:55:46.295] [TRACE] wildseve - COMPENSATION record already exists : 90
+[2020-01-17T00:55:46.800] [TRACE] wildseve - COMPENSATION cases to be inserted : 718
+[2020-01-17T00:55:46.801] [TRACE] wildseve - COMPENSATION cases to be inserted : 719
+[2020-01-17T00:55:46.801] [TRACE] wildseve - COMPENSATION cases to be inserted : 720
+[2020-01-17T00:55:46.802] [TRACE] wildseve - COMPENSATION cases to be inserted : 721
+[2020-01-17T00:55:46.803] [TRACE] wildseve - COMPENSATION cases to be inserted : 722
+[2020-01-17T00:55:46.804] [TRACE] wildseve - COMPENSATION cases to be inserted : 723
+[2020-01-17T00:55:46.804] [TRACE] wildseve - COMPENSATION cases to be inserted : 724
+[2020-01-17T00:55:46.805] [TRACE] wildseve - COMPENSATION cases to be inserted : 725
+[2020-01-17T00:55:46.806] [TRACE] wildseve - COMPENSATION record already exists : 91
+[2020-01-17T00:55:47.359] [TRACE] wildseve - COMPENSATION cases to be inserted : 726
+[2020-01-17T00:55:47.359] [TRACE] wildseve - COMPENSATION cases to be inserted : 727
+[2020-01-17T00:55:47.360] [TRACE] wildseve - COMPENSATION cases to be inserted : 728
+[2020-01-17T00:55:47.360] [TRACE] wildseve - COMPENSATION cases to be inserted : 729
+[2020-01-17T00:55:47.361] [TRACE] wildseve - COMPENSATION cases to be inserted : 730
+[2020-01-17T00:55:47.362] [TRACE] wildseve - COMPENSATION cases to be inserted : 731
+[2020-01-17T00:55:47.363] [TRACE] wildseve - COMPENSATION cases to be inserted : 732
+[2020-01-17T00:55:47.363] [TRACE] wildseve - COMPENSATION cases to be inserted : 733
+[2020-01-17T00:55:47.364] [TRACE] wildseve - COMPENSATION cases to be inserted : 734
+[2020-01-17T00:55:47.365] [TRACE] wildseve - COMPENSATION cases to be inserted : 735
+[2020-01-17T00:55:47.365] [TRACE] wildseve - COMPENSATION record already exists : 92
+[2020-01-17T00:55:47.874] [TRACE] wildseve - COMPENSATION cases to be inserted : 736
+[2020-01-17T00:55:47.874] [TRACE] wildseve - COMPENSATION cases to be inserted : 737
+[2020-01-17T00:55:47.875] [TRACE] wildseve - COMPENSATION cases to be inserted : 738
+[2020-01-17T00:55:47.875] [TRACE] wildseve - COMPENSATION cases to be inserted : 739
+[2020-01-17T00:55:47.877] [TRACE] wildseve - COMPENSATION cases to be inserted : 740
+[2020-01-17T00:55:47.877] [TRACE] wildseve - COMPENSATION cases to be inserted : 741
+[2020-01-17T00:55:47.879] [TRACE] wildseve - COMPENSATION cases to be inserted : 742
+[2020-01-17T00:55:47.880] [TRACE] wildseve - COMPENSATION cases to be inserted : 743
+[2020-01-17T00:55:47.882] [TRACE] wildseve - COMPENSATION cases to be inserted : 744
+[2020-01-17T00:55:47.883] [TRACE] wildseve - COMPENSATION cases to be inserted : 745
+[2020-01-17T00:55:47.883] [TRACE] wildseve - COMPENSATION record already exists : 93
+[2020-01-17T00:55:48.378] [TRACE] wildseve - COMPENSATION cases to be inserted : 746
+[2020-01-17T00:55:48.379] [TRACE] wildseve - COMPENSATION cases to be inserted : 747
+[2020-01-17T00:55:48.380] [TRACE] wildseve - COMPENSATION cases to be inserted : 748
+[2020-01-17T00:55:48.380] [TRACE] wildseve - COMPENSATION cases to be inserted : 749
+[2020-01-17T00:55:48.381] [TRACE] wildseve - COMPENSATION cases to be inserted : 750
+[2020-01-17T00:55:48.382] [TRACE] wildseve - COMPENSATION cases to be inserted : 751
+[2020-01-17T00:55:48.386] [TRACE] wildseve - COMPENSATION cases to be inserted : 752
+[2020-01-17T00:55:48.387] [TRACE] wildseve - COMPENSATION cases to be inserted : 753
+[2020-01-17T00:55:48.399] [TRACE] wildseve - COMPENSATION cases to be inserted : 754
+[2020-01-17T00:55:48.400] [TRACE] wildseve - COMPENSATION record already exists : 94
+[2020-01-17T00:55:48.914] [TRACE] wildseve - COMPENSATION cases to be inserted : 755
+[2020-01-17T00:55:48.915] [TRACE] wildseve - COMPENSATION cases to be inserted : 756
+[2020-01-17T00:55:48.915] [TRACE] wildseve - COMPENSATION cases to be inserted : 757
+[2020-01-17T00:55:48.916] [TRACE] wildseve - COMPENSATION cases to be inserted : 758
+[2020-01-17T00:55:48.916] [TRACE] wildseve - COMPENSATION cases to be inserted : 759
+[2020-01-17T00:55:48.917] [TRACE] wildseve - COMPENSATION cases to be inserted : 760
+[2020-01-17T00:55:48.918] [TRACE] wildseve - COMPENSATION cases to be inserted : 761
+[2020-01-17T00:55:48.918] [TRACE] wildseve - COMPENSATION cases to be inserted : 762
+[2020-01-17T00:55:48.919] [TRACE] wildseve - COMPENSATION cases to be inserted : 763
+[2020-01-17T00:55:48.919] [TRACE] wildseve - COMPENSATION cases to be inserted : 764
+[2020-01-17T00:55:48.920] [TRACE] wildseve - COMPENSATION record already exists : 95
+[2020-01-17T00:55:49.424] [TRACE] wildseve - COMPENSATION cases to be inserted : 765
+[2020-01-17T00:55:49.424] [TRACE] wildseve - COMPENSATION cases to be inserted : 766
+[2020-01-17T00:55:49.425] [TRACE] wildseve - COMPENSATION cases to be inserted : 767
+[2020-01-17T00:55:49.425] [TRACE] wildseve - COMPENSATION cases to be inserted : 768
+[2020-01-17T00:55:49.426] [TRACE] wildseve - COMPENSATION cases to be inserted : 769
+[2020-01-17T00:55:49.427] [TRACE] wildseve - COMPENSATION cases to be inserted : 770
+[2020-01-17T00:55:49.428] [TRACE] wildseve - COMPENSATION cases to be inserted : 771
+[2020-01-17T00:55:49.428] [TRACE] wildseve - COMPENSATION cases to be inserted : 772
+[2020-01-17T00:55:49.429] [TRACE] wildseve - COMPENSATION cases to be inserted : 773
+[2020-01-17T00:55:49.430] [TRACE] wildseve - COMPENSATION record already exists : 96
+[2020-01-17T00:55:49.954] [TRACE] wildseve - COMPENSATION cases to be inserted : 774
+[2020-01-17T00:55:49.954] [TRACE] wildseve - COMPENSATION cases to be inserted : 775
+[2020-01-17T00:55:49.955] [TRACE] wildseve - COMPENSATION cases to be inserted : 776
+[2020-01-17T00:55:49.956] [TRACE] wildseve - COMPENSATION cases to be inserted : 777
+[2020-01-17T00:55:49.957] [TRACE] wildseve - COMPENSATION cases to be inserted : 778
+[2020-01-17T00:55:49.957] [TRACE] wildseve - COMPENSATION cases to be inserted : 779
+[2020-01-17T00:55:49.958] [TRACE] wildseve - COMPENSATION cases to be inserted : 780
+[2020-01-17T00:55:49.959] [TRACE] wildseve - COMPENSATION cases to be inserted : 781
+[2020-01-17T00:55:49.959] [TRACE] wildseve - COMPENSATION cases to be inserted : 782
+[2020-01-17T00:55:49.960] [TRACE] wildseve - COMPENSATION cases to be inserted : 783
+[2020-01-17T00:55:49.961] [TRACE] wildseve - COMPENSATION record already exists : 97
+[2020-01-17T00:55:50.465] [TRACE] wildseve - COMPENSATION cases to be inserted : 784
+[2020-01-17T00:55:50.466] [TRACE] wildseve - COMPENSATION cases to be inserted : 785
+[2020-01-17T00:55:50.467] [TRACE] wildseve - COMPENSATION cases to be inserted : 786
+[2020-01-17T00:55:50.467] [TRACE] wildseve - COMPENSATION cases to be inserted : 787
+[2020-01-17T00:55:50.468] [TRACE] wildseve - COMPENSATION cases to be inserted : 788
+[2020-01-17T00:55:50.469] [TRACE] wildseve - COMPENSATION cases to be inserted : 789
+[2020-01-17T00:55:50.470] [TRACE] wildseve - COMPENSATION cases to be inserted : 790
+[2020-01-17T00:55:50.470] [TRACE] wildseve - COMPENSATION cases to be inserted : 791
+[2020-01-17T00:55:50.473] [TRACE] wildseve - COMPENSATION cases to be inserted : 792
+[2020-01-17T00:55:50.473] [TRACE] wildseve - COMPENSATION cases to be inserted : 793
+[2020-01-17T00:55:50.474] [TRACE] wildseve - COMPENSATION record already exists : 98
+[2020-01-17T00:55:51.008] [TRACE] wildseve - COMPENSATION cases to be inserted : 794
+[2020-01-17T00:55:51.008] [TRACE] wildseve - COMPENSATION cases to be inserted : 795
+[2020-01-17T00:55:51.009] [TRACE] wildseve - COMPENSATION cases to be inserted : 796
+[2020-01-17T00:55:51.010] [TRACE] wildseve - COMPENSATION cases to be inserted : 797
+[2020-01-17T00:55:51.010] [TRACE] wildseve - COMPENSATION cases to be inserted : 798
+[2020-01-17T00:55:51.011] [TRACE] wildseve - COMPENSATION cases to be inserted : 799
+[2020-01-17T00:55:51.012] [TRACE] wildseve - COMPENSATION cases to be inserted : 800
+[2020-01-17T00:55:51.012] [TRACE] wildseve - COMPENSATION cases to be inserted : 801
+[2020-01-17T00:55:51.013] [TRACE] wildseve - COMPENSATION cases to be inserted : 802
+[2020-01-17T00:55:51.014] [TRACE] wildseve - COMPENSATION cases to be inserted : 803
+[2020-01-17T00:55:51.014] [TRACE] wildseve - COMPENSATION record already exists : 99
+[2020-01-17T00:55:51.530] [TRACE] wildseve - COMPENSATION cases to be inserted : 804
+[2020-01-17T00:55:51.531] [TRACE] wildseve - COMPENSATION cases to be inserted : 805
+[2020-01-17T00:55:51.532] [TRACE] wildseve - COMPENSATION cases to be inserted : 806
+[2020-01-17T00:55:51.533] [TRACE] wildseve - COMPENSATION cases to be inserted : 807
+[2020-01-17T00:55:51.534] [TRACE] wildseve - COMPENSATION cases to be inserted : 808
+[2020-01-17T00:55:51.535] [TRACE] wildseve - COMPENSATION cases to be inserted : 809
+[2020-01-17T00:55:51.536] [TRACE] wildseve - COMPENSATION cases to be inserted : 810
+[2020-01-17T00:55:51.536] [TRACE] wildseve - COMPENSATION cases to be inserted : 811
+[2020-01-17T00:55:51.538] [TRACE] wildseve - COMPENSATION cases to be inserted : 812
+[2020-01-17T00:55:51.539] [TRACE] wildseve - COMPENSATION record already exists : 100
+[2020-01-17T00:55:52.060] [TRACE] wildseve - COMPENSATION cases to be inserted : 813
+[2020-01-17T00:55:52.060] [TRACE] wildseve - COMPENSATION cases to be inserted : 814
+[2020-01-17T00:55:52.061] [TRACE] wildseve - COMPENSATION cases to be inserted : 815
+[2020-01-17T00:55:52.062] [TRACE] wildseve - COMPENSATION cases to be inserted : 816
+[2020-01-17T00:55:52.062] [TRACE] wildseve - COMPENSATION cases to be inserted : 817
+[2020-01-17T00:55:52.064] [TRACE] wildseve - COMPENSATION cases to be inserted : 818
+[2020-01-17T00:55:52.065] [TRACE] wildseve - COMPENSATION cases to be inserted : 819
+[2020-01-17T00:55:52.066] [TRACE] wildseve - COMPENSATION record already exists : 101
+[2020-01-17T00:55:52.561] [TRACE] wildseve - COMPENSATION cases to be inserted : 820
+[2020-01-17T00:55:52.562] [TRACE] wildseve - COMPENSATION cases to be inserted : 821
+[2020-01-17T00:55:52.562] [TRACE] wildseve - COMPENSATION cases to be inserted : 822
+[2020-01-17T00:55:52.563] [TRACE] wildseve - COMPENSATION cases to be inserted : 823
+[2020-01-17T00:55:52.564] [TRACE] wildseve - COMPENSATION cases to be inserted : 824
+[2020-01-17T00:55:52.564] [TRACE] wildseve - COMPENSATION cases to be inserted : 825
+[2020-01-17T00:55:52.565] [TRACE] wildseve - COMPENSATION cases to be inserted : 826
+[2020-01-17T00:55:52.566] [TRACE] wildseve - COMPENSATION cases to be inserted : 827
+[2020-01-17T00:55:52.567] [TRACE] wildseve - COMPENSATION cases to be inserted : 828
+[2020-01-17T00:55:52.567] [TRACE] wildseve - COMPENSATION cases to be inserted : 829
+[2020-01-17T00:55:52.568] [TRACE] wildseve - COMPENSATION record already exists : 102
+[2020-01-17T00:55:53.102] [TRACE] wildseve - COMPENSATION cases to be inserted : 830
+[2020-01-17T00:55:53.103] [TRACE] wildseve - COMPENSATION cases to be inserted : 831
+[2020-01-17T00:55:53.104] [TRACE] wildseve - COMPENSATION cases to be inserted : 832
+[2020-01-17T00:55:53.105] [TRACE] wildseve - COMPENSATION cases to be inserted : 833
+[2020-01-17T00:55:53.105] [TRACE] wildseve - COMPENSATION cases to be inserted : 834
+[2020-01-17T00:55:53.106] [TRACE] wildseve - COMPENSATION cases to be inserted : 835
+[2020-01-17T00:55:53.107] [TRACE] wildseve - COMPENSATION cases to be inserted : 836
+[2020-01-17T00:55:53.107] [TRACE] wildseve - COMPENSATION cases to be inserted : 837
+[2020-01-17T00:55:53.108] [TRACE] wildseve - COMPENSATION cases to be inserted : 838
+[2020-01-17T00:55:53.108] [TRACE] wildseve - COMPENSATION cases to be inserted : 839
+[2020-01-17T00:55:53.109] [TRACE] wildseve - COMPENSATION record already exists : 103
+[2020-01-17T00:55:53.635] [TRACE] wildseve - COMPENSATION cases to be inserted : 840
+[2020-01-17T00:55:53.636] [TRACE] wildseve - COMPENSATION cases to be inserted : 841
+[2020-01-17T00:55:53.637] [TRACE] wildseve - COMPENSATION cases to be inserted : 842
+[2020-01-17T00:55:53.637] [TRACE] wildseve - COMPENSATION cases to be inserted : 843
+[2020-01-17T00:55:53.638] [TRACE] wildseve - COMPENSATION cases to be inserted : 844
+[2020-01-17T00:55:53.639] [TRACE] wildseve - COMPENSATION cases to be inserted : 845
+[2020-01-17T00:55:53.639] [TRACE] wildseve - COMPENSATION cases to be inserted : 846
+[2020-01-17T00:55:53.640] [TRACE] wildseve - COMPENSATION cases to be inserted : 847
+[2020-01-17T00:55:53.641] [TRACE] wildseve - COMPENSATION cases to be inserted : 848
+[2020-01-17T00:55:53.641] [TRACE] wildseve - COMPENSATION cases to be inserted : 849
+[2020-01-17T00:55:53.642] [TRACE] wildseve - COMPENSATION record already exists : 104
+[2020-01-17T00:55:54.141] [TRACE] wildseve - COMPENSATION cases to be inserted : 850
+[2020-01-17T00:55:54.142] [TRACE] wildseve - COMPENSATION cases to be inserted : 851
+[2020-01-17T00:55:54.143] [TRACE] wildseve - COMPENSATION cases to be inserted : 852
+[2020-01-17T00:55:54.143] [TRACE] wildseve - COMPENSATION cases to be inserted : 853
+[2020-01-17T00:55:54.144] [TRACE] wildseve - COMPENSATION cases to be inserted : 854
+[2020-01-17T00:55:54.145] [TRACE] wildseve - COMPENSATION record already exists : 105
+[2020-01-17T00:55:54.705] [TRACE] wildseve - COMPENSATION cases to be inserted : 855
+[2020-01-17T00:55:54.705] [TRACE] wildseve - COMPENSATION cases to be inserted : 856
+[2020-01-17T00:55:54.706] [TRACE] wildseve - COMPENSATION cases to be inserted : 857
+[2020-01-17T00:55:54.706] [TRACE] wildseve - COMPENSATION cases to be inserted : 858
+[2020-01-17T00:55:54.707] [TRACE] wildseve - COMPENSATION cases to be inserted : 859
+[2020-01-17T00:55:54.708] [TRACE] wildseve - COMPENSATION cases to be inserted : 860
+[2020-01-17T00:55:54.708] [TRACE] wildseve - COMPENSATION cases to be inserted : 861
+[2020-01-17T00:55:54.709] [TRACE] wildseve - COMPENSATION cases to be inserted : 862
+[2020-01-17T00:55:54.709] [TRACE] wildseve - COMPENSATION record already exists : 106
+[2020-01-17T00:55:55.248] [TRACE] wildseve - COMPENSATION cases to be inserted : 863
+[2020-01-17T00:55:55.248] [TRACE] wildseve - COMPENSATION cases to be inserted : 864
+[2020-01-17T00:55:55.249] [TRACE] wildseve - COMPENSATION cases to be inserted : 865
+[2020-01-17T00:55:55.250] [TRACE] wildseve - COMPENSATION cases to be inserted : 866
+[2020-01-17T00:55:55.251] [TRACE] wildseve - COMPENSATION cases to be inserted : 867
+[2020-01-17T00:55:55.251] [TRACE] wildseve - COMPENSATION cases to be inserted : 868
+[2020-01-17T00:55:55.252] [TRACE] wildseve - COMPENSATION cases to be inserted : 869
+[2020-01-17T00:55:55.253] [TRACE] wildseve - COMPENSATION cases to be inserted : 870
+[2020-01-17T00:55:55.253] [TRACE] wildseve - COMPENSATION cases to be inserted : 871
+[2020-01-17T00:55:55.254] [TRACE] wildseve - COMPENSATION cases to be inserted : 872
+[2020-01-17T00:55:55.255] [TRACE] wildseve - COMPENSATION record already exists : 107
+[2020-01-17T00:55:55.758] [TRACE] wildseve - COMPENSATION cases to be inserted : 873
+[2020-01-17T00:55:55.758] [TRACE] wildseve - COMPENSATION cases to be inserted : 874
+[2020-01-17T00:55:55.759] [TRACE] wildseve - COMPENSATION record already exists : 108
+[2020-01-17T00:55:56.296] [TRACE] wildseve - COMPENSATION cases to be inserted : 875
+[2020-01-17T00:55:56.297] [TRACE] wildseve - COMPENSATION cases to be inserted : 876
+[2020-01-17T00:55:56.297] [TRACE] wildseve - COMPENSATION cases to be inserted : 877
+[2020-01-17T00:55:56.298] [TRACE] wildseve - COMPENSATION cases to be inserted : 878
+[2020-01-17T00:55:56.299] [TRACE] wildseve - COMPENSATION cases to be inserted : 879
+[2020-01-17T00:55:56.300] [TRACE] wildseve - COMPENSATION cases to be inserted : 880
+[2020-01-17T00:55:56.300] [TRACE] wildseve - COMPENSATION cases to be inserted : 881
+[2020-01-17T00:55:56.301] [TRACE] wildseve - COMPENSATION cases to be inserted : 882
+[2020-01-17T00:55:56.302] [TRACE] wildseve - COMPENSATION cases to be inserted : 883
+[2020-01-17T00:55:56.302] [TRACE] wildseve - COMPENSATION cases to be inserted : 884
+[2020-01-17T00:55:56.303] [TRACE] wildseve - COMPENSATION record already exists : 109
+[2020-01-17T00:55:56.798] [TRACE] wildseve - COMPENSATION cases to be inserted : 885
+[2020-01-17T00:55:56.799] [TRACE] wildseve - COMPENSATION cases to be inserted : 886
+[2020-01-17T00:55:56.799] [TRACE] wildseve - COMPENSATION cases to be inserted : 887
+[2020-01-17T00:55:56.800] [TRACE] wildseve - COMPENSATION cases to be inserted : 888
+[2020-01-17T00:55:56.801] [TRACE] wildseve - COMPENSATION cases to be inserted : 889
+[2020-01-17T00:55:56.801] [TRACE] wildseve - COMPENSATION cases to be inserted : 890
+[2020-01-17T00:55:56.802] [TRACE] wildseve - COMPENSATION cases to be inserted : 891
+[2020-01-17T00:55:56.803] [TRACE] wildseve - COMPENSATION cases to be inserted : 892
+[2020-01-17T00:55:56.803] [TRACE] wildseve - COMPENSATION cases to be inserted : 893
+[2020-01-17T00:55:56.804] [TRACE] wildseve - COMPENSATION cases to be inserted : 894
+[2020-01-17T00:55:56.805] [TRACE] wildseve - COMPENSATION record already exists : 110
+[2020-01-17T00:55:57.337] [TRACE] wildseve - COMPENSATION cases to be inserted : 895
+[2020-01-17T00:55:57.338] [TRACE] wildseve - COMPENSATION cases to be inserted : 896
+[2020-01-17T00:55:57.338] [TRACE] wildseve - COMPENSATION cases to be inserted : 897
+[2020-01-17T00:55:57.338] [TRACE] wildseve - COMPENSATION cases to be inserted : 898
+[2020-01-17T00:55:57.338] [TRACE] wildseve - COMPENSATION cases to be inserted : 899
+[2020-01-17T00:55:57.339] [TRACE] wildseve - COMPENSATION cases to be inserted : 900
+[2020-01-17T00:55:57.339] [TRACE] wildseve - COMPENSATION record already exists : 111
+[2020-01-17T00:55:57.874] [TRACE] wildseve - COMPENSATION record already exists : 112
+[2020-01-17T00:55:58.397] [TRACE] wildseve - COMPENSATION cases to be inserted : 901
+[2020-01-17T00:55:58.397] [TRACE] wildseve - COMPENSATION cases to be inserted : 902
+[2020-01-17T00:55:58.398] [TRACE] wildseve - COMPENSATION cases to be inserted : 903
+[2020-01-17T00:55:58.398] [TRACE] wildseve - COMPENSATION cases to be inserted : 904
+[2020-01-17T00:55:58.398] [TRACE] wildseve - COMPENSATION cases to be inserted : 905
+[2020-01-17T00:55:58.399] [TRACE] wildseve - COMPENSATION cases to be inserted : 906
+[2020-01-17T00:55:58.399] [TRACE] wildseve - COMPENSATION cases to be inserted : 907
+[2020-01-17T00:55:58.399] [TRACE] wildseve - COMPENSATION cases to be inserted : 908
+[2020-01-17T00:55:58.400] [TRACE] wildseve - COMPENSATION cases to be inserted : 909
+[2020-01-17T00:55:58.400] [TRACE] wildseve - COMPENSATION cases to be inserted : 910
+[2020-01-17T00:55:58.400] [TRACE] wildseve - COMPENSATION record already exists : 113
+[2020-01-17T00:55:58.938] [TRACE] wildseve - COMPENSATION cases to be inserted : 911
+[2020-01-17T00:55:58.938] [TRACE] wildseve - COMPENSATION cases to be inserted : 912
+[2020-01-17T00:55:58.939] [TRACE] wildseve - COMPENSATION cases to be inserted : 913
+[2020-01-17T00:55:58.940] [TRACE] wildseve - COMPENSATION cases to be inserted : 914
+[2020-01-17T00:55:58.941] [TRACE] wildseve - COMPENSATION cases to be inserted : 915
+[2020-01-17T00:55:58.941] [TRACE] wildseve - COMPENSATION cases to be inserted : 916
+[2020-01-17T00:55:58.941] [TRACE] wildseve - COMPENSATION cases to be inserted : 917
+[2020-01-17T00:55:58.942] [TRACE] wildseve - COMPENSATION cases to be inserted : 918
+[2020-01-17T00:55:58.943] [TRACE] wildseve - COMPENSATION cases to be inserted : 919
+[2020-01-17T00:55:58.945] [TRACE] wildseve - COMPENSATION cases to be inserted : 920
+[2020-01-17T00:55:58.946] [TRACE] wildseve - COMPENSATION record already exists : 114
+[2020-01-17T00:55:59.446] [TRACE] wildseve - COMPENSATION cases to be inserted : 921
+[2020-01-17T00:55:59.446] [TRACE] wildseve - COMPENSATION cases to be inserted : 922
+[2020-01-17T00:55:59.447] [TRACE] wildseve - COMPENSATION cases to be inserted : 923
+[2020-01-17T00:55:59.447] [TRACE] wildseve - COMPENSATION cases to be inserted : 924
+[2020-01-17T00:55:59.447] [TRACE] wildseve - COMPENSATION cases to be inserted : 925
+[2020-01-17T00:55:59.448] [TRACE] wildseve - COMPENSATION cases to be inserted : 926
+[2020-01-17T00:55:59.448] [TRACE] wildseve - COMPENSATION cases to be inserted : 927
+[2020-01-17T00:55:59.448] [TRACE] wildseve - COMPENSATION cases to be inserted : 928
+[2020-01-17T00:55:59.448] [TRACE] wildseve - COMPENSATION cases to be inserted : 929
+[2020-01-17T00:55:59.449] [TRACE] wildseve - COMPENSATION cases to be inserted : 930
+[2020-01-17T00:55:59.449] [TRACE] wildseve - COMPENSATION record already exists : 115
+[2020-01-17T00:55:59.985] [TRACE] wildseve - COMPENSATION cases to be inserted : 931
+[2020-01-17T00:55:59.986] [TRACE] wildseve - COMPENSATION cases to be inserted : 932
+[2020-01-17T00:55:59.986] [TRACE] wildseve - COMPENSATION cases to be inserted : 933
+[2020-01-17T00:55:59.986] [TRACE] wildseve - COMPENSATION cases to be inserted : 934
+[2020-01-17T00:55:59.987] [TRACE] wildseve - COMPENSATION cases to be inserted : 935
+[2020-01-17T00:55:59.987] [TRACE] wildseve - COMPENSATION cases to be inserted : 936
+[2020-01-17T00:55:59.987] [TRACE] wildseve - COMPENSATION cases to be inserted : 937
+[2020-01-17T00:55:59.987] [TRACE] wildseve - COMPENSATION cases to be inserted : 938
+[2020-01-17T00:55:59.988] [TRACE] wildseve - COMPENSATION cases to be inserted : 939
+[2020-01-17T00:55:59.988] [TRACE] wildseve - COMPENSATION cases to be inserted : 940
+[2020-01-17T00:55:59.988] [TRACE] wildseve - COMPENSATION record already exists : 116
+[2020-01-17T00:56:00.528] [TRACE] wildseve - COMPENSATION cases to be inserted : 941
+[2020-01-17T00:56:00.529] [TRACE] wildseve - COMPENSATION record already exists : 117
+[2020-01-17T00:56:01.049] [TRACE] wildseve - COMPENSATION cases to be inserted : 942
+[2020-01-17T00:56:01.049] [TRACE] wildseve - COMPENSATION cases to be inserted : 943
+[2020-01-17T00:56:01.050] [TRACE] wildseve - COMPENSATION cases to be inserted : 944
+[2020-01-17T00:56:01.051] [TRACE] wildseve - COMPENSATION cases to be inserted : 945
+[2020-01-17T00:56:01.052] [TRACE] wildseve - COMPENSATION cases to be inserted : 946
+[2020-01-17T00:56:01.052] [TRACE] wildseve - COMPENSATION cases to be inserted : 947
+[2020-01-17T00:56:01.053] [TRACE] wildseve - COMPENSATION cases to be inserted : 948
+[2020-01-17T00:56:01.054] [TRACE] wildseve - COMPENSATION cases to be inserted : 949
+[2020-01-17T00:56:01.054] [TRACE] wildseve - COMPENSATION cases to be inserted : 950
+[2020-01-17T00:56:01.055] [TRACE] wildseve - COMPENSATION cases to be inserted : 951
+[2020-01-17T00:56:01.056] [TRACE] wildseve - COMPENSATION record already exists : 118
+[2020-01-17T00:56:01.583] [TRACE] wildseve - COMPENSATION cases to be inserted : 952
+[2020-01-17T00:56:01.583] [TRACE] wildseve - COMPENSATION cases to be inserted : 953
+[2020-01-17T00:56:01.583] [TRACE] wildseve - COMPENSATION cases to be inserted : 954
+[2020-01-17T00:56:01.584] [TRACE] wildseve - COMPENSATION cases to be inserted : 955
+[2020-01-17T00:56:01.584] [TRACE] wildseve - COMPENSATION cases to be inserted : 956
+[2020-01-17T00:56:01.584] [TRACE] wildseve - COMPENSATION cases to be inserted : 957
+[2020-01-17T00:56:01.585] [TRACE] wildseve - COMPENSATION cases to be inserted : 958
+[2020-01-17T00:56:01.585] [TRACE] wildseve - COMPENSATION cases to be inserted : 959
+[2020-01-17T00:56:01.585] [TRACE] wildseve - COMPENSATION cases to be inserted : 960
+[2020-01-17T00:56:01.585] [TRACE] wildseve - COMPENSATION cases to be inserted : 961
+[2020-01-17T00:56:01.586] [TRACE] wildseve - COMPENSATION record already exists : 119
+[2020-01-17T00:56:02.128] [TRACE] wildseve - COMPENSATION record already exists : 120
+[2020-01-17T00:56:02.639] [TRACE] wildseve - COMPENSATION cases to be inserted : 962
+[2020-01-17T00:56:02.639] [TRACE] wildseve - COMPENSATION cases to be inserted : 963
+[2020-01-17T00:56:02.640] [TRACE] wildseve - COMPENSATION cases to be inserted : 964
+[2020-01-17T00:56:02.641] [TRACE] wildseve - COMPENSATION cases to be inserted : 965
+[2020-01-17T00:56:02.641] [TRACE] wildseve - COMPENSATION record already exists : 121
+[2020-01-17T00:56:03.153] [TRACE] wildseve - COMPENSATION cases to be inserted : 966
+[2020-01-17T00:56:03.153] [TRACE] wildseve - COMPENSATION record already exists : 122
+[2020-01-17T00:56:03.663] [TRACE] wildseve - COMPENSATION record already exists : 123
+[2020-01-17T00:56:04.208] [TRACE] wildseve - COMPENSATION cases to be inserted : 967
+[2020-01-17T00:56:04.208] [TRACE] wildseve - COMPENSATION cases to be inserted : 968
+[2020-01-17T00:56:04.209] [TRACE] wildseve - COMPENSATION cases to be inserted : 969
+[2020-01-17T00:56:04.210] [TRACE] wildseve - COMPENSATION cases to be inserted : 970
+[2020-01-17T00:56:04.210] [TRACE] wildseve - COMPENSATION cases to be inserted : 971
+[2020-01-17T00:56:04.211] [TRACE] wildseve - COMPENSATION cases to be inserted : 972
+[2020-01-17T00:56:04.212] [TRACE] wildseve - COMPENSATION cases to be inserted : 973
+[2020-01-17T00:56:04.212] [TRACE] wildseve - COMPENSATION cases to be inserted : 974
+[2020-01-17T00:56:04.213] [TRACE] wildseve - COMPENSATION cases to be inserted : 975
+[2020-01-17T00:56:04.216] [TRACE] wildseve - COMPENSATION cases to be inserted : 976
+[2020-01-17T00:56:04.217] [TRACE] wildseve - COMPENSATION record already exists : 124
+[2020-01-17T00:56:04.720] [TRACE] wildseve - COMPENSATION cases to be inserted : 977
+[2020-01-17T00:56:04.720] [TRACE] wildseve - COMPENSATION cases to be inserted : 978
+[2020-01-17T00:56:04.721] [TRACE] wildseve - COMPENSATION cases to be inserted : 979
+[2020-01-17T00:56:04.722] [TRACE] wildseve - COMPENSATION cases to be inserted : 980
+[2020-01-17T00:56:04.722] [TRACE] wildseve - COMPENSATION cases to be inserted : 981
+[2020-01-17T00:56:04.723] [TRACE] wildseve - COMPENSATION cases to be inserted : 982
+[2020-01-17T00:56:04.724] [TRACE] wildseve - COMPENSATION record already exists : 125
+[2020-01-17T00:56:05.232] [TRACE] wildseve - COMPENSATION cases to be inserted : 983
+[2020-01-17T00:56:05.233] [TRACE] wildseve - COMPENSATION cases to be inserted : 984
+[2020-01-17T00:56:05.234] [TRACE] wildseve - COMPENSATION record already exists : 126
+[2020-01-17T00:56:05.758] [TRACE] wildseve - COMPENSATION cases to be inserted : 985
+[2020-01-17T00:56:05.759] [TRACE] wildseve - COMPENSATION cases to be inserted : 986
+[2020-01-17T00:56:05.760] [TRACE] wildseve - COMPENSATION cases to be inserted : 987
+[2020-01-17T00:56:05.761] [TRACE] wildseve - COMPENSATION cases to be inserted : 988
+[2020-01-17T00:56:05.761] [TRACE] wildseve - COMPENSATION cases to be inserted : 989
+[2020-01-17T00:56:05.762] [TRACE] wildseve - COMPENSATION cases to be inserted : 990
+[2020-01-17T00:56:05.763] [TRACE] wildseve - COMPENSATION cases to be inserted : 991
+[2020-01-17T00:56:05.764] [TRACE] wildseve - COMPENSATION cases to be inserted : 992
+[2020-01-17T00:56:05.764] [TRACE] wildseve - COMPENSATION cases to be inserted : 993
+[2020-01-17T00:56:05.765] [TRACE] wildseve - COMPENSATION cases to be inserted : 994
+[2020-01-17T00:56:05.766] [TRACE] wildseve - COMPENSATION record already exists : 127
+[2020-01-17T00:56:06.287] [TRACE] wildseve - COMPENSATION cases to be inserted : 995
+[2020-01-17T00:56:06.288] [TRACE] wildseve - COMPENSATION cases to be inserted : 996
+[2020-01-17T00:56:06.289] [TRACE] wildseve - COMPENSATION cases to be inserted : 997
+[2020-01-17T00:56:06.289] [TRACE] wildseve - COMPENSATION record already exists : 128
+[2020-01-17T00:56:06.831] [TRACE] wildseve - COMPENSATION cases to be inserted : 998
+[2020-01-17T00:56:06.831] [TRACE] wildseve - COMPENSATION cases to be inserted : 999
+[2020-01-17T00:56:06.832] [TRACE] wildseve - COMPENSATION cases to be inserted : 1000
+[2020-01-17T00:56:06.833] [TRACE] wildseve - COMPENSATION cases to be inserted : 1001
+[2020-01-17T00:56:06.834] [TRACE] wildseve - COMPENSATION cases to be inserted : 1002
+[2020-01-17T00:56:06.834] [TRACE] wildseve - COMPENSATION cases to be inserted : 1003
+[2020-01-17T00:56:06.835] [TRACE] wildseve - COMPENSATION cases to be inserted : 1004
+[2020-01-17T00:56:06.836] [TRACE] wildseve - COMPENSATION cases to be inserted : 1005
+[2020-01-17T00:56:06.836] [TRACE] wildseve - COMPENSATION cases to be inserted : 1006
+[2020-01-17T00:56:06.837] [TRACE] wildseve - COMPENSATION cases to be inserted : 1007
+[2020-01-17T00:56:06.838] [TRACE] wildseve - COMPENSATION record already exists : 129
+[2020-01-17T00:56:07.337] [TRACE] wildseve - COMPENSATION cases to be inserted : 1008
+[2020-01-17T00:56:07.338] [TRACE] wildseve - COMPENSATION cases to be inserted : 1009
+[2020-01-17T00:56:07.339] [TRACE] wildseve - COMPENSATION cases to be inserted : 1010
+[2020-01-17T00:56:07.339] [TRACE] wildseve - COMPENSATION cases to be inserted : 1011
+[2020-01-17T00:56:07.340] [TRACE] wildseve - COMPENSATION cases to be inserted : 1012
+[2020-01-17T00:56:07.341] [TRACE] wildseve - COMPENSATION cases to be inserted : 1013
+[2020-01-17T00:56:07.341] [TRACE] wildseve - COMPENSATION cases to be inserted : 1014
+[2020-01-17T00:56:07.342] [TRACE] wildseve - COMPENSATION cases to be inserted : 1015
+[2020-01-17T00:56:07.343] [TRACE] wildseve - COMPENSATION cases to be inserted : 1016
+[2020-01-17T00:56:07.344] [TRACE] wildseve - COMPENSATION cases to be inserted : 1017
+[2020-01-17T00:56:07.344] [TRACE] wildseve - COMPENSATION record already exists : 130
+[2020-01-17T00:56:07.836] [TRACE] wildseve - COMPENSATION cases to be inserted : 1018
+[2020-01-17T00:56:07.838] [TRACE] wildseve - COMPENSATION cases to be inserted : 1019
+[2020-01-17T00:56:07.839] [TRACE] wildseve - COMPENSATION cases to be inserted : 1020
+[2020-01-17T00:56:07.840] [TRACE] wildseve - COMPENSATION cases to be inserted : 1021
+[2020-01-17T00:56:07.840] [TRACE] wildseve - COMPENSATION cases to be inserted : 1022
+[2020-01-17T00:56:07.841] [TRACE] wildseve - COMPENSATION cases to be inserted : 1023
+[2020-01-17T00:56:07.842] [TRACE] wildseve - COMPENSATION cases to be inserted : 1024
+[2020-01-17T00:56:07.842] [TRACE] wildseve - COMPENSATION cases to be inserted : 1025
+[2020-01-17T00:56:07.843] [TRACE] wildseve - COMPENSATION cases to be inserted : 1026
+[2020-01-17T00:56:07.843] [TRACE] wildseve - COMPENSATION cases to be inserted : 1027
+[2020-01-17T00:56:07.844] [TRACE] wildseve - COMPENSATION record already exists : 131
+[2020-01-17T00:56:08.354] [TRACE] wildseve - COMPENSATION cases to be inserted : 1028
+[2020-01-17T00:56:08.355] [TRACE] wildseve - COMPENSATION cases to be inserted : 1029
+[2020-01-17T00:56:08.356] [TRACE] wildseve - COMPENSATION cases to be inserted : 1030
+[2020-01-17T00:56:08.356] [TRACE] wildseve - COMPENSATION cases to be inserted : 1031
+[2020-01-17T00:56:08.357] [TRACE] wildseve - COMPENSATION cases to be inserted : 1032
+[2020-01-17T00:56:08.358] [TRACE] wildseve - COMPENSATION cases to be inserted : 1033
+[2020-01-17T00:56:08.358] [TRACE] wildseve - COMPENSATION cases to be inserted : 1034
+[2020-01-17T00:56:08.359] [TRACE] wildseve - COMPENSATION cases to be inserted : 1035
+[2020-01-17T00:56:08.360] [TRACE] wildseve - COMPENSATION cases to be inserted : 1036
+[2020-01-17T00:56:08.360] [TRACE] wildseve - COMPENSATION cases to be inserted : 1037
+[2020-01-17T00:56:08.361] [TRACE] wildseve - COMPENSATION record already exists : 132
+[2020-01-17T00:56:08.859] [TRACE] wildseve - COMPENSATION cases to be inserted : 1038
+[2020-01-17T00:56:08.859] [TRACE] wildseve - COMPENSATION cases to be inserted : 1039
+[2020-01-17T00:56:08.860] [TRACE] wildseve - COMPENSATION cases to be inserted : 1040
+[2020-01-17T00:56:08.861] [TRACE] wildseve - COMPENSATION cases to be inserted : 1041
+[2020-01-17T00:56:08.861] [TRACE] wildseve - COMPENSATION cases to be inserted : 1042
+[2020-01-17T00:56:08.862] [TRACE] wildseve - COMPENSATION cases to be inserted : 1043
+[2020-01-17T00:56:08.863] [TRACE] wildseve - COMPENSATION cases to be inserted : 1044
+[2020-01-17T00:56:08.863] [TRACE] wildseve - COMPENSATION cases to be inserted : 1045
+[2020-01-17T00:56:08.864] [TRACE] wildseve - COMPENSATION cases to be inserted : 1046
+[2020-01-17T00:56:08.864] [TRACE] wildseve - COMPENSATION cases to be inserted : 1047
+[2020-01-17T00:56:08.865] [TRACE] wildseve - COMPENSATION record already exists : 133
+[2020-01-17T00:56:09.404] [TRACE] wildseve - COMPENSATION cases to be inserted : 1048
+[2020-01-17T00:56:09.405] [TRACE] wildseve - COMPENSATION cases to be inserted : 1049
+[2020-01-17T00:56:09.405] [TRACE] wildseve - COMPENSATION cases to be inserted : 1050
+[2020-01-17T00:56:09.406] [TRACE] wildseve - COMPENSATION cases to be inserted : 1051
+[2020-01-17T00:56:09.407] [TRACE] wildseve - COMPENSATION cases to be inserted : 1052
+[2020-01-17T00:56:09.408] [TRACE] wildseve - COMPENSATION cases to be inserted : 1053
+[2020-01-17T00:56:09.408] [TRACE] wildseve - COMPENSATION cases to be inserted : 1054
+[2020-01-17T00:56:09.409] [TRACE] wildseve - COMPENSATION cases to be inserted : 1055
+[2020-01-17T00:56:09.410] [TRACE] wildseve - COMPENSATION cases to be inserted : 1056
+[2020-01-17T00:56:09.410] [TRACE] wildseve - COMPENSATION cases to be inserted : 1057
+[2020-01-17T00:56:09.411] [TRACE] wildseve - COMPENSATION record already exists : 134
+[2020-01-17T00:56:09.926] [TRACE] wildseve - COMPENSATION cases to be inserted : 1058
+[2020-01-17T00:56:09.926] [TRACE] wildseve - COMPENSATION cases to be inserted : 1059
+[2020-01-17T00:56:09.929] [TRACE] wildseve - COMPENSATION cases to be inserted : 1060
+[2020-01-17T00:56:09.930] [TRACE] wildseve - COMPENSATION cases to be inserted : 1061
+[2020-01-17T00:56:09.931] [TRACE] wildseve - COMPENSATION cases to be inserted : 1062
+[2020-01-17T00:56:09.932] [TRACE] wildseve - COMPENSATION cases to be inserted : 1063
+[2020-01-17T00:56:09.938] [TRACE] wildseve - COMPENSATION cases to be inserted : 1064
+[2020-01-17T00:56:09.939] [TRACE] wildseve - COMPENSATION cases to be inserted : 1065
+[2020-01-17T00:56:09.940] [TRACE] wildseve - COMPENSATION cases to be inserted : 1066
+[2020-01-17T00:56:09.941] [TRACE] wildseve - COMPENSATION cases to be inserted : 1067
+[2020-01-17T00:56:09.942] [TRACE] wildseve - COMPENSATION record already exists : 135
+[2020-01-17T00:56:10.470] [TRACE] wildseve - COMPENSATION cases to be inserted : 1068
+[2020-01-17T00:56:10.470] [TRACE] wildseve - COMPENSATION cases to be inserted : 1069
+[2020-01-17T00:56:10.471] [TRACE] wildseve - COMPENSATION cases to be inserted : 1070
+[2020-01-17T00:56:10.472] [TRACE] wildseve - COMPENSATION cases to be inserted : 1071
+[2020-01-17T00:56:10.473] [TRACE] wildseve - COMPENSATION record already exists : 136
+[2020-01-17T00:56:10.994] [TRACE] wildseve - COMPENSATION cases to be inserted : 1072
+[2020-01-17T00:56:10.995] [TRACE] wildseve - COMPENSATION cases to be inserted : 1073
+[2020-01-17T00:56:10.995] [TRACE] wildseve - COMPENSATION cases to be inserted : 1074
+[2020-01-17T00:56:10.996] [TRACE] wildseve - COMPENSATION cases to be inserted : 1075
+[2020-01-17T00:56:10.997] [TRACE] wildseve - COMPENSATION cases to be inserted : 1076
+[2020-01-17T00:56:10.997] [TRACE] wildseve - COMPENSATION cases to be inserted : 1077
+[2020-01-17T00:56:10.998] [TRACE] wildseve - COMPENSATION cases to be inserted : 1078
+[2020-01-17T00:56:10.999] [TRACE] wildseve - COMPENSATION cases to be inserted : 1079
+[2020-01-17T00:56:10.999] [TRACE] wildseve - COMPENSATION cases to be inserted : 1080
+[2020-01-17T00:56:11.000] [TRACE] wildseve - COMPENSATION cases to be inserted : 1081
+[2020-01-17T00:56:11.001] [TRACE] wildseve - COMPENSATION record already exists : 137
+[2020-01-17T00:56:11.514] [TRACE] wildseve - COMPENSATION cases to be inserted : 1082
+[2020-01-17T00:56:11.514] [TRACE] wildseve - COMPENSATION cases to be inserted : 1083
+[2020-01-17T00:56:11.515] [TRACE] wildseve - COMPENSATION cases to be inserted : 1084
+[2020-01-17T00:56:11.516] [TRACE] wildseve - COMPENSATION cases to be inserted : 1085
+[2020-01-17T00:56:11.517] [TRACE] wildseve - COMPENSATION cases to be inserted : 1086
+[2020-01-17T00:56:11.517] [TRACE] wildseve - COMPENSATION cases to be inserted : 1087
+[2020-01-17T00:56:11.518] [TRACE] wildseve - COMPENSATION cases to be inserted : 1088
+[2020-01-17T00:56:11.519] [TRACE] wildseve - COMPENSATION cases to be inserted : 1089
+[2020-01-17T00:56:11.520] [TRACE] wildseve - COMPENSATION cases to be inserted : 1090
+[2020-01-17T00:56:11.522] [TRACE] wildseve - COMPENSATION cases to be inserted : 1091
+[2020-01-17T00:56:11.522] [TRACE] wildseve - COMPENSATION record already exists : 138
+[2020-01-17T00:56:12.051] [TRACE] wildseve - COMPENSATION cases to be inserted : 1092
+[2020-01-17T00:56:12.052] [TRACE] wildseve - COMPENSATION cases to be inserted : 1093
+[2020-01-17T00:56:12.052] [TRACE] wildseve - COMPENSATION cases to be inserted : 1094
+[2020-01-17T00:56:12.053] [TRACE] wildseve - COMPENSATION cases to be inserted : 1095
+[2020-01-17T00:56:12.054] [TRACE] wildseve - COMPENSATION cases to be inserted : 1096
+[2020-01-17T00:56:12.055] [TRACE] wildseve - COMPENSATION cases to be inserted : 1097
+[2020-01-17T00:56:12.056] [TRACE] wildseve - COMPENSATION cases to be inserted : 1098
+[2020-01-17T00:56:12.056] [TRACE] wildseve - COMPENSATION cases to be inserted : 1099
+[2020-01-17T00:56:12.057] [TRACE] wildseve - COMPENSATION cases to be inserted : 1100
+[2020-01-17T00:56:12.057] [TRACE] wildseve - COMPENSATION record already exists : 139
+[2020-01-17T00:56:12.578] [TRACE] wildseve - COMPENSATION cases to be inserted : 1101
+[2020-01-17T00:56:12.578] [TRACE] wildseve - COMPENSATION record already exists : 140
+[2020-01-17T00:56:13.098] [TRACE] wildseve - COMPENSATION cases to be inserted : 1102
+[2020-01-17T00:56:13.098] [TRACE] wildseve - COMPENSATION record already exists : 141
+[2020-01-17T00:56:13.603] [TRACE] wildseve - COMPENSATION cases to be inserted : 1103
+[2020-01-17T00:56:13.603] [TRACE] wildseve - COMPENSATION cases to be inserted : 1104
+[2020-01-17T00:56:13.604] [TRACE] wildseve - COMPENSATION cases to be inserted : 1105
+[2020-01-17T00:56:13.605] [TRACE] wildseve - COMPENSATION cases to be inserted : 1106
+[2020-01-17T00:56:13.606] [TRACE] wildseve - COMPENSATION cases to be inserted : 1107
+[2020-01-17T00:56:13.606] [TRACE] wildseve - COMPENSATION cases to be inserted : 1108
+[2020-01-17T00:56:13.608] [TRACE] wildseve - COMPENSATION cases to be inserted : 1109
+[2020-01-17T00:56:13.609] [TRACE] wildseve - COMPENSATION cases to be inserted : 1110
+[2020-01-17T00:56:13.609] [TRACE] wildseve - COMPENSATION cases to be inserted : 1111
+[2020-01-17T00:56:13.610] [TRACE] wildseve - COMPENSATION cases to be inserted : 1112
+[2020-01-17T00:56:13.610] [TRACE] wildseve - COMPENSATION record already exists : 142
+[2020-01-17T00:56:14.163] [TRACE] wildseve - COMPENSATION cases to be inserted : 1113
+[2020-01-17T00:56:14.165] [TRACE] wildseve - COMPENSATION cases to be inserted : 1114
+[2020-01-17T00:56:14.166] [TRACE] wildseve - COMPENSATION cases to be inserted : 1115
+[2020-01-17T00:56:14.166] [TRACE] wildseve - COMPENSATION cases to be inserted : 1116
+[2020-01-17T00:56:14.167] [TRACE] wildseve - COMPENSATION cases to be inserted : 1117
+[2020-01-17T00:56:14.168] [TRACE] wildseve - COMPENSATION cases to be inserted : 1118
+[2020-01-17T00:56:14.168] [TRACE] wildseve - COMPENSATION cases to be inserted : 1119
+[2020-01-17T00:56:14.169] [TRACE] wildseve - COMPENSATION cases to be inserted : 1120
+[2020-01-17T00:56:14.170] [TRACE] wildseve - COMPENSATION cases to be inserted : 1121
+[2020-01-17T00:56:14.171] [TRACE] wildseve - COMPENSATION cases to be inserted : 1122
+[2020-01-17T00:56:14.172] [TRACE] wildseve - COMPENSATION record already exists : 143
+[2020-01-17T00:56:14.703] [TRACE] wildseve - COMPENSATION cases to be inserted : 1123
+[2020-01-17T00:56:14.703] [TRACE] wildseve - COMPENSATION cases to be inserted : 1124
+[2020-01-17T00:56:14.704] [TRACE] wildseve - COMPENSATION cases to be inserted : 1125
+[2020-01-17T00:56:14.705] [TRACE] wildseve - COMPENSATION cases to be inserted : 1126
+[2020-01-17T00:56:14.705] [TRACE] wildseve - COMPENSATION cases to be inserted : 1127
+[2020-01-17T00:56:14.706] [TRACE] wildseve - COMPENSATION cases to be inserted : 1128
+[2020-01-17T00:56:14.706] [TRACE] wildseve - COMPENSATION cases to be inserted : 1129
+[2020-01-17T00:56:14.707] [TRACE] wildseve - COMPENSATION cases to be inserted : 1130
+[2020-01-17T00:56:14.707] [TRACE] wildseve - COMPENSATION cases to be inserted : 1131
+[2020-01-17T00:56:14.708] [TRACE] wildseve - COMPENSATION cases to be inserted : 1132
+[2020-01-17T00:56:14.709] [TRACE] wildseve - COMPENSATION record already exists : 144
+[2020-01-17T00:56:15.247] [TRACE] wildseve - COMPENSATION cases to be inserted : 1133
+[2020-01-17T00:56:15.248] [TRACE] wildseve - COMPENSATION cases to be inserted : 1134
+[2020-01-17T00:56:15.248] [TRACE] wildseve - COMPENSATION cases to be inserted : 1135
+[2020-01-17T00:56:15.249] [TRACE] wildseve - COMPENSATION cases to be inserted : 1136
+[2020-01-17T00:56:15.250] [TRACE] wildseve - COMPENSATION cases to be inserted : 1137
+[2020-01-17T00:56:15.250] [TRACE] wildseve - COMPENSATION cases to be inserted : 1138
+[2020-01-17T00:56:15.251] [TRACE] wildseve - COMPENSATION cases to be inserted : 1139
+[2020-01-17T00:56:15.252] [TRACE] wildseve - COMPENSATION cases to be inserted : 1140
+[2020-01-17T00:56:15.252] [TRACE] wildseve - COMPENSATION cases to be inserted : 1141
+[2020-01-17T00:56:15.253] [TRACE] wildseve - COMPENSATION cases to be inserted : 1142
+[2020-01-17T00:56:15.253] [TRACE] wildseve - COMPENSATION record already exists : 145
+[2020-01-17T00:56:15.794] [TRACE] wildseve - COMPENSATION cases to be inserted : 1143
+[2020-01-17T00:56:15.794] [TRACE] wildseve - COMPENSATION cases to be inserted : 1144
+[2020-01-17T00:56:15.795] [TRACE] wildseve - COMPENSATION cases to be inserted : 1145
+[2020-01-17T00:56:15.796] [TRACE] wildseve - COMPENSATION cases to be inserted : 1146
+[2020-01-17T00:56:15.796] [TRACE] wildseve - COMPENSATION cases to be inserted : 1147
+[2020-01-17T00:56:15.797] [TRACE] wildseve - COMPENSATION cases to be inserted : 1148
+[2020-01-17T00:56:15.797] [TRACE] wildseve - COMPENSATION cases to be inserted : 1149
+[2020-01-17T00:56:15.798] [TRACE] wildseve - COMPENSATION cases to be inserted : 1150
+[2020-01-17T00:56:15.799] [TRACE] wildseve - COMPENSATION cases to be inserted : 1151
+[2020-01-17T00:56:15.799] [TRACE] wildseve - COMPENSATION record already exists : 146
+[2020-01-17T00:56:16.303] [TRACE] wildseve - COMPENSATION cases to be inserted : 1152
+[2020-01-17T00:56:16.303] [TRACE] wildseve - COMPENSATION cases to be inserted : 1153
+[2020-01-17T00:56:16.304] [TRACE] wildseve - COMPENSATION cases to be inserted : 1154
+[2020-01-17T00:56:16.305] [TRACE] wildseve - COMPENSATION cases to be inserted : 1155
+[2020-01-17T00:56:16.306] [TRACE] wildseve - COMPENSATION cases to be inserted : 1156
+[2020-01-17T00:56:16.306] [TRACE] wildseve - COMPENSATION cases to be inserted : 1157
+[2020-01-17T00:56:16.307] [TRACE] wildseve - COMPENSATION cases to be inserted : 1158
+[2020-01-17T00:56:16.307] [TRACE] wildseve - COMPENSATION cases to be inserted : 1159
+[2020-01-17T00:56:16.308] [TRACE] wildseve - COMPENSATION record already exists : 147
+[2020-01-17T00:56:16.846] [TRACE] wildseve - COMPENSATION cases to be inserted : 1160
+[2020-01-17T00:56:16.846] [TRACE] wildseve - COMPENSATION cases to be inserted : 1161
+[2020-01-17T00:56:16.847] [TRACE] wildseve - COMPENSATION cases to be inserted : 1162
+[2020-01-17T00:56:16.848] [TRACE] wildseve - COMPENSATION cases to be inserted : 1163
+[2020-01-17T00:56:16.849] [TRACE] wildseve - COMPENSATION cases to be inserted : 1164
+[2020-01-17T00:56:16.849] [TRACE] wildseve - COMPENSATION cases to be inserted : 1165
+[2020-01-17T00:56:16.850] [TRACE] wildseve - COMPENSATION cases to be inserted : 1166
+[2020-01-17T00:56:16.852] [TRACE] wildseve - COMPENSATION cases to be inserted : 1167
+[2020-01-17T00:56:16.853] [TRACE] wildseve - COMPENSATION cases to be inserted : 1168
+[2020-01-17T00:56:16.853] [TRACE] wildseve - COMPENSATION cases to be inserted : 1169
+[2020-01-17T00:56:16.854] [TRACE] wildseve - COMPENSATION record already exists : 148
+[2020-01-17T00:56:17.358] [TRACE] wildseve - COMPENSATION cases to be inserted : 1170
+[2020-01-17T00:56:17.358] [TRACE] wildseve - COMPENSATION cases to be inserted : 1171
+[2020-01-17T00:56:17.359] [TRACE] wildseve - COMPENSATION record already exists : 149
+[2020-01-17T00:56:17.888] [TRACE] wildseve - COMPENSATION cases to be inserted : 1172
+[2020-01-17T00:56:17.888] [TRACE] wildseve - COMPENSATION cases to be inserted : 1173
+[2020-01-17T00:56:17.889] [TRACE] wildseve - COMPENSATION cases to be inserted : 1174
+[2020-01-17T00:56:17.889] [TRACE] wildseve - COMPENSATION cases to be inserted : 1175
+[2020-01-17T00:56:17.890] [TRACE] wildseve - COMPENSATION cases to be inserted : 1176
+[2020-01-17T00:56:17.891] [TRACE] wildseve - COMPENSATION cases to be inserted : 1177
+[2020-01-17T00:56:17.891] [TRACE] wildseve - COMPENSATION cases to be inserted : 1178
+[2020-01-17T00:56:17.892] [TRACE] wildseve - COMPENSATION cases to be inserted : 1179
+[2020-01-17T00:56:17.893] [TRACE] wildseve - COMPENSATION cases to be inserted : 1180
+[2020-01-17T00:56:17.893] [TRACE] wildseve - COMPENSATION cases to be inserted : 1181
+[2020-01-17T00:56:17.894] [TRACE] wildseve - COMPENSATION record already exists : 150
+[2020-01-17T00:56:18.399] [TRACE] wildseve - COMPENSATION cases to be inserted : 1182
+[2020-01-17T00:56:18.399] [TRACE] wildseve - COMPENSATION cases to be inserted : 1183
+[2020-01-17T00:56:18.400] [TRACE] wildseve - COMPENSATION cases to be inserted : 1184
+[2020-01-17T00:56:18.400] [TRACE] wildseve - COMPENSATION cases to be inserted : 1185
+[2020-01-17T00:56:18.401] [TRACE] wildseve - COMPENSATION cases to be inserted : 1186
+[2020-01-17T00:56:18.402] [TRACE] wildseve - COMPENSATION cases to be inserted : 1187
+[2020-01-17T00:56:18.402] [TRACE] wildseve - COMPENSATION cases to be inserted : 1188
+[2020-01-17T00:56:18.403] [TRACE] wildseve - COMPENSATION cases to be inserted : 1189
+[2020-01-17T00:56:18.404] [TRACE] wildseve - COMPENSATION cases to be inserted : 1190
+[2020-01-17T00:56:18.404] [TRACE] wildseve - COMPENSATION cases to be inserted : 1191
+[2020-01-17T00:56:18.405] [TRACE] wildseve - COMPENSATION record already exists : 151
+[2020-01-17T00:56:18.927] [TRACE] wildseve - COMPENSATION cases to be inserted : 1192
+[2020-01-17T00:56:18.928] [TRACE] wildseve - COMPENSATION cases to be inserted : 1193
+[2020-01-17T00:56:18.928] [TRACE] wildseve - COMPENSATION cases to be inserted : 1194
+[2020-01-17T00:56:18.929] [TRACE] wildseve - COMPENSATION cases to be inserted : 1195
+[2020-01-17T00:56:18.930] [TRACE] wildseve - COMPENSATION cases to be inserted : 1196
+[2020-01-17T00:56:18.930] [TRACE] wildseve - COMPENSATION cases to be inserted : 1197
+[2020-01-17T00:56:18.931] [TRACE] wildseve - COMPENSATION cases to be inserted : 1198
+[2020-01-17T00:56:18.932] [TRACE] wildseve - COMPENSATION cases to be inserted : 1199
+[2020-01-17T00:56:18.933] [TRACE] wildseve - COMPENSATION cases to be inserted : 1200
+[2020-01-17T00:56:18.933] [TRACE] wildseve - COMPENSATION cases to be inserted : 1201
+[2020-01-17T00:56:18.934] [TRACE] wildseve - COMPENSATION record already exists : 152
+[2020-01-17T00:56:19.444] [TRACE] wildseve - COMPENSATION cases to be inserted : 1202
+[2020-01-17T00:56:19.444] [TRACE] wildseve - COMPENSATION record already exists : 153
+[2020-01-17T00:56:19.979] [TRACE] wildseve - COMPENSATION cases to be inserted : 1203
+[2020-01-17T00:56:19.980] [TRACE] wildseve - COMPENSATION cases to be inserted : 1204
+[2020-01-17T00:56:19.980] [TRACE] wildseve - COMPENSATION cases to be inserted : 1205
+[2020-01-17T00:56:19.981] [TRACE] wildseve - COMPENSATION cases to be inserted : 1206
+[2020-01-17T00:56:19.982] [TRACE] wildseve - COMPENSATION cases to be inserted : 1207
+[2020-01-17T00:56:19.982] [TRACE] wildseve - COMPENSATION cases to be inserted : 1208
+[2020-01-17T00:56:19.984] [TRACE] wildseve - COMPENSATION cases to be inserted : 1209
+[2020-01-17T00:56:19.985] [TRACE] wildseve - COMPENSATION cases to be inserted : 1210
+[2020-01-17T00:56:19.985] [TRACE] wildseve - COMPENSATION cases to be inserted : 1211
+[2020-01-17T00:56:19.986] [TRACE] wildseve - COMPENSATION cases to be inserted : 1212
+[2020-01-17T00:56:19.986] [TRACE] wildseve - COMPENSATION record already exists : 154
+[2020-01-17T00:56:20.484] [TRACE] wildseve - COMPENSATION cases to be inserted : 1213
+[2020-01-17T00:56:20.484] [TRACE] wildseve - COMPENSATION record already exists : 155
+[2020-01-17T00:56:21.017] [TRACE] wildseve - COMPENSATION cases to be inserted : 1214
+[2020-01-17T00:56:21.018] [TRACE] wildseve - COMPENSATION cases to be inserted : 1215
+[2020-01-17T00:56:21.018] [TRACE] wildseve - COMPENSATION cases to be inserted : 1216
+[2020-01-17T00:56:21.018] [TRACE] wildseve - COMPENSATION cases to be inserted : 1217
+[2020-01-17T00:56:21.019] [TRACE] wildseve - COMPENSATION cases to be inserted : 1218
+[2020-01-17T00:56:21.019] [TRACE] wildseve - COMPENSATION cases to be inserted : 1219
+[2020-01-17T00:56:21.019] [TRACE] wildseve - COMPENSATION cases to be inserted : 1220
+[2020-01-17T00:56:21.020] [TRACE] wildseve - COMPENSATION cases to be inserted : 1221
+[2020-01-17T00:56:21.020] [TRACE] wildseve - COMPENSATION cases to be inserted : 1222
+[2020-01-17T00:56:21.020] [TRACE] wildseve - COMPENSATION cases to be inserted : 1223
+[2020-01-17T00:56:21.020] [TRACE] wildseve - COMPENSATION record already exists : 156
+[2020-01-17T00:56:21.528] [TRACE] wildseve - COMPENSATION cases to be inserted : 1224
+[2020-01-17T00:56:21.529] [TRACE] wildseve - COMPENSATION cases to be inserted : 1225
+[2020-01-17T00:56:21.530] [TRACE] wildseve - COMPENSATION cases to be inserted : 1226
+[2020-01-17T00:56:21.531] [TRACE] wildseve - COMPENSATION cases to be inserted : 1227
+[2020-01-17T00:56:21.532] [TRACE] wildseve - COMPENSATION cases to be inserted : 1228
+[2020-01-17T00:56:21.533] [TRACE] wildseve - COMPENSATION cases to be inserted : 1229
+[2020-01-17T00:56:21.535] [TRACE] wildseve - COMPENSATION cases to be inserted : 1230
+[2020-01-17T00:56:21.536] [TRACE] wildseve - COMPENSATION cases to be inserted : 1231
+[2020-01-17T00:56:21.537] [TRACE] wildseve - COMPENSATION cases to be inserted : 1232
+[2020-01-17T00:56:21.539] [TRACE] wildseve - COMPENSATION cases to be inserted : 1233
+[2020-01-17T00:56:21.540] [TRACE] wildseve - COMPENSATION record already exists : 157
+[2020-01-17T00:56:22.058] [TRACE] wildseve - COMPENSATION cases to be inserted : 1234
+[2020-01-17T00:56:22.059] [TRACE] wildseve - COMPENSATION cases to be inserted : 1235
+[2020-01-17T00:56:22.060] [TRACE] wildseve - COMPENSATION cases to be inserted : 1236
+[2020-01-17T00:56:22.060] [TRACE] wildseve - COMPENSATION cases to be inserted : 1237
+[2020-01-17T00:56:22.061] [TRACE] wildseve - COMPENSATION cases to be inserted : 1238
+[2020-01-17T00:56:22.062] [TRACE] wildseve - COMPENSATION cases to be inserted : 1239
+[2020-01-17T00:56:22.062] [TRACE] wildseve - COMPENSATION cases to be inserted : 1240
+[2020-01-17T00:56:22.064] [TRACE] wildseve - COMPENSATION cases to be inserted : 1241
+[2020-01-17T00:56:22.064] [TRACE] wildseve - COMPENSATION cases to be inserted : 1242
+[2020-01-17T00:56:22.065] [TRACE] wildseve - COMPENSATION cases to be inserted : 1243
+[2020-01-17T00:56:22.065] [TRACE] wildseve - COMPENSATION record already exists : 158
+[2020-01-17T00:56:22.558] [TRACE] wildseve - COMPENSATION cases to be inserted : 1244
+[2020-01-17T00:56:22.559] [TRACE] wildseve - COMPENSATION cases to be inserted : 1245
+[2020-01-17T00:56:22.559] [TRACE] wildseve - COMPENSATION cases to be inserted : 1246
+[2020-01-17T00:56:22.560] [TRACE] wildseve - COMPENSATION cases to be inserted : 1247
+[2020-01-17T00:56:22.561] [TRACE] wildseve - COMPENSATION cases to be inserted : 1248
+[2020-01-17T00:56:22.561] [TRACE] wildseve - COMPENSATION record already exists : 159
+[2020-01-17T00:56:23.095] [TRACE] wildseve - COMPENSATION cases to be inserted : 1249
+[2020-01-17T00:56:23.095] [TRACE] wildseve - COMPENSATION cases to be inserted : 1250
+[2020-01-17T00:56:23.096] [TRACE] wildseve - COMPENSATION cases to be inserted : 1251
+[2020-01-17T00:56:23.096] [TRACE] wildseve - COMPENSATION record already exists : 160
+[2020-01-17T00:56:23.603] [TRACE] wildseve - COMPENSATION cases to be inserted : 1252
+[2020-01-17T00:56:23.603] [TRACE] wildseve - COMPENSATION cases to be inserted : 1253
+[2020-01-17T00:56:23.604] [TRACE] wildseve - COMPENSATION cases to be inserted : 1254
+[2020-01-17T00:56:23.604] [TRACE] wildseve - COMPENSATION cases to be inserted : 1255
+[2020-01-17T00:56:23.607] [TRACE] wildseve - COMPENSATION cases to be inserted : 1256
+[2020-01-17T00:56:23.607] [TRACE] wildseve - COMPENSATION cases to be inserted : 1257
+[2020-01-17T00:56:23.608] [TRACE] wildseve - COMPENSATION cases to be inserted : 1258
+[2020-01-17T00:56:23.609] [TRACE] wildseve - COMPENSATION cases to be inserted : 1259
+[2020-01-17T00:56:23.609] [TRACE] wildseve - COMPENSATION cases to be inserted : 1260
+[2020-01-17T00:56:23.610] [TRACE] wildseve - COMPENSATION cases to be inserted : 1261
+[2020-01-17T00:56:23.611] [TRACE] wildseve - COMPENSATION record already exists : 161
+[2020-01-17T00:56:24.139] [TRACE] wildseve - COMPENSATION cases to be inserted : 1262
+[2020-01-17T00:56:24.139] [TRACE] wildseve - COMPENSATION cases to be inserted : 1263
+[2020-01-17T00:56:24.140] [TRACE] wildseve - COMPENSATION cases to be inserted : 1264
+[2020-01-17T00:56:24.140] [TRACE] wildseve - COMPENSATION cases to be inserted : 1265
+[2020-01-17T00:56:24.141] [TRACE] wildseve - COMPENSATION cases to be inserted : 1266
+[2020-01-17T00:56:24.142] [TRACE] wildseve - COMPENSATION cases to be inserted : 1267
+[2020-01-17T00:56:24.143] [TRACE] wildseve - COMPENSATION cases to be inserted : 1268
+[2020-01-17T00:56:24.143] [TRACE] wildseve - COMPENSATION cases to be inserted : 1269
+[2020-01-17T00:56:24.144] [TRACE] wildseve - COMPENSATION cases to be inserted : 1270
+[2020-01-17T00:56:24.144] [TRACE] wildseve - COMPENSATION cases to be inserted : 1271
+[2020-01-17T00:56:24.145] [TRACE] wildseve - COMPENSATION record already exists : 162
+[2020-01-17T00:56:24.643] [TRACE] wildseve - COMPENSATION cases to be inserted : 1272
+[2020-01-17T00:56:24.644] [TRACE] wildseve - COMPENSATION cases to be inserted : 1273
+[2020-01-17T00:56:24.644] [TRACE] wildseve - COMPENSATION cases to be inserted : 1274
+[2020-01-17T00:56:24.645] [TRACE] wildseve - COMPENSATION cases to be inserted : 1275
+[2020-01-17T00:56:24.646] [TRACE] wildseve - COMPENSATION cases to be inserted : 1276
+[2020-01-17T00:56:24.646] [TRACE] wildseve - COMPENSATION cases to be inserted : 1277
+[2020-01-17T00:56:24.647] [TRACE] wildseve - COMPENSATION cases to be inserted : 1278
+[2020-01-17T00:56:24.648] [TRACE] wildseve - COMPENSATION cases to be inserted : 1279
+[2020-01-17T00:56:24.649] [TRACE] wildseve - COMPENSATION record already exists : 163
+[2020-01-17T00:56:25.180] [TRACE] wildseve - COMPENSATION record already exists : 164
+[2020-01-17T00:56:25.714] [TRACE] wildseve - COMPENSATION cases to be inserted : 1280
+[2020-01-17T00:56:25.715] [TRACE] wildseve - COMPENSATION cases to be inserted : 1281
+[2020-01-17T00:56:25.715] [TRACE] wildseve - COMPENSATION cases to be inserted : 1282
+[2020-01-17T00:56:25.716] [TRACE] wildseve - COMPENSATION cases to be inserted : 1283
+[2020-01-17T00:56:25.717] [TRACE] wildseve - COMPENSATION cases to be inserted : 1284
+[2020-01-17T00:56:25.718] [TRACE] wildseve - COMPENSATION cases to be inserted : 1285
+[2020-01-17T00:56:25.718] [TRACE] wildseve - COMPENSATION cases to be inserted : 1286
+[2020-01-17T00:56:25.719] [TRACE] wildseve - COMPENSATION cases to be inserted : 1287
+[2020-01-17T00:56:25.720] [TRACE] wildseve - COMPENSATION cases to be inserted : 1288
+[2020-01-17T00:56:25.720] [TRACE] wildseve - COMPENSATION cases to be inserted : 1289
+[2020-01-17T00:56:25.721] [TRACE] wildseve - COMPENSATION record already exists : 165
+[2020-01-17T00:56:26.227] [TRACE] wildseve - COMPENSATION cases to be inserted : 1290
+[2020-01-17T00:56:26.227] [TRACE] wildseve - COMPENSATION cases to be inserted : 1291
+[2020-01-17T00:56:26.228] [TRACE] wildseve - COMPENSATION cases to be inserted : 1292
+[2020-01-17T00:56:26.229] [TRACE] wildseve - COMPENSATION cases to be inserted : 1293
+[2020-01-17T00:56:26.229] [TRACE] wildseve - COMPENSATION record already exists : 166
+[2020-01-17T00:56:26.756] [TRACE] wildseve - COMPENSATION cases to be inserted : 1294
+[2020-01-17T00:56:26.756] [TRACE] wildseve - COMPENSATION cases to be inserted : 1295
+[2020-01-17T00:56:26.757] [TRACE] wildseve - COMPENSATION record already exists : 167
+[2020-01-17T00:56:27.276] [TRACE] wildseve - COMPENSATION cases to be inserted : 1296
+[2020-01-17T00:56:27.277] [TRACE] wildseve - COMPENSATION cases to be inserted : 1297
+[2020-01-17T00:56:27.278] [TRACE] wildseve - COMPENSATION cases to be inserted : 1298
+[2020-01-17T00:56:27.278] [TRACE] wildseve - COMPENSATION cases to be inserted : 1299
+[2020-01-17T00:56:27.279] [TRACE] wildseve - COMPENSATION cases to be inserted : 1300
+[2020-01-17T00:56:27.279] [TRACE] wildseve - COMPENSATION cases to be inserted : 1301
+[2020-01-17T00:56:27.282] [TRACE] wildseve - COMPENSATION cases to be inserted : 1302
+[2020-01-17T00:56:27.282] [TRACE] wildseve - COMPENSATION cases to be inserted : 1303
+[2020-01-17T00:56:27.283] [TRACE] wildseve - COMPENSATION cases to be inserted : 1304
+[2020-01-17T00:56:27.284] [TRACE] wildseve - COMPENSATION cases to be inserted : 1305
+[2020-01-17T00:56:27.284] [TRACE] wildseve - COMPENSATION record already exists : 168
+[2020-01-17T00:56:27.817] [TRACE] wildseve - COMPENSATION cases to be inserted : 1306
+[2020-01-17T00:56:27.817] [TRACE] wildseve - COMPENSATION cases to be inserted : 1307
+[2020-01-17T00:56:27.818] [TRACE] wildseve - COMPENSATION cases to be inserted : 1308
+[2020-01-17T00:56:27.819] [TRACE] wildseve - COMPENSATION cases to be inserted : 1309
+[2020-01-17T00:56:27.819] [TRACE] wildseve - COMPENSATION cases to be inserted : 1310
+[2020-01-17T00:56:27.820] [TRACE] wildseve - COMPENSATION cases to be inserted : 1311
+[2020-01-17T00:56:27.821] [TRACE] wildseve - COMPENSATION cases to be inserted : 1312
+[2020-01-17T00:56:27.821] [TRACE] wildseve - COMPENSATION cases to be inserted : 1313
+[2020-01-17T00:56:27.822] [TRACE] wildseve - COMPENSATION cases to be inserted : 1314
+[2020-01-17T00:56:27.823] [TRACE] wildseve - COMPENSATION cases to be inserted : 1315
+[2020-01-17T00:56:27.823] [TRACE] wildseve - COMPENSATION record already exists : 169
+[2020-01-17T00:56:28.319] [TRACE] wildseve - COMPENSATION cases to be inserted : 1316
+[2020-01-17T00:56:28.319] [TRACE] wildseve - COMPENSATION cases to be inserted : 1317
+[2020-01-17T00:56:28.320] [TRACE] wildseve - COMPENSATION cases to be inserted : 1318
+[2020-01-17T00:56:28.321] [TRACE] wildseve - COMPENSATION cases to be inserted : 1319
+[2020-01-17T00:56:28.322] [TRACE] wildseve - COMPENSATION cases to be inserted : 1320
+[2020-01-17T00:56:28.322] [TRACE] wildseve - COMPENSATION cases to be inserted : 1321
+[2020-01-17T00:56:28.323] [TRACE] wildseve - COMPENSATION cases to be inserted : 1322
+[2020-01-17T00:56:28.324] [TRACE] wildseve - COMPENSATION cases to be inserted : 1323
+[2020-01-17T00:56:28.324] [TRACE] wildseve - COMPENSATION cases to be inserted : 1324
+[2020-01-17T00:56:28.325] [TRACE] wildseve - COMPENSATION cases to be inserted : 1325
+[2020-01-17T00:56:28.325] [TRACE] wildseve - COMPENSATION record already exists : 170
+[2020-01-17T00:56:28.847] [TRACE] wildseve - COMPENSATION cases to be inserted : 1326
+[2020-01-17T00:56:28.847] [TRACE] wildseve - COMPENSATION cases to be inserted : 1327
+[2020-01-17T00:56:28.848] [TRACE] wildseve - COMPENSATION cases to be inserted : 1328
+[2020-01-17T00:56:28.849] [TRACE] wildseve - COMPENSATION cases to be inserted : 1329
+[2020-01-17T00:56:28.849] [TRACE] wildseve - COMPENSATION cases to be inserted : 1330
+[2020-01-17T00:56:28.850] [TRACE] wildseve - COMPENSATION cases to be inserted : 1331
+[2020-01-17T00:56:28.851] [TRACE] wildseve - COMPENSATION cases to be inserted : 1332
+[2020-01-17T00:56:28.851] [TRACE] wildseve - COMPENSATION cases to be inserted : 1333
+[2020-01-17T00:56:28.852] [TRACE] wildseve - COMPENSATION cases to be inserted : 1334
+[2020-01-17T00:56:28.853] [TRACE] wildseve - COMPENSATION cases to be inserted : 1335
+[2020-01-17T00:56:28.853] [TRACE] wildseve - COMPENSATION record already exists : 171
+[2020-01-17T00:56:29.358] [TRACE] wildseve - COMPENSATION cases to be inserted : 1336
+[2020-01-17T00:56:29.358] [TRACE] wildseve - COMPENSATION cases to be inserted : 1337
+[2020-01-17T00:56:29.359] [TRACE] wildseve - COMPENSATION cases to be inserted : 1338
+[2020-01-17T00:56:29.360] [TRACE] wildseve - COMPENSATION cases to be inserted : 1339
+[2020-01-17T00:56:29.360] [TRACE] wildseve - COMPENSATION cases to be inserted : 1340
+[2020-01-17T00:56:29.361] [TRACE] wildseve - COMPENSATION record already exists : 172
+[2020-01-17T00:56:29.870] [TRACE] wildseve - COMPENSATION cases to be inserted : 1341
+[2020-01-17T00:56:29.870] [TRACE] wildseve - COMPENSATION cases to be inserted : 1342
+[2020-01-17T00:56:29.871] [TRACE] wildseve - COMPENSATION cases to be inserted : 1343
+[2020-01-17T00:56:29.872] [TRACE] wildseve - COMPENSATION cases to be inserted : 1344
+[2020-01-17T00:56:29.872] [TRACE] wildseve - COMPENSATION cases to be inserted : 1345
+[2020-01-17T00:56:29.873] [TRACE] wildseve - COMPENSATION cases to be inserted : 1346
+[2020-01-17T00:56:29.874] [TRACE] wildseve - COMPENSATION cases to be inserted : 1347
+[2020-01-17T00:56:29.874] [TRACE] wildseve - COMPENSATION cases to be inserted : 1348
+[2020-01-17T00:56:29.875] [TRACE] wildseve - COMPENSATION cases to be inserted : 1349
+[2020-01-17T00:56:29.876] [TRACE] wildseve - COMPENSATION cases to be inserted : 1350
+[2020-01-17T00:56:29.876] [TRACE] wildseve - COMPENSATION record already exists : 173
+[2020-01-17T00:56:30.380] [TRACE] wildseve - COMPENSATION cases to be inserted : 1351
+[2020-01-17T00:56:30.380] [TRACE] wildseve - COMPENSATION cases to be inserted : 1352
+[2020-01-17T00:56:30.381] [TRACE] wildseve - COMPENSATION record already exists : 174
+[2020-01-17T00:56:30.913] [TRACE] wildseve - COMPENSATION record already exists : 175
+[2020-01-17T00:56:31.427] [TRACE] wildseve - COMPENSATION cases to be inserted : 1353
+[2020-01-17T00:56:31.427] [TRACE] wildseve - COMPENSATION cases to be inserted : 1354
+[2020-01-17T00:56:31.428] [TRACE] wildseve - COMPENSATION cases to be inserted : 1355
+[2020-01-17T00:56:31.429] [TRACE] wildseve - COMPENSATION cases to be inserted : 1356
+[2020-01-17T00:56:31.429] [TRACE] wildseve - COMPENSATION cases to be inserted : 1357
+[2020-01-17T00:56:31.430] [TRACE] wildseve - COMPENSATION cases to be inserted : 1358
+[2020-01-17T00:56:31.431] [TRACE] wildseve - COMPENSATION cases to be inserted : 1359
+[2020-01-17T00:56:31.432] [TRACE] wildseve - COMPENSATION cases to be inserted : 1360
+[2020-01-17T00:56:31.432] [TRACE] wildseve - COMPENSATION cases to be inserted : 1361
+[2020-01-17T00:56:31.433] [TRACE] wildseve - COMPENSATION cases to be inserted : 1362
+[2020-01-17T00:56:31.433] [TRACE] wildseve - COMPENSATION record already exists : 176
+[2020-01-17T00:56:31.954] [TRACE] wildseve - COMPENSATION cases to be inserted : 1363
+[2020-01-17T00:56:31.954] [TRACE] wildseve - COMPENSATION cases to be inserted : 1364
+[2020-01-17T00:56:31.955] [TRACE] wildseve - COMPENSATION cases to be inserted : 1365
+[2020-01-17T00:56:31.955] [TRACE] wildseve - COMPENSATION cases to be inserted : 1366
+[2020-01-17T00:56:31.956] [TRACE] wildseve - COMPENSATION cases to be inserted : 1367
+[2020-01-17T00:56:31.957] [TRACE] wildseve - COMPENSATION cases to be inserted : 1368
+[2020-01-17T00:56:31.957] [TRACE] wildseve - COMPENSATION cases to be inserted : 1369
+[2020-01-17T00:56:31.958] [TRACE] wildseve - COMPENSATION cases to be inserted : 1370
+[2020-01-17T00:56:31.959] [TRACE] wildseve - COMPENSATION cases to be inserted : 1371
+[2020-01-17T00:56:31.959] [TRACE] wildseve - COMPENSATION cases to be inserted : 1372
+[2020-01-17T00:56:31.960] [TRACE] wildseve - COMPENSATION record already exists : 177
+[2020-01-17T00:56:32.465] [TRACE] wildseve - COMPENSATION cases to be inserted : 1373
+[2020-01-17T00:56:32.466] [TRACE] wildseve - COMPENSATION cases to be inserted : 1374
+[2020-01-17T00:56:32.467] [TRACE] wildseve - COMPENSATION cases to be inserted : 1375
+[2020-01-17T00:56:32.467] [TRACE] wildseve - COMPENSATION record already exists : 178
+[2020-01-17T00:56:32.993] [TRACE] wildseve - COMPENSATION cases to be inserted : 1376
+[2020-01-17T00:56:32.994] [TRACE] wildseve - COMPENSATION cases to be inserted : 1377
+[2020-01-17T00:56:32.994] [TRACE] wildseve - COMPENSATION cases to be inserted : 1378
+[2020-01-17T00:56:32.995] [TRACE] wildseve - COMPENSATION cases to be inserted : 1379
+[2020-01-17T00:56:32.996] [TRACE] wildseve - COMPENSATION cases to be inserted : 1380
+[2020-01-17T00:56:32.996] [TRACE] wildseve - COMPENSATION cases to be inserted : 1381
+[2020-01-17T00:56:32.997] [TRACE] wildseve - COMPENSATION cases to be inserted : 1382
+[2020-01-17T00:56:32.998] [TRACE] wildseve - COMPENSATION cases to be inserted : 1383
+[2020-01-17T00:56:32.998] [TRACE] wildseve - COMPENSATION cases to be inserted : 1384
+[2020-01-17T00:56:32.999] [TRACE] wildseve - COMPENSATION cases to be inserted : 1385
+[2020-01-17T00:56:33.000] [TRACE] wildseve - COMPENSATION record already exists : 179
+[2020-01-17T00:56:33.497] [TRACE] wildseve - COMPENSATION cases to be inserted : 1386
+[2020-01-17T00:56:33.498] [TRACE] wildseve - COMPENSATION record already exists : 180
+[2020-01-17T00:56:34.001] [TRACE] wildseve - COMPENSATION cases to be inserted : 1387
+[2020-01-17T00:56:34.002] [TRACE] wildseve - COMPENSATION cases to be inserted : 1388
+[2020-01-17T00:56:34.002] [TRACE] wildseve - COMPENSATION cases to be inserted : 1389
+[2020-01-17T00:56:34.003] [TRACE] wildseve - COMPENSATION cases to be inserted : 1390
+[2020-01-17T00:56:34.004] [TRACE] wildseve - COMPENSATION cases to be inserted : 1391
+[2020-01-17T00:56:34.005] [TRACE] wildseve - COMPENSATION cases to be inserted : 1392
+[2020-01-17T00:56:34.005] [TRACE] wildseve - COMPENSATION cases to be inserted : 1393
+[2020-01-17T00:56:34.006] [TRACE] wildseve - COMPENSATION cases to be inserted : 1394
+[2020-01-17T00:56:34.007] [TRACE] wildseve - COMPENSATION cases to be inserted : 1395
+[2020-01-17T00:56:34.007] [TRACE] wildseve - COMPENSATION cases to be inserted : 1396
+[2020-01-17T00:56:34.009] [TRACE] wildseve - COMPENSATION record already exists : 181
+[2020-01-17T00:56:34.543] [TRACE] wildseve - COMPENSATION cases to be inserted : 1397
+[2020-01-17T00:56:34.544] [TRACE] wildseve - COMPENSATION cases to be inserted : 1398
+[2020-01-17T00:56:34.545] [TRACE] wildseve - COMPENSATION cases to be inserted : 1399
+[2020-01-17T00:56:34.545] [TRACE] wildseve - COMPENSATION cases to be inserted : 1400
+[2020-01-17T00:56:34.546] [TRACE] wildseve - COMPENSATION cases to be inserted : 1401
+[2020-01-17T00:56:34.546] [TRACE] wildseve - COMPENSATION record already exists : 182
+[2020-01-17T00:56:35.086] [TRACE] wildseve - COMPENSATION cases to be inserted : 1402
+[2020-01-17T00:56:35.087] [TRACE] wildseve - COMPENSATION cases to be inserted : 1403
+[2020-01-17T00:56:35.088] [TRACE] wildseve - COMPENSATION cases to be inserted : 1404
+[2020-01-17T00:56:35.088] [TRACE] wildseve - COMPENSATION cases to be inserted : 1405
+[2020-01-17T00:56:35.089] [TRACE] wildseve - COMPENSATION cases to be inserted : 1406
+[2020-01-17T00:56:35.090] [TRACE] wildseve - COMPENSATION cases to be inserted : 1407
+[2020-01-17T00:56:35.091] [TRACE] wildseve - COMPENSATION cases to be inserted : 1408
+[2020-01-17T00:56:35.091] [TRACE] wildseve - COMPENSATION cases to be inserted : 1409
+[2020-01-17T00:56:35.092] [TRACE] wildseve - COMPENSATION cases to be inserted : 1410
+[2020-01-17T00:56:35.093] [TRACE] wildseve - COMPENSATION cases to be inserted : 1411
+[2020-01-17T00:56:35.093] [TRACE] wildseve - COMPENSATION record already exists : 183
+[2020-01-17T00:56:35.618] [TRACE] wildseve - COMPENSATION cases to be inserted : 1412
+[2020-01-17T00:56:35.619] [TRACE] wildseve - COMPENSATION cases to be inserted : 1413
+[2020-01-17T00:56:35.620] [TRACE] wildseve - COMPENSATION cases to be inserted : 1414
+[2020-01-17T00:56:35.620] [TRACE] wildseve - COMPENSATION cases to be inserted : 1415
+[2020-01-17T00:56:35.621] [TRACE] wildseve - COMPENSATION cases to be inserted : 1416
+[2020-01-17T00:56:35.621] [TRACE] wildseve - COMPENSATION cases to be inserted : 1417
+[2020-01-17T00:56:35.622] [TRACE] wildseve - COMPENSATION cases to be inserted : 1418
+[2020-01-17T00:56:35.623] [TRACE] wildseve - COMPENSATION cases to be inserted : 1419
+[2020-01-17T00:56:35.624] [TRACE] wildseve - COMPENSATION cases to be inserted : 1420
+[2020-01-17T00:56:35.625] [TRACE] wildseve - COMPENSATION cases to be inserted : 1421
+[2020-01-17T00:56:35.625] [TRACE] wildseve - COMPENSATION record already exists : 184
+[2020-01-17T00:56:36.143] [TRACE] wildseve - COMPENSATION cases to be inserted : 1422
+[2020-01-17T00:56:36.144] [TRACE] wildseve - COMPENSATION cases to be inserted : 1423
+[2020-01-17T00:56:36.145] [TRACE] wildseve - COMPENSATION cases to be inserted : 1424
+[2020-01-17T00:56:36.145] [TRACE] wildseve - COMPENSATION cases to be inserted : 1425
+[2020-01-17T00:56:36.146] [TRACE] wildseve - COMPENSATION cases to be inserted : 1426
+[2020-01-17T00:56:36.146] [TRACE] wildseve - COMPENSATION cases to be inserted : 1427
+[2020-01-17T00:56:36.147] [TRACE] wildseve - COMPENSATION cases to be inserted : 1428
+[2020-01-17T00:56:36.148] [TRACE] wildseve - COMPENSATION cases to be inserted : 1429
+[2020-01-17T00:56:36.148] [TRACE] wildseve - COMPENSATION cases to be inserted : 1430
+[2020-01-17T00:56:36.149] [TRACE] wildseve - COMPENSATION cases to be inserted : 1431
+[2020-01-17T00:56:36.150] [TRACE] wildseve - COMPENSATION record already exists : 185
+[2020-01-17T00:56:36.674] [TRACE] wildseve - COMPENSATION cases to be inserted : 1432
+[2020-01-17T00:56:36.675] [TRACE] wildseve - COMPENSATION cases to be inserted : 1433
+[2020-01-17T00:56:36.676] [TRACE] wildseve - COMPENSATION cases to be inserted : 1434
+[2020-01-17T00:56:36.676] [TRACE] wildseve - COMPENSATION cases to be inserted : 1435
+[2020-01-17T00:56:36.677] [TRACE] wildseve - COMPENSATION cases to be inserted : 1436
+[2020-01-17T00:56:36.678] [TRACE] wildseve - COMPENSATION cases to be inserted : 1437
+[2020-01-17T00:56:36.678] [TRACE] wildseve - COMPENSATION cases to be inserted : 1438
+[2020-01-17T00:56:36.679] [TRACE] wildseve - COMPENSATION cases to be inserted : 1439
+[2020-01-17T00:56:36.679] [TRACE] wildseve - COMPENSATION cases to be inserted : 1440
+[2020-01-17T00:56:36.680] [TRACE] wildseve - COMPENSATION cases to be inserted : 1441
+[2020-01-17T00:56:36.681] [TRACE] wildseve - COMPENSATION record already exists : 186
+[2020-01-17T00:56:37.178] [TRACE] wildseve - COMPENSATION cases to be inserted : 1442
+[2020-01-17T00:56:37.179] [TRACE] wildseve - COMPENSATION cases to be inserted : 1443
+[2020-01-17T00:56:37.179] [TRACE] wildseve - COMPENSATION cases to be inserted : 1444
+[2020-01-17T00:56:37.180] [TRACE] wildseve - COMPENSATION cases to be inserted : 1445
+[2020-01-17T00:56:37.181] [TRACE] wildseve - COMPENSATION cases to be inserted : 1446
+[2020-01-17T00:56:37.181] [TRACE] wildseve - COMPENSATION record already exists : 187
+[2020-01-17T00:56:37.678] [TRACE] wildseve - COMPENSATION cases to be inserted : 1447
+[2020-01-17T00:56:37.679] [TRACE] wildseve - COMPENSATION cases to be inserted : 1448
+[2020-01-17T00:56:37.679] [TRACE] wildseve - COMPENSATION cases to be inserted : 1449
+[2020-01-17T00:56:37.680] [TRACE] wildseve - COMPENSATION cases to be inserted : 1450
+[2020-01-17T00:56:37.681] [TRACE] wildseve - COMPENSATION cases to be inserted : 1451
+[2020-01-17T00:56:37.682] [TRACE] wildseve - COMPENSATION cases to be inserted : 1452
+[2020-01-17T00:56:37.682] [TRACE] wildseve - COMPENSATION cases to be inserted : 1453
+[2020-01-17T00:56:37.683] [TRACE] wildseve - COMPENSATION record already exists : 188
+[2020-01-17T00:56:38.206] [TRACE] wildseve - COMPENSATION cases to be inserted : 1454
+[2020-01-17T00:56:38.207] [TRACE] wildseve - COMPENSATION cases to be inserted : 1455
+[2020-01-17T00:56:38.207] [TRACE] wildseve - COMPENSATION cases to be inserted : 1456
+[2020-01-17T00:56:38.207] [TRACE] wildseve - COMPENSATION cases to be inserted : 1457
+[2020-01-17T00:56:38.208] [TRACE] wildseve - COMPENSATION cases to be inserted : 1458
+[2020-01-17T00:56:38.208] [TRACE] wildseve - COMPENSATION record already exists : 189
+[2020-01-17T00:56:38.718] [TRACE] wildseve - COMPENSATION cases to be inserted : 1459
+[2020-01-17T00:56:38.719] [TRACE] wildseve - COMPENSATION cases to be inserted : 1460
+[2020-01-17T00:56:38.720] [TRACE] wildseve - COMPENSATION cases to be inserted : 1461
+[2020-01-17T00:56:38.720] [TRACE] wildseve - COMPENSATION record already exists : 190
+[2020-01-17T00:56:39.249] [TRACE] wildseve - COMPENSATION record already exists : 191
+[2020-01-17T00:56:39.768] [TRACE] wildseve - COMPENSATION record already exists : 192
+[2020-01-17T00:56:40.298] [TRACE] wildseve - COMPENSATION cases to be inserted : 1462
+[2020-01-17T00:56:40.298] [TRACE] wildseve - COMPENSATION cases to be inserted : 1463
+[2020-01-17T00:56:40.298] [TRACE] wildseve - COMPENSATION cases to be inserted : 1464
+[2020-01-17T00:56:40.299] [TRACE] wildseve - COMPENSATION cases to be inserted : 1465
+[2020-01-17T00:56:40.299] [TRACE] wildseve - COMPENSATION cases to be inserted : 1466
+[2020-01-17T00:56:40.299] [TRACE] wildseve - COMPENSATION record already exists : 193
+[2020-01-17T00:56:40.798] [TRACE] wildseve - COMPENSATION cases to be inserted : 1467
+[2020-01-17T00:56:40.798] [TRACE] wildseve - COMPENSATION record already exists : 194
+[2020-01-17T00:56:41.298] [TRACE] wildseve - COMPENSATION cases to be inserted : 1468
+[2020-01-17T00:56:41.300] [TRACE] wildseve - COMPENSATION cases to be inserted : 1469
+[2020-01-17T00:56:41.301] [TRACE] wildseve - COMPENSATION cases to be inserted : 1470
+[2020-01-17T00:56:41.302] [TRACE] wildseve - COMPENSATION cases to be inserted : 1471
+[2020-01-17T00:56:41.302] [TRACE] wildseve - COMPENSATION cases to be inserted : 1472
+[2020-01-17T00:56:41.303] [TRACE] wildseve - COMPENSATION cases to be inserted : 1473
+[2020-01-17T00:56:41.304] [TRACE] wildseve - COMPENSATION cases to be inserted : 1474
+[2020-01-17T00:56:41.304] [TRACE] wildseve - COMPENSATION cases to be inserted : 1475
+[2020-01-17T00:56:41.305] [TRACE] wildseve - COMPENSATION cases to be inserted : 1476
+[2020-01-17T00:56:41.306] [TRACE] wildseve - COMPENSATION cases to be inserted : 1477
+[2020-01-17T00:56:41.306] [TRACE] wildseve - COMPENSATION record already exists : 195
+[2020-01-17T00:56:41.801] [TRACE] wildseve - COMPENSATION cases to be inserted : 1478
+[2020-01-17T00:56:41.801] [TRACE] wildseve - COMPENSATION cases to be inserted : 1479
+[2020-01-17T00:56:41.802] [TRACE] wildseve - COMPENSATION cases to be inserted : 1480
+[2020-01-17T00:56:41.803] [TRACE] wildseve - COMPENSATION cases to be inserted : 1481
+[2020-01-17T00:56:41.803] [TRACE] wildseve - COMPENSATION cases to be inserted : 1482
+[2020-01-17T00:56:41.804] [TRACE] wildseve - COMPENSATION record already exists : 196
+[2020-01-17T00:56:42.325] [TRACE] wildseve - COMPENSATION cases to be inserted : 1483
+[2020-01-17T00:56:42.326] [TRACE] wildseve - COMPENSATION cases to be inserted : 1484
+[2020-01-17T00:56:42.327] [TRACE] wildseve - COMPENSATION cases to be inserted : 1485
+[2020-01-17T00:56:42.328] [TRACE] wildseve - COMPENSATION cases to be inserted : 1486
+[2020-01-17T00:56:42.329] [TRACE] wildseve - COMPENSATION cases to be inserted : 1487
+[2020-01-17T00:56:42.330] [TRACE] wildseve - COMPENSATION cases to be inserted : 1488
+[2020-01-17T00:56:42.330] [TRACE] wildseve - COMPENSATION record already exists : 197
+[2020-01-17T00:56:42.846] [TRACE] wildseve - COMPENSATION cases to be inserted : 1489
+[2020-01-17T00:56:42.846] [TRACE] wildseve - COMPENSATION cases to be inserted : 1490
+[2020-01-17T00:56:42.847] [TRACE] wildseve - COMPENSATION cases to be inserted : 1491
+[2020-01-17T00:56:42.848] [TRACE] wildseve - COMPENSATION cases to be inserted : 1492
+[2020-01-17T00:56:42.848] [TRACE] wildseve - COMPENSATION cases to be inserted : 1493
+[2020-01-17T00:56:42.849] [TRACE] wildseve - COMPENSATION cases to be inserted : 1494
+[2020-01-17T00:56:42.850] [TRACE] wildseve - COMPENSATION cases to be inserted : 1495
+[2020-01-17T00:56:42.850] [TRACE] wildseve - COMPENSATION cases to be inserted : 1496
+[2020-01-17T00:56:42.851] [TRACE] wildseve - COMPENSATION cases to be inserted : 1497
+[2020-01-17T00:56:42.852] [TRACE] wildseve - COMPENSATION cases to be inserted : 1498
+[2020-01-17T00:56:42.852] [TRACE] wildseve - COMPENSATION record already exists : 198
+[2020-01-17T00:56:43.358] [TRACE] wildseve - COMPENSATION cases to be inserted : 1499
+[2020-01-17T00:56:43.358] [TRACE] wildseve - COMPENSATION cases to be inserted : 1500
+[2020-01-17T00:56:43.359] [TRACE] wildseve - COMPENSATION cases to be inserted : 1501
+[2020-01-17T00:56:43.360] [TRACE] wildseve - COMPENSATION cases to be inserted : 1502
+[2020-01-17T00:56:43.360] [TRACE] wildseve - COMPENSATION cases to be inserted : 1503
+[2020-01-17T00:56:43.361] [TRACE] wildseve - COMPENSATION cases to be inserted : 1504
+[2020-01-17T00:56:43.362] [TRACE] wildseve - COMPENSATION cases to be inserted : 1505
+[2020-01-17T00:56:43.363] [TRACE] wildseve - COMPENSATION cases to be inserted : 1506
+[2020-01-17T00:56:43.363] [TRACE] wildseve - COMPENSATION cases to be inserted : 1507
+[2020-01-17T00:56:43.364] [TRACE] wildseve - COMPENSATION cases to be inserted : 1508
+[2020-01-17T00:56:43.364] [TRACE] wildseve - COMPENSATION record already exists : 199
+[2020-01-17T00:56:43.861] [TRACE] wildseve - COMPENSATION cases to be inserted : 1509
+[2020-01-17T00:56:43.861] [TRACE] wildseve - COMPENSATION cases to be inserted : 1510
+[2020-01-17T00:56:43.862] [TRACE] wildseve - COMPENSATION cases to be inserted : 1511
+[2020-01-17T00:56:43.863] [TRACE] wildseve - COMPENSATION cases to be inserted : 1512
+[2020-01-17T00:56:43.864] [TRACE] wildseve - COMPENSATION cases to be inserted : 1513
+[2020-01-17T00:56:43.865] [TRACE] wildseve - COMPENSATION cases to be inserted : 1514
+[2020-01-17T00:56:43.865] [TRACE] wildseve - COMPENSATION cases to be inserted : 1515
+[2020-01-17T00:56:43.866] [TRACE] wildseve - COMPENSATION cases to be inserted : 1516
+[2020-01-17T00:56:43.866] [TRACE] wildseve - COMPENSATION cases to be inserted : 1517
+[2020-01-17T00:56:43.867] [TRACE] wildseve - COMPENSATION record already exists : 200
+[2020-01-17T00:56:44.379] [TRACE] wildseve - COMPENSATION cases to be inserted : 1518
+[2020-01-17T00:56:44.380] [TRACE] wildseve - COMPENSATION cases to be inserted : 1519
+[2020-01-17T00:56:44.381] [TRACE] wildseve - COMPENSATION cases to be inserted : 1520
+[2020-01-17T00:56:44.381] [TRACE] wildseve - COMPENSATION cases to be inserted : 1521
+[2020-01-17T00:56:44.382] [TRACE] wildseve - COMPENSATION cases to be inserted : 1522
+[2020-01-17T00:56:44.383] [TRACE] wildseve - COMPENSATION cases to be inserted : 1523
+[2020-01-17T00:56:44.383] [TRACE] wildseve - COMPENSATION cases to be inserted : 1524
+[2020-01-17T00:56:44.384] [TRACE] wildseve - COMPENSATION cases to be inserted : 1525
+[2020-01-17T00:56:44.384] [TRACE] wildseve - COMPENSATION cases to be inserted : 1526
+[2020-01-17T00:56:44.385] [TRACE] wildseve - COMPENSATION cases to be inserted : 1527
+[2020-01-17T00:56:44.386] [TRACE] wildseve - COMPENSATION record already exists : 201
+[2020-01-17T00:56:44.888] [TRACE] wildseve - COMPENSATION cases to be inserted : 1528
+[2020-01-17T00:56:44.888] [TRACE] wildseve - COMPENSATION cases to be inserted : 1529
+[2020-01-17T00:56:44.889] [TRACE] wildseve - COMPENSATION cases to be inserted : 1530
+[2020-01-17T00:56:44.890] [TRACE] wildseve - COMPENSATION cases to be inserted : 1531
+[2020-01-17T00:56:44.890] [TRACE] wildseve - COMPENSATION cases to be inserted : 1532
+[2020-01-17T00:56:44.891] [TRACE] wildseve - COMPENSATION cases to be inserted : 1533
+[2020-01-17T00:56:44.892] [TRACE] wildseve - COMPENSATION cases to be inserted : 1534
+[2020-01-17T00:56:44.892] [TRACE] wildseve - COMPENSATION record already exists : 202
+[2020-01-17T00:56:45.395] [TRACE] wildseve - COMPENSATION cases to be inserted : 1535
+[2020-01-17T00:56:45.396] [TRACE] wildseve - COMPENSATION cases to be inserted : 1536
+[2020-01-17T00:56:45.396] [TRACE] wildseve - COMPENSATION cases to be inserted : 1537
+[2020-01-17T00:56:45.397] [TRACE] wildseve - COMPENSATION cases to be inserted : 1538
+[2020-01-17T00:56:45.398] [TRACE] wildseve - COMPENSATION cases to be inserted : 1539
+[2020-01-17T00:56:45.399] [TRACE] wildseve - COMPENSATION cases to be inserted : 1540
+[2020-01-17T00:56:45.399] [TRACE] wildseve - COMPENSATION cases to be inserted : 1541
+[2020-01-17T00:56:45.400] [TRACE] wildseve - COMPENSATION cases to be inserted : 1542
+[2020-01-17T00:56:45.401] [TRACE] wildseve - COMPENSATION cases to be inserted : 1543
+[2020-01-17T00:56:45.401] [TRACE] wildseve - COMPENSATION cases to be inserted : 1544
+[2020-01-17T00:56:45.402] [TRACE] wildseve - COMPENSATION record already exists : 203
+[2020-01-17T00:56:45.894] [TRACE] wildseve - COMPENSATION cases to be inserted : 1545
+[2020-01-17T00:56:45.895] [TRACE] wildseve - COMPENSATION cases to be inserted : 1546
+[2020-01-17T00:56:45.896] [TRACE] wildseve - COMPENSATION cases to be inserted : 1547
+[2020-01-17T00:56:45.896] [TRACE] wildseve - COMPENSATION cases to be inserted : 1548
+[2020-01-17T00:56:45.897] [TRACE] wildseve - COMPENSATION cases to be inserted : 1549
+[2020-01-17T00:56:45.898] [TRACE] wildseve - COMPENSATION cases to be inserted : 1550
+[2020-01-17T00:56:45.898] [TRACE] wildseve - COMPENSATION cases to be inserted : 1551
+[2020-01-17T00:56:45.899] [TRACE] wildseve - COMPENSATION cases to be inserted : 1552
+[2020-01-17T00:56:45.900] [TRACE] wildseve - COMPENSATION cases to be inserted : 1553
+[2020-01-17T00:56:45.900] [TRACE] wildseve - COMPENSATION cases to be inserted : 1554
+[2020-01-17T00:56:45.901] [TRACE] wildseve - COMPENSATION record already exists : 204
+[2020-01-17T00:56:46.395] [TRACE] wildseve - COMPENSATION cases to be inserted : 1555
+[2020-01-17T00:56:46.396] [TRACE] wildseve - COMPENSATION cases to be inserted : 1556
+[2020-01-17T00:56:46.397] [TRACE] wildseve - COMPENSATION cases to be inserted : 1557
+[2020-01-17T00:56:46.397] [TRACE] wildseve - COMPENSATION cases to be inserted : 1558
+[2020-01-17T00:56:46.398] [TRACE] wildseve - COMPENSATION cases to be inserted : 1559
+[2020-01-17T00:56:46.399] [TRACE] wildseve - COMPENSATION cases to be inserted : 1560
+[2020-01-17T00:56:46.399] [TRACE] wildseve - COMPENSATION cases to be inserted : 1561
+[2020-01-17T00:56:46.400] [TRACE] wildseve - COMPENSATION cases to be inserted : 1562
+[2020-01-17T00:56:46.400] [TRACE] wildseve - COMPENSATION cases to be inserted : 1563
+[2020-01-17T00:56:46.401] [TRACE] wildseve - COMPENSATION cases to be inserted : 1564
+[2020-01-17T00:56:46.401] [TRACE] wildseve - COMPENSATION record already exists : 205
+[2020-01-17T00:56:46.895] [TRACE] wildseve - COMPENSATION cases to be inserted : 1565
+[2020-01-17T00:56:46.895] [TRACE] wildseve - COMPENSATION cases to be inserted : 1566
+[2020-01-17T00:56:46.895] [TRACE] wildseve - COMPENSATION record already exists : 206
+[2020-01-17T00:56:47.398] [TRACE] wildseve - COMPENSATION cases to be inserted : 1567
+[2020-01-17T00:56:47.399] [TRACE] wildseve - COMPENSATION record already exists : 207
+[2020-01-17T00:56:47.895] [TRACE] wildseve - COMPENSATION cases to be inserted : 1568
+[2020-01-17T00:56:47.896] [TRACE] wildseve - COMPENSATION cases to be inserted : 1569
+[2020-01-17T00:56:47.896] [TRACE] wildseve - COMPENSATION cases to be inserted : 1570
+[2020-01-17T00:56:47.897] [TRACE] wildseve - COMPENSATION cases to be inserted : 1571
+[2020-01-17T00:56:47.898] [TRACE] wildseve - COMPENSATION cases to be inserted : 1572
+[2020-01-17T00:56:47.899] [TRACE] wildseve - COMPENSATION cases to be inserted : 1573
+[2020-01-17T00:56:47.899] [TRACE] wildseve - COMPENSATION cases to be inserted : 1574
+[2020-01-17T00:56:47.900] [TRACE] wildseve - COMPENSATION cases to be inserted : 1575
+[2020-01-17T00:56:47.901] [TRACE] wildseve - COMPENSATION cases to be inserted : 1576
+[2020-01-17T00:56:47.902] [TRACE] wildseve - COMPENSATION cases to be inserted : 1577
+[2020-01-17T00:56:47.902] [TRACE] wildseve - COMPENSATION record already exists : 208
+[2020-01-17T00:56:48.396] [TRACE] wildseve - COMPENSATION record already exists : 209
+[2020-01-17T00:56:48.895] [TRACE] wildseve - COMPENSATION cases to be inserted : 1578
+[2020-01-17T00:56:48.896] [TRACE] wildseve - COMPENSATION cases to be inserted : 1579
+[2020-01-17T00:56:48.897] [TRACE] wildseve - COMPENSATION cases to be inserted : 1580
+[2020-01-17T00:56:48.898] [TRACE] wildseve - COMPENSATION cases to be inserted : 1581
+[2020-01-17T00:56:48.898] [TRACE] wildseve - COMPENSATION cases to be inserted : 1582
+[2020-01-17T00:56:48.899] [TRACE] wildseve - COMPENSATION cases to be inserted : 1583
+[2020-01-17T00:56:48.899] [TRACE] wildseve - COMPENSATION cases to be inserted : 1584
+[2020-01-17T00:56:48.900] [TRACE] wildseve - COMPENSATION record already exists : 210
+[2020-01-17T00:56:49.396] [TRACE] wildseve - COMPENSATION record already exists : 211
+[2020-01-17T00:56:49.898] [TRACE] wildseve - COMPENSATION cases to be inserted : 1585
+[2020-01-17T00:56:49.898] [TRACE] wildseve - COMPENSATION record already exists : 212
+[2020-01-17T00:56:50.396] [TRACE] wildseve - COMPENSATION cases to be inserted : 1586
+[2020-01-17T00:56:50.397] [TRACE] wildseve - COMPENSATION record already exists : 213
+[2020-01-17T00:56:50.898] [TRACE] wildseve - COMPENSATION cases already exists : 1
+[2020-01-17T00:56:51.406] [TRACE] wildseve - COMPENSATION cases already exists : 2
+[2020-01-17T00:56:51.918] [TRACE] wildseve - COMPENSATION cases already exists : 3
+[2020-01-17T00:56:52.453] [TRACE] wildseve - COMPENSATION cases already exists : 4
+[2020-01-17T00:56:52.963] [TRACE] wildseve - COMPENSATION cases already exists : 5
+[2020-01-17T00:56:53.479] [TRACE] wildseve - COMPENSATION cases already exists : 6
+[2020-01-17T00:56:53.978] [TRACE] wildseve - COMPENSATION cases already exists : 7
+[2020-01-17T00:56:54.478] [TRACE] wildseve - COMPENSATION cases already exists : 8
+[2020-01-17T00:56:54.985] [TRACE] wildseve - COMPENSATION cases already exists : 9
+[2020-01-17T00:56:55.497] [TRACE] wildseve - COMPENSATION cases already exists : 10
+[2020-01-17T00:56:55.998] [TRACE] wildseve - COMPENSATION cases already exists : 11
+[2020-01-17T00:56:56.498] [TRACE] wildseve - COMPENSATION cases already exists : 12
+[2020-01-17T00:56:57.007] [TRACE] wildseve - COMPENSATION cases already exists : 13
+[2020-01-17T00:56:57.527] [TRACE] wildseve - COMPENSATION cases already exists : 14
+[2020-01-17T00:56:58.038] [TRACE] wildseve - COMPENSATION cases already exists : 15
+[2020-01-17T00:56:58.538] [TRACE] wildseve - COMPENSATION cases already exists : 16
+[2020-01-17T00:56:59.062] [TRACE] wildseve - COMPENSATION cases already exists : 17
+[2020-01-17T00:56:59.582] [TRACE] wildseve - COMPENSATION cases already exists : 18
+[2020-01-17T00:57:00.102] [TRACE] wildseve - COMPENSATION cases already exists : 19
+[2020-01-17T00:57:00.628] [TRACE] wildseve - COMPENSATION cases already exists : 20
+[2020-01-17T00:57:01.137] [TRACE] wildseve - COMPENSATION cases already exists : 21
+[2020-01-17T00:57:01.637] [TRACE] wildseve - COMPENSATION cases already exists : 22
+[2020-01-17T00:57:02.141] [TRACE] wildseve - COMPENSATION cases already exists : 23
+[2020-01-17T00:57:02.668] [TRACE] wildseve - COMPENSATION cases already exists : 24
+[2020-01-17T00:57:03.177] [TRACE] wildseve - COMPENSATION cases already exists : 25
+[2020-01-17T00:57:03.677] [TRACE] wildseve - COMPENSATION cases already exists : 26
+[2020-01-17T00:57:04.177] [TRACE] wildseve - COMPENSATION cases already exists : 27
+[2020-01-17T00:57:04.681] [TRACE] wildseve - COMPENSATION cases already exists : 28
+[2020-01-17T00:57:05.200] [TRACE] wildseve - COMPENSATION cases already exists : 29
+[2020-01-17T00:57:05.717] [TRACE] wildseve - COMPENSATION cases already exists : 30
+[2020-01-17T00:57:06.217] [TRACE] wildseve - COMPENSATION cases already exists : 31
+[2020-01-17T00:57:06.744] [TRACE] wildseve - COMPENSATION cases already exists : 32
+[2020-01-17T00:57:07.257] [TRACE] wildseve - COMPENSATION cases already exists : 33
+[2020-01-17T00:57:07.757] [TRACE] wildseve - COMPENSATION cases already exists : 34
+[2020-01-17T00:57:08.274] [TRACE] wildseve - COMPENSATION cases already exists : 35
+[2020-01-17T00:57:08.777] [TRACE] wildseve - COMPENSATION cases already exists : 36
+[2020-01-17T00:57:09.300] [TRACE] wildseve - COMPENSATION cases already exists : 37
+[2020-01-17T00:57:09.817] [TRACE] wildseve - COMPENSATION cases already exists : 38
+[2020-01-17T00:57:10.318] [TRACE] wildseve - COMPENSATION cases already exists : 39
+[2020-01-17T00:57:10.838] [TRACE] wildseve - COMPENSATION cases already exists : 40
+[2020-01-17T00:57:11.351] [TRACE] wildseve - COMPENSATION cases already exists : 41
+[2020-01-17T00:57:11.858] [TRACE] wildseve - COMPENSATION cases already exists : 42
+[2020-01-17T00:57:12.374] [TRACE] wildseve - COMPENSATION cases already exists : 43
+[2020-01-17T00:57:12.879] [TRACE] wildseve - COMPENSATION cases already exists : 44
+[2020-01-17T00:57:13.398] [TRACE] wildseve - COMPENSATION cases already exists : 45
+[2020-01-17T00:57:13.915] [TRACE] wildseve - COMPENSATION cases already exists : 46
+[2020-01-17T00:57:14.419] [TRACE] wildseve - COMPENSATION cases already exists : 47
+[2020-01-17T00:57:14.917] [TRACE] wildseve - COMPENSATION cases already exists : 48
+[2020-01-17T00:57:15.418] [TRACE] wildseve - COMPENSATION cases already exists : 49
+[2020-01-17T00:57:15.917] [TRACE] wildseve - COMPENSATION cases already exists : 50
+[2020-01-17T00:57:16.422] [TRACE] wildseve - COMPENSATION cases already exists : 51
+[2020-01-17T00:57:16.940] [TRACE] wildseve - COMPENSATION cases already exists : 52
+[2020-01-17T00:57:17.465] [TRACE] wildseve - COMPENSATION cases already exists : 53
+[2020-01-17T00:57:17.990] [TRACE] wildseve - COMPENSATION cases already exists : 54
+[2020-01-17T00:57:18.542] [TRACE] wildseve - COMPENSATION cases already exists : 55
+[2020-01-17T00:57:19.058] [TRACE] wildseve - COMPENSATION cases already exists : 56
+[2020-01-17T00:57:19.558] [TRACE] wildseve - COMPENSATION cases already exists : 57
+[2020-01-17T00:57:20.065] [TRACE] wildseve - COMPENSATION cases already exists : 58
+[2020-01-17T00:57:20.577] [TRACE] wildseve - COMPENSATION cases already exists : 59
+[2020-01-17T00:57:21.083] [TRACE] wildseve - COMPENSATION cases already exists : 60
+[2020-01-17T00:57:21.610] [TRACE] wildseve - COMPENSATION cases already exists : 61
+[2020-01-17T00:57:22.125] [TRACE] wildseve - COMPENSATION cases already exists : 62
+[2020-01-17T00:57:22.647] [TRACE] wildseve - COMPENSATION cases already exists : 63
+[2020-01-17T00:57:23.157] [TRACE] wildseve - COMPENSATION cases already exists : 64
+[2020-01-17T00:57:23.662] [TRACE] wildseve - COMPENSATION cases already exists : 65
+[2020-01-17T00:57:24.177] [TRACE] wildseve - COMPENSATION cases already exists : 66
+[2020-01-17T00:57:24.677] [TRACE] wildseve - COMPENSATION cases already exists : 67
+[2020-01-17T00:57:25.178] [TRACE] wildseve - COMPENSATION cases already exists : 68
+[2020-01-17T00:57:25.676] [TRACE] wildseve - COMPENSATION cases already exists : 69
+[2020-01-17T00:57:26.218] [TRACE] wildseve - COMPENSATION cases already exists : 70
+[2020-01-17T00:57:26.716] [TRACE] wildseve - COMPENSATION cases already exists : 71
+[2020-01-17T00:57:27.237] [TRACE] wildseve - COMPENSATION cases already exists : 72
+[2020-01-17T00:57:27.737] [TRACE] wildseve - COMPENSATION cases already exists : 73
+[2020-01-17T00:57:28.238] [TRACE] wildseve - COMPENSATION cases already exists : 74
+[2020-01-17T00:57:28.784] [TRACE] wildseve - COMPENSATION cases already exists : 75
+[2020-01-17T00:57:29.299] [TRACE] wildseve - COMPENSATION cases already exists : 76
+[2020-01-17T00:57:29.818] [TRACE] wildseve - COMPENSATION cases already exists : 77
+[2020-01-17T00:57:30.318] [TRACE] wildseve - COMPENSATION cases already exists : 78
+[2020-01-17T00:57:30.821] [TRACE] wildseve - COMPENSATION cases already exists : 79
+[2020-01-17T00:57:31.347] [TRACE] wildseve - COMPENSATION cases already exists : 80
+[2020-01-17T00:57:31.866] [TRACE] wildseve - COMPENSATION cases already exists : 81
+[2020-01-17T00:57:32.386] [TRACE] wildseve - COMPENSATION cases already exists : 82
+[2020-01-17T00:57:32.899] [TRACE] wildseve - COMPENSATION cases already exists : 83
+[2020-01-17T00:57:33.415] [TRACE] wildseve - COMPENSATION cases already exists : 84
+[2020-01-17T00:57:33.917] [TRACE] wildseve - COMPENSATION cases already exists : 85
+[2020-01-17T00:57:34.410] [TRACE] wildseve - COMPENSATION cases already exists : 86
+[2020-01-17T00:57:34.915] [TRACE] wildseve - COMPENSATION cases already exists : 87
+[2020-01-17T00:57:35.413] [TRACE] wildseve - COMPENSATION cases already exists : 88
+[2020-01-17T00:57:35.913] [TRACE] wildseve - COMPENSATION cases already exists : 89
+[2020-01-17T00:57:36.411] [TRACE] wildseve - COMPENSATION cases already exists : 90
+[2020-01-17T00:57:36.912] [TRACE] wildseve - COMPENSATION cases already exists : 91
+[2020-01-17T00:57:37.413] [TRACE] wildseve - COMPENSATION cases already exists : 92
+[2020-01-17T00:57:37.914] [TRACE] wildseve - COMPENSATION cases already exists : 93
+[2020-01-17T00:57:38.412] [TRACE] wildseve - COMPENSATION cases already exists : 94
+[2020-01-17T00:57:38.916] [TRACE] wildseve - COMPENSATION cases already exists : 95
+[2020-01-17T00:57:39.388] [TRACE] wildseve - COMPENSATION cases already exists : 96
+[2020-01-17T00:57:39.892] [TRACE] wildseve - COMPENSATION cases already exists : 97
+[2020-01-17T00:57:40.397] [TRACE] wildseve - COMPENSATION cases already exists : 98
+[2020-01-17T00:57:40.892] [TRACE] wildseve - COMPENSATION cases already exists : 99
+[2020-01-17T00:57:41.409] [TRACE] wildseve - COMPENSATION cases already exists : 100
+[2020-01-17T00:57:41.914] [TRACE] wildseve - COMPENSATION cases already exists : 101
+[2020-01-17T00:57:42.430] [TRACE] wildseve - COMPENSATION cases already exists : 102
+[2020-01-17T00:57:42.911] [TRACE] wildseve - COMPENSATION cases already exists : 103
+[2020-01-17T00:57:43.412] [TRACE] wildseve - COMPENSATION cases already exists : 104
+[2020-01-17T00:57:44.374] [TRACE] wildseve - COMPENSATION cases already exists : 105
+[2020-01-17T00:57:45.352] [TRACE] wildseve - COMPENSATION cases already exists : 106
+[2020-01-17T00:57:46.592] [TRACE] wildseve - COMPENSATION cases already exists : 107
+[2020-01-17T00:57:47.543] [TRACE] wildseve - COMPENSATION cases already exists : 108
+[2020-01-17T00:57:48.780] [TRACE] wildseve - COMPENSATION cases already exists : 109
+[2020-01-17T00:57:49.746] [TRACE] wildseve - COMPENSATION cases already exists : 110
+[2020-01-17T00:57:50.745] [TRACE] wildseve - COMPENSATION cases already exists : 111
+[2020-01-17T00:57:51.975] [TRACE] wildseve - COMPENSATION cases already exists : 112
+[2020-01-17T00:57:53.156] [TRACE] wildseve - COMPENSATION cases already exists : 113

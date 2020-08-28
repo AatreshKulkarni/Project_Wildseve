@@ -1,0 +1,37 @@
+ Id CommandLine
+  -- -----------
+   1 cd .\Desktop
+   2 cd .\node_server
+   3 ls
+   4 gcloud init
+   5 npm start
+   6 gcloud auth login
+   7 gcloud app deploy
+   8 gcloud app browser
+   9 gcloud app browse
+  10 gcloud app deploy
+  11 gcloud browse
+  12 gcloud app browse
+  13 gcloud app browse
+  14 gcloud app deploy
+  15 gcloud app browse
+  
+  
+  help- https://www.youtube.com/watch?v=fAUT1-MuxKc
+  
+  error
+  
+  Update available 5.6.0 → 6.4.1    │
+   │     Run npm i -g npm to update 
+
+
+
+Discard the local changes
+
+using git reset --hard
+or git checkout -t -f remote/branch
+Or: Discard local changes for a specific file
+
+using git checkout filename   
+  
+  
